@@ -37,7 +37,7 @@ const SECTIONS = [
   {
     n: "06",
     title: "Your choices",
-    html: "You can sign out at any time. To have your email deleted, or for any question about your data, write to <a href=\"mailto:privacy@qubitlane.xyz\" class=\"pp-link\">privacy@qubitlane.xyz</a>.",
+    html: "You can sign out at any time. To have your email deleted, or for any question about your data, write to <a href=\"mailto:privacy@qubitess.xyz\" class=\"cq-link\">privacy@qubitess.xyz</a>.",
   },
 ];
 </script>

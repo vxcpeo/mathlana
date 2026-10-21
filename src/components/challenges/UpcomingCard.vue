@@ -1,5 +1,5 @@
 <script setup>
-/** A "not open yet" challenge: a quiet ledger row with its status pill. */
+/** A "not open yet" challenge: a numbered ledger row with its status pill. */
 import ChallengeIcon from "@/components/challenges/ChallengeIcon.vue";
 
 defineProps({
@@ -9,59 +9,80 @@ defineProps({
 </script>
 
 <template>
-  <div class="pp-ledger__row pp-urow">
-    <div class="pp-urow__id">
-      <ChallengeIcon :name="copy.icon" class="pp-urow__icon" />
-      <div class="pp-stack--tight pp-urow__body">
-        <p class="pp-inline pp-urow__titleline">
-          <span class="pp-h3 pp-urow__name">{{ challenge.name }}</span>
-          <span
-            class="pp-tag pp-tag--sm"
-            :class="copy.statusTone === 'brand' ? 'pp-tag--accent' : ''"
-            >{{ challenge.status }}</span
-          >
-        </p>
-        <p class="pp-small">{{ challenge.description }}</p>
-        <p class="pp-tiny pp-urow__note">{{ challenge.note }}</p>
-      </div>
+  <div class="cq-urow">
+    <ChallengeIcon :name="copy.icon" class="cq-urow__icon" />
+    <div class="cq-urow__body">
+      <p class="cq-inline cq-urow__titleline">
+        <span class="cq-h3 cq-urow__name">{{ challenge.name }}</span>
+        <span
+          class="cq-tag cq-tag--sm"
+          :class="copy.statusTone === 'brand' ? 'cq-tag--accent' : ''"
+          >{{ challenge.status }}</span
+        >
+      </p>
+      <p class="cq-small cq-urow__description">{{ challenge.description }}</p>
+      <p class="cq-tiny cq-urow__note">{{ challenge.note }}</p>
     </div>
   </div>
 </template>
 
 <style scoped>
-.pp-urow.pp-ledger__row {
-  gap: 12px;
-  padding: 18px 4px;
-}
-
-.pp-urow__id {
+.cq-urow {
+  counter-increment: cqledger;
   display: grid;
-  grid-template-columns: 24px minmax(0, 1fr);
+  grid-template-columns: 42px 24px minmax(0, 1fr);
   align-items: start;
-  gap: 12px;
+  gap: 12px clamp(12px, 1.6vw, 20px);
+  padding: clamp(18px, 2.2vw, 26px) clamp(18px, 2.6vw, 32px);
+  min-width: 0;
 }
 
-.pp-urow__icon {
-  width: 16px;
-  height: 16px;
+.cq-urow::before {
+  content: counter(cqledger, decimal-leading-zero);
+  padding-top: 4px;
+  font-family: var(--cq-mono);
+  font-size: 0.68rem;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+  color: var(--cq-muted);
+}
+
+.cq-urow__icon {
+  width: 17px;
+  height: 17px;
   margin-top: 4px;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
 }
 
-.pp-urow__titleline {
+.cq-urow__body {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.cq-urow__titleline {
   align-items: center;
   gap: 8px 10px;
 }
 
-.pp-urow__body {
-  min-width: 0;
+.cq-urow__name {
+  color: var(--cq-ink-soft);
+  overflow-wrap: anywhere;
 }
 
-.pp-urow__name {
-  color: var(--pp-ink-soft);
+.cq-urow__description {
+  max-width: 66ch;
 }
 
-.pp-urow__note {
+.cq-urow__note {
   max-width: 72ch;
+}
+
+@media (max-width: 560px) {
+  .cq-urow {
+    grid-template-columns: 28px 20px minmax(0, 1fr);
+    gap: 10px;
+    padding: 18px 16px;
+  }
 }
 </style>

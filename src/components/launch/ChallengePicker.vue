@@ -23,30 +23,31 @@ const groups = computed(() =>
     index="03"
     title="Pick a challenge"
     hint="Your token works on this one for good, unless the challenge closes."
+    class="cq-lstep--rail"
   >
-    <div role="radiogroup" aria-label="Pick a challenge" class="pp-choices">
-      <div v-for="group in groups" :key="group.key" class="pp-choices__group">
-        <p class="pp-choices__legend">
-          <Icon :name="group.icon" :size="14" class="pp-choices__glyph" />{{ group.label }}
+    <div role="radiogroup" aria-label="Pick a challenge" class="cq-lpick">
+      <div v-for="group in groups" :key="group.key" class="cq-lpick__group">
+        <p class="cq-lpick__legend">
+          <Icon :name="group.icon" :size="14" class="cq-lpick__glyph" />{{ group.label }}
         </p>
-        <div class="pp-choices__rows">
+        <div class="cq-lpick__rows">
           <button
             v-for="row in group.rows"
             :key="row.slug"
             type="button"
             role="radio"
             :aria-checked="row.slug === selected"
-            class="pp-choice"
-            :class="row.slug === selected ? 'pp-choice--on' : ''"
+            class="cq-lpick__choice"
+            :class="row.slug === selected ? 'cq-lpick__choice--on' : ''"
             @click="selected = row.slug"
           >
-            <span class="pp-choice__main">
-              <Icon :name="row.icon" :size="16" class="pp-choice__icon" />
-              <span class="pp-choice__title">{{ row.title }}</span>
+            <span class="cq-lpick__main">
+              <Icon :name="row.icon" :size="16" class="cq-lpick__icon" />
+              <span class="cq-lpick__title">{{ row.title }}</span>
             </span>
-            <span class="pp-choice__sub">{{ row.subtitle }}</span>
-            <span class="pp-choice__val pp-num">{{ row.value }} {{ row.unit }}</span>
-            <span aria-hidden="true" class="pp-choice__mark">
+            <span class="cq-lpick__sub">{{ row.subtitle }}</span>
+            <span class="cq-lpick__val cq-num">{{ row.value }} {{ row.unit }}</span>
+            <span aria-hidden="true" class="cq-lpick__mark">
               <Icon v-if="row.slug === selected" name="check" :stroke-width="2.25" :size="12" />
             </span>
           </button>
@@ -57,128 +58,127 @@ const groups = computed(() =>
 </template>
 
 <style scoped>
-.pp-choices {
+.cq-lpick {
   display: grid;
-  gap: var(--pp-t4);
+  gap: 16px;
   min-width: 0;
 }
 
-.pp-choices__group {
+.cq-lpick__group {
   min-width: 0;
-  background: transparent;
-  border: 0;
-  border-top: 1px solid var(--pp-ink);
-  border-radius: 0;
-  overflow: visible;
+  border-top: 1px solid var(--cq-ink);
 }
 
-.pp-choices__legend {
+.cq-lpick__legend {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 7px 0;
-  background: transparent;
-  border-bottom: 1px solid var(--pp-line);
-  font-family: var(--pp-mono);
-  font-size: 0.66rem;
+  border-bottom: 1px solid var(--cq-line);
+  font-family: var(--cq-mono);
+  font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--pp-ink);
+  color: var(--cq-ink);
 }
 
-.pp-choices__glyph {
+.cq-lpick__glyph {
   flex: 0 0 auto;
-  color: var(--pp-accent-text);
+  color: var(--cq-accent-text);
 }
 
-.pp-choices__rows {
+.cq-lpick__rows {
   display: grid;
   min-width: 0;
 }
 
-.pp-choice {
+.cq-lpick__choice {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: start;
-  gap: 3px 16px;
+  gap: 3px 12px;
   width: 100%;
   min-width: 0;
-  padding: 13px 4px;
+  padding: 11px 5px 11px 8px;
   text-align: left;
   background: transparent;
-  border-bottom: 1px solid var(--pp-line-soft);
-  transition: box-shadow var(--pp-fast) var(--pp-ease), background-color var(--pp-fast) var(--pp-ease);
+  border: 0;
+  border-bottom: 1px solid var(--cq-line-soft);
+  border-left: 2px solid transparent;
+  transition: background-color var(--cq-fast) var(--cq-ease),
+    border-color var(--cq-fast) var(--cq-ease);
 }
 
-.pp-choice:last-child {
+.cq-lpick__choice:last-child {
   border-bottom: 0;
 }
 
-.pp-choice:hover {
-  background: transparent;
-  box-shadow: inset 2px 0 0 var(--pp-line-strong);
+.cq-lpick__choice:hover {
+  background: var(--cq-sheet-soft);
+  border-left-color: var(--cq-line-strong);
 }
 
-.pp-choice--on {
-  background: transparent;
-  box-shadow: inset 2px 0 0 var(--pp-accent);
+.cq-lpick__choice--on {
+  background: var(--cq-accent-soft);
+  border-left-color: var(--cq-accent);
 }
 
-.pp-choice__main {
+.cq-lpick__main {
   grid-column: 1;
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
   min-width: 0;
 }
 
-.pp-choice__icon {
+.cq-lpick__icon {
   flex: 0 0 auto;
-  color: var(--pp-accent-text);
+  color: var(--cq-accent-text);
 }
 
-.pp-choice__title {
+.cq-lpick__title {
   min-width: 0;
-  font-family: var(--pp-display);
-  font-size: 1.02rem;
+  font-family: var(--cq-display);
+  font-size: 0.98rem;
   font-weight: 500;
+  line-height: 1.2;
   letter-spacing: -0.01em;
-  color: var(--pp-ink);
+  color: var(--cq-ink);
   overflow-wrap: anywhere;
 }
 
-.pp-choice__sub {
+.cq-lpick__sub {
   grid-column: 1;
-  font-size: 0.78rem;
-  line-height: 1.45;
-  color: var(--pp-muted);
-  overflow-wrap: anywhere;
-}
-
-.pp-choice__val {
-  grid-column: 1;
-  font-family: var(--pp-mono);
+  padding-left: 24px;
   font-size: 0.72rem;
-  color: var(--pp-ink-soft);
+  line-height: 1.45;
+  color: var(--cq-muted);
   overflow-wrap: anywhere;
 }
 
-.pp-choice__mark {
+.cq-lpick__val {
+  grid-column: 1;
+  padding-left: 24px;
+  font-size: 0.66rem;
+  color: var(--cq-ink-soft);
+  overflow-wrap: anywhere;
+}
+
+.cq-lpick__mark {
   grid-column: 2;
   grid-row: 1 / span 3;
   align-self: center;
   display: grid;
   place-items: center;
-  width: 18px;
-  height: 18px;
-  border: 1px solid var(--pp-line-strong);
-  border-radius: 0;
-  color: var(--pp-sheet);
+  width: 17px;
+  height: 17px;
+  border: 1px solid var(--cq-line-strong);
+  color: var(--cq-sheet);
 }
 
-.pp-choice--on .pp-choice__mark {
-  background: var(--pp-accent);
-  border-color: var(--pp-accent);
+.cq-lpick__choice--on .cq-lpick__mark {
+  background: var(--cq-accent);
+  border-color: var(--cq-accent);
 }
 </style>

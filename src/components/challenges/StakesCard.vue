@@ -1,8 +1,7 @@
 <script setup>
 /**
- * "What's at stake" — the ruled stake block: what the work protects and the
- * number it defends on the left, the comparison table and the caveat on the
- * right.
+ * "What's at stake" — the dark stake panel's ruled interior: what the work
+ * protects and the number it defends, then the comparison table and caveat.
  */
 defineProps({
   protectsLabel: { type: String, default: "Protects" },
@@ -13,98 +12,105 @@ defineProps({
 </script>
 
 <template>
-  <div class="pp-stake">
-    <div class="pp-stake__facts">
-      <div class="pp-stack--tight">
-        <p class="pp-h4">{{ protectsLabel }}</p>
-        <p class="pp-body">{{ protects }}</p>
+  <div class="cq-chstake">
+    <div class="cq-chstake__facts">
+      <div class="cq-chstake__copy">
+        <p class="cq-h4">{{ protectsLabel }}</p>
+        <p class="cq-chstake__protects">{{ protects }}</p>
       </div>
 
-      <div class="pp-stack--tight">
-        <p class="pp-h4">Its number: the public record</p>
-        <p class="pp-stake__figure">
-          <span class="pp-stake__num pp-num">{{ value }}</span>
-          <span v-if="unit" class="pp-stake__unit">{{ unit }}</span>
+      <div class="cq-chstake__record">
+        <p class="cq-h4">Its number: the public record</p>
+        <p class="cq-chstake__figure">
+          <span class="cq-chstake__num cq-num">{{ value }}</span>
+          <span v-if="unit" class="cq-chstake__unit">{{ unit }}</span>
         </p>
-        <slot name="number-note" />
+        <div class="cq-chstake__note">
+          <slot name="number-note" />
+        </div>
       </div>
 
       <slot name="extra" />
     </div>
 
-    <div class="pp-stake__scale">
-      <p class="pp-h4">For scale</p>
+    <div class="cq-chstake__scale">
+      <p class="cq-h4">For scale</p>
       <slot name="scale" />
-      <p class="pp-stake__foot"><slot name="footnote" /></p>
+      <p class="cq-chstake__foot"><slot name="footnote" /></p>
     </div>
   </div>
 </template>
 
 <style scoped>
-.pp-stake {
+.cq-chstake {
   display: grid;
-  grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr);
-  gap: clamp(22px, 4vw, 52px);
-  align-items: start;
-  padding-top: 6px;
+  gap: clamp(18px, 2.4vw, 28px);
+  min-width: 0;
+  padding-top: clamp(18px, 2.2vw, 26px);
+  border-top: 1px solid var(--cq-line);
 }
 
-.pp-stake__facts {
+.cq-chstake__facts {
   display: grid;
-  gap: var(--pp-t3);
-  align-content: start;
+  gap: var(--cq-t3);
   min-width: 0;
 }
 
-.pp-stake__figure {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
+.cq-chstake__copy,
+.cq-chstake__record {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
 }
 
-.pp-stake__num {
-  font-family: var(--pp-display);
-  font-size: clamp(2rem, 3.4vw, 2.8rem);
-  font-weight: 620;
-  line-height: 0.95;
-  letter-spacing: -0.035em;
-  color: var(--pp-ink);
+.cq-chstake__protects {
+  color: var(--cq-ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.cq-chstake__figure {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+}
+
+.cq-chstake__num {
+  font-family: var(--cq-display);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 650;
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  color: var(--cq-ink);
   overflow-wrap: anywhere;
 }
 
-.pp-stake__unit {
-  font-family: var(--pp-mono);
-  font-size: 0.72rem;
+.cq-chstake__unit {
+  font-family: var(--cq-mono);
+  font-size: 0.7rem;
+  line-height: 1.4;
   letter-spacing: 0.04em;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
 }
 
-.pp-stake__scale {
-  display: grid;
-  gap: 12px;
-  align-content: start;
+.cq-chstake__note {
   min-width: 0;
-  padding-left: clamp(0px, 2vw, 28px);
-  border-left: 1px solid var(--pp-line);
 }
 
-.pp-stake__foot {
-  margin-top: 4px;
+.cq-chstake__scale {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding-top: clamp(16px, 2vw, 22px);
+  border-top: 1px solid var(--cq-line);
+}
+
+.cq-chstake__foot {
+  margin-top: 2px;
   font-size: 0.72rem;
   line-height: 1.55;
-  color: var(--pp-muted);
-}
-
-@media (max-width: 1180px) {
-  .pp-stake {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .pp-stake__scale {
-    padding-left: 0;
-    padding-top: 16px;
-    border-left: 0;
-    border-top: 1px solid var(--pp-line);
-  }
+  color: var(--cq-muted);
 }
 </style>

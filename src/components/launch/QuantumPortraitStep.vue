@@ -1,6 +1,6 @@
 <script setup>
 /**
- * Step 01 鈥?"Its picture". The drop zone plus the "Make it quantum" card and
+ * Step 01 — "Its picture". The drop zone plus the "Make it quantum" card and
  * the portrait panel it expands into.
  *
  * The panel's queue is simulated: the reference parks the portrait in a real
@@ -113,156 +113,158 @@ onBeforeUnmount(() => {
 
 <template>
   <LaunchStep index="01" title="Its picture" hint="PNG, JPEG, GIF or WebP, up to 2 MB. Square looks best.">
-    <div class="pp-intake">
-      <label
-        for="launch-image"
-        class="pp-drop"
-        :class="picture ? 'pp-drop--filled' : ''"
-      >
-        <img v-if="picture" :src="picture.url" alt="" class="pp-drop__img" />
-        <span v-if="picture" class="pp-drop__change">Change</span>
-        <span v-else class="pp-drop__empty">
-          <Icon name="image-up" :size="20" class="pp-drop__icon" />Choose a picture
-        </span>
-      </label>
-      <input id="launch-image" type="file" :accept="ACCEPT" class="sr-only" @change="pick" />
+    <div class="cq-lpic">
+      <div class="cq-lpic__intake">
+        <label
+          for="launch-image"
+          class="cq-lpic__drop"
+          :class="picture ? 'cq-lpic__drop--filled' : ''"
+        >
+          <img v-if="picture" :src="picture.url" alt="" class="cq-lpic__thumb" />
+          <span v-if="picture" class="cq-lpic__change">Change</span>
+          <span v-else class="cq-lpic__empty">
+            <Icon name="image-up" :size="20" class="cq-lpic__emptyicon" />Choose a picture
+          </span>
+        </label>
+        <input id="launch-image" type="file" :accept="ACCEPT" class="sr-only" @change="pick" />
 
-      <div class="pp-quantum" :class="open ? 'pp-quantum--open' : ''">
-        <div class="pp-quantum__head">
-          <LaunchGlyph name="quantum" width="20" height="20" class="pp-quantum__glyph" />
-          <div class="pp-quantum__copy">
-            <p class="pp-quantum__title">Make it quantum</p>
-            <p class="pp-small">Art made of real quantum measurements, a grain an ordinary computer can only imitate. Platform covers the cost.</p>
+        <div class="cq-lpic__quantum" :class="open ? 'cq-lpic__quantum--open' : ''">
+          <div class="cq-lpic__quantum-head">
+            <LaunchGlyph name="quantum" width="20" height="20" class="cq-lpic__glyph" />
+            <div class="cq-lpic__quantum-copy">
+              <p class="cq-lpic__quantum-title">Make it quantum</p>
+              <p class="cq-small">Art made of real quantum measurements, a grain an ordinary computer can only imitate. Platform covers the cost.</p>
+            </div>
+            <AppButton
+              size="sm"
+              :aria-expanded="open"
+              aria-controls="launch-quantum"
+              @click="open = !open"
+            >
+              {{ open ? "Hide" : "Draw it" }}
+              <Icon
+                name="chevron-down"
+                :stroke-width="1.75"
+                :size="15"
+                class="cq-lpic__chev"
+                :class="open ? 'cq-lpic__chev--up' : ''"
+              />
+            </AppButton>
           </div>
-          <AppButton
-            size="sm"
-            :aria-expanded="open"
-            aria-controls="launch-quantum"
-            @click="open = !open"
-          >
-            {{ open ? "Hide" : "Draw it" }}
-            <Icon
-              name="chevron-down"
-              :stroke-width="1.75"
-              :size="15"
-              class="pp-quantum__chev"
-              :class="open ? 'pp-quantum__chev--up' : ''"
-            />
-          </AppButton>
+
+          <dl class="cq-lpic__facts">
+            <div class="cq-lpic__fact">
+              <dt class="cq-lpic__term">
+                <Icon name="scan-line" :stroke-width="1.75" :size="14" class="cq-lpic__factic" />Real measurements
+              </dt>
+              <dd class="cq-lpic__def">Real qubits, not AI.</dd>
+            </div>
+            <div class="cq-lpic__fact">
+              <dt class="cq-lpic__term">
+                <Icon
+                  name="fingerprint-pattern"
+                  :stroke-width="1.75"
+                  :size="14"
+                  class="cq-lpic__factic"
+                />One of a kind
+              </dt>
+              <dd class="cq-lpic__def">Every run comes out new.</dd>
+            </div>
+            <div class="cq-lpic__fact">
+              <dt class="cq-lpic__term">
+                <Icon name="atom" :stroke-width="1.75" :size="14" class="cq-lpic__factic" />Entanglement check
+              </dt>
+              <dd class="cq-lpic__def">Its score comes with it.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <div v-if="open" class="cq-lpic__screen" id="launch-quantum">
+        <span aria-hidden="true" class="cq-lpic__tick cq-lpic__tick--tl"></span>
+        <span aria-hidden="true" class="cq-lpic__tick cq-lpic__tick--tr"></span>
+        <span aria-hidden="true" class="cq-lpic__tick cq-lpic__tick--bl"></span>
+        <span aria-hidden="true" class="cq-lpic__tick cq-lpic__tick--br"></span>
+
+        <div class="cq-lpic__screenbar">
+          <span class="cq-lpic__screenlabel">
+            <LaunchGlyph name="quantum" width="14" height="14" />Quantum portrait
+          </span>
         </div>
 
-        <dl class="pp-quantum__facts">
-          <div class="pp-quantum__fact">
-            <dt class="pp-quantum__term">
-              <Icon name="scan-line" :stroke-width="1.75" :size="14" class="pp-quantum__factic" />Real measurements
-            </dt>
-            <dd class="pp-quantum__def">Real qubits, not AI.</dd>
-          </div>
-          <div class="pp-quantum__fact">
-            <dt class="pp-quantum__term">
-              <Icon
-                name="fingerprint-pattern"
-                :stroke-width="1.75"
-                :size="14"
-                class="pp-quantum__factic"
-              />One of a kind
-            </dt>
-            <dd class="pp-quantum__def">Every run comes out new.</dd>
-          </div>
-          <div class="pp-quantum__fact">
-            <dt class="pp-quantum__term">
-              <Icon name="atom" :stroke-width="1.75" :size="14" class="pp-quantum__factic" />Entanglement check
-            </dt>
-            <dd class="pp-quantum__def">Its score comes with it.</dd>
-          </div>
-        </dl>
-      </div>
-    </div>
+        <div class="cq-lpic__screengrid">
+          <figure class="cq-lpic__fig">
+            <img v-if="picture" :src="picture.url" alt="" class="cq-lpic__shot" />
+            <label v-else for="launch-image" class="cq-lpic__screenempty">
+              <Icon name="image-up" :size="24" class="cq-lpic__screenemptyicon" />Choose a picture
+            </label>
+            <figcaption class="cq-lpic__cap">Your picture</figcaption>
+          </figure>
 
-    <div v-if="open" class="pp-screen" id="launch-quantum">
-      <span aria-hidden="true" class="pp-screen__tick pp-screen__tick--tl"></span>
-      <span aria-hidden="true" class="pp-screen__tick pp-screen__tick--tr"></span>
-      <span aria-hidden="true" class="pp-screen__tick pp-screen__tick--bl"></span>
-      <span aria-hidden="true" class="pp-screen__tick pp-screen__tick--br"></span>
+          <figure class="cq-lpic__fig">
+            <div class="cq-lpic__plate">
+              <div v-if="stage === 'idle'" class="cq-lpic__state">
+                <LaunchGlyph name="quantum" :stroke-width="1.25" width="32" height="32" class="cq-lpic__big" />
+                <AppButton size="sm" :disabled="!picture" @click="draw">
+                  <LaunchGlyph name="quantum" width="16" height="16" />Draw it
+                </AppButton>
+                <span v-if="!picture" class="cq-lpic__gate">Choose a picture first</span>
+              </div>
 
-      <div class="pp-screen__bar">
-        <span class="pp-screen__label">
-          <LaunchGlyph name="quantum" width="14" height="14" />Quantum portrait
-        </span>
-      </div>
+              <div v-else-if="stage === 'queued'" class="cq-lpic__state">
+                <LaunchGlyph
+                  name="quantum"
+                  :stroke-width="1.25"
+                  width="40"
+                  height="40"
+                  class="cq-lpic__big cq-live-pulse"
+                />
+              </div>
 
-      <div class="pp-screen__grid">
-        <figure class="pp-screen__fig">
-          <img v-if="picture" :src="picture.url" alt="" class="pp-screen__shot" />
-          <label v-else for="launch-image" class="pp-screen__empty">
-            <Icon name="image-up" :size="24" class="pp-screen__emptyicon" />Choose a picture
-          </label>
-          <figcaption class="pp-screen__cap">Your picture</figcaption>
-        </figure>
+              <div v-else class="cq-lpic__state">
+                <CardArt name="seal" class="cq-lpic__seal" />
+              </div>
 
-        <figure class="pp-screen__fig">
-          <div class="pp-screen__plate">
-            <div v-if="stage === 'idle'" class="pp-screen__state">
-              <LaunchGlyph name="quantum" :stroke-width="1.25" width="32" height="32" class="pp-screen__big" />
-              <AppButton size="sm" :disabled="!picture" @click="draw">
-                <LaunchGlyph name="quantum" width="16" height="16" />Draw it
-              </AppButton>
-              <span v-if="!picture" class="pp-screen__gate">Choose a picture first</span>
+              <div v-if="stage === 'done'" class="cq-lpic__state cq-lpic__state--over">
+                <AppButton size="sm" @click="draw">
+                  <LaunchGlyph name="quantum" width="16" height="16" />Draw it again
+                </AppButton>
+              </div>
+
+              <p v-if="statusText" aria-live="polite" class="cq-lpic__status">
+                <span class="cq-lpic__statustxt">{{ statusText }}</span>
+              </p>
             </div>
+            <figcaption class="cq-lpic__cap cq-lpic__cap--accent">Quantum version</figcaption>
+          </figure>
+        </div>
 
-            <div v-else-if="stage === 'queued'" class="pp-screen__state">
-              <LaunchGlyph
-                name="quantum"
-                :stroke-width="1.25"
-                width="40"
-                height="40"
-                class="pp-screen__big pp-live-pulse"
-              />
-            </div>
-
-            <div v-else class="pp-screen__state">
-              <CardArt name="seal" class="pp-screen__seal" />
-            </div>
-
-            <div v-if="stage === 'done'" class="pp-screen__state pp-screen__state--over">
-              <AppButton size="sm" @click="draw">
-                <LaunchGlyph name="quantum" width="16" height="16" />Draw it again
-              </AppButton>
-            </div>
-
-            <p v-if="statusText" aria-live="polite" class="pp-screen__status">
-              <span class="pp-screen__statustxt">{{ statusText }}</span>
+        <div class="cq-lpic__notes">
+          <p v-if="stage === 'idle'" class="cq-small">
+            Your picture on the left, its quantum version on the right. Press Draw it and a real
+            quantum computer measures it point by point; the look comes out different every time.
+          </p>
+          <p v-else-if="stage === 'done'" class="cq-small">
+            Drawn on {{ result.machine.model }}, {{ result.machine.qubits }} qubits. The
+            entanglement score, {{ result.score }}, goes on chain with the token.
+          </p>
+          <div class="cq-lpic__caution">
+            <p class="cq-lpic__note">
+              <Icon name="clock" :stroke-width="1.75" :size="14" class="cq-lpic__noteicon" />Quantum
+              computers are scarce, so each portrait waits its turn in the machine's queue:
+              usually about 3 minutes, start to picture, and up to 10 to 15 minutes at busy times.
+            </p>
+            <p class="cq-lpic__note">
+              <Icon name="atom" :stroke-width="1.75" :size="14" class="cq-lpic__noteicon" />Qubitess
+              runs on its own quantum time on IBM Cloud and AWS, and sends each portrait to the
+              machine whose turn comes soonest.
+            </p>
+            <p class="cq-lpic__note">
+              <LaunchGlyph name="coins" :stroke-width="1.75" width="14" height="14" class="cq-lpic__noteicon" />Quantum
+              computer time costs the platform $96 a minute, and the platform covers it. So runs
+              are strictly limited: 2 portraits a day each, one at a time.
             </p>
           </div>
-          <figcaption class="pp-screen__cap pp-screen__cap--accent">Quantum version</figcaption>
-        </figure>
-      </div>
-
-      <div class="pp-screen__notes">
-        <p v-if="stage === 'idle'" class="pp-small">
-          Your picture on the left, its quantum version on the right. Press Draw it and a real
-          quantum computer measures it point by point; the look comes out different every time.
-        </p>
-        <p v-else-if="stage === 'done'" class="pp-small">
-          Drawn on {{ result.machine.model }}, {{ result.machine.qubits }} qubits. The
-          entanglement score, {{ result.score }}, goes on chain with the token.
-        </p>
-        <div class="pp-screen__caution">
-          <p class="pp-screen__note">
-            <Icon name="clock" :stroke-width="1.75" :size="14" class="pp-screen__noteicon" />Quantum
-            computers are scarce, so each portrait waits its turn in the machine's queue:
-            usually about 3 minutes, start to picture, and up to 10 to 15 minutes at busy times.
-          </p>
-          <p class="pp-screen__note">
-            <Icon name="atom" :stroke-width="1.75" :size="14" class="pp-screen__noteicon" />Qubitlane
-            runs on its own quantum time on IBM Cloud and AWS, and sends each portrait to the
-            machine whose turn comes soonest.
-          </p>
-          <p class="pp-screen__note">
-            <LaunchGlyph name="coins" :stroke-width="1.75" width="14" height="14" class="pp-screen__noteicon" />Quantum
-            computer time costs the platform $96 a minute, and the platform covers it. So runs
-            are strictly limited: 2 portraits a day each, one at a time.
-          </p>
         </div>
       </div>
     </div>
@@ -270,40 +272,46 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped>
-.pp-intake {
+.cq-lpic {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
-  align-items: start;
-  gap: var(--pp-t3);
+  gap: clamp(15px, 2vw, 22px);
   min-width: 0;
 }
 
-/* drop zone ------------------------------------------------------------- */
-.pp-drop {
+/* intake ---------------------------------------------------------------- */
+.cq-lpic__intake {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(14px, 2vw, 22px);
+  min-width: 0;
+}
+
+.cq-lpic__drop {
   position: relative;
   display: grid;
   place-items: center;
   justify-self: start;
-  width: 96px;
-  height: 96px;
+  width: 128px;
+  height: 128px;
   overflow: hidden;
   cursor: pointer;
-  background: var(--pp-sheet);
-  border: 1px solid var(--pp-line-strong);
-  border-radius: 0;
-  transition: border-color var(--pp-fast) var(--pp-ease);
+  background: var(--cq-sheet);
+  border: 1px dashed var(--cq-line-strong);
+  transition: border-color var(--cq-fast) var(--cq-ease);
 }
 
-.pp-drop:hover {
-  border-color: var(--pp-accent);
+.cq-lpic__drop:hover,
+.cq-lpic__drop:focus-within {
+  border-color: var(--cq-accent);
 }
 
-.pp-drop--filled {
+.cq-lpic__drop--filled {
   border-style: solid;
-  border-color: var(--pp-line);
+  border-color: var(--cq-line);
 }
 
-.pp-drop__img {
+.cq-lpic__thumb {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -311,222 +319,224 @@ onBeforeUnmount(() => {
   object-fit: cover;
 }
 
-.pp-drop__change {
+.cq-lpic__change {
   position: absolute;
   inset: auto 0 0 0;
-  padding: 3px 0;
-  background: color-mix(in srgb, var(--pp-sheet) 88%, transparent);
-  font-family: var(--pp-mono);
-  font-size: 0.62rem;
-  letter-spacing: 0.08em;
+  padding: 4px 0;
+  background: color-mix(in srgb, var(--cq-sheet) 90%, transparent);
+  font-family: var(--cq-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--pp-ink);
+  color: var(--cq-ink);
   opacity: 0;
-  transition: opacity var(--pp-fast) var(--pp-ease);
+  transition: opacity var(--cq-fast) var(--cq-ease);
 }
 
-.pp-drop:hover .pp-drop__change {
+.cq-lpic__drop:hover .cq-lpic__change,
+.cq-lpic__drop:focus-within .cq-lpic__change {
   opacity: 1;
 }
 
-.pp-drop__empty {
+.cq-lpic__empty {
   display: grid;
   justify-items: center;
-  gap: 6px;
-  padding: 0 8px;
+  gap: 7px;
+  padding: 0 10px;
   text-align: center;
-  font-size: 0.72rem;
-  line-height: 1.3;
-  color: var(--pp-muted);
+  font-size: 0.71rem;
+  line-height: 1.35;
+  color: var(--cq-muted);
 }
 
-.pp-drop__icon {
-  color: var(--pp-accent-text);
+.cq-lpic__emptyicon {
+  color: var(--cq-accent-text);
 }
 
-/* "Make it quantum" plate ---------------------------------------------- */
-.pp-quantum {
+.cq-lpic__quantum {
   display: grid;
   min-width: 0;
-  background: transparent;
-  border: 0;
-  border-top: 1px solid var(--pp-ink);
-  border-left: 2px solid var(--pp-accent);
-  border-radius: 0;
+  border-top: 1px solid var(--cq-ink);
+  border-left: 2px solid var(--cq-accent);
 }
 
-.pp-quantum--open {
-  border-left-color: var(--pp-accent);
+.cq-lpic__quantum--open {
+  border-left-color: var(--cq-accent);
+  background: var(--cq-sheet);
 }
 
-.pp-quantum__head {
+.cq-lpic__quantum-head {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 11px;
   min-width: 0;
-  padding: 12px 0 10px 14px;
+  padding: 12px 0 11px 14px;
 }
 
-.pp-quantum__glyph {
+.cq-lpic__glyph {
   margin-top: 2px;
-  color: var(--pp-accent-text);
+  color: var(--cq-accent-text);
 }
 
-.pp-quantum__copy {
+.cq-lpic__quantum-copy {
   display: grid;
   gap: 3px;
   flex: 1 1 auto;
   min-width: 0;
 }
 
-.pp-quantum__title {
-  font-family: var(--pp-display);
-  font-size: 1.04rem;
+.cq-lpic__quantum-title {
+  font-family: var(--cq-display);
+  font-size: 1.02rem;
   font-weight: 500;
+  line-height: 1.2;
   letter-spacing: -0.01em;
-  color: var(--pp-ink);
+  color: var(--cq-ink);
 }
 
-.pp-quantum__chev {
-  transition: transform var(--pp-fast) var(--pp-ease);
+.cq-lpic__chev {
+  transition: transform var(--cq-fast) var(--cq-ease);
 }
 
-.pp-quantum__chev--up {
+.cq-lpic__chev--up {
   transform: rotate(180deg);
 }
 
-.pp-quantum__facts {
+.cq-lpic__facts {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px 18px;
+  gap: 9px 16px;
   padding: 10px 0 12px 14px;
-  border-top: 1px solid var(--pp-line);
+  border-top: 1px solid var(--cq-line);
 }
 
-.pp-quantum__fact {
+.cq-lpic__fact {
   display: grid;
   gap: 2px;
   min-width: 0;
 }
 
-.pp-quantum__term {
+.cq-lpic__term {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: var(--pp-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.06em;
+  font-family: var(--cq-mono);
+  font-size: 0.61rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--pp-accent-text);
+  color: var(--cq-accent-text);
 }
 
-.pp-quantum__factic {
+.cq-lpic__factic {
   flex: 0 0 auto;
 }
 
-.pp-quantum__def {
-  font-size: 0.72rem;
-  line-height: 1.4;
-  color: var(--pp-muted);
+.cq-lpic__def {
+  font-size: 0.7rem;
+  line-height: 1.45;
+  color: var(--cq-muted);
   overflow-wrap: anywhere;
 }
 
-/* the drawn portrait screen -------------------------------------------- */
-.pp-screen {
+/* quantum portrait screen ----------------------------------------------- */
+.cq-lpic__screen {
   position: relative;
   display: grid;
   min-width: 0;
-  background: transparent;
-  border: 1px solid var(--pp-line-strong);
-  border-radius: 0;
+  border: 1px solid var(--cq-line-strong);
+  background: var(--cq-sheet);
 }
 
-.pp-screen__tick {
+.cq-lpic__tick {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  border: 0 solid var(--pp-accent);
+  width: 9px;
+  height: 9px;
+  border: 0 solid var(--cq-accent);
   pointer-events: none;
+  z-index: 2;
 }
 
-.pp-screen__tick--tl {
+.cq-lpic__tick--tl {
   top: -1px;
   left: -1px;
   border-top-width: 2px;
   border-left-width: 2px;
 }
 
-.pp-screen__tick--tr {
+.cq-lpic__tick--tr {
   top: -1px;
   right: -1px;
   border-top-width: 2px;
   border-right-width: 2px;
 }
 
-.pp-screen__tick--bl {
+.cq-lpic__tick--bl {
   bottom: -1px;
   left: -1px;
   border-bottom-width: 2px;
   border-left-width: 2px;
 }
 
-.pp-screen__tick--br {
+.cq-lpic__tick--br {
   bottom: -1px;
   right: -1px;
   border-bottom-width: 2px;
   border-right-width: 2px;
 }
 
-.pp-screen__bar {
+.cq-lpic__screenbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
   min-width: 0;
   padding: 8px 12px;
-  border-bottom: 1px solid var(--pp-line);
+  border-bottom: 1px solid var(--cq-line);
 }
 
-.pp-screen__label {
+.cq-lpic__screenlabel {
   display: flex;
   align-items: center;
   gap: 7px;
   min-width: 0;
-  font-family: var(--pp-mono);
-  font-size: 0.64rem;
+  font-family: var(--cq-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--pp-accent-text);
+  color: var(--cq-accent-text);
 }
 
-.pp-screen__grid {
+.cq-lpic__screengrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
   padding: 14px;
-  border-bottom: 1px solid var(--pp-line);
+  border-bottom: 1px solid var(--cq-line);
 }
 
-.pp-screen__fig {
+.cq-lpic__fig {
   display: grid;
   gap: 7px;
   min-width: 0;
 }
 
-.pp-screen__shot,
-.pp-screen__empty {
+.cq-lpic__shot,
+.cq-lpic__screenempty {
   width: 100%;
   aspect-ratio: 1;
-  border: 1px solid var(--pp-line);
-  border-radius: 0;
+  border: 1px solid var(--cq-line);
 }
 
-.pp-screen__shot {
+.cq-lpic__shot {
   object-fit: cover;
 }
 
-.pp-screen__empty {
+.cq-lpic__screenempty {
   display: grid;
   place-items: center;
   align-content: center;
@@ -534,47 +544,47 @@ onBeforeUnmount(() => {
   padding: 12px;
   cursor: pointer;
   border-style: dashed;
-  background: var(--pp-sheet-soft);
+  background: var(--cq-sheet-soft);
   text-align: center;
-  font-size: 0.74rem;
-  color: var(--pp-muted);
-  transition: border-color var(--pp-fast) var(--pp-ease);
+  font-size: 0.73rem;
+  color: var(--cq-muted);
+  transition: border-color var(--cq-fast) var(--cq-ease);
 }
 
-.pp-screen__empty:hover {
-  border-color: var(--pp-accent);
+.cq-lpic__screenempty:hover {
+  border-color: var(--cq-accent);
 }
 
-.pp-screen__emptyicon {
-  color: var(--pp-accent-text);
+.cq-lpic__screenemptyicon {
+  color: var(--cq-accent-text);
 }
 
-.pp-screen__cap {
-  font-family: var(--pp-mono);
-  font-size: 0.64rem;
-  letter-spacing: 0.08em;
+.cq-lpic__cap {
+  font-family: var(--cq-mono);
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
   overflow-wrap: anywhere;
 }
 
-.pp-screen__cap--accent {
-  color: var(--pp-accent-text);
+.cq-lpic__cap--accent {
+  color: var(--cq-accent-text);
 }
 
-.pp-screen__plate {
+.cq-lpic__plate {
   position: relative;
   display: grid;
   width: 100%;
   aspect-ratio: 1;
   overflow: hidden;
   border: 1px solid #171610;
-  border-radius: 0;
   background: #171610;
 }
 
-.pp-screen__state {
+.cq-lpic__state {
   position: absolute;
   inset: 0;
   display: grid;
@@ -585,31 +595,30 @@ onBeforeUnmount(() => {
   text-align: center;
 }
 
-.pp-screen__state--over {
+.cq-lpic__state--over {
   background: color-mix(in srgb, #171610 55%, transparent);
 }
 
-.pp-screen__big {
+.cq-lpic__big {
   color: #b9baff;
 }
 
-.pp-screen__seal {
+.cq-lpic__seal {
   width: 92%;
   height: 92%;
   margin: auto;
 }
 
-.pp-screen__gate {
+.cq-lpic__gate {
   padding: 2px 6px;
-  border-radius: 0;
   background: color-mix(in srgb, #171610 80%, transparent);
-  font-family: var(--pp-mono);
-  font-size: 0.62rem;
+  font-family: var(--cq-mono);
+  font-size: 0.6rem;
   letter-spacing: 0.04em;
   color: #c9d0ff;
 }
 
-.pp-screen__status {
+.cq-lpic__status {
   position: absolute;
   inset: auto 8px 8px 8px;
   display: flex;
@@ -618,66 +627,64 @@ onBeforeUnmount(() => {
   gap: 8px;
   min-width: 0;
   padding: 4px 8px;
-  border-radius: 0;
   background: color-mix(in srgb, #171610 85%, transparent);
-  font-family: var(--pp-mono);
-  font-size: 0.62rem;
+  font-family: var(--cq-mono);
+  font-size: 0.6rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #c9d0ff;
 }
 
-.pp-screen__statustxt {
+.cq-lpic__statustxt {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.pp-screen__notes {
+.cq-lpic__notes {
   display: grid;
   gap: 12px;
   padding: 14px;
 }
 
-.pp-screen__caution {
+.cq-lpic__caution {
   display: grid;
   gap: 10px;
   padding: 10px 0 10px 14px;
-  background: transparent;
-  border: 0;
-  border-left: 2px solid var(--pp-warn);
-  border-radius: 0;
+  border-left: 2px solid var(--cq-warn);
 }
 
-.pp-screen__note {
+.cq-lpic__note {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   line-height: 1.5;
-  color: var(--pp-warn);
+  color: var(--cq-warn);
 }
 
-.pp-screen__noteicon {
+.cq-lpic__noteicon {
   flex: 0 0 auto;
   margin-top: 2px;
 }
 
+@media (max-width: 760px) {
+  .cq-lpic__facts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 @media (max-width: 560px) {
-  .pp-intake {
+  .cq-lpic__intake {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .pp-quantum__facts {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .pp-quantum__head {
+  .cq-lpic__quantum-head {
     flex-wrap: wrap;
   }
 
-  .pp-screen__grid {
+  .cq-lpic__screengrid {
     gap: 10px;
     padding: 10px;
   }

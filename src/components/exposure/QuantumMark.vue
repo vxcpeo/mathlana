@@ -13,7 +13,7 @@
     stroke-width="1.5"
     stroke-linecap="round"
     aria-hidden="true"
-    class="pp-quantum-mark"
+    class="cq-quantum-mark"
   >
     <circle cx="12" cy="12" r="9" />
     <ellipse cx="12" cy="12" rx="9" ry="3.2" stroke-dasharray="2 2.4" />
@@ -24,7 +24,7 @@
 </template>
 
 <style scoped>
-.pp-quantum-mark {
+.cq-quantum-mark {
   width: 16px;
   height: 16px;
   flex: 0 0 auto;

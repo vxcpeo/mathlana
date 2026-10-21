@@ -36,7 +36,7 @@ export const GROUP_LABELS = {
  */
 const ASKS = {
   "ecdsa-fail":
-    "Build the cheapest reversible quantum circuit for one point addition on secp256k1, in Rust. A machine simulates it, and Qubitlane checks it again on 102,400 fresh inputs.",
+    "Build the cheapest reversible quantum circuit for one point addition on secp256k1, in Rust. A machine simulates it, and Qubitess checks it again on 102,400 fresh inputs.",
   proximity:
     "Prove in Lean how sound a Reed-Solomon proximity test is: a radius proven safe from below, and one proven unsafe from above.",
 };
@@ -54,7 +54,7 @@ export function challengeAsks(challenge) {
 export const CARD_COPY = {
   "q-day": {
     icon: "atom",
-    hostLabel: "run by Qubitlane",
+    hostLabel: "run by Qubitess",
     href: "/q-day",
     clockAriaLabel: "Open the Q-Day clock",
   },
@@ -93,7 +93,7 @@ export const CHALLENGE_DETAIL = {
     verbIconClass: "text-brand",
     track: "sig-golf",
     ctaNote:
-      "Checked by the challenge's own verifier. Qubitlane runs the same Lean check first, within minutes.",
+      "Checked by the challenge's own verifier. Qubitess runs the same Lean check first, within minutes.",
     leaderboard: "https://yukon.org/sig.golf",
     panels: [{ metric: 0, title: "sig.golf", recordLabel: "Public record" }],
     stakes: {
@@ -127,7 +127,7 @@ export const CHALLENGE_DETAIL = {
     why: "This step is what a quantum computer repeats to recover a private key from a public key that is already visible. A cheaper step means a smaller machine would do. It is the clock for moving funds to fresh, hidden addresses.",
     track: "point-add",
     ctaNote:
-      "Checked by Qubitlane: the strict check, 102,400 fresh inputs drawn after the circuit is fixed. A circuit that beats ECDSA.fail's record without tuning for its public test is submitted there.",
+      "Checked by Qubitess: the strict check, 102,400 fresh inputs drawn after the circuit is fixed. A circuit that beats ECDSA.fail's record without tuning for its public test is submitted there.",
     leaderboard: "https://ecdsa.fail",
     panels: [
       {
@@ -148,7 +148,7 @@ export const CHALLENGE_DETAIL = {
       protects:
         "The elliptic curve behind Bitcoin and Ethereum keys, attacked: a point addition is the step a quantum computer repeats to recover a private key from a public key that is already visible.",
       numberNote: () =>
-        "Qubits times Toffoli gates for one point addition: the best circuit that passes Qubitlane's strict check, 102,400 fresh inputs drawn after the circuit is fixed. Lower means a smaller future machine would do. No machine can run it today.",
+        "Qubits times Toffoli gates for one point addition: the best circuit that passes Qubitess's strict check, 102,400 fresh inputs drawn after the circuit is fixed. Lower means a smaller future machine would do. No machine can run it today.",
       scaleRows: ({ challenge }) => [
         { label: "Where it started", value: group(challenge.metrics[0].start) },
         { label: "Strict record", value: group(challenge.metrics[0].value), tone: "proven" },
@@ -169,7 +169,7 @@ export const CHALLENGE_DETAIL = {
     why: "Hash-based proof systems, the kind blockchains are moving to, rest on these bounds. Closing the gap means smaller proofs that anyone can trust.",
     track: "proximity-lower",
     ctaNote:
-      "Checked by the challenge's own verifier. Qubitlane runs the same Lean check first, within minutes.",
+      "Checked by the challenge's own verifier. Qubitess runs the same Lean check first, within minutes.",
     leaderboard: "https://better.codes",
     panels: [
       {

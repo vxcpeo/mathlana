@@ -11,88 +11,122 @@ defineProps({
 </script>
 
 <template>
-  <section class="pp-step">
-    <div class="pp-step__bar">
-      <span class="pp-step__no">{{ index }}</span>
-      <span aria-hidden="true" class="pp-step__rule"></span>
-      <h2 class="pp-step__title">{{ title }}</h2>
-    </div>
-    <p v-if="hint" class="pp-step__hint">{{ hint }}</p>
-    <div class="pp-step__body">
+  <section class="cq-lstep">
+    <header class="cq-lstep__head">
+      <span class="cq-lstep__no">{{ index }}</span>
+      <span aria-hidden="true" class="cq-lstep__rule"></span>
+      <div class="cq-lstep__titles">
+        <h2 class="cq-lstep__title">{{ title }}</h2>
+        <p v-if="hint" class="cq-lstep__hint">{{ hint }}</p>
+      </div>
+    </header>
+    <div class="cq-lstep__body">
       <slot />
     </div>
   </section>
 </template>
 
 <style scoped>
-.pp-step {
+.cq-lstep {
   display: grid;
-  gap: var(--pp-t3);
+  gap: clamp(15px, 1.8vw, 22px);
   min-width: 0;
-  padding-top: var(--pp-t3);
-  border-top: 1px solid var(--pp-ink);
+  padding-top: clamp(20px, 2.4vw, 30px);
+  border-top: 1px solid var(--cq-ink);
 }
 
-.pp-step__bar {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.cq-lstep__head {
+  display: grid;
+  grid-template-columns: 2.9rem 28px minmax(0, 1fr);
+  align-items: start;
+  gap: 14px;
   min-width: 0;
 }
 
-.pp-step__no {
-  display: inline-block;
-  flex-shrink: 0;
-  font-family: var(--pp-mono);
-  font-size: 0.74rem;
+.cq-lstep__rule {
+  align-self: start;
+  width: 28px;
+  height: 1px;
+  margin-top: 1.45rem;
+  background: var(--cq-accent);
+}
+
+.cq-lstep__no {
+  display: inline-grid;
+  place-items: center;
+  width: 2.9rem;
+  height: 2.9rem;
+  font-family: var(--cq-mono);
+  font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  color: var(--pp-accent-text);
+  letter-spacing: 0.08em;
+  color: var(--cq-accent-text);
+  border: 1px solid var(--cq-accent-line);
+  background: var(--cq-accent-soft);
 }
 
-.pp-step__rule {
-  flex: 0 0 26px;
-  height: 1px;
-  background: var(--pp-accent);
-}
-
-.pp-step__bar::after {
-  content: "";
-  flex: 1 1 48px;
-  height: 1px;
-  background: var(--pp-line-strong);
-}
-
-.pp-step__title {
+.cq-lstep__titles {
+  display: grid;
+  gap: 5px;
   min-width: 0;
-  font-family: var(--pp-display);
-  font-size: clamp(1.25rem, 1.9vw, 1.6rem);
+  padding-top: 2px;
+}
+
+.cq-lstep__title {
+  font-family: var(--cq-display);
+  font-size: clamp(1.3rem, 2vw, 1.72rem);
   font-weight: 500;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  color: var(--pp-ink);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: var(--cq-ink);
   overflow-wrap: anywhere;
 }
 
-.pp-step__hint {
-  max-width: 72ch;
-  margin-left: 0;
-  font-family: var(--pp-display);
-  font-style: italic;
-  font-size: 0.92rem;
-  line-height: 1.5;
-  color: var(--pp-muted);
+.cq-lstep__hint {
+  max-width: 70ch;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--cq-muted);
 }
 
-.pp-step__body {
+.cq-lstep__body {
   display: grid;
-  gap: var(--pp-t3);
+  gap: clamp(14px, 1.8vw, 20px);
   min-width: 0;
 }
 
+.cq-lstep--rail {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.cq-lstep--rail .cq-lstep__head {
+  grid-template-columns: 2.55rem minmax(0, 1fr);
+  gap: 12px;
+}
+
+.cq-lstep--rail .cq-lstep__rule {
+  display: none;
+}
+
+.cq-lstep--rail .cq-lstep__no {
+  width: 2.55rem;
+  height: 2.55rem;
+}
+
 @media (max-width: 560px) {
-  .pp-step__hint {
-    margin-left: 0;
+  .cq-lstep__head {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+    gap: 11px;
+  }
+
+  .cq-lstep__rule {
+    display: none;
+  }
+
+  .cq-lstep__no {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 </style>

@@ -10,108 +10,147 @@ defineProps({
 </script>
 
 <template>
-  <article class="pp-ledger__row pp-ladder" :class="level.racing ? 'pp-ladder--live' : ''">
-    <div class="pp-ladder__id">
-      <p class="pp-ladder__level">
-        <span class="pp-ladder__num pp-num">{{ level.bits }}-bit key</span>
+  <article class="cq-rung" :class="level.racing ? 'cq-rung--live' : ''">
+    <div class="cq-rung__lead">
+      <p class="cq-rung__level">
+        <span class="cq-rung__num cq-num">{{ level.bits }}-bit key</span>
       </p>
-      <p class="pp-ladder__curve pp-num">{{ level.curve }}</p>
-      <span class="pp-tag pp-tag--sm" :class="level.racing ? 'pp-tag--live' : ''">{{
+      <p class="cq-rung__curve cq-num">{{ level.curve }}</p>
+      <span class="cq-tag cq-tag--sm" :class="level.racing ? 'cq-tag--live' : ''">{{
         level.state
       }}</span>
     </div>
 
-    <div class="pp-ladder__col">
-      <p class="pp-h4">Smallest correct attack</p>
-      <p class="pp-body">{{ level.challenger }}</p>
-      <p class="pp-tiny">{{ level.moved }}</p>
+    <div class="cq-rung__copy">
+      <p class="cq-h4 cq-rung__label">Smallest correct attack</p>
+      <p class="cq-body cq-rung__body">{{ level.challenger }}</p>
+      <p class="cq-tiny cq-rung__moved">{{ level.moved }}</p>
     </div>
 
-    <div class="pp-ladder__col">
-      <p class="pp-h4">Reference attack</p>
-      <p class="pp-ladder__stat">
-        <span class="pp-num">{{ level.steps }}</span> two-qubit steps
+    <div class="cq-rung__cost">
+      <p class="cq-h4 cq-rung__label">Reference attack</p>
+      <p class="cq-rung__stat">
+        <span class="cq-num">{{ level.steps }}</span> two-qubit steps
       </p>
-      <p class="pp-ladder__stat">
-        <span class="pp-num">{{ level.qubits }}</span> qubits
+      <p class="cq-rung__stat">
+        <span class="cq-num">{{ level.qubits }}</span> qubits
       </p>
-      <p class="pp-tiny">{{ level.hardware }}</p>
+      <p class="cq-tiny cq-rung__hardware">{{ level.hardware }}</p>
     </div>
   </article>
 </template>
 
 <style scoped>
-.pp-ladder.pp-ledger__row {
-  grid-template-columns: minmax(0, 10rem) minmax(0, 1fr) minmax(0, 1.15fr);
-  gap: clamp(18px, 3vw, 44px);
+.cq-rung {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 11rem) minmax(0, 1fr) minmax(0, 1.1fr);
   align-items: start;
-  padding: 22px 4px;
+  gap: clamp(16px, 3vw, 42px);
+  padding: 24px 4px 24px 18px;
+  border-top: 1px solid var(--cq-line);
+  border-left: 2px solid transparent;
 }
 
-.pp-ladder--live {
-  background: color-mix(in srgb, var(--pp-accent-soft) 55%, transparent);
+.cq-rung:first-child {
+  border-top: 0;
 }
 
-.pp-ladder__id {
+.cq-rung:last-child {
+  border-bottom: 1px solid var(--cq-line);
+}
+
+.cq-rung--live {
+  border-left-color: var(--cq-accent);
+  background: linear-gradient(90deg, var(--cq-accent-soft), transparent 58%);
+}
+
+.cq-rung__lead {
   display: grid;
   gap: 8px;
   justify-items: start;
-  align-content: start;
+  min-width: 0;
 }
 
-.pp-ladder__id::before {
-  counter-increment: crladder;
-  content: counter(crladder, decimal-leading-zero);
-  font-family: var(--pp-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.18em;
-  color: var(--pp-muted);
-}
-
-.pp-ladder__level {
+.cq-rung__level {
   display: flex;
   align-items: baseline;
+  min-width: 0;
 }
 
-.pp-ladder__num {
-  font-family: var(--pp-display);
-  font-size: clamp(1.4rem, 2vw, 1.75rem);
-  font-weight: 620;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  color: var(--pp-ink);
+.cq-rung__num {
+  font-family: var(--cq-display);
+  font-size: clamp(1.55rem, 2.2vw, 2rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: var(--cq-ink);
 }
 
-.pp-ladder__unit {
-  font-family: var(--pp-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--pp-muted);
-}
-
-.pp-ladder__curve {
-  font-size: 0.74rem;
-  line-height: 1.4;
-  color: var(--pp-muted);
+.cq-rung__curve {
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--cq-muted);
   overflow-wrap: anywhere;
 }
 
-.pp-ladder__col {
+.cq-rung__copy,
+.cq-rung__cost {
   display: grid;
   gap: 6px;
   align-content: start;
+  min-width: 0;
 }
 
-.pp-ladder__stat {
+.cq-rung__label {
+  padding-bottom: 4px;
+}
+
+.cq-rung__body {
+  max-width: 44ch;
+}
+
+.cq-rung__stat {
   font-size: 0.9rem;
-  color: var(--pp-ink-soft);
+  line-height: 1.45;
+  color: var(--cq-ink-soft);
 }
 
-@media (max-width: 760px) {
-  .pp-ladder.pp-ledger__row {
+.cq-rung__hardware {
+  padding-top: 3px;
+}
+
+@media (max-width: 820px) {
+  .cq-rung {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .cq-rung__lead {
+    grid-column: 1 / -1;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 10px 16px;
+  }
+
+  .cq-rung__curve {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .cq-rung {
     grid-template-columns: minmax(0, 1fr);
     gap: 18px;
+    padding-left: 14px;
+  }
+
+  .cq-rung__lead {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 7px;
+  }
+
+  .cq-rung__curve {
+    grid-column: auto;
   }
 }
 </style>

@@ -26,7 +26,7 @@ const ZERO_POOL = {
 
 const SNAPSHOTS = {
   "47X58Wy6mCEW9w5uxedBHJbL14Ryh6TCngMDAjr5M6no": {
-    description: "sword cat generated using real Quantum computer, via Qubitlane.si",
+    description: "sword cat generated using real Quantum computer, via Qubitess.si",
     pool: {
       paidInUsd: 1.52,
       spentUsd: 0,

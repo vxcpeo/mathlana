@@ -2,7 +2,8 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import { router } from "./router";
 import { initTheme } from "./composables/useTheme";
-import "./styles/paper.css";
+import "./styles/rail.css";
+import "./styles/shell.css";
 
 initTheme();
 

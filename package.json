@@ -1,9 +1,9 @@
 {
-  "name": "qubitlane-website",
+  "name": "qubitess-website",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Qubitlane — when do Bitcoin, Ethereum and Solana wallets break? Vue 3 website.",
+  "description": "Qubitess — when do Bitcoin, Ethereum and Solana wallets break? Vue 3 website.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

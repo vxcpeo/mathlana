@@ -6,7 +6,7 @@
 </script>
 
 <template>
-  <svg viewBox="0 0 240 150" aria-hidden="true" class="pp-close-art">
+  <svg viewBox="0 0 240 150" aria-hidden="true" class="cq-close-art">
     <g transform="rotate(-14 165 70)">
       <circle
         cx="165"
@@ -72,7 +72,7 @@
 </template>
 
 <style scoped>
-.pp-close-art {
+.cq-close-art {
   width: auto;
   height: 100%;
   max-width: none;

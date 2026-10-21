@@ -9,95 +9,115 @@ const example = computed(() => {
 });
 
 const SPLIT = [
-  { label: "AI/Quantum pool", share: 60, dot: "pp-tone-accent" },
-  { label: "Qubitlane", share: 20, dot: "pp-tone-muted" },
-  { label: "Creator", share: 20, dot: "pp-tone-ink" },
+  { label: "AI/Quantum pool", share: 60, dot: "cq-tone-accent" },
+  { label: "Qubitess", share: 20, dot: "cq-tone-muted" },
+  { label: "Creator", share: 20, dot: "cq-tone-ink" },
 ];
 </script>
 
 <template>
-  <section class="pp-sec pp-fee" aria-labelledby="fee-title">
-    <div class="pp-sec__head">
-      <h2 id="fee-title" class="pp-h2">Where its fees go</h2>
+  <section class="cq-sheet cq-fee" aria-labelledby="fee-title">
+    <div class="cq-sheet__head cq-fee__head">
+      <h2 id="fee-title" class="cq-sheet__title">Where its fees go</h2>
     </div>
 
-    <div class="pp-fee__body">
-      <div class="pp-fee__bar" aria-hidden="true">
-        <span class="pp-fee__seg" style="width: 60%" />
-        <span class="pp-fee__seg pp-fee__seg--b" style="width: 20%" />
-        <span class="pp-fee__seg pp-fee__seg--c" style="width: 20%" />
+    <div class="cq-fee__body">
+      <div class="cq-fee__bar" aria-hidden="true">
+        <span class="cq-fee__seg" style="width: 60%" />
+        <span class="cq-fee__seg cq-fee__seg--b" style="width: 20%" />
+        <span class="cq-fee__seg cq-fee__seg--c" style="width: 20%" />
       </div>
 
-      <table class="pp-table pp-fee__table">
-        <tbody>
-          <tr v-for="row in SPLIT" :key="row.label">
-            <td class="pp-fee__label">
-              <span class="pp-dot pp-fee__dot" :class="row.dot" aria-hidden="true" />{{ row.label }}
-            </td>
-            <td class="pp-table__num pp-fee__share">{{ row.share }}%</td>
-          </tr>
-        </tbody>
-      </table>
+      <dl class="cq-fee__rows">
+        <div v-for="row in SPLIT" :key="row.label" class="cq-fee__row">
+          <dt class="cq-fee__label">
+            <span class="cq-dot cq-fee__dot" :class="row.dot" aria-hidden="true" />{{ row.label }}
+          </dt>
+          <dd class="cq-num cq-fee__share">{{ row.share }}%</dd>
+        </div>
+      </dl>
 
-      <p class="pp-note pp-fee__example">{{ example }}</p>
+      <p class="cq-note cq-fee__example">{{ example }}</p>
     </div>
   </section>
 </template>
 
 <style scoped>
-.pp-fee {
-  min-width: 0;
+.cq-fee {
+  gap: 0;
+  overflow: clip;
 }
 
-.pp-fee__body {
+.cq-fee__head {
+  padding: 16px clamp(16px, 2vw, 20px) 13px;
+}
+
+.cq-fee__body {
   display: grid;
   gap: 14px;
-  max-width: 46rem;
+  padding: 16px clamp(16px, 2vw, 20px) 18px;
 }
 
-.pp-fee__bar {
+.cq-fee__bar {
   display: flex;
-  height: 5px;
+  height: 4px;
   overflow: clip;
-  border-radius: 999px;
 }
 
-.pp-fee__seg {
+.cq-fee__seg {
   display: block;
   height: 100%;
-  background: var(--pp-accent);
+  background: var(--cq-accent);
 }
 
-.pp-fee__seg--b {
-  background: var(--pp-ink-soft);
+.cq-fee__seg--b {
+  background: var(--cq-ink-soft);
 }
 
-.pp-fee__seg--c {
-  background: var(--pp-line-strong);
+.cq-fee__seg--c {
+  background: var(--cq-line-strong);
 }
 
-.pp-fee__table {
-  border-top: 1px solid var(--pp-line);
+.cq-fee__rows {
+  display: grid;
+  margin: 0;
+  border-top: 1px solid var(--cq-line);
 }
 
-.pp-fee__label {
+.cq-fee__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--cq-line-soft);
+}
+
+.cq-fee__row:last-child {
+  border-bottom: 0;
+}
+
+.cq-fee__label {
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 0;
   font-size: 0.86rem;
-  color: var(--pp-ink);
+  color: var(--cq-ink);
 }
 
-.pp-fee__dot {
-  color: var(--pp-muted);
+.cq-fee__dot {
+  color: var(--cq-muted);
 }
 
-.pp-fee__share {
-  color: var(--pp-ink);
-  font-size: 0.86rem;
+.cq-fee__share {
+  font-size: 0.9rem;
+  color: var(--cq-ink);
+  text-align: right;
 }
 
-.pp-fee__example {
+.cq-fee__example {
+  margin: 0;
   font-size: 0.78rem;
   line-height: 1.55;
 }

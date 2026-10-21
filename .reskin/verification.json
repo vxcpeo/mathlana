@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T16:26:41.682Z",
+  "generatedAt": "2026-10-21T17:46:50.194Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/mathlana/website",
-    "name": "qubitlane-website",
-    "baseUrl": "http://127.0.0.1:4499/"
+    "name": "qubitess-website",
+    "baseUrl": "http://127.0.0.1:4498/"
   },
   "passed": false,
   "thresholds": {
@@ -20,11 +20,10 @@
       "passed": true,
       "issues": [],
       "warnings": [
-        "bindings: \"attr:item.to\" count increased 12 -> 13",
-        "bindings: \"interpolation:item.label\" count increased 14 -> 15",
-        "bindings: \"link:item.to\" count increased 12 -> 13"
+        "bindings: \"attr:item.icon\" count increased 2 -> 3",
+        "bindings: \"form:item.icon\" count increased 2 -> 3"
       ],
-      "hash": "32e21d29b635e30bb4ea29eda07a86460b8fed67373651b78d4e4843bb75fc90"
+      "hash": "e9add1f651aea2acc97e8fa2835652c7dca2d3b5aa8f3f1253816b73679a6d2a"
     },
     "skeleton": {
       "passed": false,
@@ -71,9 +70,9 @@
         }
       },
       "accent": {
-        "original": "#0000ff",
-        "current": "#6f82e8",
-        "deltaE": 82.95,
+        "original": "#6f82e8",
+        "current": "#4d5bff",
+        "deltaE": 39.74,
         "min": 30
       }
     },
@@ -84,36 +83,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.375,
+          "fingerprintSimilarity": 0.366,
           "landmarkSimilarity": 0.5,
-          "classOverlap": 0.065
+          "classOverlap": 0.063
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 24,
-              "total": 28
+              "tokens": 23,
+              "total": 27
             },
             "current": {
-              "tokens": 24,
-              "total": 28
+              "tokens": 23,
+              "total": 27
             }
           }
         },
@@ -137,36 +131,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.365,
+          "fingerprintSimilarity": 0.433,
           "landmarkSimilarity": 0.5,
-          "classOverlap": 0.081
+          "classOverlap": 0.077
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 11,
-              "total": 13
+              "tokens": 10,
+              "total": 12
             },
             "current": {
-              "tokens": 11,
-              "total": 13
+              "tokens": 10,
+              "total": 12
             }
           }
         },
@@ -190,36 +179,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.42,
+          "fingerprintSimilarity": 0.342,
           "landmarkSimilarity": 0.5,
-          "classOverlap": 0.069
+          "classOverlap": 0.066
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 6,
-              "total": 7
+              "tokens": 4,
+              "total": 6
             },
             "current": {
-              "tokens": 6,
-              "total": 7
+              "tokens": 4,
+              "total": 6
             }
           }
         },
@@ -243,36 +227,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.356,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.071
+          "fingerprintSimilarity": 0.3,
+          "landmarkSimilarity": 0.429,
+          "classOverlap": 0.069
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 22,
-              "total": 23
+              "tokens": 20,
+              "total": 22
             },
             "current": {
-              "tokens": 22,
-              "total": 23
+              "tokens": 20,
+              "total": 22
             }
           }
         },
@@ -310,36 +289,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.349,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.053
+          "fingerprintSimilarity": 0.362,
+          "landmarkSimilarity": 0.571,
+          "classOverlap": 0.05
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 11,
-              "total": 18
+              "tokens": 9,
+              "total": 17
             },
             "current": {
-              "tokens": 11,
-              "total": 18
+              "tokens": 9,
+              "total": 17
             }
           }
         },
@@ -363,36 +337,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.324,
+          "fingerprintSimilarity": 0.406,
           "landmarkSimilarity": 0.5,
-          "classOverlap": 0.043
+          "classOverlap": 0.044
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 30,
-              "total": 66
+              "tokens": 29,
+              "total": 65
             },
             "current": {
-              "tokens": 30,
-              "total": 66
+              "tokens": 29,
+              "total": 65
             }
           }
         },
@@ -416,36 +385,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.352,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.049
+          "fingerprintSimilarity": 0.438,
+          "landmarkSimilarity": 0.571,
+          "classOverlap": 0.05
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 21,
-              "total": 25
+              "tokens": 19,
+              "total": 24
             },
             "current": {
-              "tokens": 21,
-              "total": 25
+              "tokens": 19,
+              "total": 24
             }
           }
         },
@@ -469,36 +433,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.389,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.074
+          "fingerprintSimilarity": 0.462,
+          "landmarkSimilarity": 0.667,
+          "classOverlap": 0.071
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 15,
-              "total": 18
+              "tokens": 14,
+              "total": 17
             },
             "current": {
-              "tokens": 15,
-              "total": 18
+              "tokens": 14,
+              "total": 17
             }
           }
         },
@@ -522,36 +481,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.313,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.06
+          "fingerprintSimilarity": 0.332,
+          "landmarkSimilarity": 0.333,
+          "classOverlap": 0.056
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 23,
-              "total": 25
+              "tokens": 21,
+              "total": 24
             },
             "current": {
-              "tokens": 23,
-              "total": 25
+              "tokens": 21,
+              "total": 24
             }
           }
         },
@@ -575,36 +529,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.385,
+          "fingerprintSimilarity": 0.258,
           "landmarkSimilarity": 0.571,
-          "classOverlap": 0.078
+          "classOverlap": 0.072
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 14,
-              "total": 15
+              "tokens": 12,
+              "total": 14
             },
             "current": {
-              "tokens": 14,
-              "total": 15
+              "tokens": 12,
+              "total": 14
             }
           }
         },
@@ -628,36 +577,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.375,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.053
+          "fingerprintSimilarity": 0.322,
+          "landmarkSimilarity": 0.4,
+          "classOverlap": 0.047
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 25,
-              "total": 28
+              "tokens": 24,
+              "total": 27
             },
             "current": {
-              "tokens": 25,
-              "total": 28
+              "tokens": 24,
+              "total": 27
             }
           }
         },
@@ -681,36 +625,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.408,
+          "fingerprintSimilarity": 0.27,
           "landmarkSimilarity": 0.571,
-          "classOverlap": 0.079
+          "classOverlap": 0.073
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 12,
-              "total": 13
+              "tokens": 10,
+              "total": 12
             },
             "current": {
-              "tokens": 12,
-              "total": 13
+              "tokens": 10,
+              "total": 12
             }
           }
         },
@@ -748,36 +687,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.452,
+          "fingerprintSimilarity": 0.288,
           "landmarkSimilarity": 0.5,
-          "classOverlap": 0.092
+          "classOverlap": 0.085
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 6,
-              "total": 7
+              "tokens": 4,
+              "total": 6
             },
             "current": {
-              "tokens": 6,
-              "total": 7
+              "tokens": 4,
+              "total": 6
             }
           }
         },
@@ -801,36 +735,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.408,
+          "fingerprintSimilarity": 0.27,
           "landmarkSimilarity": 0.571,
-          "classOverlap": 0.079
+          "classOverlap": 0.073
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 17,
-              "total": 18
+              "tokens": 15,
+              "total": 17
             },
             "current": {
-              "tokens": 17,
-              "total": 18
+              "tokens": 15,
+              "total": 17
             }
           }
         },
@@ -854,36 +783,31 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=About",
-          "aria attribute added: aria-label=Challenges",
-          "aria attribute added: aria-label=Check a wallet",
-          "aria attribute added: aria-label=Contents",
-          "aria attribute added: aria-label=How it works",
-          "aria attribute added: aria-label=Open the menu",
-          "aria attribute added: aria-label=Sections",
-          "aria attribute added: aria-label=Tokens",
-          "link target added: /#how",
-          "link target added: /about",
-          "link target added: /challenges",
-          "link target added: /exposure",
-          "link target added: /tokens"
+          "aria attribute changed/removed: aria-label=Contents",
+          "aria attribute changed/removed: aria-label=Open the menu",
+          "aria attribute changed/removed: aria-label=Sections",
+          "link target no longer rendered: /#how",
+          "link target no longer rendered: /about",
+          "link target no longer rendered: /challenges",
+          "link target no longer rendered: /exposure",
+          "link target no longer rendered: /tokens"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.299,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.063
+          "fingerprintSimilarity": 0.246,
+          "landmarkSimilarity": 0.667,
+          "classOverlap": 0.06
         },
         "content": {
           "missing": [],
           "extra": [],
           "numeric": {
             "baseline": {
-              "tokens": 22,
-              "total": 32
+              "tokens": 20,
+              "total": 31
             },
             "current": {
-              "tokens": 22,
-              "total": 32
+              "tokens": 20,
+              "total": 31
             }
           }
         },
@@ -907,207 +831,131 @@
     "source: archetype still orbital (spatial); expected a different skeleton family"
   ],
   "warnings": [
-    "bindings: \"attr:item.to\" count increased 12 -> 13",
-    "bindings: \"interpolation:item.label\" count increased 14 -> 15",
-    "bindings: \"link:item.to\" count increased 12 -> 13",
-    "/: aria attribute added: aria-label=About",
-    "/: aria attribute added: aria-label=Challenges",
-    "/: aria attribute added: aria-label=Check a wallet",
-    "/: aria attribute added: aria-label=Contents",
-    "/: aria attribute added: aria-label=How it works",
-    "/: aria attribute added: aria-label=Open the menu",
-    "/: aria attribute added: aria-label=Sections",
-    "/: aria attribute added: aria-label=Tokens",
-    "/: link target added: /#how",
-    "/: link target added: /about",
-    "/: link target added: /challenges",
-    "/: link target added: /exposure",
-    "/: link target added: /tokens",
-    "/about: aria attribute added: aria-label=About",
-    "/about: aria attribute added: aria-label=Challenges",
-    "/about: aria attribute added: aria-label=Check a wallet",
-    "/about: aria attribute added: aria-label=Contents",
-    "/about: aria attribute added: aria-label=How it works",
-    "/about: aria attribute added: aria-label=Open the menu",
-    "/about: aria attribute added: aria-label=Sections",
-    "/about: aria attribute added: aria-label=Tokens",
-    "/about: link target added: /#how",
-    "/about: link target added: /about",
-    "/about: link target added: /challenges",
-    "/about: link target added: /exposure",
-    "/about: link target added: /tokens",
-    "/account: aria attribute added: aria-label=About",
-    "/account: aria attribute added: aria-label=Challenges",
-    "/account: aria attribute added: aria-label=Check a wallet",
-    "/account: aria attribute added: aria-label=Contents",
-    "/account: aria attribute added: aria-label=How it works",
-    "/account: aria attribute added: aria-label=Open the menu",
-    "/account: aria attribute added: aria-label=Sections",
-    "/account: aria attribute added: aria-label=Tokens",
-    "/account: link target added: /#how",
-    "/account: link target added: /about",
-    "/account: link target added: /challenges",
-    "/account: link target added: /exposure",
-    "/account: link target added: /tokens",
-    "/challenges: aria attribute added: aria-label=About",
-    "/challenges: aria attribute added: aria-label=Challenges",
-    "/challenges: aria attribute added: aria-label=Check a wallet",
-    "/challenges: aria attribute added: aria-label=Contents",
-    "/challenges: aria attribute added: aria-label=How it works",
-    "/challenges: aria attribute added: aria-label=Open the menu",
-    "/challenges: aria attribute added: aria-label=Sections",
-    "/challenges: aria attribute added: aria-label=Tokens",
-    "/challenges: link target added: /#how",
-    "/challenges: link target added: /about",
-    "/challenges: link target added: /challenges",
-    "/challenges: link target added: /exposure",
-    "/challenges: link target added: /tokens",
-    "/challenges/ecdsa-fail: aria attribute added: aria-label=About",
-    "/challenges/ecdsa-fail: aria attribute added: aria-label=Challenges",
-    "/challenges/ecdsa-fail: aria attribute added: aria-label=Check a wallet",
-    "/challenges/ecdsa-fail: aria attribute added: aria-label=Contents",
-    "/challenges/ecdsa-fail: aria attribute added: aria-label=How it works",
-    "/challenges/ecdsa-fail: aria attribute added: aria-label=Open the menu",
-    "/challenges/ecdsa-fail: aria attribute added: aria-label=Sections",
-    "/challenges/ecdsa-fail: aria attribute added: aria-label=Tokens",
-    "/challenges/ecdsa-fail: link target added: /#how",
-    "/challenges/ecdsa-fail: link target added: /about",
-    "/challenges/ecdsa-fail: link target added: /challenges",
-    "/challenges/ecdsa-fail: link target added: /exposure",
-    "/challenges/ecdsa-fail: link target added: /tokens",
-    "/challenges/proximity: aria attribute added: aria-label=About",
-    "/challenges/proximity: aria attribute added: aria-label=Challenges",
-    "/challenges/proximity: aria attribute added: aria-label=Check a wallet",
-    "/challenges/proximity: aria attribute added: aria-label=Contents",
-    "/challenges/proximity: aria attribute added: aria-label=How it works",
-    "/challenges/proximity: aria attribute added: aria-label=Open the menu",
-    "/challenges/proximity: aria attribute added: aria-label=Sections",
-    "/challenges/proximity: aria attribute added: aria-label=Tokens",
-    "/challenges/proximity: link target added: /#how",
-    "/challenges/proximity: link target added: /about",
-    "/challenges/proximity: link target added: /challenges",
-    "/challenges/proximity: link target added: /exposure",
-    "/challenges/proximity: link target added: /tokens",
-    "/challenges/sig-golf: aria attribute added: aria-label=About",
-    "/challenges/sig-golf: aria attribute added: aria-label=Challenges",
-    "/challenges/sig-golf: aria attribute added: aria-label=Check a wallet",
-    "/challenges/sig-golf: aria attribute added: aria-label=Contents",
-    "/challenges/sig-golf: aria attribute added: aria-label=How it works",
-    "/challenges/sig-golf: aria attribute added: aria-label=Open the menu",
-    "/challenges/sig-golf: aria attribute added: aria-label=Sections",
-    "/challenges/sig-golf: aria attribute added: aria-label=Tokens",
-    "/challenges/sig-golf: link target added: /#how",
-    "/challenges/sig-golf: link target added: /about",
-    "/challenges/sig-golf: link target added: /challenges",
-    "/challenges/sig-golf: link target added: /exposure",
-    "/challenges/sig-golf: link target added: /tokens",
-    "/exposure: aria attribute added: aria-label=About",
-    "/exposure: aria attribute added: aria-label=Challenges",
-    "/exposure: aria attribute added: aria-label=Check a wallet",
-    "/exposure: aria attribute added: aria-label=Contents",
-    "/exposure: aria attribute added: aria-label=How it works",
-    "/exposure: aria attribute added: aria-label=Open the menu",
-    "/exposure: aria attribute added: aria-label=Sections",
-    "/exposure: aria attribute added: aria-label=Tokens",
-    "/exposure: link target added: /#how",
-    "/exposure: link target added: /about",
-    "/exposure: link target added: /challenges",
-    "/exposure: link target added: /exposure",
-    "/exposure: link target added: /tokens",
-    "/launch: aria attribute added: aria-label=About",
-    "/launch: aria attribute added: aria-label=Challenges",
-    "/launch: aria attribute added: aria-label=Check a wallet",
-    "/launch: aria attribute added: aria-label=Contents",
-    "/launch: aria attribute added: aria-label=How it works",
-    "/launch: aria attribute added: aria-label=Open the menu",
-    "/launch: aria attribute added: aria-label=Sections",
-    "/launch: aria attribute added: aria-label=Tokens",
-    "/launch: link target added: /#how",
-    "/launch: link target added: /about",
-    "/launch: link target added: /challenges",
-    "/launch: link target added: /exposure",
-    "/launch: link target added: /tokens",
-    "/privacy: aria attribute added: aria-label=About",
-    "/privacy: aria attribute added: aria-label=Challenges",
-    "/privacy: aria attribute added: aria-label=Check a wallet",
-    "/privacy: aria attribute added: aria-label=Contents",
-    "/privacy: aria attribute added: aria-label=How it works",
-    "/privacy: aria attribute added: aria-label=Open the menu",
-    "/privacy: aria attribute added: aria-label=Sections",
-    "/privacy: aria attribute added: aria-label=Tokens",
-    "/privacy: link target added: /#how",
-    "/privacy: link target added: /about",
-    "/privacy: link target added: /challenges",
-    "/privacy: link target added: /exposure",
-    "/privacy: link target added: /tokens",
-    "/q-day: aria attribute added: aria-label=About",
-    "/q-day: aria attribute added: aria-label=Challenges",
-    "/q-day: aria attribute added: aria-label=Check a wallet",
-    "/q-day: aria attribute added: aria-label=Contents",
-    "/q-day: aria attribute added: aria-label=How it works",
-    "/q-day: aria attribute added: aria-label=Open the menu",
-    "/q-day: aria attribute added: aria-label=Sections",
-    "/q-day: aria attribute added: aria-label=Tokens",
-    "/q-day: link target added: /#how",
-    "/q-day: link target added: /about",
-    "/q-day: link target added: /challenges",
-    "/q-day: link target added: /exposure",
-    "/q-day: link target added: /tokens",
-    "/risks: aria attribute added: aria-label=About",
-    "/risks: aria attribute added: aria-label=Challenges",
-    "/risks: aria attribute added: aria-label=Check a wallet",
-    "/risks: aria attribute added: aria-label=Contents",
-    "/risks: aria attribute added: aria-label=How it works",
-    "/risks: aria attribute added: aria-label=Open the menu",
-    "/risks: aria attribute added: aria-label=Sections",
-    "/risks: aria attribute added: aria-label=Tokens",
-    "/risks: link target added: /#how",
-    "/risks: link target added: /about",
-    "/risks: link target added: /challenges",
-    "/risks: link target added: /exposure",
-    "/risks: link target added: /tokens",
-    "/t/preview: aria attribute added: aria-label=About",
-    "/t/preview: aria attribute added: aria-label=Challenges",
-    "/t/preview: aria attribute added: aria-label=Check a wallet",
-    "/t/preview: aria attribute added: aria-label=Contents",
-    "/t/preview: aria attribute added: aria-label=How it works",
-    "/t/preview: aria attribute added: aria-label=Open the menu",
-    "/t/preview: aria attribute added: aria-label=Sections",
-    "/t/preview: aria attribute added: aria-label=Tokens",
-    "/t/preview: link target added: /#how",
-    "/t/preview: link target added: /about",
-    "/t/preview: link target added: /challenges",
-    "/t/preview: link target added: /exposure",
-    "/t/preview: link target added: /tokens",
-    "/terms: aria attribute added: aria-label=About",
-    "/terms: aria attribute added: aria-label=Challenges",
-    "/terms: aria attribute added: aria-label=Check a wallet",
-    "/terms: aria attribute added: aria-label=Contents",
-    "/terms: aria attribute added: aria-label=How it works",
-    "/terms: aria attribute added: aria-label=Open the menu",
-    "/terms: aria attribute added: aria-label=Sections",
-    "/terms: aria attribute added: aria-label=Tokens",
-    "/terms: link target added: /#how",
-    "/terms: link target added: /about",
-    "/terms: link target added: /challenges",
-    "/terms: link target added: /exposure",
-    "/terms: link target added: /tokens",
-    "/tokens: aria attribute added: aria-label=About",
-    "/tokens: aria attribute added: aria-label=Challenges",
-    "/tokens: aria attribute added: aria-label=Check a wallet",
-    "/tokens: aria attribute added: aria-label=Contents",
-    "/tokens: aria attribute added: aria-label=How it works",
-    "/tokens: aria attribute added: aria-label=Open the menu",
-    "/tokens: aria attribute added: aria-label=Sections",
-    "/tokens: aria attribute added: aria-label=Tokens",
-    "/tokens: link target added: /#how",
-    "/tokens: link target added: /about",
-    "/tokens: link target added: /challenges",
-    "/tokens: link target added: /exposure",
-    "/tokens: link target added: /tokens"
+    "bindings: \"attr:item.icon\" count increased 2 -> 3",
+    "bindings: \"form:item.icon\" count increased 2 -> 3",
+    "/: aria attribute changed/removed: aria-label=Contents",
+    "/: aria attribute changed/removed: aria-label=Open the menu",
+    "/: aria attribute changed/removed: aria-label=Sections",
+    "/: link target no longer rendered: /#how",
+    "/: link target no longer rendered: /about",
+    "/: link target no longer rendered: /challenges",
+    "/: link target no longer rendered: /exposure",
+    "/: link target no longer rendered: /tokens",
+    "/about: aria attribute changed/removed: aria-label=Contents",
+    "/about: aria attribute changed/removed: aria-label=Open the menu",
+    "/about: aria attribute changed/removed: aria-label=Sections",
+    "/about: link target no longer rendered: /#how",
+    "/about: link target no longer rendered: /about",
+    "/about: link target no longer rendered: /challenges",
+    "/about: link target no longer rendered: /exposure",
+    "/about: link target no longer rendered: /tokens",
+    "/account: aria attribute changed/removed: aria-label=Contents",
+    "/account: aria attribute changed/removed: aria-label=Open the menu",
+    "/account: aria attribute changed/removed: aria-label=Sections",
+    "/account: link target no longer rendered: /#how",
+    "/account: link target no longer rendered: /about",
+    "/account: link target no longer rendered: /challenges",
+    "/account: link target no longer rendered: /exposure",
+    "/account: link target no longer rendered: /tokens",
+    "/challenges: aria attribute changed/removed: aria-label=Contents",
+    "/challenges: aria attribute changed/removed: aria-label=Open the menu",
+    "/challenges: aria attribute changed/removed: aria-label=Sections",
+    "/challenges: link target no longer rendered: /#how",
+    "/challenges: link target no longer rendered: /about",
+    "/challenges: link target no longer rendered: /challenges",
+    "/challenges: link target no longer rendered: /exposure",
+    "/challenges: link target no longer rendered: /tokens",
+    "/challenges/ecdsa-fail: aria attribute changed/removed: aria-label=Contents",
+    "/challenges/ecdsa-fail: aria attribute changed/removed: aria-label=Open the menu",
+    "/challenges/ecdsa-fail: aria attribute changed/removed: aria-label=Sections",
+    "/challenges/ecdsa-fail: link target no longer rendered: /#how",
+    "/challenges/ecdsa-fail: link target no longer rendered: /about",
+    "/challenges/ecdsa-fail: link target no longer rendered: /challenges",
+    "/challenges/ecdsa-fail: link target no longer rendered: /exposure",
+    "/challenges/ecdsa-fail: link target no longer rendered: /tokens",
+    "/challenges/proximity: aria attribute changed/removed: aria-label=Contents",
+    "/challenges/proximity: aria attribute changed/removed: aria-label=Open the menu",
+    "/challenges/proximity: aria attribute changed/removed: aria-label=Sections",
+    "/challenges/proximity: link target no longer rendered: /#how",
+    "/challenges/proximity: link target no longer rendered: /about",
+    "/challenges/proximity: link target no longer rendered: /challenges",
+    "/challenges/proximity: link target no longer rendered: /exposure",
+    "/challenges/proximity: link target no longer rendered: /tokens",
+    "/challenges/sig-golf: aria attribute changed/removed: aria-label=Contents",
+    "/challenges/sig-golf: aria attribute changed/removed: aria-label=Open the menu",
+    "/challenges/sig-golf: aria attribute changed/removed: aria-label=Sections",
+    "/challenges/sig-golf: link target no longer rendered: /#how",
+    "/challenges/sig-golf: link target no longer rendered: /about",
+    "/challenges/sig-golf: link target no longer rendered: /challenges",
+    "/challenges/sig-golf: link target no longer rendered: /exposure",
+    "/challenges/sig-golf: link target no longer rendered: /tokens",
+    "/exposure: aria attribute changed/removed: aria-label=Contents",
+    "/exposure: aria attribute changed/removed: aria-label=Open the menu",
+    "/exposure: aria attribute changed/removed: aria-label=Sections",
+    "/exposure: link target no longer rendered: /#how",
+    "/exposure: link target no longer rendered: /about",
+    "/exposure: link target no longer rendered: /challenges",
+    "/exposure: link target no longer rendered: /exposure",
+    "/exposure: link target no longer rendered: /tokens",
+    "/launch: aria attribute changed/removed: aria-label=Contents",
+    "/launch: aria attribute changed/removed: aria-label=Open the menu",
+    "/launch: aria attribute changed/removed: aria-label=Sections",
+    "/launch: link target no longer rendered: /#how",
+    "/launch: link target no longer rendered: /about",
+    "/launch: link target no longer rendered: /challenges",
+    "/launch: link target no longer rendered: /exposure",
+    "/launch: link target no longer rendered: /tokens",
+    "/privacy: aria attribute changed/removed: aria-label=Contents",
+    "/privacy: aria attribute changed/removed: aria-label=Open the menu",
+    "/privacy: aria attribute changed/removed: aria-label=Sections",
+    "/privacy: link target no longer rendered: /#how",
+    "/privacy: link target no longer rendered: /about",
+    "/privacy: link target no longer rendered: /challenges",
+    "/privacy: link target no longer rendered: /exposure",
+    "/privacy: link target no longer rendered: /tokens",
+    "/q-day: aria attribute changed/removed: aria-label=Contents",
+    "/q-day: aria attribute changed/removed: aria-label=Open the menu",
+    "/q-day: aria attribute changed/removed: aria-label=Sections",
+    "/q-day: link target no longer rendered: /#how",
+    "/q-day: link target no longer rendered: /about",
+    "/q-day: link target no longer rendered: /challenges",
+    "/q-day: link target no longer rendered: /exposure",
+    "/q-day: link target no longer rendered: /tokens",
+    "/risks: aria attribute changed/removed: aria-label=Contents",
+    "/risks: aria attribute changed/removed: aria-label=Open the menu",
+    "/risks: aria attribute changed/removed: aria-label=Sections",
+    "/risks: link target no longer rendered: /#how",
+    "/risks: link target no longer rendered: /about",
+    "/risks: link target no longer rendered: /challenges",
+    "/risks: link target no longer rendered: /exposure",
+    "/risks: link target no longer rendered: /tokens",
+    "/t/preview: aria attribute changed/removed: aria-label=Contents",
+    "/t/preview: aria attribute changed/removed: aria-label=Open the menu",
+    "/t/preview: aria attribute changed/removed: aria-label=Sections",
+    "/t/preview: link target no longer rendered: /#how",
+    "/t/preview: link target no longer rendered: /about",
+    "/t/preview: link target no longer rendered: /challenges",
+    "/t/preview: link target no longer rendered: /exposure",
+    "/t/preview: link target no longer rendered: /tokens",
+    "/terms: aria attribute changed/removed: aria-label=Contents",
+    "/terms: aria attribute changed/removed: aria-label=Open the menu",
+    "/terms: aria attribute changed/removed: aria-label=Sections",
+    "/terms: link target no longer rendered: /#how",
+    "/terms: link target no longer rendered: /about",
+    "/terms: link target no longer rendered: /challenges",
+    "/terms: link target no longer rendered: /exposure",
+    "/terms: link target no longer rendered: /tokens",
+    "/tokens: aria attribute changed/removed: aria-label=Contents",
+    "/tokens: aria attribute changed/removed: aria-label=Open the menu",
+    "/tokens: aria attribute changed/removed: aria-label=Sections",
+    "/tokens: link target no longer rendered: /#how",
+    "/tokens: link target no longer rendered: /about",
+    "/tokens: link target no longer rendered: /challenges",
+    "/tokens: link target no longer rendered: /exposure",
+    "/tokens: link target no longer rendered: /tokens"
   ],
   "baseline": {
-    "generatedAt": "2026-10-20T16:23:07.656Z",
+    "generatedAt": "2026-10-21T17:39:27.176Z",
     "routes": [
       "/",
       "/about",

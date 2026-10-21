@@ -1,12 +1,12 @@
 /**
  * On-chain program addresses and the constants the website reads from them.
  *
- * The deployed program lives in `<root>/contracts` (Anchor). `QUBITLANE_PROGRAM_ID`
- * is the program id declared there in `programs/qubitlane/src/lib.rs`.
+ * The deployed program lives in `<root>/contracts` (Anchor). `QUBITESS_PROGRAM_ID`
+ * is the program id declared there in `programs/qubitess/src/lib.rs`.
  */
 
 /** Placeholder until the program is deployed to a cluster. */
-export const QUBITLANE_PROGRAM_ID =
+export const QUBITESS_PROGRAM_ID =
   "MthLnaQ1aZ8Z7dQ3sVJ7hKj2QyWq6rN4vXbC9pLoP1R";
 
 /** Cluster the interface talks to. */

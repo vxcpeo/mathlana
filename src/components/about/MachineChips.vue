@@ -70,15 +70,15 @@ const moreLabel = computed(() =>
 </script>
 
 <template>
-  <div class="pp-machine">
-    <p class="pp-h4 pp-machine__title">Running quantum computers:</p>
+  <div class="cq-machine">
+    <p class="cq-h4 cq-machine__title">Running quantum computers:</p>
 
-    <ul class="pp-machine__list">
+    <ul class="cq-machine__list">
       <li
         v-for="(machine, index) in ordered"
         :key="`${machine.maker}-${machine.model}`"
-        class="pp-machine__item"
-        :class="{ 'pp-machine__item--hidden': index >= visibleCount }"
+        class="cq-machine__item"
+        :class="{ 'cq-machine__item--hidden': index >= visibleCount }"
       >
         <a
           :href="machine.href"
@@ -87,11 +87,11 @@ const moreLabel = computed(() =>
           data-machine="true"
           data-chip
           :aria-label="`${machine.maker} ${machine.label}, its official page (opens in a new tab)`"
-          class="pp-machine__row"
+          class="cq-machine__chip"
         >
-          <MachineLogo :maker="machine.maker" class="pp-machine__logo" />
-          <span class="pp-machine__label">{{ machine.label }}</span>
-          <span aria-hidden="true" class="pp-machine__art">
+          <MachineLogo :maker="machine.maker" class="cq-machine__logo" />
+          <span class="cq-machine__label">{{ machine.label }}</span>
+          <span aria-hidden="true" class="cq-machine__art">
             <CardArt name="badge" />
           </span>
         </a>
@@ -100,130 +100,116 @@ const moreLabel = computed(() =>
 
     <span
       data-more
-      class="pp-machine__more"
-      :class="{ 'pp-machine__more--empty': hiddenCount === 0 }"
+      class="cq-machine__more"
+      :class="{ 'cq-machine__more--empty': hiddenCount === 0 }"
       >+{{ moreLabel }} more</span
     >
   </div>
 </template>
 
 <style scoped>
-.pp-machine {
+.cq-machine {
   display: grid;
-  gap: 8px;
+  gap: 10px;
   min-width: 0;
 }
 
-.pp-machine__title {
-  color: var(--pp-ink-soft);
+.cq-machine__title {
+  color: var(--cq-muted);
 }
 
-.pp-machine__list {
-  display: grid;
-  border-top: 1px solid var(--pp-line);
-}
-
-.pp-machine__item {
+.cq-machine__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
   min-width: 0;
-  border-bottom: 1px solid var(--pp-line-soft);
 }
 
-.pp-machine__item--hidden {
+.cq-machine__item {
+  min-width: 0;
+}
+
+.cq-machine__item--hidden {
   display: none;
 }
 
-.pp-machine__row {
-  display: grid;
-  grid-template-columns: 60px minmax(0, 1fr) 16px;
+.cq-machine__chip {
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  min-width: 0;
-  min-height: 35px;
-  padding: 7px 2px;
-  color: var(--pp-ink-soft);
+  gap: 7px;
+  max-width: 100%;
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid var(--cq-line);
+  border-radius: 999px;
+  background: var(--cq-sheet);
+  color: var(--cq-ink-soft);
+  transition: border-color var(--cq-fast) var(--cq-ease), background-color var(--cq-fast) var(--cq-ease);
 }
 
-.pp-machine__logo {
+.cq-machine__chip:hover,
+.cq-machine__chip:focus-visible {
+  border-color: var(--cq-accent-line);
+  background: var(--cq-sheet-soft);
+}
+
+.cq-machine__logo {
   width: auto;
-  height: 14px;
-  max-width: 60px;
+  height: 11px;
+  max-width: 54px;
   flex-shrink: 0;
   overflow: visible;
   filter: grayscale(1);
   opacity: 0.9;
 }
 
-.pp-machine__label {
+.cq-machine__label {
   min-width: 0;
-  font-family: var(--pp-mono);
-  font-size: 0.79rem;
+  font-family: var(--cq-mono);
+  font-size: 0.72rem;
   line-height: 1.3;
   letter-spacing: 0.01em;
-  color: var(--pp-ink);
-  overflow-wrap: anywhere;
-  transition: color var(--pp-fast) var(--pp-ease);
+  color: var(--cq-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.pp-machine__row:hover .pp-machine__label {
-  color: var(--pp-accent-text);
-}
-
-.pp-machine__art {
+.cq-machine__art {
   display: block;
-  width: 16px;
-  height: 16px;
-  color: var(--pp-accent-text);
-  opacity: 0.6;
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  color: var(--cq-accent-text);
+  opacity: 0.55;
 }
 
-.pp-machine__art :deep(svg) {
+.cq-machine__art :deep(svg) {
   width: 100%;
   height: 100%;
 }
 
-.pp-machine__more {
+.cq-machine__more {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   width: fit-content;
   padding-top: 2px;
-  font-family: var(--pp-mono);
+  font-family: var(--cq-mono);
   font-size: 0.68rem;
   line-height: 1.4;
   letter-spacing: 0.04em;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
 }
 
-.pp-machine__more::before {
+.cq-machine__more::before {
   content: "";
   width: 14px;
   height: 1px;
-  background: var(--pp-line-strong);
+  background: var(--cq-line-strong);
 }
 
-.pp-machine__more--empty {
+.cq-machine__more--empty {
   display: none;
-}
-
-@media (max-width: 560px) {
-  .pp-machine__row {
-    grid-template-columns: 48px minmax(0, 1fr) 14px;
-    gap: 8px;
-    padding: 6px 0;
-  }
-
-  .pp-machine__logo {
-    max-width: 48px;
-    height: 12px;
-  }
-
-  .pp-machine__label {
-    font-size: 0.68rem;
-  }
-
-  .pp-machine__art {
-    width: 14px;
-    height: 14px;
-  }
 }
 </style>

@@ -1,6 +1,6 @@
-# Qubitlane — website
+# Qubitess — website
 
-The Vue 3 front end for [qubitlane.xyz](https://qubitlane.xyz/): *"Math and
+The Vue 3 front end for [qubitess.xyz](https://qubitess.xyz/): *"Math and
 cryptography research agents, on Solana."*
 
 Built with **Vue 3**, **Vite 7**, **vue-router 4** and **Tailwind CSS v4**.
@@ -25,58 +25,74 @@ backend — see `vite.config.js`.
 src/
 ├── main.js                      app bootstrap, theme applied before mount
 ├── App.vue                      shell: skip link, header, <RouterView>, footer
-├── style.css                    the whole design system (Tailwind v4 @theme)
+├── styles/
+│  ├── rail.css                  component grammar: cq-* tokens and classes
+│  └── shell.css                 the Command Rail skeleton + primitives
 ├── router/index.js              every route, with per-route <title>
-├── idl/qubitlane.json            generated from ../contracts (see below)
+├── idl/qubitess.json            generated from ../contracts (see below)
 ├── data/
-│   ├── challenges.js            quantum roster, challenge registry, NVDAx
-│   ├── tokens.js                token directory + research log
-│   └── onchain.js               program id, PDA seeds, launch economics
+│  ├── challenges.js            quantum roster, challenge registry, NVDAx
+│  ├── tokens.js                token directory + research log
+│  └── onchain.js               program id, PDA seeds, launch economics
 ├── lib/
-│   ├── format.js                group, compactUsd, priceUsd, timeAgo, …
-│   └── program.js               Anchor client: PDA helpers, reads, metric formatting
+│  ├── format.js                group, compactUsd, priceUsd, timeAgo, …
+│  └── program.js               Anchor client: PDA helpers, reads, metric formatting
 ├── composables/
-│   ├── useTheme.js              light / dark / system, persisted
-│   ├── useQuantumStatus.js      polls /api/quantum/status every 30 s
-│   └── useMarket.js             polls /api/market?mints=… every 60 s
+│  ├── useTheme.js              light / dark / system, persisted
+│  ├── useQuantumStatus.js      polls /api/quantum/status every 30 s
+│  └── useMarket.js             polls /api/market?mints=… every 60 s
 ├── components/
-│   ├── ui/                      Icon, AppButton, AppBadge, PanelCard, MetricLine
-│   ├── art/                     CardArt, MachineLogo (extracted line art + wordmarks)
-│   ├── brand/BrandMark.vue       the Qubitlane mark
-│   ├── layout/                  AppHeader, QuantumTicker, AppFooter
-│   ├── home/                    HomeHero, ThreatPanels, ThreatRow,
+│  ├── ui/                      Icon, AppButton, AppBadge, PanelCard, MetricLine
+│  ├── art/                     CardArt, MachineLogo (extracted line art + wordmarks)
+│  ├── brand/BrandMark.vue       the Qubitess mark
+│  ├── shell/                   CommandRail, CommandDock, CommandBar, Colophon
+│  ├── layout/                  QuantumTicker (the live stdout strip)
+│  ├── home/                    HomeHero, ThreatPanels, ThreatRow,
 │   │                            ExposureBanner, HowItWorks
-│   └── token/TokenCard.vue       the token card used in three places
+│  └── tokens/                  token ledger rows, pool, fee split, research log
 └── views/                       one component per route
 ```
 
 ## Design system
 
-Everything lives in `src/style.css`: the reference site's own token values,
-re-exported to Tailwind through `@theme inline` so they are available as
-ordinary utilities.
+Two stylesheets, one namespace (`cq-*`):
+
+* `src/styles/rail.css` — the component grammar: tokens, type scale, surfaces,
+  ledgers, tags, buttons, forms and the night edition. Every component class
+  lives here or in a scoped block; there is no Tailwind layer.
+* `src/styles/shell.css` — the Command Rail skeleton: the fixed glyph rail, the
+  floating command bar, the mobile dock, the fixed stdout strip, the colophon,
+  the pagehead and stage grids, and the blueprint primitives.
 
 ```html
-<div class="rounded-xl border bg-card text-card-foreground">
-  <h2 class="headline text-2xl text-foreground">Two threats to your keys</h2>
-  <p class="text-sm text-muted-foreground">…</p>
-  <span class="font-mono text-[0.95rem] text-brand-text figures">1,282,404,859</span>
-</div>
+<section class="cq-page">
+  <div class="cq-pagehead">
+    <div class="cq-pagehead__head">
+      <p class="cq-kicker">Section</p>
+      <h1 class="cq-runhead">Running head</h1>
+    </div>
+    <div class="cq-pagehead__edge"><p class="cq-lede">…</p></div>
+  </div>
+  <div class="cq-stage">
+    <div class="cq-stage__main"><div class="cq-sheet">ledger</div></div>
+    <div class="cq-stage__edge"><div class="cq-band">figures</div></div>
+  </div>
+</section>
 ```
 
-* Surfaces — `background`, `card`, `popover`, `muted`, `secondary`, `accent`
-* Text — `foreground`, `muted-foreground`, `quiet`, `quiet-text`
-* Semantic families — `brand`, `proven`, `caution`, `failed`, `note`, `quantum`,
-  each with `-surface`, `-border` and `-text` variants
-* Charts — `chart-1` … `chart-5`
-* Utilities — `.headline` (Montserrat semibold, `-0.025em`, `line-height: 1.1`),
-  `.figures` (tabular numerals), `.scrollbar-none`
+* Ground — `--cq-ground` blueprint grey with a 32 px module grid; sheets are
+  `--cq-sheet` with 18 px corners, a 1 px `--cq-line` hairline and a soft shadow.
+* Accent — `--cq-accent` `#0000ff` for fills and focus, `--cq-accent-text` for
+  text on the ground; `--cq-live`, `--cq-alert`, `--cq-warn`, `--cq-note` for
+  semantics, each with a `-surface`.
+* Type — `--cq-display` Montserrat 620 at −0.035 em, `--cq-body` DM Sans,
+  `--cq-mono` JetBrains Mono for kickers and figures, all self-hosted in
+  `public/fonts`.
+* Layout — `.cq-pagehead`, `.cq-stage`, `.cq-sheet`, `.cq-band`, `.cq-plate`,
+  `.cq-page`, plus `.cq-btn`, `.cq-tag`, `.cq-chip`, `.cq-ledger`.
 
 Dark mode is class-driven (`.dark` on `<html>`), applied by
 `initTheme()` before mount so the first paint is already correct.
-
-Type is self-hosted in `public/fonts`: Montserrat (headings), DM Sans (body),
-JetBrains Mono (figures).
 
 ## Reading on-chain state
 
@@ -96,13 +112,13 @@ The IDL is generated by `../contracts/tools/generate_idl.py` (or by
 
 ```bash
 python ../contracts/tools/generate_idl.py
-cp ../contracts/idl/qubitlane.json src/idl/qubitlane.json
+cp ../contracts/idl/qubitess.json src/idl/qubitess.json
 ```
 
 Set the deployed program address in `src/data/onchain.js`:
 
 ```js
-export const QUBITLANE_PROGRAM_ID = "<your deployed program id>";
+export const QUBITESS_PROGRAM_ID = "<your deployed program id>";
 ```
 
 and the RPC in the environment:
@@ -128,7 +144,7 @@ export const LAUNCH = {
 };
 ```
 
-`../contracts/programs/qubitlane/src/constants.rs` carries the same numbers.
+`../contracts/programs/qubitess/src/constants.rs` carries the same numbers.
 
 ## Wallet connection
 

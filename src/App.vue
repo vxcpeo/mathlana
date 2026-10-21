@@ -1,24 +1,26 @@
 <script setup>
 import { RouterView } from "vue-router";
-import AppHeader from "@/components/layout/AppHeader.vue";
-import AppRail from "@/components/rail/AppRail.vue";
+import CommandRail from "@/components/shell/CommandRail.vue";
+import CommandDock from "@/components/shell/CommandDock.vue";
+import CommandBar from "@/components/shell/CommandBar.vue";
 import QuantumTicker from "@/components/layout/QuantumTicker.vue";
-import AppFooter from "@/components/layout/AppFooter.vue";
+import Colophon from "@/components/shell/Colophon.vue";
 </script>
 
 <template>
-  <div class="pp-paper">
-    <a href="#main" class="pp-skip sr-only">Skip to content</a>
-    <AppHeader />
-    <QuantumTicker />
-    <div class="pp-shell">
-      <main id="main" class="pp-main">
+  <div class="cq-app">
+    <a href="#main" class="cq-skip sr-only">Skip to content</a>
+    <CommandRail />
+    <CommandDock />
+    <div class="cq-app__frame">
+      <CommandBar />
+      <main id="main" class="cq-main">
         <RouterView />
       </main>
-      <aside class="pp-contents" aria-label="Contents">
-        <AppRail />
-      </aside>
+      <Colophon />
     </div>
-    <AppFooter />
+    <div class="cq-stdout" role="presentation">
+      <QuantumTicker />
+    </div>
   </div>
 </template>

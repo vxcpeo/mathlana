@@ -28,7 +28,7 @@ const SQUARES = FIELD.map((opacity, index) => ({
 </script>
 
 <template>
-  <svg viewBox="0 0 240 150" aria-hidden="true" class="pp-form-art">
+  <svg viewBox="0 0 240 150" aria-hidden="true" class="cq-form-art">
     <g transform="rotate(-16 170 58)">
       <circle
         v-for="ring in RINGS"
@@ -59,7 +59,7 @@ const SQUARES = FIELD.map((opacity, index) => ({
 </template>
 
 <style scoped>
-.pp-form-art {
+.cq-form-art {
   width: auto;
   height: 100%;
   max-width: none;

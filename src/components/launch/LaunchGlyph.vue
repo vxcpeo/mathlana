@@ -31,13 +31,13 @@ const body = computed(() => GLYPHS[props.name] ?? "");
     :stroke-width="strokeWidth"
     stroke-linecap="round"
     aria-hidden="true"
-    class="pp-glyph"
+    class="cq-lglyph"
     v-html="body"
   />
 </template>
 
 <style scoped>
-.pp-glyph {
+.cq-lglyph {
   flex: 0 0 auto;
 }
 </style>

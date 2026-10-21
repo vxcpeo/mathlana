@@ -36,30 +36,30 @@ const label = computed(() =>
 </script>
 
 <template>
-  <section :aria-label="label" class="pp-wire">
-    <span class="pp-wire__label">
-      <Icon name="atom" :size="14" class="pp-accent" />
-      <span class="pp-wire__title">Live quantum computer stats</span>
+  <section :aria-label="label" class="cq-wire">
+    <span class="cq-wire__label">
+      <Icon name="atom" :size="14" class="cq-accent" />
+      <span class="cq-wire__title">Live quantum computer stats</span>
     </span>
 
-    <span class="pp-wire__item">
-      <span class="pp-dot pp-dot--live pp-live-pulse" aria-hidden="true" />
+    <span class="cq-wire__item">
+      <span class="cq-dot cq-dot--live cq-live-pulse" aria-hidden="true" />
       <span v-if="state.status === 'live'">
-        <span class="pp-wire__count pp-num">{{ machineCount }} running instances</span>
+        <span class="cq-wire__count cq-num">{{ machineCount }} running instances</span>
       </span>
       <span v-else>Connecting</span>
     </span>
 
-    <span class="pp-wire__rule" aria-hidden="true" />
+    <span class="cq-wire__rule" aria-hidden="true" />
 
-    <div class="pp-wire__track">
+    <div class="cq-wire__track">
       <span
         v-for="machine in visible"
         :key="`${machine.maker}-${machine.model}`"
-        class="pp-wire__item"
-        :class="{ 'pp-wire__item--on': machine.highlighted }"
+        class="cq-wire__item"
+        :class="{ 'cq-wire__item--on': machine.highlighted }"
       >
-        <span aria-hidden="true" class="pp-dot" :class="machine.highlighted ? 'pp-dot--live' : ''" />
+        <span aria-hidden="true" class="cq-dot" :class="machine.highlighted ? 'cq-dot--live' : ''" />
         <a
           v-if="machine.url"
           :href="machine.url"
@@ -68,8 +68,8 @@ const label = computed(() =>
           :aria-label="`${machine.maker} ${machine.model}, its official page (opens in a new tab)`"
           >{{ machine.model }}</a
         >
-        <span v-else class="pp-wire__name">{{ machine.model }}</span>
-        <span class="pp-wire__qubits pp-num">{{ machine.qubits }} qubits</span>
+        <span v-else class="cq-wire__name">{{ machine.model }}</span>
+        <span class="cq-wire__qubits cq-num">{{ machine.qubits }} qubits</span>
       </span>
     </div>
   </section>

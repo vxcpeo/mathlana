@@ -17,7 +17,7 @@ const ART = {
   'figure': {
     viewBox: '-2 -2 651.21 404',
     fill: 'none',
-    body: '<g stroke-width="1.5" vector-effect="non-scaling-stroke"><rect width="647.21" height="400" class="pp-art-stroke-accent" vector-effect="non-scaling-stroke"></rect><line x1="400" y1="0" x2="400" y2="400" class="pp-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="400" y1="247.21" x2="647.21" y2="247.21" class="pp-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="494.43" y1="247.21" x2="494.43" y2="400" class="pp-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="400" y1="305.57" x2="494.43" y2="305.57" class="pp-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="458.36" y1="247.21" x2="458.36" y2="305.57" class="pp-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="458.36" y1="283.28" x2="494.43" y2="283.28" class="pp-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="472.14" y1="283.28" x2="472.14" y2="305.57" class="pp-art-stroke-accent" vector-effect="non-scaling-stroke"></line><path d="M0 400A400 400 0 0 1 400 0M400 0A247.21 247.21 0 0 1 647.21 247.21M647.21 247.21A152.79 152.79 0 0 1 494.43 400M494.43 400A94.43 94.43 0 0 1 400 305.57M400 305.57A58.36 58.36 0 0 1 458.36 247.21M458.36 247.21A36.07 36.07 0 0 1 494.43 283.28M494.43 283.28A22.29 22.29 0 0 1 472.14 305.57" class="pp-art-stroke-ink" stroke-linecap="round" vector-effect="non-scaling-stroke"></path><circle cx="400" cy="0" r="6.3" class="pp-art-fill-accent"></circle><circle cx="647.21" cy="247.21" r="6.3" class="pp-art-fill-accent"></circle><circle cx="400" cy="305.57" r="4.7" class="pp-art-fill-ink"></circle></g>',
+    body: '<g stroke-width="1.5" vector-effect="non-scaling-stroke"><rect width="647.21" height="400" class="cq-art-stroke-accent" vector-effect="non-scaling-stroke"></rect><line x1="400" y1="0" x2="400" y2="400" class="cq-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="400" y1="247.21" x2="647.21" y2="247.21" class="cq-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="494.43" y1="247.21" x2="494.43" y2="400" class="cq-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="400" y1="305.57" x2="494.43" y2="305.57" class="cq-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="458.36" y1="247.21" x2="458.36" y2="305.57" class="cq-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="458.36" y1="283.28" x2="494.43" y2="283.28" class="cq-art-stroke-accent" vector-effect="non-scaling-stroke"></line><line x1="472.14" y1="283.28" x2="472.14" y2="305.57" class="cq-art-stroke-accent" vector-effect="non-scaling-stroke"></line><path d="M0 400A400 400 0 0 1 400 0M400 0A247.21 247.21 0 0 1 647.21 247.21M647.21 247.21A152.79 152.79 0 0 1 494.43 400M494.43 400A94.43 94.43 0 0 1 400 305.57M400 305.57A58.36 58.36 0 0 1 458.36 247.21M458.36 247.21A36.07 36.07 0 0 1 494.43 283.28M494.43 283.28A22.29 22.29 0 0 1 472.14 305.57" class="cq-art-stroke-ink" stroke-linecap="round" vector-effect="non-scaling-stroke"></path><circle cx="400" cy="0" r="6.3" class="cq-art-fill-accent"></circle><circle cx="647.21" cy="247.21" r="6.3" class="cq-art-fill-accent"></circle><circle cx="400" cy="305.57" r="4.7" class="cq-art-fill-ink"></circle></g>',
   },
   'badge': {
     viewBox: '0 0 40 40',
@@ -29,7 +29,7 @@ const ART = {
   },
   'seal': {
     viewBox: '0 0 100 100',
-    body: '<g transform="rotate(0 50 50)" fill="none" stroke-width="1.5"><path d="M18 82 A64 64 0 0 1 82 18" stroke="#6c86ff" vector-effect="non-scaling-stroke"></path><circle cx="82" cy="18" r="3.2" fill="#6c86ff" stroke="none"></circle></g><text x="50" y="50" text-anchor="middle" dominant-baseline="central" class="pp-art-seal" font-size="44" letter-spacing="-1">T</text>',
+    body: '<g transform="rotate(0 50 50)" fill="none" stroke-width="1.5"><path d="M18 82 A64 64 0 0 1 82 18" stroke="#6c86ff" vector-effect="non-scaling-stroke"></path><circle cx="82" cy="18" r="3.2" fill="#6c86ff" stroke="none"></circle></g><text x="50" y="50" text-anchor="middle" dominant-baseline="central" class="cq-art-seal" font-size="44" letter-spacing="-1">T</text>',
   },
 };
 
@@ -46,7 +46,7 @@ const art = computed(() => ART[props.name] ?? null);
     :viewBox="art.viewBox"
     :fill="art.fill"
     aria-hidden="true"
-    class="pp-art-svg"
+    class="cq-art-svg"
     v-html="art.body"
   />
 </template>

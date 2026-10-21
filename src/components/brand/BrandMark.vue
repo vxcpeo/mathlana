@@ -1,31 +1,34 @@
 <script setup>
-/** The Qubitlane brand mark — a Q drawn as a key ring with a cobalt tail. */
+/**
+ * The Qubitess brand mark — an ink ring (the loop crypto lives in) with the
+ * qubit as a detached accent dot escaping it.
+ */
 </script>
 
 <template>
   <svg
     viewBox="0 0 600 480"
-    class="pp-brandmark"
+    class="cq-brandmark"
     aria-hidden="true"
     data-brand-mark="true"
   >
-    <circle class="pp-brandmark__ring" cx="255" cy="215" r="150" fill="none" stroke-width="60" />
-    <path class="pp-brandmark__tail" d="M330 280 L505 445" fill="none" stroke-width="60" stroke-linecap="round" />
+    <circle class="cq-brandmark__ring" cx="272" cy="228" r="132" fill="none" stroke-width="56" />
+    <circle class="cq-brandmark__dot" cx="470" cy="380" r="34" stroke="none" />
   </svg>
 </template>
 
 <style scoped>
-.pp-brandmark {
+.cq-brandmark {
   height: 1.05em;
   width: auto;
   flex-shrink: 0;
 }
 
-.pp-brandmark__ring {
-  stroke: var(--pp-ink);
+.cq-brandmark__ring {
+  stroke: var(--cq-ink);
 }
 
-.pp-brandmark__tail {
-  stroke: var(--pp-accent);
+.cq-brandmark__dot {
+  fill: var(--cq-accent);
 }
 </style>

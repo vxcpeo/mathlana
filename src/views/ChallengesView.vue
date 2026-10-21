@@ -1,7 +1,7 @@
 <script setup>
 /**
- * `/challenges` — the two threat families, each fronted by a ruled group band
- * and followed by a ledger of the public problems that measure it.
+ * `/challenges` — the two threat families as numbered ledger sheets: a dark
+ * running band per family, then hairline-separated challenge rows.
  */
 import ChallengeCard from "@/components/challenges/ChallengeCard.vue";
 import ChallengeIcon from "@/components/challenges/ChallengeIcon.vue";
@@ -44,46 +44,48 @@ const GROUPS = [
 </script>
 
 <template>
-  <div class="pp-page pp-groups">
-    <div class="pp-head">
-      <div class="pp-head__row pp-groups__head">
-        <div class="pp-stack pp-groups__intro">
-          <h1 class="pp-runhead">{{ CHALLENGES_PAGE.title }}</h1>
-          <p class="pp-lede">{{ CHALLENGES_PAGE.subtitle }}</p>
-        </div>
+  <div class="cq-page cq-chmap">
+    <header class="cq-pagehead cq-chmap__pagehead">
+      <div class="cq-pagehead__head">
+        <p class="cq-kicker cq-chmap__kicker" aria-hidden="true"></p>
+        <h1 class="cq-runhead">{{ CHALLENGES_PAGE.title }}</h1>
+      </div>
 
-        <ol class="pp-gindex">
-          <li v-for="group in GROUPS" :key="group.key" class="pp-gindex__item">
-            <a :href="`#group-${group.key}`" :aria-label="group.title" class="pp-gindex__link">
-              <span class="pp-gindex__num" aria-hidden="true" />
-              <ChallengeIcon :name="group.icon" class="pp-gindex__icon" />
+      <div class="cq-pagehead__edge">
+        <p class="cq-lede cq-chmap__lede">{{ CHALLENGES_PAGE.subtitle }}</p>
+
+        <ol class="cq-chmap__jumps">
+          <li v-for="group in GROUPS" :key="group.key" class="cq-chmap__jumpitem">
+            <a :href="`#group-${group.key}`" :aria-label="group.title" class="cq-chmap__jump">
+              <span class="cq-chmap__jumpnum" aria-hidden="true" />
+              <ChallengeIcon :name="group.icon" class="cq-chmap__jumpicon" />
             </a>
           </li>
         </ol>
       </div>
-    </div>
+    </header>
 
-    <section
-      v-for="group in GROUPS"
-      :key="group.key"
-      :id="`group-${group.key}`"
-      class="pp-sec pp-group"
-    >
-      <ThreatGroupHeader
-        :title="group.title"
-        :subtitle="group.subtitle"
-        :icon="group.icon"
-        :art="group.art"
-      />
+    <div class="cq-chmap__sheets">
+      <section
+        v-for="group in GROUPS"
+        :key="group.key"
+        :id="`group-${group.key}`"
+        class="cq-sheet cq-chmap__group"
+      >
+        <ThreatGroupHeader
+          :title="group.title"
+          :subtitle="group.subtitle"
+          :icon="group.icon"
+          :art="group.art"
+        />
 
-      <div v-for="block in group.blocks" :key="block.label" class="pp-group__block">
-        <div class="pp-sec__head pp-group__label">
-          <p class="pp-h4">{{ block.label }}</p>
-        </div>
+        <div v-for="block in group.blocks" :key="block.label" class="cq-chmap__block">
+          <div class="cq-chmap__blockhead">
+            <p class="cq-h4">{{ block.label }}</p>
+          </div>
 
-        <ul class="pp-ledger pp-cards">
-          <template v-for="item in block.items" :key="item.key">
-            <li class="pp-cards__item">
+          <ol class="cq-chmap__ledger">
+            <li v-for="item in block.items" :key="item.key" class="cq-chmap__item">
               <ChallengeCard
                 v-if="item.challenge.open"
                 :challenge="item.challenge"
@@ -91,101 +93,151 @@ const GROUPS = [
               />
               <UpcomingCard v-else :challenge="item.challenge" :copy="CARD_COPY[item.key]" />
             </li>
-          </template>
-        </ul>
-      </div>
-    </section>
+          </ol>
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.pp-groups {
-  counter-reset: ppgroup;
+.cq-chmap {
+  counter-reset: cqgroup;
 }
 
-.pp-groups__head {
-  align-items: end;
-  gap: var(--pp-t4);
+.cq-chmap__pagehead {
+  align-items: start;
 }
 
-.pp-groups__intro {
-  min-width: 0;
-  max-width: 56rem;
-  gap: var(--pp-t3);
-}
-
-.pp-gindex {
+.cq-chmap__kicker {
   display: flex;
-  flex-shrink: 0;
-  gap: 10px;
-  counter-reset: ppgindex;
+  min-height: 12px;
+  margin: 0;
 }
 
-.pp-gindex__link {
+.cq-chmap__lede {
+  max-width: 48ch;
+  font-size: clamp(0.95rem, 1.1vw, 1.08rem);
+  line-height: 1.6;
+  color: var(--cq-muted);
+}
+
+.cq-chmap__jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  counter-reset: cqjump;
+}
+
+.cq-chmap__jumpitem {
+  display: flex;
+}
+
+.cq-chmap__jump {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 8px;
+  min-height: 38px;
   padding: 8px 12px;
-  border: 1px solid var(--pp-line);
+  border: 1px solid var(--cq-line);
   border-radius: 999px;
-  color: var(--pp-muted);
-  transition: color var(--pp-fast) var(--pp-ease), border-color var(--pp-fast) var(--pp-ease),
-    background-color var(--pp-fast) var(--pp-ease);
+  color: var(--cq-muted);
+  text-decoration: none;
+  transition: color var(--cq-fast) var(--cq-ease), border-color var(--cq-fast) var(--cq-ease),
+    background var(--cq-fast) var(--cq-ease);
 }
 
-.pp-gindex__link:hover {
-  color: var(--pp-accent-text);
-  border-color: var(--pp-accent-line);
-  background: var(--pp-accent-soft);
+.cq-chmap__jump:hover,
+.cq-chmap__jump:focus-visible {
+  color: var(--cq-accent-text);
+  border-color: var(--cq-accent-line);
+  background: var(--cq-accent-soft);
 }
 
-.pp-gindex__num {
-  counter-increment: ppgindex;
-  font-family: var(--pp-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
+.cq-chmap__jumpnum {
+  font-family: var(--cq-mono);
+  font-size: 0.64rem;
+  line-height: 1;
+  letter-spacing: 0.12em;
 }
 
-.pp-gindex__num::before {
-  content: counter(ppgindex, decimal-leading-zero);
+.cq-chmap__jumpnum::before {
+  counter-increment: cqjump;
+  content: counter(cqjump, decimal-leading-zero);
 }
 
-.pp-gindex__item {
-  display: flex;
-}
-
-.pp-gindex__icon {
+.cq-chmap__jumpicon {
   width: 14px;
   height: 14px;
-  align-self: center;
 }
 
-.pp-group {
-  padding-top: var(--pp-t5);
+.cq-chmap__sheets {
+  display: grid;
+  gap: clamp(22px, 3vw, 38px);
 }
 
-.pp-group__block {
-  margin-top: var(--pp-t4);
-  padding-top: var(--pp-t3);
-  border-top: 1px solid var(--pp-line);
+.cq-chmap__group {
+  counter-reset: cqledger;
+  border-radius: var(--cq-radius-lg);
+  scroll-margin-top: 108px;
 }
 
-.pp-group__label {
-  margin-bottom: 0;
+.cq-chmap__blockhead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 42px;
+  padding: 12px clamp(20px, 2.6vw, 32px);
+  border-top: 1px solid var(--cq-line);
+  border-bottom: 1px solid var(--cq-line);
+  background: var(--cq-sheet-soft);
 }
 
-.pp-cards {
-  border-top: 0;
+.cq-chmap__blockhead .cq-h4 {
+  margin: 0;
+  max-width: 82ch;
+  color: var(--cq-muted-ground);
+  line-height: 1.5;
 }
 
-.pp-cards__item {
-  display: block;
+.cq-chmap__ledger {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cq-chmap__item {
   min-width: 0;
 }
 
-@media (max-width: 720px) {
-  .pp-groups__head {
-    align-items: start;
+.cq-chmap__item + .cq-chmap__item {
+  border-top: 1px solid var(--cq-line-soft);
+}
+
+.cq-chmap__item:hover {
+  background: color-mix(in srgb, var(--cq-sheet-soft) 58%, transparent);
+}
+
+@media (max-width: 960px) {
+  .cq-chmap__pagehead {
+    gap: 20px;
+  }
+
+  .cq-chmap__lede {
+    max-width: 62ch;
+  }
+}
+
+@media (max-width: 560px) {
+  .cq-chmap__group {
+    border-radius: var(--cq-radius);
+  }
+
+  .cq-chmap__blockhead {
+    padding: 12px 16px;
   }
 }
 </style>

@@ -3,6 +3,7 @@
 
 # Historical brands (0..n)
 history: Mathlana
+history: Qubitlane
 
 # Current brand (exactly one)
-current: Qubitlane
+current: Qubitess

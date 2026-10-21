@@ -1,33 +1,33 @@
 # Reskin verification — FAIL
 
-Generated: 2026-10-20T16:26:41.682Z
+Generated: 2026-10-21T17:46:50.194Z
 
-- Project: **qubitlane-website**
-- URL: http://127.0.0.1:4499/
+- Project: **qubitess-website**
+- URL: http://127.0.0.1:4498/
 - Original skeleton: `orbital` (spatial)
 - New skeleton: `orbital` (spatial)
-- Accent: #0000ff -> #6f82e8 (82.95 ΔE; min 30)
-- Source contract: intact (`32e21d29b635`)
+- Accent: #6f82e8 -> #4d5bff (39.74 ΔE; min 30)
+- Source contract: intact (`e9add1f651ae`)
 
 | Route | Result | DOM similarity | Landmark similarity | Axe serious | Screenshot |
 |---|---|---:|---:|---:|---|
-| `/` | PASS | 0.375 | 0.5 | 0 | [desktop](current/home-desktop.png) |
-| `/about` | PASS | 0.365 | 0.5 | 0 | [desktop](current/about-desktop.png) |
-| `/account` | PASS | 0.42 | 0.5 | 0 | [desktop](current/account-desktop.png) |
-| `/challenges` | PASS | 0.356 | 0.5 | 0 | [desktop](current/challenges-desktop.png) |
+| `/` | PASS | 0.366 | 0.5 | 0 | [desktop](current/home-desktop.png) |
+| `/about` | PASS | 0.433 | 0.5 | 0 | [desktop](current/about-desktop.png) |
+| `/account` | PASS | 0.342 | 0.5 | 0 | [desktop](current/account-desktop.png) |
+| `/challenges` | PASS | 0.3 | 0.429 | 0 | [desktop](current/challenges-desktop.png) |
 | `/challenges/:slug` | PASS | — | — | — | — |
-| `/challenges/ecdsa-fail` | PASS | 0.349 | 0.5 | 0 | [desktop](current/challenges-ecdsa-fail-desktop.png) |
-| `/challenges/proximity` | PASS | 0.324 | 0.5 | 0 | [desktop](current/challenges-proximity-desktop.png) |
-| `/challenges/sig-golf` | PASS | 0.352 | 0.5 | 0 | [desktop](current/challenges-sig-golf-desktop.png) |
-| `/exposure` | PASS | 0.389 | 0.5 | 0 | [desktop](current/exposure-desktop.png) |
-| `/launch` | PASS | 0.313 | 0.5 | 0 | [desktop](current/launch-desktop.png) |
-| `/privacy` | PASS | 0.385 | 0.571 | 0 | [desktop](current/privacy-desktop.png) |
-| `/q-day` | PASS | 0.375 | 0.5 | 0 | [desktop](current/q-day-desktop.png) |
-| `/risks` | PASS | 0.408 | 0.571 | 0 | [desktop](current/risks-desktop.png) |
+| `/challenges/ecdsa-fail` | PASS | 0.362 | 0.571 | 0 | [desktop](current/challenges-ecdsa-fail-desktop.png) |
+| `/challenges/proximity` | PASS | 0.406 | 0.5 | 0 | [desktop](current/challenges-proximity-desktop.png) |
+| `/challenges/sig-golf` | PASS | 0.438 | 0.571 | 0 | [desktop](current/challenges-sig-golf-desktop.png) |
+| `/exposure` | PASS | 0.462 | 0.667 | 0 | [desktop](current/exposure-desktop.png) |
+| `/launch` | PASS | 0.332 | 0.333 | 0 | [desktop](current/launch-desktop.png) |
+| `/privacy` | PASS | 0.258 | 0.571 | 0 | [desktop](current/privacy-desktop.png) |
+| `/q-day` | PASS | 0.322 | 0.4 | 0 | [desktop](current/q-day-desktop.png) |
+| `/risks` | PASS | 0.27 | 0.571 | 0 | [desktop](current/risks-desktop.png) |
 | `/t/:mint` | PASS | — | — | — | — |
-| `/t/preview` | PASS | 0.452 | 0.5 | 0 | [desktop](current/t-preview-desktop.png) |
-| `/terms` | PASS | 0.408 | 0.571 | 0 | [desktop](current/terms-desktop.png) |
-| `/tokens` | PASS | 0.299 | 0.5 | 0 | [desktop](current/tokens-desktop.png) |
+| `/t/preview` | PASS | 0.288 | 0.5 | 0 | [desktop](current/t-preview-desktop.png) |
+| `/terms` | PASS | 0.27 | 0.571 | 0 | [desktop](current/terms-desktop.png) |
+| `/tokens` | PASS | 0.246 | 0.667 | 0 | [desktop](current/tokens-desktop.png) |
 
 ## Blocking issues
 
@@ -35,46 +35,46 @@ Generated: 2026-10-20T16:26:41.682Z
 
 ## Warnings
 
-- bindings: "attr:item.to" count increased 12 -> 13
-- bindings: "interpolation:item.label" count increased 14 -> 15
-- bindings: "link:item.to" count increased 12 -> 13
-- /: aria attribute added: aria-label=About
-- /: aria attribute added: aria-label=Challenges
-- /: aria attribute added: aria-label=Check a wallet
-- /: aria attribute added: aria-label=Contents
-- /: aria attribute added: aria-label=How it works
-- /: aria attribute added: aria-label=Open the menu
-- /: aria attribute added: aria-label=Sections
-- /: aria attribute added: aria-label=Tokens
-- /: link target added: /#how
-- /: link target added: /about
-- /: link target added: /challenges
-- /: link target added: /exposure
-- /: link target added: /tokens
-- /about: aria attribute added: aria-label=About
-- /about: aria attribute added: aria-label=Challenges
-- /about: aria attribute added: aria-label=Check a wallet
-- /about: aria attribute added: aria-label=Contents
-- /about: aria attribute added: aria-label=How it works
-- /about: aria attribute added: aria-label=Open the menu
-- /about: aria attribute added: aria-label=Sections
-- /about: aria attribute added: aria-label=Tokens
-- /about: link target added: /#how
-- /about: link target added: /about
-- /about: link target added: /challenges
-- /about: link target added: /exposure
-- /about: link target added: /tokens
-- /account: aria attribute added: aria-label=About
-- /account: aria attribute added: aria-label=Challenges
-- /account: aria attribute added: aria-label=Check a wallet
-- /account: aria attribute added: aria-label=Contents
-- /account: aria attribute added: aria-label=How it works
-- /account: aria attribute added: aria-label=Open the menu
-- /account: aria attribute added: aria-label=Sections
-- /account: aria attribute added: aria-label=Tokens
-- /account: link target added: /#how
-- /account: link target added: /about
-- /account: link target added: /challenges
+- bindings: "attr:item.icon" count increased 2 -> 3
+- bindings: "form:item.icon" count increased 2 -> 3
+- /: aria attribute changed/removed: aria-label=Contents
+- /: aria attribute changed/removed: aria-label=Open the menu
+- /: aria attribute changed/removed: aria-label=Sections
+- /: link target no longer rendered: /#how
+- /: link target no longer rendered: /about
+- /: link target no longer rendered: /challenges
+- /: link target no longer rendered: /exposure
+- /: link target no longer rendered: /tokens
+- /about: aria attribute changed/removed: aria-label=Contents
+- /about: aria attribute changed/removed: aria-label=Open the menu
+- /about: aria attribute changed/removed: aria-label=Sections
+- /about: link target no longer rendered: /#how
+- /about: link target no longer rendered: /about
+- /about: link target no longer rendered: /challenges
+- /about: link target no longer rendered: /exposure
+- /about: link target no longer rendered: /tokens
+- /account: aria attribute changed/removed: aria-label=Contents
+- /account: aria attribute changed/removed: aria-label=Open the menu
+- /account: aria attribute changed/removed: aria-label=Sections
+- /account: link target no longer rendered: /#how
+- /account: link target no longer rendered: /about
+- /account: link target no longer rendered: /challenges
+- /account: link target no longer rendered: /exposure
+- /account: link target no longer rendered: /tokens
+- /challenges: aria attribute changed/removed: aria-label=Contents
+- /challenges: aria attribute changed/removed: aria-label=Open the menu
+- /challenges: aria attribute changed/removed: aria-label=Sections
+- /challenges: link target no longer rendered: /#how
+- /challenges: link target no longer rendered: /about
+- /challenges: link target no longer rendered: /challenges
+- /challenges: link target no longer rendered: /exposure
+- /challenges: link target no longer rendered: /tokens
+- /challenges/ecdsa-fail: aria attribute changed/removed: aria-label=Contents
+- /challenges/ecdsa-fail: aria attribute changed/removed: aria-label=Open the menu
+- /challenges/ecdsa-fail: aria attribute changed/removed: aria-label=Sections
+- /challenges/ecdsa-fail: link target no longer rendered: /#how
+- /challenges/ecdsa-fail: link target no longer rendered: /about
+- /challenges/ecdsa-fail: link target no longer rendered: /challenges
 
 ## Thresholds
 

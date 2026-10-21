@@ -36,21 +36,21 @@ const LEGEND = [
   {
     key: "public",
     icon: "eye",
-    tone: "pp-tone-warn",
+    tone: "cq-tone-warn",
     title: "Key public",
     body: "The public key is on chain, or is the address itself.",
   },
   {
     key: "hidden",
     icon: "eye-off",
-    tone: "pp-tone-accent",
+    tone: "cq-tone-accent",
     title: "Key hidden",
     body: "The key is still behind a hash: it shows only when the address signs.",
   },
   {
     key: "noKey",
     icon: "code-xml",
-    tone: "pp-tone-muted",
+    tone: "cq-tone-muted",
     title: "No key",
     body: "A contract or a program controls the address: there is no private key.",
   },
@@ -146,7 +146,7 @@ const hint = computed(() => {
 });
 
 const hintTone = computed(() =>
-  error.value || preview.value.problems.length ? "pp-tone-alert" : "pp-tone-muted",
+  error.value || preview.value.problems.length ? "cq-tone-alert" : "cq-tone-muted",
 );
 
 function check() {
@@ -167,134 +167,59 @@ function clear() {
 </script>
 
 <template>
-  <div class="pp-page">
-    <div class="pp-head">
-      <p class="pp-kicker">Exposure check</p>
-      <h1 class="pp-runhead">Is your money behind a public key?</h1>
-      <p class="pp-lede">
-        If the math behind wallet signatures weakens, through quantum computers or AI-accelerated
-        math, coins behind a public key are the first within reach. Paste a wallet to see how much
-        sits where, and the one calm step that fits.
-      </p>
-    </div>
-
-    <div class="pp-stage pp-expo">
-      <div class="pp-wide">
-        <form novalidate class="pp-sheet pp-expo__form" @submit.prevent="check">
-          <div class="pp-sheet__head pp-expo__formhead">
-            <span aria-hidden="true" class="pp-art pp-sheet__art pp-expo__formart">
-              <FormArt />
-            </span>
-            <div class="pp-sheet__head-row">
-              <Icon name="wallet" :size="16" class="pp-tone-accent" />
-              <h2 class="pp-sheet__title">Check a wallet</h2>
-            </div>
-            <p class="pp-sheet__sub">
-              Addresses of Bitcoin, Ethereum or Solana, one per line, or a Bitcoin wallet's xpub,
-              ypub or zpub.
-            </p>
-          </div>
-
-          <div class="pp-sheet__body pp-expo__body">
-            <label for="wallet" class="sr-only">Addresses or a wallet key</label>
-            <textarea
-              id="wallet"
-              v-model="raw"
-              name="wallet"
-              rows="2"
-              placeholder="bc1q…, 0x…, a Solana address, or an xpub"
-              maxlength="2000"
-              autocomplete="off"
-              autocapitalize="none"
-              autocorrect="off"
-              spellcheck="false"
-              aria-describedby="wallet-hint wallet-privacy"
-              class="pp-textarea pp-expo__paste"
-              @input="error = ''"
-            ></textarea>
-
-            <div class="pp-expo__actions">
-              <p id="wallet-hint" aria-live="polite" class="pp-expo__hint" :class="hintTone">
-                {{ hint }}
-              </p>
-              <div class="pp-inline pp-expo__buttons">
-                <AppButton
-                  v-if="raw.trim() || checked"
-                  variant="outline"
-                  @click="clear"
-                >
-                  Clear
-                </AppButton>
-                <AppButton type="submit">Check</AppButton>
-              </div>
-            </div>
-          </div>
-
-          <p id="wallet-privacy" class="pp-sheet__foot pp-expo__privacy">
-            <Icon name="shield-check" :size="14" class="pp-expo__privacyicon" />
-            Read-only. Nothing is saved or logged, and no wallet or signature is asked for.
-          </p>
-        </form>
-
-        <ExposureResults v-if="checked" :result="checked" />
-
-        <section class="pp-sheet pp-expo__legend">
-          <div class="pp-sheet__head">
-            <h2 class="pp-sheet__title">What the answer can be</h2>
-          </div>
-          <ul class="pp-expo__legendlist">
-            <li v-for="item in LEGEND" :key="item.key" class="pp-expo__legenditem">
-              <Icon :name="item.icon" :size="16" class="pp-expo__legendicon" :class="item.tone" />
-              <div class="pp-expo__legendcopy">
-                <p class="pp-h3">{{ item.title }}</p>
-                <p class="pp-small">{{ item.body }}</p>
-              </div>
-            </li>
-          </ul>
-        </section>
+  <div class="cq-page cq-expo">
+    <header class="cq-pagehead cq-expo__head">
+      <div class="cq-pagehead__head">
+        <p class="cq-kicker">Exposure check</p>
+        <h1 class="cq-runhead cq-expo__title">Is your money behind a public key?</h1>
+        <p class="cq-lede cq-expo__lede">
+          If the math behind wallet signatures weakens, through quantum computers or AI-accelerated
+          math, coins behind a public key are the first within reach. Paste a wallet to see how much
+          sits where, and the one calm step that fits.
+        </p>
       </div>
 
-      <div class="pp-margin pp-expo__aside">
-        <PanelCard class="pp-expo__panel">
+      <div class="cq-pagehead__edge cq-expo__headedge">
+        <PanelCard class="cq-expo__panel">
           <template #art>
-            <span aria-hidden="true" class="pp-art pp-expo__closeart">
+            <span aria-hidden="true" class="cq-expo__closeart">
               <CloseArt />
             </span>
           </template>
 
           <template #header>
-            <div class="pp-sheet__head-row">
-              <QuantumMark class="pp-expo__qm" />
-              <h2 class="pp-sheet__title">How close it is</h2>
+            <div class="cq-sheet__head-row">
+              <QuantumMark class="cq-expo__qm" />
+              <h2 class="cq-sheet__title">How close it is</h2>
             </div>
-            <p class="pp-sheet__sub">
+            <p class="cq-sheet__sub">
               Two public measures of the quantum threat to today's keys, read live.
             </p>
           </template>
 
-          <ul class="pp-ledger pp-expo__measures">
+          <ul class="cq-expo__measures">
             <li>
               <RouterLink
                 to="/q-day"
                 :aria-label="`Q-Day clock: ${clockBits} of ${clockTarget} bits. Open`"
-                class="pp-expo__measure pp-reveal"
+                class="cq-expo__measure"
               >
-                <QuantumMark class="pp-expo__qm" />
-                <span class="pp-expo__mtext">
-                  <span class="pp-expo__mname">Q-Day clock</span>
-                  <span class="pp-expo__mdesc"
+                <QuantumMark class="cq-expo__qm" />
+                <span class="cq-expo__mtext">
+                  <span class="cq-expo__mname">Q-Day clock</span>
+                  <span class="cq-expo__mdesc"
                     >The biggest key a real quantum computer has broken, under the strict check</span
                   >
                 </span>
-                <Icon name="arrow-up-right" :size="14" class="pp-expo__mgo" />
-                <span class="pp-expo__mfig">
-                  <span class="pp-expo__mnum">
-                    <span class="pp-expo__figure pp-num">{{ clockBits }}</span>
-                    <span class="pp-tiny">of {{ clockTarget }} bits</span>
+                <Icon name="arrow-up-right" :size="14" class="cq-expo__mgo" />
+                <span class="cq-expo__mfig">
+                  <span class="cq-expo__mnum">
+                    <span class="cq-expo__figure cq-num">{{ clockBits }}</span>
+                    <span class="cq-tiny">of {{ clockTarget }} bits</span>
                   </span>
-                  <span aria-hidden="true" class="pp-meter pp-expo__meter">
+                  <span aria-hidden="true" class="cq-meter cq-expo__meter">
                     <span
-                      class="pp-meter__fill"
+                      class="cq-meter__fill"
                       :style="{ width: `${clockTarget ? Math.round((clockBits / clockTarget) * 100) : 0}%` }"
                     />
                   </span>
@@ -306,28 +231,28 @@ function clear() {
               <RouterLink
                 to="/challenges/ecdsa-fail"
                 :aria-label="`ECDSA.fail: ${circuitValue} qubits × Toffoli. Open`"
-                class="pp-expo__measure pp-reveal"
+                class="cq-expo__measure"
               >
-                <Icon name="cpu" :size="16" class="pp-expo__qm" />
-                <span class="pp-expo__mtext">
-                  <span class="pp-expo__mname">ECDSA.fail</span>
-                  <span class="pp-expo__mdesc"
+                <Icon name="cpu" :size="16" class="cq-expo__qm" />
+                <span class="cq-expo__mtext">
+                  <span class="cq-expo__mname">ECDSA.fail</span>
+                  <span class="cq-expo__mdesc"
                     >The smallest known quantum circuit that breaks a Bitcoin key</span
                   >
                 </span>
-                <Icon name="arrow-up-right" :size="14" class="pp-expo__mgo" />
-                <span class="pp-expo__mfig">
-                  <span class="pp-expo__mnum">
-                    <span class="pp-expo__figure pp-num">{{ circuitValue }}</span>
-                    <span class="pp-tiny">qubits × Toffoli</span>
+                <Icon name="arrow-up-right" :size="14" class="cq-expo__mgo" />
+                <span class="cq-expo__mfig">
+                  <span class="cq-expo__mnum">
+                    <span class="cq-expo__figure cq-num">{{ circuitValue }}</span>
+                    <span class="cq-tiny">qubits × Toffoli</span>
                   </span>
-                  <span aria-hidden="true" class="pp-meter pp-expo__meter">
+                  <span aria-hidden="true" class="cq-meter cq-expo__meter">
                     <span
-                      class="pp-meter__fill"
+                      class="cq-meter__fill"
                       :style="{ width: `${Math.round(CIRCUIT?.progress ?? 0)}%` }"
                     />
                   </span>
-                  <span class="pp-expo__delta"
+                  <span class="cq-expo__delta"
                     >{{ CIRCUIT?.improvementLabel ?? "88.1% smaller" }} than at the start</span
                   >
                 </span>
@@ -335,213 +260,220 @@ function clear() {
             </li>
           </ul>
 
-          <p class="pp-sheet__foot pp-tiny pp-expo__asidefoot">
+          <p class="cq-sheet__foot cq-tiny cq-expo__asidefoot">
             Neither is a date. Both show which way the work is moving.
           </p>
         </PanelCard>
       </div>
+    </header>
+
+    <div class="cq-stage cq-expo__stage">
+      <div class="cq-stage__main">
+        <section class="cq-band cq-expo__plate">
+          <form novalidate class="cq-expo__form" @submit.prevent="check">
+            <div class="cq-expo__formhead">
+              <span aria-hidden="true" class="cq-expo__formart">
+                <FormArt />
+              </span>
+              <div class="cq-expo__formrow">
+                <Icon name="wallet" :size="16" class="cq-expo__formicon" />
+                <h2 class="cq-h2 cq-expo__formtitle">Check a wallet</h2>
+              </div>
+              <p class="cq-expo__formsub">
+                Addresses of Bitcoin, Ethereum or Solana, one per line, or a Bitcoin wallet's xpub,
+                ypub or zpub.
+              </p>
+            </div>
+
+            <div class="cq-expo__body">
+              <label for="wallet" class="sr-only">Addresses or a wallet key</label>
+              <textarea
+                id="wallet"
+                v-model="raw"
+                name="wallet"
+                rows="2"
+                placeholder="bc1q…, 0x…, a Solana address, or an xpub"
+                maxlength="2000"
+                autocomplete="off"
+                autocapitalize="none"
+                autocorrect="off"
+                spellcheck="false"
+                aria-describedby="wallet-hint wallet-privacy"
+                class="cq-textarea cq-expo__paste"
+                @input="error = ''"
+              ></textarea>
+
+              <div class="cq-expo__actions">
+                <p id="wallet-hint" aria-live="polite" class="cq-expo__hint" :class="hintTone">
+                  {{ hint }}
+                </p>
+                <div class="cq-inline cq-expo__buttons">
+                  <AppButton
+                    v-if="raw.trim() || checked"
+                    variant="outline"
+                    @click="clear"
+                  >
+                    Clear
+                  </AppButton>
+                  <AppButton type="submit">Check</AppButton>
+                </div>
+              </div>
+            </div>
+
+            <p id="wallet-privacy" class="cq-expo__privacy">
+              <Icon name="shield-check" :size="14" class="cq-expo__privacyicon" />
+              Read-only. Nothing is saved or logged, and no wallet or signature is asked for.
+            </p>
+          </form>
+        </section>
+      </div>
+
+      <aside class="cq-stage__edge">
+        <section class="cq-sheet cq-expo__legend">
+          <div class="cq-sheet__head">
+            <h2 class="cq-sheet__title">What the answer can be</h2>
+          </div>
+          <ul class="cq-expo__legendlist">
+            <li v-for="item in LEGEND" :key="item.key" class="cq-expo__legenditem">
+              <Icon :name="item.icon" :size="16" class="cq-expo__legendicon" :class="item.tone" />
+              <div class="cq-expo__legendcopy">
+                <p class="cq-h3">{{ item.title }}</p>
+                <p class="cq-small">{{ item.body }}</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </aside>
     </div>
 
-    <section class="pp-sec pp-expo__chains">
-      <div class="pp-sec__head">
-        <h2 class="pp-h4">How it reads each chain</h2>
+    <section v-if="checked" class="cq-expo__results">
+      <ExposureResults :result="checked" />
+    </section>
+
+    <section class="cq-sheet cq-expo__chains">
+      <div class="cq-expo__chainshead">
+        <h2 class="cq-h2">How it reads each chain</h2>
       </div>
-      <ol class="pp-grid pp-grid--3 pp-expo__chainlist">
-        <li v-for="note in CHAIN_NOTES" :key="note.n" class="pp-expo__chainrow">
-          <span class="pp-index pp-expo__no">{{ note.n }}</span>
-          <div class="pp-expo__chaincopy">
-            <h3 class="pp-h3">{{ note.title }}</h3>
-            <p class="pp-small">{{ note.body }}</p>
+      <ol class="cq-expo__chainlist">
+        <li v-for="note in CHAIN_NOTES" :key="note.n" class="cq-expo__chainrow">
+          <span class="cq-expo__no">{{ note.n }}</span>
+          <div class="cq-expo__chaincopy">
+            <h3 class="cq-h3">{{ note.title }}</h3>
+            <p class="cq-body">{{ note.body }}</p>
           </div>
         </li>
       </ol>
     </section>
 
-    <section class="pp-sec">
-      <div class="pp-grid pp-grid--3">
-        <div v-for="note in FOOTNOTES" :key="note.title" class="pp-expo__footnote">
-          <h2 class="pp-h3">{{ note.title }}</h2>
-          <p class="pp-small">{{ note.body }}</p>
-        </div>
+    <section class="cq-expo__notes">
+      <div v-for="note in FOOTNOTES" :key="note.title" class="cq-expo__note">
+        <h2 class="cq-h3">{{ note.title }}</h2>
+        <p class="cq-small">{{ note.body }}</p>
       </div>
     </section>
   </div>
 </template>
 
 <style scoped>
-.pp-expo {
-  align-items: start;
+.cq-expo {
+  padding-bottom: clamp(28px, 4vw, 56px);
 }
 
-/* form ---------------------------------------------------------------- */
-.pp-expo__form {
+/* running head -------------------------------------------------------- */
+.cq-expo__title {
+  max-width: 14ch;
+  font-size: clamp(40px, 5.6vw, 82px);
+  margin-top: 12px;
+}
+
+.cq-expo__head {
+  grid-template-columns: minmax(0, 1.4fr) minmax(300px, 0.6fr);
+}
+
+.cq-expo__lede {
+  margin-top: 18px;
+  max-width: 54ch;
+}
+
+.cq-expo__headedge {
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.cq-expo__panel {
+  width: 100%;
   min-width: 0;
 }
 
-.pp-expo__formhead {
-  position: relative;
-  overflow: clip;
-}
-
-.pp-expo__formart {
-  opacity: 0.4;
-}
-
-.pp-expo__closeart {
-  opacity: 0.4;
-}
-
-.pp-expo__panel .pp-expo__closeart {
+.cq-expo__closeart {
   position: absolute;
   top: 0;
   right: 0;
-  width: 64%;
-  height: 104px;
+  display: block;
+  width: 82%;
+  height: 96px;
   overflow: clip;
+  opacity: 0.4;
   pointer-events: none;
 }
 
-.pp-expo__body {
-  gap: var(--pp-t2);
-}
-
-.pp-expo__paste {
-  min-height: 96px;
-  font-family: var(--pp-mono);
-  font-size: 0.86rem;
-  line-height: 1.6;
-  overflow-wrap: anywhere;
-}
-
-.pp-expo__actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px 16px;
-}
-
-.pp-expo__hint {
-  min-width: 0;
-  min-height: 20px;
-  font-size: 0.8rem;
-  line-height: 1.5;
-  text-wrap: pretty;
-  overflow-wrap: anywhere;
-}
-
-.pp-expo__buttons {
-  margin-left: auto;
-}
-
-.pp-expo__privacy {
-  gap: 7px;
-  font-size: 0.76rem;
-  line-height: 1.5;
-  color: var(--pp-muted);
-}
-
-.pp-expo__privacyicon {
-  flex: 0 0 auto;
-  margin-top: 2px;
-  color: var(--pp-muted);
-}
-
-/* legend -------------------------------------------------------------- */
-.pp-expo__legend {
-  min-width: 0;
-}
-
-.pp-expo__legendlist {
+/* measures ------------------------------------------------------------ */
+.cq-expo__measures {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   min-width: 0;
 }
 
-.pp-expo__legenditem {
-  display: flex;
-  align-items: flex-start;
-  gap: 9px;
-  min-width: 0;
-  padding: 14px 22px;
-  border-left: 1px solid var(--pp-line-soft);
-}
-
-.pp-expo__legenditem:first-child {
-  border-left: 0;
-}
-
-.pp-expo__legendicon {
-  flex: 0 0 auto;
-  margin-top: 3px;
-}
-
-.pp-expo__legendcopy {
-  display: grid;
-  gap: 2px;
-  min-width: 0;
-}
-
-/* aside --------------------------------------------------------------- */
-.pp-expo__aside {
-  align-content: start;
-}
-
-.pp-expo__panel {
-  min-width: 0;
-}
-
-.pp-expo__measures {
-  min-width: 0;
-}
-
-.pp-expo__measure {
+.cq-expo__measure {
   display: grid;
   grid-template-columns: 18px minmax(0, 1fr) auto;
   align-items: start;
   gap: 4px 10px;
   min-width: 0;
-  padding: 12px 18px;
-  border-bottom: 1px solid var(--pp-line-soft);
+  padding: 13px 18px;
+  border-top: 1px solid var(--cq-line-soft);
 }
 
-.pp-expo__measure:last-child {
-  border-bottom: 0;
+.cq-expo__measures > li:first-child .cq-expo__measure {
+  border-top: 0;
 }
 
-.pp-expo__qm {
-  color: var(--pp-accent-text);
+.cq-expo__measure:hover {
+  background: var(--cq-sheet-soft);
 }
 
-.pp-expo__mtext {
+.cq-expo__qm {
+  color: var(--cq-accent-text);
+}
+
+.cq-expo__mtext {
   grid-column: 2;
   display: grid;
   gap: 2px;
   min-width: 0;
 }
 
-.pp-expo__mname {
-  font-family: var(--pp-display);
+.cq-expo__mname {
+  font-family: var(--cq-display);
   font-size: 0.9rem;
   font-weight: 620;
   letter-spacing: -0.01em;
-  color: var(--pp-ink);
+  color: var(--cq-ink);
 }
 
-.pp-expo__mdesc {
+.cq-expo__mdesc {
   font-size: 0.74rem;
   line-height: 1.45;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
   overflow-wrap: anywhere;
 }
 
-.pp-expo__mgo {
+.cq-expo__mgo {
   grid-column: 3;
   margin-top: 2px;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
 }
 
-.pp-expo__mfig {
+.cq-expo__mfig {
   grid-column: 2 / -1;
   display: grid;
   gap: 6px;
@@ -549,96 +481,354 @@ function clear() {
   margin-top: 6px;
 }
 
-.pp-expo__mnum {
+.cq-expo__mnum {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   gap: 6px;
 }
 
-.pp-expo__figure {
+.cq-expo__figure {
   font-size: 1rem;
-  color: var(--pp-ink);
+  color: var(--cq-ink);
 }
 
-.pp-expo__meter {
+.cq-expo__meter {
   display: block;
   height: 5px;
 }
 
-.pp-expo__delta {
-  font-family: var(--pp-mono);
+.cq-expo__delta {
+  font-family: var(--cq-mono);
   font-size: 0.68rem;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
 }
 
-.pp-expo__asidefoot {
-  font-size: 0.74rem;
-  color: var(--pp-muted);
+.cq-expo__asidefoot {
+  display: block;
+  width: 100%;
+  font-size: 0.72rem;
+  color: var(--cq-muted);
 }
 
-/* chain notes --------------------------------------------------------- */
-.pp-expo__chains {
-  min-width: 0;
+/* stage --------------------------------------------------------------- */
+.cq-expo__stage {
+  margin-top: clamp(8px, 1.4vw, 18px);
 }
 
-.pp-expo__chainlist {
-  min-width: 0;
+/* form plate ---------------------------------------------------------- */
+.cq-expo__plate {
+  display: block;
+  margin-top: 0;
+  padding: clamp(20px, 3vw, 34px);
+  box-shadow: var(--cq-shadow);
 }
 
-.pp-expo__chainrow {
+.cq-expo__form {
   display: grid;
-  grid-template-columns: 22px minmax(0, 1fr);
-  align-content: start;
-  gap: 4px 10px;
-  padding-top: var(--pp-t2);
-  border-top: 1px solid var(--pp-line);
-}
-
-.pp-expo__no {
-  padding-top: 2px;
-  color: var(--pp-accent-text);
-}
-
-.pp-expo__chaincopy {
-  display: grid;
-  gap: 4px;
+  gap: clamp(18px, 2.4vw, 26px);
   min-width: 0;
+}
+
+.cq-expo__formhead {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  overflow: clip;
+  padding-bottom: 2px;
+}
+
+.cq-expo__formart {
+  position: absolute;
+  top: -56px;
+  right: -30px;
+  display: block;
+  width: min(58%, 320px);
+  height: 190px;
+  color: #8fa0d6;
+  opacity: 0.38;
+  pointer-events: none;
+}
+
+.cq-expo__formart :deep(svg) {
+  width: 100%;
+  height: 100%;
+}
+
+.cq-expo__formrow {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cq-expo__formicon {
+  flex: 0 0 auto;
+  color: #aab6ff;
+}
+
+.cq-expo__formtitle {
+  color: #f2f5ff;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  line-height: 1.02;
+}
+
+.cq-expo__formsub {
+  position: relative;
+  z-index: 1;
+  max-width: 52ch;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: #a9b5c8;
+}
+
+.cq-expo__body {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.cq-expo__paste {
+  min-height: 112px;
+  padding: 12px 14px;
+  background: #11141b;
+  border: 1px solid #2b3446;
+  border-radius: var(--cq-radius-sm);
+  color: #eef2f9;
+  font-family: var(--cq-mono);
+  font-size: 0.86rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.cq-expo__paste::placeholder {
+  color: #6f7f99;
+}
+
+.cq-expo__paste:hover {
+  border-color: #3d4b64;
+}
+
+.cq-expo__paste:focus-visible {
+  outline: 2px solid #8fa0ff;
+  outline-offset: 1px;
+  border-color: #8fa0ff;
+}
+
+.cq-expo__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+}
+
+.cq-expo__hint {
+  min-width: 0;
+  min-height: 20px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #a9b5c8;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
+}
+
+.cq-expo__hint.cq-tone-alert {
+  color: #ffb4a1;
+}
+
+.cq-expo__buttons {
+  margin-left: auto;
+}
+
+.cq-expo__plate :deep(.cq-btn) {
+  background: #eef2f9;
+  border-color: #eef2f9;
+  color: #0a0b0d;
+}
+
+.cq-expo__plate :deep(.cq-btn:hover) {
+  background: #4d5bff;
+  border-color: #4d5bff;
+  color: #ffffff;
+}
+
+.cq-expo__plate :deep(.cq-btn--line) {
+  background: transparent;
+  border-color: #3d4b64;
+  color: #eef2f9;
+}
+
+.cq-expo__plate :deep(.cq-btn--line:hover) {
+  background: #1a1f29;
+  border-color: #6d7c96;
+  color: #ffffff;
+}
+
+.cq-expo__privacy {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  padding-top: 14px;
+  border-top: 1px solid #222a38;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  color: #8f9cb2;
+}
+
+.cq-expo__privacyicon {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: #8f9cb2;
+}
+
+/* legend (edge) ------------------------------------------------------- */
+.cq-expo__legend {
+  min-width: 0;
+}
+
+.cq-expo__legendlist {
+  display: grid;
+  min-width: 0;
+}
+
+.cq-expo__legenditem {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  align-items: start;
+  gap: 10px;
+  min-width: 0;
+  padding: 15px 18px;
+  border-top: 1px solid var(--cq-line-soft);
+}
+
+.cq-expo__legenditem:first-child {
+  border-top: 0;
+}
+
+.cq-expo__legendicon {
+  flex: 0 0 auto;
+  margin-top: 3px;
+}
+
+.cq-expo__legendcopy {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+/* results ------------------------------------------------------------- */
+.cq-expo__results {
+  margin-top: clamp(26px, 4vw, 48px);
+}
+
+/* chains -------------------------------------------------------------- */
+.cq-expo__chains {
+  margin-top: clamp(30px, 4vw, 54px);
+  overflow: clip;
+}
+
+.cq-expo__chainshead {
+  padding: clamp(18px, 2.6vw, 26px) clamp(18px, 3vw, 30px);
+  border-bottom: 1px solid var(--cq-line);
+  background: var(--cq-sheet-soft);
+}
+
+.cq-expo__chainlist {
+  display: grid;
+}
+
+.cq-expo__chainrow {
+  display: grid;
+  grid-template-columns: clamp(56px, 6vw, 80px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(12px, 2vw, 26px);
+  padding: clamp(18px, 2.4vw, 26px) clamp(18px, 3vw, 30px);
+  border-top: 1px solid var(--cq-line-soft);
+}
+
+.cq-expo__chainrow:first-child {
+  border-top: 0;
+}
+
+.cq-expo__no {
+  font-family: var(--cq-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--cq-accent-text);
+}
+
+.cq-expo__chaincopy {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  max-width: 88ch;
+}
+
+.cq-expo__chaincopy .cq-body {
+  font-size: 0.9rem;
+  color: var(--cq-ink-soft);
 }
 
 /* footnotes ----------------------------------------------------------- */
-.pp-expo__footnote {
+.cq-expo__notes {
   display: grid;
-  gap: 6px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin-top: clamp(26px, 4vw, 44px);
+  border-top: 1px solid var(--cq-line);
+}
+
+.cq-expo__note {
+  display: grid;
   align-content: start;
+  gap: 7px;
   min-width: 0;
+  padding: 20px clamp(14px, 2vw, 24px) 0;
+  border-left: 1px solid var(--cq-line-soft);
 }
 
-@media (max-width: 1180px) {
-  .pp-expo__aside {
+.cq-expo__note:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+@media (max-width: 960px) {
+  .cq-expo__head {
     grid-template-columns: minmax(0, 1fr);
-    align-items: start;
+  }
+
+  .cq-expo__headedge {
+    justify-content: flex-start;
+  }
+
+  .cq-expo__panel {
+    max-width: 420px;
+  }
+
+  .cq-expo__title {
+    font-size: clamp(34px, 9vw, 56px);
   }
 }
 
-@media (max-width: 700px) {
-  .pp-expo__legendlist {
+@media (max-width: 720px) {
+  .cq-expo__notes {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .pp-expo__legenditem {
+  .cq-expo__note {
+    padding: 16px 0;
     border-left: 0;
-    border-top: 1px solid var(--pp-line-soft);
+    border-top: 1px solid var(--cq-line-soft);
   }
 
-  .pp-expo__legenditem:first-child {
+  .cq-expo__note:first-child {
     border-top: 0;
   }
-}
 
-@media (min-width: 1181px) {
-  .pp-expo {
-    grid-template-columns: minmax(0, 1.45fr) minmax(290px, 0.55fr);
+  .cq-expo__chainrow {
+    grid-template-columns: 34px minmax(0, 1fr);
   }
 }
 </style>

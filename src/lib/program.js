@@ -1,7 +1,7 @@
 /**
  * The on-chain side of the website.
  *
- * The IDL in `src/idl/qubitlane.json` is generated from the Anchor program in
+ * The IDL in `src/idl/qubitess.json` is generated from the Anchor program in
  * `<root>/contracts` by `contracts/tools/generate_idl.py` (or by
  * `anchor build`). Everything the site displays — the challenge records, a
  * token's AI/Quantum pool, its agent sessions, the quantum-drawn portrait —
@@ -9,10 +9,10 @@
  */
 import { AnchorProvider, Program, BN } from "@coral-xyz/anchor";
 import { Connection, PublicKey, clusterApiUrl } from "@solana/web3.js";
-import idl from "@/idl/qubitlane.json";
-import { QUBITLANE_PROGRAM_ID, RPC_ENDPOINT } from "@/data/onchain";
+import idl from "@/idl/qubitess.json";
+import { QUBITESS_PROGRAM_ID, RPC_ENDPOINT } from "@/data/onchain";
 
-export const PROGRAM_ID = new PublicKey(QUBITLANE_PROGRAM_ID);
+export const PROGRAM_ID = new PublicKey(QUBITESS_PROGRAM_ID);
 
 /** Read-only connection — the site never asks the visitor for a signature
  *  unless they are launching a token or signing in. */

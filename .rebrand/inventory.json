@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "project": "E:\\workspace\\chuangye\\solana\\mathlana\\website",
-  "generatedAt": "2026-10-20T00:58:58+08:00",
+  "generatedAt": "2026-10-22T01:00:17+08:00",
   "git": {
     "isGit": false
   },
@@ -10,8 +10,8 @@
     "lockfile": "pnpm-lock.yaml"
   },
   "stats": {
-    "files": 96,
-    "textFiles": 90,
+    "files": 97,
+    "textFiles": 91,
     "imageFiles": 6
   },
   "files": [
@@ -28,61 +28,31 @@
     {
       "path": "README.md",
       "kind": "text",
-      "size": 6423,
-      "hash": "f9b86f4f3e8a861006788b0c551ed02130e0fa27e1a56f85fb7e54a5836feeeb",
+      "size": 6241,
+      "hash": "35f4a526cb87c5787e304c023e7f89287188ed86e948c420c89fe515439ba632",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 10
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 10
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "index.html",
       "kind": "text",
-      "size": 1131,
-      "hash": "cd8c3176a44849d049e4df2f232fa004dd2d75c3fc7b3cadefef38a7f814f3b4",
+      "size": 1086,
+      "hash": "6022afe5263271949e0b514ecd82d47507e15993bf19273b30419924ad118d13",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 5
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 5
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "package.json",
       "kind": "text",
       "size": 620,
-      "hash": "2100fc453885caf2bda5e84b56c6ab196425cd18dedd8360e2bf0c9f0f3e37e7",
+      "hash": "1eaa0ee58b3391fdb3683fc1482b6dcb01afb766cfcc7175b95209cf7ee2b725",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
@@ -91,25 +61,15 @@
       "size": 1139,
       "hash": "af3b0d8f3bc6070def9fd14b2e6e42906dd76f27a904448b4086f0ec96416297",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "public/icon.svg",
       "kind": "text",
-      "size": 532,
-      "hash": "ba84ef00ea9a01b4e353f3c1c68ce73b41c8e54826ef8f84269f5398e636f1a3",
+      "size": 253,
+      "hash": "b37ae60721774b63c2312175a0e62af7966c762e6fbd2e226dde9678c006ec2b",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -118,8 +78,8 @@
     {
       "path": "public/brand/mark.svg",
       "kind": "text",
-      "size": 397,
-      "hash": "7a835094106d7440e537df0a3cf154cd71d482d83df2428aa96643d805cffcf1",
+      "size": 201,
+      "hash": "384b7375f391ecd01e8baf8677b63b1151d89b888e004f521dafbf78793ce763",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -128,8 +88,8 @@
     {
       "path": "src/App.vue",
       "kind": "text",
-      "size": 614,
-      "hash": "18ce1948775e936033a170cabadcbf794a5500fcbf2a2c45736fbdd06600e13d",
+      "size": 689,
+      "hash": "21b3ac90b743b44a5cf7a13752f730c303006b1d6c698ff0b944829a18e82cc7",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -138,18 +98,8 @@
     {
       "path": "src/main.js",
       "kind": "text",
-      "size": 228,
-      "hash": "324693397335610afb7a20b22ec187b4ef6135ff63b6da14ec5df1a15659474c",
-      "encoding": "utf-8",
-      "hits": [],
-      "brandHits": [],
-      "protectedHits": []
-    },
-    {
-      "path": "src/style.css",
-      "kind": "text",
-      "size": 13844,
-      "hash": "8e07b58bd2387decb9c11244f1781ff13702dfd523afccf4f36ee070bb016f81",
+      "size": 235,
+      "hash": "d198a367c87ffaad2eafc7b6664289ac3c416aab5c55ef257bfda06a9bb518d1",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -158,8 +108,8 @@
     {
       "path": "src/components/about/MachineChips.vue",
       "kind": "text",
-      "size": 6312,
-      "hash": "6ab845e4abf42559da147e4df72471e49da92e223a647b9b690df853cadfcc63",
+      "size": 5701,
+      "hash": "dd3b283b440f7daeaff071c43ec5fc4bfb6657f8460ee7cd2bc369da0ef615a4",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -168,8 +118,8 @@
     {
       "path": "src/components/art/CardArt.vue",
       "kind": "text",
-      "size": 12869,
-      "hash": "cddb4c982c66883b0ac492d9ee3c3c7c921420a48d256d6acf9c17b035049172",
+      "size": 12918,
+      "hash": "9867f3287899ea77f87be24d2a48ef64b74ad0fa0f2032169f7eaf7357eba141",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -178,8 +128,8 @@
     {
       "path": "src/components/art/MachineLogo.vue",
       "kind": "text",
-      "size": 13540,
-      "hash": "acda06478977cc354c2cf96ebf6927696dbd4bb6966380d8250deb1ea1d79269",
+      "size": 13520,
+      "hash": "bf7c20cfb08bf0c67839feba81b50e25ede4e736b85ac8ec8088e0b8a0698cfb",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -188,28 +138,18 @@
     {
       "path": "src/components/brand/BrandMark.vue",
       "kind": "text",
-      "size": 679,
-      "hash": "12106a9123e6971a9074dd018b4fc427015222135b3537d2168ee5048829edb4",
+      "size": 676,
+      "hash": "6a1c5be8b0003d3af72f60452e6689005385c93267104397e14d0fda8689f438",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/challenges/ChallengeCard.vue",
       "kind": "text",
-      "size": 6875,
-      "hash": "09f27f17863261f4e359ccd2fdc0fbac90b3390db903675076d1cdc897ba9b0f",
+      "size": 7839,
+      "hash": "531a9ae7d9f9fcea08e220901bb2ae23845b2f651414429f8f6a12a3b0f41996",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -218,8 +158,8 @@
     {
       "path": "src/components/challenges/ChallengeHero.vue",
       "kind": "text",
-      "size": 3597,
-      "hash": "bc4934dedbef6fc7b981c49a8ceab1a1751ea5e0efb50a27ea6792fc663fb57d",
+      "size": 3358,
+      "hash": "fd13bac50506b046ff06d43ef3ac1380d97b0b461b2aa8cc72d937233e32b15f",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -228,8 +168,8 @@
     {
       "path": "src/components/challenges/ChallengeIcon.vue",
       "kind": "text",
-      "size": 1256,
-      "hash": "d3dfae1b17d13f97ed58fac0eb45d9294b06b074e1efa9fc513890fbe2430853",
+      "size": 1301,
+      "hash": "b6aa4a4dcf4f2fede73e7bdd62028e8aa32f8ef00842bd35160832d5c61be483",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -238,8 +178,8 @@
     {
       "path": "src/components/challenges/MetricPanel.vue",
       "kind": "text",
-      "size": 3302,
-      "hash": "12c6001947cfaa57d4b5b51120edbb9be8fd93056ee310406ecb712039299d66",
+      "size": 2281,
+      "hash": "71747c63d19f382858bffad9a380007bf7b9b6c2beec967cbdde3f15957a5679",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -248,8 +188,8 @@
     {
       "path": "src/components/challenges/StakesCard.vue",
       "kind": "text",
-      "size": 1980,
-      "hash": "f9ba61b82c6e776b80e7c1e27340414d68f27f99895f9473485f670169709b32",
+      "size": 2392,
+      "hash": "626be31691f6f89c0b5577c14f6f6e1a018532d6ad788132bc7f6bb475cdddd7",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -258,8 +198,8 @@
     {
       "path": "src/components/challenges/ThreatGroupHeader.vue",
       "kind": "text",
-      "size": 1397,
-      "hash": "ee0c1b865ec4ee257befb87c4a5dcb3a4a79ea634cc59fe8ec0194e2554efb95",
+      "size": 2111,
+      "hash": "af4c797b500fedf3eb6ef2677d49eb403b6c5eb4938ee0fd82fb5e6c3ca3f473",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -268,8 +208,8 @@
     {
       "path": "src/components/challenges/UpcomingCard.vue",
       "kind": "text",
-      "size": 1199,
-      "hash": "7597f320ae6eebf137d9665c703f972de3de9b54fc70c5dd85789b6e2ca4067e",
+      "size": 1449,
+      "hash": "ddff9e22436f726110a52b68cd6fe864dc9a94ddcd4b6c379a2c5de3729abbd0",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -278,8 +218,8 @@
     {
       "path": "src/components/challenges/VerbBadge.vue",
       "kind": "text",
-      "size": 614,
-      "hash": "ba043c37e97cb62906f39d14a73293ee274e1e90cb145dc20527d92dd8de9ae5",
+      "size": 851,
+      "hash": "2d93f11512894b557ea24f689bdaf9cef45ff77060e1a5e227ddfcc2ef93861f",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -288,28 +228,18 @@
     {
       "path": "src/components/challenges/presentation.js",
       "kind": "text",
-      "size": 12194,
-      "hash": "43cd69c80e70a7a03b267936779e3b79c92978870221c6d1106aafef9eb791d8",
+      "size": 12135,
+      "hash": "1c939def7bf95fdf90ed82f0b82da649a62c9c9d592619c88035ed207ec05220",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 6
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 6
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/exposure/CloseArt.vue",
       "kind": "text",
-      "size": 1709,
-      "hash": "3a84964feeae14466f3eb44b59bf5731df6fb1c8dcb57e150cf277f6d72dccff",
+      "size": 1801,
+      "hash": "7c107113d5e01f65785aaac0adfb21bb4a1ea5a8dfc719454f420dacc8aad138",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -318,8 +248,8 @@
     {
       "path": "src/components/exposure/ExposureResults.vue",
       "kind": "text",
-      "size": 7569,
-      "hash": "0a972f1f2c1e7318b02503583557e235d3944bf8d2a2ca623f89d889f44fc3f7",
+      "size": 8748,
+      "hash": "0bf6d7da3450652a12670748a34e53cc0c653219c0ece28796e416366eab1c51",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -328,8 +258,8 @@
     {
       "path": "src/components/exposure/FormArt.vue",
       "kind": "text",
-      "size": 1695,
-      "hash": "e17fa84acbeaf3200459decb3d7d29776cde3bcb80aa3a9545e4829667a05f83",
+      "size": 1785,
+      "hash": "99830324da26be833db52cefd4e6fa05e87f2610f6961d99aae099d7535b9ef5",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -338,8 +268,8 @@
     {
       "path": "src/components/exposure/QuantumMark.vue",
       "kind": "text",
-      "size": 633,
-      "hash": "4eddea8d60ee9dd38db9e737d0969534f3c5fe1fb13d7797ced1cb6718cace44",
+      "size": 756,
+      "hash": "d51332afb299ba5e8b2df5dffc711dc1c39ef8882091b3e8b4ec5ca4d0b73f3f",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -358,8 +288,8 @@
     {
       "path": "src/components/home/ExposureBanner.vue",
       "kind": "text",
-      "size": 2600,
-      "hash": "2b561985b83bc24247da9798ec889c27e0ebac58ced090fd2d6a4882b48821c7",
+      "size": 2998,
+      "hash": "1a0747f5813d0e076cf021f0cd89c52685b4c5ffd0d677a95ac6df2a217d090d",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -368,48 +298,28 @@
     {
       "path": "src/components/home/HomeHero.vue",
       "kind": "text",
-      "size": 9051,
-      "hash": "ff74b9440e66b8d1966db1ea3c701d120f1a6972bcdfbb49b77d5d14e2482dbf",
+      "size": 5626,
+      "hash": "de465b12df4d9a8097aeb330c85e7f58a9be768898dbe76feb45f263fceb5a2d",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/home/HowItWorks.vue",
       "kind": "text",
-      "size": 3539,
-      "hash": "b203cacd73e0b92a2fbda66e74fbf057a8c7390cbddf4790a6f1240c0797dd68",
+      "size": 3769,
+      "hash": "65f5cda01aca09c0c7ad135190f952613c961d5cb8f5d877fe21e418c398037f",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/home/ThreatPanels.vue",
       "kind": "text",
-      "size": 6587,
-      "hash": "78070d06daddc4f426802bdc3dcc7eec157b52f317b77c12cb9cb443182cd3d8",
+      "size": 7373,
+      "hash": "9c4d6d0254c4af760fff648324aa02b4ded3d6da22e7d5fbc612ef025aa37984",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -418,8 +328,8 @@
     {
       "path": "src/components/home/ThreatRow.vue",
       "kind": "text",
-      "size": 3346,
-      "hash": "2ed2a7d7435150f5948afa94584ab8fca20570a3016c2cc0aa447edfbd685ca9",
+      "size": 4101,
+      "hash": "0cae4d0c19847f9cb59099147234376275791b38510558c0f0a773938ed6b04f",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -428,8 +338,8 @@
     {
       "path": "src/components/launch/ChallengePicker.vue",
       "kind": "text",
-      "size": 3009,
-      "hash": "4bded8c358afa6d616db5a86ee767a5810f278b62afadb3a289b22aeb20168b0",
+      "size": 4451,
+      "hash": "f07f058260e1200dee8f618c8ced1d59232e58f081770e76d6e749868eeabc1f",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -438,28 +348,18 @@
     {
       "path": "src/components/launch/FeeSplitPanel.vue",
       "kind": "text",
-      "size": 2966,
-      "hash": "aac90dfc7693b300dc55a2d220276063ca68a51a1957b9568e68f4c22036721a",
+      "size": 3715,
+      "hash": "4ab624395f3cbbb6fdabcb6ba566222470cc36498f91053debdf20531bae7b1c",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/launch/LaunchGlyph.vue",
       "kind": "text",
-      "size": 1264,
-      "hash": "e521e99728393a8707e19a1c583ada76fdfbad79b37ae88d6dcf2ff54b6dc282",
+      "size": 1321,
+      "hash": "fbbca9f4e56e7f1c99661aaff2111597ba633f8c70bec0637d4efbe799d741be",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -468,8 +368,8 @@
     {
       "path": "src/components/launch/LaunchStep.vue",
       "kind": "text",
-      "size": 750,
-      "hash": "f51476188ced0c8742e7c2126f02a248d31af82b4899fb8c2a1e935b0c5c76f8",
+      "size": 1886,
+      "hash": "2d91eaf38331808c86c774e0610111be127c981cc7391ec15223618e5a55d813",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -478,41 +378,21 @@
     {
       "path": "src/components/launch/QuantumPortraitStep.vue",
       "kind": "text",
-      "size": 15123,
-      "hash": "93c8f203b681728236852e7a2f839526a7d672ce8b445b0acc40d3e30272f3fc",
+      "size": 17570,
+      "hash": "78c6a4519facad78fba5c1817c127f7f7ed24381d6ca7faaacc3df2ddf85fde4",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/launch/TokenPreviewCard.vue",
       "kind": "text",
-      "size": 5790,
-      "hash": "ea647ea00cc19fdcacbd194204b8026f96e7e7a6eb0bf9ae7c6b89cd21447af5",
+      "size": 7366,
+      "hash": "d96f9aaf05f42f9d93288144115b05f1e050a06bf2f12547842ab35862d94505",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
@@ -538,48 +418,28 @@
     {
       "path": "src/components/layout/AppFooter.vue",
       "kind": "text",
-      "size": 7315,
-      "hash": "8a85da948674631cd5dccfa953d32df513ac89bf90aeb98a70f2d9aa39215ef8",
+      "size": 3388,
+      "hash": "96ea2efef932a1a5d603c5a6f1f2accf98c5639044475b7a0be13e77fddd93c2",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/layout/AppHeader.vue",
       "kind": "text",
-      "size": 3265,
-      "hash": "db850a22227def04653a496afe42315f0206258273ff07cc32398f2c7e4b891d",
+      "size": 2674,
+      "hash": "7d7590055124d64c6bcfa87f63ec57ac8e4a908a24eca20acd8f2a703b1ae989",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/layout/QuantumTicker.vue",
       "kind": "text",
-      "size": 3475,
-      "hash": "247e36192eb86586fb569448ac1a78a4ffbb3012b3a115ad857966450810a0c5",
+      "size": 2582,
+      "hash": "82ae0c89907b4642c8ba84150304d664c161c2e212037aab9231a0d7a792c179",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -588,8 +448,8 @@
     {
       "path": "src/components/legal/LegalArticle.vue",
       "kind": "text",
-      "size": 2021,
-      "hash": "188fec58a66a5534aa24f5fe7beccb831cceb58d36802d728ad9a61f5372e0e9",
+      "size": 4805,
+      "hash": "329556966fd3863ba27fffedba6890994d5d156f3be71061648f794d3f1681af",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -598,8 +458,8 @@
     {
       "path": "src/components/legal/LegalSection.vue",
       "kind": "text",
-      "size": 1046,
-      "hash": "a00a132defbd20422b16fe950c194671c94a514ef2bbd2e47871d84dbf4f4ff1",
+      "size": 2357,
+      "hash": "b3b6adf50b74c4ef7f52b6977603d936896f88fd229e8b5776ed1bd4cf22f72e",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -608,8 +468,8 @@
     {
       "path": "src/components/qday/LadderCard.vue",
       "kind": "text",
-      "size": 1988,
-      "hash": "194475523eb6fe3c576e7df94a6c96785091ec9d4999613b27fb3d2a07678258",
+      "size": 2746,
+      "hash": "1071422d32c9c2977c492ef248917b84dec263e9157495817559cfd76e91dede",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -618,8 +478,18 @@
     {
       "path": "src/components/qday/QuantumMark.vue",
       "kind": "text",
-      "size": 667,
-      "hash": "bbf03a011048511cee8e355fe539808ce0e10af3fb1e94376cd721cd3b329a45",
+      "size": 743,
+      "hash": "9e511fb4656cb0cd033138ba2a7c4c0858fc4a80756fe3b68f72f717240583dd",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/rail/AppRail.vue",
+      "kind": "text",
+      "size": 1741,
+      "hash": "2be0c5333307565aa28cd4c191021ef1f100a14ae53229a04924aed08177260f",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -628,8 +498,8 @@
     {
       "path": "src/components/tokens/AiQuantumIcon.vue",
       "kind": "text",
-      "size": 633,
-      "hash": "8e5a26677581d5663a1b50108f36daf2faa9aaec0bb46514ec6a671a7b96058e",
+      "size": 736,
+      "hash": "8a9e9bf029321f449a3321846592f35c15d51f9c20846761da7d1ae73e7debfe",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -638,28 +508,18 @@
     {
       "path": "src/components/tokens/FeeSplitPanel.vue",
       "kind": "text",
-      "size": 1586,
-      "hash": "145d4fcc074c28a61b3ebc0e6d1765932480d5630d7480bbeba20386cc2f2f10",
+      "size": 2352,
+      "hash": "642601ac5d6b97f60e2f543b1ac7962ee5bf405d9346e8130eebf00b044bde33",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/tokens/NvdaChip.vue",
       "kind": "text",
-      "size": 831,
-      "hash": "dc2f1c7fbc5997786a47fa5459e9376a86481a7612c34dd53014ed963efcde8a",
+      "size": 956,
+      "hash": "87ae1f1a4d8b0b3040062823391025e5a85053fea2b8dec775dea378731e169f",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -668,68 +528,38 @@
     {
       "path": "src/components/tokens/OfficialTokenRow.vue",
       "kind": "text",
-      "size": 6338,
-      "hash": "f7373bd6bff7ac9fefdfabfdab6fc21240a1a8a9ff15369602b4871e47077553",
+      "size": 5483,
+      "hash": "162ed5111e5bafba189c8b25570be2b1d58c63b372ae6234ac1ce2110865dd3f",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/tokens/PoolPanel.vue",
       "kind": "text",
-      "size": 4473,
-      "hash": "0d6b7c7c0ec837907686613791b34c4dca06de8c10c4fea7d77a35d345b7e409",
+      "size": 4603,
+      "hash": "86144329951b99e1433d6853da9988b35aeb856d89ef297f7bd05c0f12814a66",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/tokens/ProgressPanel.vue",
       "kind": "text",
-      "size": 3672,
-      "hash": "88cf0d73f101a5bf2cf0e1bf9d1384c89b5cb385978cbb148ed54731953d83f8",
+      "size": 3973,
+      "hash": "01ccb7a0944555a4b2e72b6731044c1732ecd7e13a0352ec21905004d35934aa",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 4
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 4
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/tokens/ResearchLogCard.vue",
       "kind": "text",
-      "size": 3868,
-      "hash": "8f75c378ff0cda4f6e17bb2cadec632a9291e45e38360770e0309a6f7119de26",
+      "size": 4874,
+      "hash": "d606b45273810a4bd6aad4f98d2e3e7c79c52e1cbb6087ef7d2bf5abef733791",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -738,8 +568,8 @@
     {
       "path": "src/components/tokens/ResearchPanel.vue",
       "kind": "text",
-      "size": 3167,
-      "hash": "472848ed75012af5f8e0711d2127df3c41ef49acb623128776d4e93b60f27f5b",
+      "size": 3371,
+      "hash": "ac7e5baa4ab15d6f92d4df7597b2a249775e8315387ad9c24109248443dcc59a",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -748,8 +578,8 @@
     {
       "path": "src/components/tokens/SegmentedControl.vue",
       "kind": "text",
-      "size": 1456,
-      "hash": "ccc5a01c143a7bf22c6a25ff3c65cf084070ed1d58f58d1d0240c9283e3b8794",
+      "size": 808,
+      "hash": "b8e9768457bb3dc366fceef3ab56611127dfb88dd175c7c4304253387e3dfc1a",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -758,8 +588,8 @@
     {
       "path": "src/components/tokens/TokenGridCard.vue",
       "kind": "text",
-      "size": 6414,
-      "hash": "a03076fc72c6570c9f89f46dd8d0a248006f0d86f0ad0a161171babcc15ebaa6",
+      "size": 7478,
+      "hash": "d06cb9df278598cffd0d3173712f35b222dc14e5242d6c05fafb5d70bbea3b11",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -768,8 +598,8 @@
     {
       "path": "src/components/tokens/TokenPicture.vue",
       "kind": "text",
-      "size": 915,
-      "hash": "3257f7fdd5d09495282bb07f9b2f209f1513e6614737fdf5090cbf33c54ab5f2",
+      "size": 1173,
+      "hash": "f223061791f52ac7f05400649267daa6b116a759bca58b4901af1ff4c5cfcfa2",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -789,27 +619,17 @@
       "path": "src/components/tokens/tokenSnapshot.js",
       "kind": "text",
       "size": 2093,
-      "hash": "e8002807a74f53740ea1a6ce3c9ab8c2040c0efef9a8b9c24fc67049d8bcdf9b",
+      "hash": "753b0508a0cf944f7eb397973d5bfc8b48358afcebb7d4e715a02fdcbfd5d4a3",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/components/ui/AppBadge.vue",
       "kind": "text",
-      "size": 1361,
-      "hash": "561937086d973bb20fadb4d3ce901bcd8029a5b397445e7304b8364612779330",
+      "size": 823,
+      "hash": "20bb4a5d32dd7dd3e1833cac7b1de0c99567eb0eddc0408211d5e51f5267ebff",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -818,8 +638,8 @@
     {
       "path": "src/components/ui/AppButton.vue",
       "kind": "text",
-      "size": 2408,
-      "hash": "3f050f9671a71bbd7fd9060cf56a304683456a390e55c38de090036f48b86e89",
+      "size": 1656,
+      "hash": "b740b9c116b2953a3b76dc7352555bddf93b32f37d29844864170951be12b083",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -838,8 +658,8 @@
     {
       "path": "src/components/ui/MetricLine.vue",
       "kind": "text",
-      "size": 3078,
-      "hash": "c427b0a102459df15cbf763eecfd23caa0203221c9f385c692559ac3cac41fc0",
+      "size": 2618,
+      "hash": "fa2251415b46a83dafa2f1b4fe969675ac9189fff5a94a267a8703abde1f18f8",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -848,8 +668,8 @@
     {
       "path": "src/components/ui/PanelCard.vue",
       "kind": "text",
-      "size": 2787,
-      "hash": "9fc1e68187f754f247161a92785ccf52d2aec3b19b1a1499064f47d8b20ed554",
+      "size": 2018,
+      "hash": "17b0925fe26bb12a17b20880a8aa3b0e8cf677f6ade792347262a17173f39c76",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -879,100 +699,50 @@
       "path": "src/composables/useTheme.js",
       "kind": "text",
       "size": 1801,
-      "hash": "bb90c836be1fc9891975f44794a6b68b376075ef5d34b7d80485ccffc7fc8c51",
+      "hash": "85fe101c82bddda9fe0754a213cc7d40c9f95cab21f66b7c10b87e6159cd1f0f",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/data/challenges.js",
       "kind": "text",
       "size": 8150,
-      "hash": "e69aa9e4536825f31f43589d56f75f1115acb01e8709f3c055570f2137dce164",
+      "hash": "a17fec4a92828b62601920f3cfdc559b2a8f5e29256e47465127d70bad6ba879",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 3
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 3
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/data/onchain.js",
       "kind": "text",
       "size": 1573,
-      "hash": "dac35aaf69414395743a9df6e1589e1c1ff0076e705bd1e0d193030589458dc7",
+      "hash": "864e347d517538777973d60d440fa52b5bfe7385dd9a1793086dd377925c4eb0",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 3
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 3
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/data/tokens.js",
       "kind": "text",
       "size": 3220,
-      "hash": "c2ef8c3525f28935e49df4a30a3fd825f5ecc2dde69e11dc92dbeb45b802790b",
+      "hash": "e35c6df97e81455fd0684a37c22f5864a3f94e497ae6ae56b887dc8f416a273a",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 3
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 3
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
-      "path": "src/idl/mathlana.json",
+      "path": "src/idl/qubitess.json",
       "kind": "text",
       "size": 50018,
-      "hash": "e16613d9e3cf9ee05733108c4c29d0c760d12b662cb14d761d4fa6ebda5fbabf",
+      "hash": "2d48123f049cae5a30630b0476a510360c1a7d75e9f6a48a73f1221978e557a2",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
@@ -989,87 +759,57 @@
       "path": "src/lib/program.js",
       "kind": "text",
       "size": 6402,
-      "hash": "f42df8b3b800dc51d80ba1762a1d80b0b04c1383d08961f10a7450ee680e8ecf",
+      "hash": "a46ba9052a63ddad32d57899368ba12dd3d37af169f68364d0c8d0f5be873d93",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 4
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 4
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/router/index.js",
       "kind": "text",
       "size": 3533,
-      "hash": "d6f21801d894ea7fe1023894be74259bb2a28505e0345cc3b29a25832eafc138",
+      "hash": "29ecbec4f37dedc735fa596848fbde1715ecb76ba47fb64a94a92bbced3a9a9d",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 7
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 7
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/styles/paper.css",
+      "kind": "text",
+      "size": 65673,
+      "hash": "d45d4576b9d252a67747293398acdc60b191ad6a14cbd954d858b37976e5faf5",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/views/AboutView.vue",
       "kind": "text",
-      "size": 16579,
-      "hash": "bbe96e1cd9832410fb6f97f10a74d17fe607b39514d9e875266c28f86c1dd62b",
+      "size": 20337,
+      "hash": "5e391e9a981277f5458ab05c156e94f8666de9ec4d464c88a7b23965c3093641",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 8
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 8
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/views/AccountView.vue",
       "kind": "text",
-      "size": 9297,
-      "hash": "a884d119a784e48c230070227fc276b7aaac6dcfe637cd8bc0f1cc58bdf3592a",
+      "size": 13972,
+      "hash": "22e36a118524eff41d356f75800898cbac3857412891e38e9ecd029140a57524",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 4
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 4
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/views/ChallengeDetailView.vue",
       "kind": "text",
-      "size": 15242,
-      "hash": "6f46b2c516b0f749f2007dceaa1bf1864bf39dda76119bac4717a2225fc44140",
+      "size": 16483,
+      "hash": "94ba47f8c48952af0867f0b3d564f214a58101dbd6b32627244b98df0d784e6d",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -1078,8 +818,8 @@
     {
       "path": "src/views/ChallengesView.vue",
       "kind": "text",
-      "size": 2630,
-      "hash": "f58c48465d0c1c2d3bc91edf8e102e9abb6ad54bde11da75d09d7b7e943fd729",
+      "size": 4677,
+      "hash": "a3d0bc49b1d89ada7340f31cce0c49d8d4ede85b95c13abb8e17a434d9e4e922",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -1088,8 +828,8 @@
     {
       "path": "src/views/ExposureView.vue",
       "kind": "text",
-      "size": 18498,
-      "hash": "2e03be575324a409a0ebe7115139890e33dc3359e94348faa1e4445ca9619801",
+      "size": 18419,
+      "hash": "b41cc8f1b0a3738308dddbca8e6691a0f13d9d8d0ace964ec97ade510b02d8d3",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -1108,8 +848,8 @@
     {
       "path": "src/views/LaunchView.vue",
       "kind": "text",
-      "size": 7921,
-      "hash": "73f6c786fc3056d1884e085e99dc1586c71646b69b6a74e63d380ec6d37f9560",
+      "size": 8100,
+      "hash": "eb971237ba389094dba792a78687f1b4a8c43a72a48af8908f9707b1d6d8b81a",
       "encoding": "utf-8",
       "hits": [],
       "brandHits": [],
@@ -1118,162 +858,92 @@
     {
       "path": "src/views/NotFoundView.vue",
       "kind": "text",
-      "size": 1697,
-      "hash": "5ada9a88e40146b019b06b0e6771e7ae7481905a78a4d978ec8929b60fda5644",
+      "size": 5138,
+      "hash": "907565043a131d3f7d1ce12ee331239e7b0e4ea5f8d20366638f91bd2359a469",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 1
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/views/PrivacyView.vue",
       "kind": "text",
-      "size": 2472,
-      "hash": "80a5a0129610414b36b2612fa30bc2e200899a3e65b96cfe6779b16f6b20c8fb",
+      "size": 2431,
+      "hash": "ae594518ed489e10bd357bc6b52b6fcf17c7401e842aa3ab394a8bde338c10cf",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/views/QDayView.vue",
       "kind": "text",
-      "size": 13352,
-      "hash": "267df8c5f9024e9c751c6a3946e2df25192427ab1b01426de0a3b203500c219c",
+      "size": 13953,
+      "hash": "884b23bfa852737eba292e1ce324f49f00baa1d7fd92025f03026a35cb293a48",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 4
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 4
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/views/RisksView.vue",
       "kind": "text",
       "size": 1492,
-      "hash": "e3fd5a31ed3985523dcb95957e175b3ebb9a298f7033b7178427acf956aa9c3c",
+      "hash": "5c2aa0ec360bac40a1ed4a378782d10e357a874736f7fa4dad3bc41a6d765e3a",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/views/TermsView.vue",
       "kind": "text",
       "size": 3454,
-      "hash": "10e44e44047050bda82178d963309e777dacca1dee4f83ed5caab34ee7272ebb",
+      "hash": "8ac5b849c0d70a2b778da3e9ad728c19e00012330f0d17b803343ec5bded5c31",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 12
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 12
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/views/TokenDetailView.vue",
       "kind": "text",
-      "size": 11726,
-      "hash": "014ce0547ef4bdbb7ada4df7421259db1f140fed8af92907fbdae1edc6fb8813",
+      "size": 11810,
+      "hash": "7013eadde30fa0c8f652e8362e2c15ed9b53d8a201faaed8f1b1064d7bc128f9",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 2
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "src/views/TokensView.vue",
       "kind": "text",
-      "size": 10030,
-      "hash": "c694530421813d078302e38d8399be9165ac5425fff3cbb2da515aa006e4a498",
+      "size": 8722,
+      "hash": "18c0b8026b5001c97ab619ed83f93a6db54b75d330669407ded4128514f5ea7c",
       "encoding": "utf-8",
-      "hits": [
-        {
-          "value": "Mathlana",
-          "count": 4
-        }
-      ],
-      "brandHits": [
-        {
-          "value": "Mathlana",
-          "count": 4
-        }
-      ],
+      "hits": [],
+      "brandHits": [],
       "protectedHits": []
     },
     {
       "path": "public/icon.svg",
       "kind": "image",
-      "size": 532,
-      "hash": "ba84ef00ea9a01b4e353f3c1c68ce73b41c8e54826ef8f84269f5398e636f1a3",
+      "size": 253,
+      "hash": "b37ae60721774b63c2312175a0e62af7966c762e6fbd2e226dde9678c006ec2b",
       "brandHits": []
     },
     {
       "path": "public/brand/mark.svg",
       "kind": "image",
-      "size": 397,
-      "hash": "7a835094106d7440e537df0a3cf154cd71d482d83df2428aa96643d805cffcf1",
+      "size": 201,
+      "hash": "384b7375f391ecd01e8baf8677b63b1151d89b888e004f521dafbf78793ce763",
       "brandHits": []
     },
     {
       "path": "public/brand/token.png",
       "kind": "image",
-      "size": 17200,
-      "hash": "8465b24e16494197f5e7c033b1d712b6d782695f5fb898c51670280423570b95",
+      "size": 27660,
+      "hash": "b95268983f8e171e43b7c520127d38c98a9450eef022458b4b11158bdcc9dc58",
       "brandHits": []
     },
     {
@@ -1303,17 +973,15 @@
       "path": "public/icon.svg",
       "format": "svg",
       "kind": "icon",
-      "bytes": 532,
+      "bytes": 253,
       "width": 32.0,
       "height": 32.0,
       "aspect": 1.0,
       "hasAlpha": false,
       "colors": [
-        "#0b0d1a",
-        "#ffffff",
-        "#ffffff",
-        "#6c86ff",
-        "#6c86ff"
+        "#0B0D1A",
+        "#FFFFFF",
+        "#6C86FF"
       ],
       "text": [],
       "containsBrand": false,
@@ -1328,15 +996,13 @@
       "path": "public/brand/mark.svg",
       "format": "svg",
       "kind": "photo",
-      "bytes": 397,
+      "bytes": 201,
       "width": 600.0,
       "height": 480.0,
       "aspect": 1.25,
       "hasAlpha": false,
       "colors": [
         "#FFFFFF",
-        "#FFFFFF",
-        "#6C86FF",
         "#6C86FF"
       ],
       "text": [],
@@ -1350,20 +1016,20 @@
       "path": "public/brand/token.png",
       "format": "png",
       "kind": "photo",
-      "bytes": 17200,
+      "bytes": 27660,
       "width": 800,
       "height": 800,
       "aspect": 1.0,
       "hasAlpha": false,
       "colors": [
-        "#0b0d1a",
+        "#0d0d15",
         "#ffffff",
-        "#020411",
-        "#708bff",
-        "#9d9ea3",
-        "#070810",
-        "#0a0c19",
-        "#080a17"
+        "#05050d",
+        "#0c0c14",
+        "#03030b",
+        "#04040c",
+        "#080810",
+        "#0a0a12"
       ],
       "text": [],
       "containsBrand": false,
@@ -1452,148 +1118,100 @@
     }
   ],
   "brand": {
-    "display": "Mathlana",
-    "slug": "mathlana",
-    "confidence": 0.795,
-    "source": "scan",
+    "display": "Qubitlane",
+    "slug": "qubitlane",
+    "confidence": 1.0,
+    "source": "brand.json",
     "evidence": [
       {
-        "value": "Mathlana",
-        "source": "readme:h1",
-        "weight": 1,
-        "files": [
-          "README.md"
-        ]
-      },
-      {
-        "value": "Mathlana",
-        "source": "html:title",
-        "weight": 1,
-        "files": [
-          "index.html"
-        ]
-      },
-      {
-        "value": "Mathlana",
-        "source": "html:og:site_name",
-        "weight": 1,
-        "files": [
-          "index.html"
-        ]
-      },
-      {
-        "value": "Mathlana",
-        "source": "html:og:title",
-        "weight": 1,
-        "files": [
-          "index.html"
-        ]
-      },
-      {
-        "value": "Mathlana",
-        "source": "package:name",
-        "weight": 1,
-        "files": [
-          "package.json"
-        ]
+        "value": "Qubitlane",
+        "source": "existing brand.json",
+        "weight": 100,
+        "file": ".rebrand/brand.json"
       }
     ],
-    "alternatives": [
-      {
-        "value": "Reading on-chain state",
-        "score": 8.0
-      },
-      {
-        "value": "Mathlana Website",
-        "score": 8.0
-      },
-      {
-        "value": "Getting started",
-        "score": 8.0
-      },
-      {
-        "value": "Layout",
-        "score": 8.0
-      },
-      {
-        "value": "text-brand-text",
-        "score": 7.0
-      }
-    ],
+    "alternatives": [],
     "variants": {
-      "display": "Mathlana",
-      "lower": "mathlana",
-      "upper": "MATHLANA",
-      "title": "Mathlana",
-      "kebab": "mathlana",
-      "snake": "mathlana",
-      "camel": "mathlana",
-      "pascal": "Mathlana",
-      "compact": "Mathlana",
-      "compactLower": "mathlana",
-      "first": "Mathlana",
-      "firstLower": "mathlana",
-      "firstUpper": "MATHLANA"
+      "display": "Qubitlane",
+      "lower": "qubitlane",
+      "upper": "QUBITLANE",
+      "title": "Qubitlane",
+      "kebab": "qubitlane",
+      "snake": "qubitlane",
+      "camel": "qubitlane",
+      "pascal": "Qubitlane",
+      "compact": "Qubitlane",
+      "compactLower": "qubitlane",
+      "first": "Qubitlane",
+      "firstLower": "qubitlane",
+      "firstUpper": "QUBITLANE"
     },
     "variantList": [
       {
-        "value": "Mathlana",
+        "value": "Qubitlane",
         "kind": "display"
       },
       {
-        "value": "mathlana",
+        "value": "qubitlane",
         "kind": "lower"
       },
       {
-        "value": "MATHLANA",
+        "value": "QUBITLANE",
         "kind": "upper"
       }
     ],
-    "domains": [
-      {
-        "host": "mathlana.si",
-        "urls": [
-          "https://mathlana.si/",
-          "https://mathlana.si"
-        ],
-        "functional": false,
-        "files": [
-          "README.md",
-          "index.html",
-          "vite.config.js"
-        ],
-        "sources": []
-      },
-      {
-        "host": "mathlana.si`",
-        "urls": [
-          "https://mathlana.si`"
-        ],
-        "functional": false,
-        "files": [
-          "README.md"
-        ],
-        "sources": []
-      }
-    ],
+    "domains": [],
     "handles": [],
-    "emails": [
-      "privacy@mathlana.si"
-    ],
+    "emails": [],
     "packageNames": [
-      "mathlana-website"
+      "qubitess-website"
     ],
     "initials": "",
     "usedBrands": [
-      "Mathlana"
+      "Mathlana",
+      "Qubitlane",
+      "Qubitess",
+      "GhostPay",
+      "Cifruna",
+      "Zero Art Protocol",
+      "Provenia",
+      "Loch",
+      "Tidevel",
+      "Miston",
+      "Ivorane",
+      "Filza",
+      "Backers",
+      "Kudorix",
+      "Tessella",
+      "Nummula",
+      "ORAsol",
+      "Attesio",
+      "YOVINX",
+      "Settiva",
+      "Seclura",
+      "Cindral",
+      "Stakri",
+      "Tracefolio",
+      "Tracevio",
+      "lockRH",
+      "Latchera",
+      "Pretiola",
+      "Clepsyra",
+      "Trovane",
+      "Librova",
+      "Ledgiva",
+      "Actoria",
+      "Custoria",
+      "Remitia",
+      "Holdavia",
+      "QUIVANTA",
+      "Leverix"
     ]
   },
   "protected": {
     "urls": [],
     "hosts": [],
-    "strings": [
-      "MATHLANA_PROGRAM_ID"
-    ],
+    "strings": [],
     "thirdParty": [
       "@coral-xyz/anchor",
       "@solana/spl-token",
@@ -1671,56 +1289,33 @@
     ]
   },
   "palette": {
-    "primary": "#6c86ff",
-    "accent": "#1c1c21",
-    "background": "#0a0a0c",
-    "foreground": "#f5f5f7",
+    "primary": "#6f82e8",
+    "accent": "#6f82e8",
+    "background": "#15261d",
+    "foreground": "#a9b6ff",
     "colors": [
       "#1f70c1",
-      "#6c86ff",
-      "#0b0d1a",
-      "#4a63e8",
       "#ffffff",
-      "#f5f5f7",
+      "#000000",
       "#1ba737",
-      "#7e7e88",
       "#929293",
-      "#3dd68c",
-      "#efeff1",
-      "#0f8a55"
+      "#171610",
+      "#6c86ff",
+      "#b7b7b8",
+      "#efebe1",
+      "#c2c2c3",
+      "#c9d0ff",
+      "#0b0d1a"
     ],
     "cssVars": {
-      "background": "#0a0a0c",
-      "foreground": "#f5f5f7",
-      "card-foreground": "#f5f5f7",
-      "popover-foreground": "#f5f5f7",
-      "primary": "#6c86ff",
-      "primary-foreground": "#0b0d1a",
-      "secondary-foreground": "#f5f5f7",
-      "muted-foreground": "#a8a8b3",
-      "accent": "#1c1c21",
-      "accent-foreground": "#f5f5f7",
-      "brand": "#6c86ff",
-      "brand-surface": "#6c86ff",
-      "brand-border": "#6c86ff",
-      "brand-text": "#8da2ff",
-      "proven-surface": "#3dd68c",
-      "proven-text": "#3dd68c",
-      "caution-surface": "#f2b43c",
-      "caution-text": "#f2b43c",
-      "failed-surface": "#f2555a",
-      "failed-text": "#f26166",
-      "note-surface": "#c4a7ff",
-      "note-text": "#c4a7ff",
-      "quantum-surface": "#5bd7e8",
-      "quantum-text": "#5bd7e8",
-      "quiet-surface": "#7e7e88",
-      "quiet-text": "#a8a8b3",
-      "sidebar-foreground": "#f5f5f7",
-      "sidebar-primary": "#6c86ff",
-      "sidebar-primary-foreground": "#0b0d1a",
-      "sidebar-accent": "#1c1c21",
-      "sidebar-accent-foreground": "#f5f5f7"
+      "pp-accent": "#6f82e8",
+      "pp-accent-text": "#a9b6ff",
+      "pp-accent-soft": "#22253c",
+      "pp-accent-line": "#414a7d",
+      "pp-live-surface": "#15261d",
+      "pp-alert-surface": "#301611",
+      "pp-warn-surface": "#2a2110",
+      "pp-note-surface": "#211a35"
     }
   },
   "routes": [
@@ -1735,9 +1330,12 @@
   },
   "brandRegistry": {
     "path": "brand.txt",
-    "exists": false,
-    "history": [],
-    "current": null,
+    "exists": true,
+    "history": [
+      "Mathlana",
+      "Qubitlane"
+    ],
+    "current": "Qubitess",
     "warnings": []
   },
   "warnings": []

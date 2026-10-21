@@ -4,7 +4,7 @@ import { onMounted, onUnmounted, ref, computed } from "vue";
  * Theme switching with the same three states the reference exposes in its
  * footer segmented control: light / dark / system.
  */
-const STORAGE_KEY = "qubitlane-theme";
+const STORAGE_KEY = "qubitess-theme";
 const mode = ref("system");
 
 let mediaQuery = null;

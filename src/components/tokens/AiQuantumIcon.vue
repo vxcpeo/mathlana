@@ -7,7 +7,7 @@
 
 <template>
   <svg
-    class="pp-aqi"
+    class="cq-aqi"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -24,7 +24,7 @@
 </template>
 
 <style scoped>
-.pp-aqi {
+.cq-aqi {
   width: 1em;
   height: 1em;
   flex-shrink: 0;

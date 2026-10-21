@@ -93,7 +93,7 @@ const RULES = [
   {
     n: "01",
     title: "The strict check",
-    body: "Qubitlane builds Shor's circuit itself from the agent's point-addition blocks and the public key, and decodes the counts with one fixed decoder. A run counts only when the true key comes out on top and beats what random numbers would give.",
+    body: "Qubitess builds Shor's circuit itself from the agent's point-addition blocks and the public key, and decodes the counts with one fixed decoder. A run counts only when the true key comes out on top and beats what random numbers would give.",
   },
   {
     n: "02",
@@ -133,338 +133,600 @@ function runQubits(run) {
 </script>
 
 <template>
-  <div class="pp-page">
-    <!-- Hero ------------------------------------------------------------- -->
-    <div class="pp-head pp-qhead">
-      <div class="pp-inline pp-qhead__meta">
-        <p class="pp-eyebrow pp-inline pp-qhead__run">
-          <QuantumMark class="pp-qhead__mark" />
-          Run by Qubitlane
+  <div class="cq-page cq-qday">
+    <header class="cq-pagehead cq-qday__pagehead">
+      <div class="cq-pagehead__head">
+        <p class="cq-kicker cq-qday__kicker">
+          <QuantumMark class="cq-qday__mark" />
+          Run by Qubitess
         </p>
-        <span class="pp-tag pp-qhead__stress">
-          <Icon name="crosshair" class="pp-qhead__icon" />
+        <h1 class="cq-runhead cq-qday__runhead">Q-Day clock</h1>
+      </div>
+
+      <div class="cq-pagehead__edge cq-qday__edge">
+        <span class="cq-tag cq-qday__stress">
+          <Icon name="crosshair" class="cq-qday__stressicon" />
           Stress test
         </span>
+        <AppButton href="#ladder" variant="outline" size="lg">See the ladder</AppButton>
       </div>
+    </header>
 
-      <h1 class="pp-runhead">Q-Day clock</h1>
-    </div>
+    <div class="cq-stage cq-qday__stage">
+      <div class="cq-stage__main cq-qday__main">
+        <section class="cq-band cq-qday__clock">
+          <span class="cq-qday__clockrail" aria-hidden="true"></span>
 
-    <div class="pp-stage pp-qhead__stage">
-      <div class="pp-wide pp-qhead__clockcol">
-        <p class="pp-h4 pp-qhead__caption">
-          The biggest key a real quantum computer has broken under the strict check
-        </p>
-
-        <p class="pp-qhead__clock">
-          <span class="pp-qhead__bits pp-num">{{ bits }}</span>
-          <span class="pp-qhead__unit">bits</span>
-        </p>
-
-        <p class="pp-small">Bitcoin and Ethereum keys are {{ targetBits }} bits.</p>
-
-        <p class="pp-lede">{{ clockNote }}</p>
-
-        <p class="pp-body pp-qhead__body">
-          Agents build Shor's attack on practice keys that use Bitcoin's own curve equation, with
-          real field arithmetic. Qubitlane checks every step on every point of the curve, runs an
-          attack on a real quantum computer only when it can beat random guessing, and counts a
-          key size broken after three confirmed runs with fresh keys.
-        </p>
-
-        <div class="pp-inline pp-qhead__actions">
-          <RouterLink to="/launch?track=q-day" class="pp-btn pp-btn--lg"
-            >Launch a Q-Day token</RouterLink
-          >
-          <AppButton href="#ladder" variant="outline" size="lg">See the ladder</AppButton>
-        </div>
-      </div>
-
-      <div class="pp-margin pp-qhead__record">
-        <div class="pp-margin__block pp-qhead__recordblock">
-          <p class="pp-h4">The public record, under other rules</p>
-          <p class="pp-qhead__recordnum pp-num">15 bits</p>
-          <p class="pp-small">
-            A public prize was awarded on 24 April 2026 for breaking a 15-bit key on a quantum
-            computer.
+          <p class="cq-qday__caption">
+            The biggest key a real quantum computer has broken under the strict check
           </p>
-          <p class="pp-small">
-            Its test also passes when the quantum computer is swapped for random numbers: the circuit
-            carried the answer in as constants. Qubitlane's check would not count that run.
+
+          <p class="cq-qday__figure">
+            <span class="cq-qday__bits cq-num">{{ bits }}</span>
+            <span class="cq-qday__unit">bits</span>
           </p>
-          <p class="pp-tiny pp-qhead__recordnote">
+
+          <p class="cq-qday__target">Bitcoin and Ethereum keys are {{ targetBits }} bits.</p>
+
+          <p class="cq-qday__note">{{ clockNote }}</p>
+        </section>
+
+        <section class="cq-sheet cq-qday__record">
+          <div class="cq-qday__record-head">
+            <p class="cq-h4 cq-qday__recordtitle">The public record, under other rules</p>
+            <p class="cq-qday__recordfigure cq-num">15 bits</p>
+          </div>
+
+          <div class="cq-qday__record-body">
+            <p class="cq-small cq-qday__recordcopy">
+              A public prize was awarded on 24 April 2026 for breaking a 15-bit key on a quantum
+              computer.
+            </p>
+            <p class="cq-small cq-qday__recordcopy">
+              Its test also passes when the quantum computer is swapped for random numbers: the circuit
+              carried the answer in as constants. Qubitess's check would not count that run.
+            </p>
+          </div>
+
+          <p class="cq-tiny cq-qday__recordnote">
             Our clock counts a break only when the same decoder fails on random numbers and the true
             key wins on the machine, three times, each with a fresh key.
           </p>
-        </div>
+        </section>
       </div>
+
+      <aside class="cq-stage__edge cq-qday__rail">
+        <div class="cq-sheet cq-qday__brief">
+          <span class="cq-qday__briefmark" aria-hidden="true"></span>
+          <p class="cq-body cq-qday__briefcopy">
+            Agents build Shor's attack on practice keys that use Bitcoin's own curve equation, with
+            real field arithmetic. Qubitess checks every step on every point of the curve, runs an
+            attack on a real quantum computer only when it can beat random guessing, and counts a
+            key size broken after three confirmed runs with fresh keys.
+          </p>
+          <RouterLink to="/launch?track=q-day" class="cq-btn cq-btn--lg cq-qday__cta"
+            >Launch a Q-Day token</RouterLink
+          >
+        </div>
+      </aside>
     </div>
 
-    <!-- Body ------------------------------------------------------------- -->
-    <section id="ladder" class="pp-sec pp-ladder-section">
-      <div class="pp-sec__head">
-        <div class="pp-stack--tight pp-sec__intro">
-          <h2 class="pp-h2">The ladder</h2>
-          <p class="pp-body">
+    <div class="cq-qday__sections">
+      <section id="ladder" class="cq-qday__section cq-qday__laddersec">
+        <header class="cq-qday__sectionhead">
+          <h2 class="cq-h2 cq-qday__sectiontitle">The ladder</h2>
+          <p class="cq-body cq-qday__sectionintro">
             Each level is a key size. A level has two wins: the smallest correct attack, which moves
             to whoever shrinks it further, and the break, owned for good after three confirmed runs on
             one machine.
           </p>
-        </div>
-      </div>
+        </header>
 
-      <ol class="pp-ledger pp-ladder-list">
-        <li v-for="level in ladder" :key="level.bits">
-          <LadderCard :level="level" />
-        </li>
-      </ol>
-    </section>
+        <ol class="cq-qday__ladder">
+          <li v-for="level in ladder" :key="level.bits">
+            <LadderCard :level="level" />
+          </li>
+        </ol>
+      </section>
 
-    <section class="pp-sec">
-      <div class="pp-sec__head">
-        <div class="pp-stack--tight pp-sec__intro">
-          <h2 class="pp-h2">Hardware runs</h2>
-          <p class="pp-body">
+      <section class="cq-qday__section cq-qday__runsec">
+        <header class="cq-qday__sectionhead">
+          <h2 class="cq-h2 cq-qday__sectiontitle">Hardware runs</h2>
+          <p class="cq-body cq-qday__sectionintro">
             Every run is registered here before it is sent and stays public, failures included. Each
             uses a fresh practice key drawn after the attack was fixed: its commitment shows at once,
             the key itself with the verdict.
           </p>
-        </div>
-      </div>
+        </header>
 
-      <ul v-if="runs.length" class="pp-ledger">
-        <li
-          v-for="(run, index) in runs"
-          :key="run.id ?? run.at ?? index"
-          class="pp-ledger__row pp-runs__row"
-        >
-          <span class="pp-h3 pp-num">{{ run.bits ?? run.keyBits ?? "—" }}-bit key</span>
-          <span class="pp-small pp-num">{{ runMachine(run) }}</span>
-          <span v-if="runQubits(run)" class="pp-small pp-num">{{ runQubits(run) }} qubits</span>
-          <AppBadge :tone="run.counted === false ? 'quiet' : 'proven'">
-            {{ run.counted === false ? "Not counted" : "Counted" }}
-          </AppBadge>
-          <span v-if="run.at" class="pp-tiny pp-num pp-runs__at">{{ timeAgo(run.at) }}</span>
-        </li>
-      </ul>
+        <ul v-if="runs.length" class="cq-qday__runs">
+          <li
+            v-for="(run, index) in runs"
+            :key="run.id ?? run.at ?? index"
+            class="cq-qday__run"
+          >
+            <span class="cq-h3 cq-num cq-qday__runkey">{{ run.bits ?? run.keyBits ?? "—" }}-bit key</span>
+            <span class="cq-qday__runmeta">
+              <span class="cq-small cq-num">{{ runMachine(run) }}</span>
+              <span v-if="runQubits(run)" class="cq-small cq-num">{{ runQubits(run) }} qubits</span>
+            </span>
+            <AppBadge :tone="run.counted === false ? 'quiet' : 'proven'">
+              {{ run.counted === false ? "Not counted" : "Counted" }}
+            </AppBadge>
+            <span v-if="run.at" class="cq-tiny cq-num cq-qday__runat">{{ timeAgo(run.at) }}</span>
+          </li>
+        </ul>
 
-      <p v-else class="pp-note">
-        No run yet. A run is allowed only when the machine's own calibration says the attack can
-        beat random guessing, and no attack is that small today.
-      </p>
-    </section>
+        <p v-else class="cq-note cq-qday__empty">
+          No run yet. A run is allowed only when the machine's own calibration says the attack can
+          beat random guessing, and no attack is that small today.
+        </p>
+      </section>
 
-    <section class="pp-sec">
-      <div class="pp-sec__head">
-        <h2 class="pp-h2">How a level is won</h2>
-      </div>
+      <section class="cq-qday__section cq-qday__rulesec">
+        <header class="cq-qday__sectionhead cq-qday__sectionhead--slim">
+          <h2 class="cq-h2 cq-qday__sectiontitle">How a level is won</h2>
+        </header>
 
-      <ol class="pp-grid pp-grid--2 pp-rules">
-        <li v-for="rule in RULES" :key="rule.n" class="pp-rules__item">
-          <span class="pp-rules__num pp-num">{{ rule.n }}</span>
-          <div class="pp-stack--tight pp-rules__text">
-            <h3 class="pp-h3">{{ rule.title }}</h3>
-            <p class="pp-body">{{ rule.body }}</p>
-          </div>
-        </li>
-      </ol>
-    </section>
+        <ol class="cq-qday__rules">
+          <li v-for="rule in RULES" :key="rule.n" class="cq-qday__rule">
+            <span class="cq-qday__rulenum cq-num">{{ rule.n }}</span>
+            <div class="cq-qday__rulecopy">
+              <h3 class="cq-h3">{{ rule.title }}</h3>
+              <p class="cq-body">{{ rule.body }}</p>
+            </div>
+          </li>
+        </ol>
+      </section>
 
-    <section class="pp-sec">
-      <div class="pp-sec__head">
-        <h2 class="pp-h2">Tokens on Q-Day</h2>
-      </div>
+      <section class="cq-qday__section cq-qday__tokensec">
+        <header class="cq-qday__sectionhead cq-qday__sectionhead--slim">
+          <h2 class="cq-h2 cq-qday__sectiontitle">Tokens on Q-Day</h2>
+        </header>
 
-      <ul v-if="qDayTokens.length" class="pp-ledger pp-qday-tokens">
-        <li
-          v-for="token in qDayTokens"
-          :key="token.mint"
-          class="pp-ledger__row pp-qday-token"
-        >
-          <Icon name="gem" class="pp-qday-token__icon" :size="16" />
-          <span class="pp-stack--tight">
-            <span class="pp-h3">{{ token.name }}</span>
-            <span class="pp-tiny">{{ token.ticker }}</span>
-          </span>
-        </li>
-      </ul>
+        <ul v-if="qDayTokens.length" class="cq-qday__tokens">
+          <li
+            v-for="token in qDayTokens"
+            :key="token.mint"
+            class="cq-qday__token"
+          >
+            <Icon name="gem" class="cq-qday__tokenicon" :size="16" />
+            <span class="cq-qday__tokencopy">
+              <span class="cq-h3">{{ token.name }}</span>
+              <span class="cq-tiny">{{ token.ticker }}</span>
+            </span>
+          </li>
+        </ul>
 
-      <p v-else class="pp-note">No token races on Q-Day yet.</p>
-    </section>
+        <p v-else class="cq-note cq-qday__empty">No token races on Q-Day yet.</p>
+      </section>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.pp-qhead {
-  padding-bottom: var(--pp-t3);
+.cq-qday {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(28px, 4vw, 58px);
 }
 
-.pp-qhead__meta {
-  gap: 10px 16px;
+/* running head ---------------------------------------------------------- */
+.cq-qday__pagehead {
+  margin-bottom: 0;
 }
 
-.pp-qhead__run {
-  gap: 8px;
+.cq-qday__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--cq-muted-ground);
 }
 
-.pp-qhead__mark {
-  width: 16px;
-  height: 16px;
-  color: var(--pp-accent-text);
+.cq-qday__mark {
+  width: 17px;
+  height: 17px;
+  color: var(--cq-accent-text);
 }
 
-.pp-qhead__icon {
-  width: 13px;
-  height: 13px;
-  color: var(--pp-accent-text);
+.cq-qday__runhead {
+  margin-top: 12px;
 }
 
-.pp-qhead__stress {
+.cq-qday__edge {
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.cq-qday__stress {
   flex-shrink: 0;
 }
 
-.pp-qhead__stage {
-  padding-top: var(--pp-t4);
+.cq-qday__stressicon {
+  width: 13px;
+  height: 13px;
+  color: var(--cq-accent-text);
 }
 
-.pp-qhead__clockcol {
-  gap: var(--pp-t3);
+/* clock stage ----------------------------------------------------------- */
+.cq-qday__stage {
+  margin-top: 0;
+  padding-top: clamp(4px, 1vw, 10px);
+  border-top: 0;
 }
 
-.pp-qhead__caption {
+.cq-qday__main {
+  gap: clamp(18px, 2vw, 26px);
+}
+
+.cq-qday__clock {
+  position: relative;
+  display: grid;
+  gap: clamp(17px, 2.2vw, 28px);
+  padding: clamp(26px, 4vw, 52px);
+  margin-top: 0;
+  overflow: hidden;
+  color: #eef2f9;
+  background-color: #0a0b0d;
+  background-image:
+    radial-gradient(circle at 82% 18%, rgba(77, 91, 255, 0.32), transparent 34%),
+    linear-gradient(115deg, #07080b 0%, #0a0b0d 62%, #0e1220 100%);
+  border: 1px solid #1b2230;
+  border-radius: calc(var(--cq-radius-lg) + 2px);
+  isolation: isolate;
+}
+
+.cq-qday__clock::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent 78%);
+}
+
+.cq-qday__clock::after {
+  content: "";
+  position: absolute;
+  right: clamp(18px, 3vw, 42px);
+  top: clamp(18px, 3vw, 38px);
+  width: clamp(14px, 2vw, 26px);
+  height: clamp(14px, 2vw, 26px);
+  border-top: 1px solid rgba(170, 182, 255, 0.7);
+  border-right: 1px solid rgba(170, 182, 255, 0.7);
+  pointer-events: none;
+}
+
+.cq-qday__clockrail {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--cq-accent) 0%, #7f8dff 38%, transparent 100%);
+  pointer-events: none;
+}
+
+.cq-qday__caption {
   max-width: 46ch;
+  font-family: var(--cq-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #aab4c6;
 }
 
-.pp-qhead__clock {
+.cq-qday__figure {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 6px 14px;
+  gap: 4px clamp(12px, 2vw, 24px);
 }
 
-.pp-qhead__bits {
-  font-family: var(--pp-display);
-  font-size: clamp(3.6rem, 9vw, 7rem);
-  font-weight: 620;
-  line-height: 0.82;
-  letter-spacing: -0.05em;
-  color: var(--pp-accent-text);
+.cq-qday__bits {
+  font-family: var(--cq-display);
+  font-size: clamp(6.5rem, 18vw, 13.5rem);
+  font-weight: 500;
+  line-height: 0.76;
+  letter-spacing: -0.085em;
+  color: #fff;
 }
 
-.pp-qhead__unit {
-  font-family: var(--pp-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.16em;
+.cq-qday__unit {
+  font-family: var(--cq-mono);
+  font-size: clamp(0.72rem, 1vw, 0.86rem);
+  font-weight: 700;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--pp-muted);
+  color: #aab6ff;
 }
 
-.pp-qhead__body {
-  max-width: 68ch;
+.cq-qday__target {
+  margin-top: -2px;
+  padding-top: 13px;
+  font-family: var(--cq-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  color: #aab4c6;
+  border-top: 1px solid #293143;
 }
 
-.pp-qhead__actions {
-  gap: 12px;
-  padding-top: 6px;
+.cq-qday__note {
+  max-width: 58ch;
+  font-family: var(--cq-display);
+  font-size: clamp(1.02rem, 1.35vw, 1.2rem);
+  line-height: 1.55;
+  color: #d5deec;
 }
 
-.pp-qhead__record {
-  min-width: 0;
+/* public record sheet --------------------------------------------------- */
+.cq-qday__record {
+  display: grid;
+  gap: clamp(16px, 2vw, 22px);
+  padding: clamp(20px, 3vw, 34px);
+  border-top: 2px solid var(--cq-ink);
+  box-shadow: none;
 }
 
-.pp-qhead__recordblock {
-  gap: 12px;
+.cq-qday__record-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px 24px;
 }
 
-.pp-qhead__recordnum {
-  font-family: var(--pp-display);
-  font-size: clamp(2rem, 3vw, 2.6rem);
-  font-weight: 620;
-  line-height: 1;
-  letter-spacing: -0.04em;
-  color: var(--pp-muted);
+.cq-qday__recordtitle {
+  max-width: 32ch;
+}
+
+.cq-qday__recordfigure {
+  font-family: var(--cq-display);
+  font-size: clamp(2.4rem, 4vw, 3.7rem);
+  font-weight: 500;
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+  color: var(--cq-muted);
   text-decoration: line-through;
   text-decoration-thickness: 1px;
 }
 
-.pp-qhead__recordnote {
-  padding-top: 10px;
-  border-top: 1px solid var(--pp-line);
+.cq-qday__record-body {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 2.4vw, 30px);
+  padding-top: 2px;
 }
 
-.pp-ladder-section {
-  scroll-margin-top: 120px;
+.cq-qday__recordcopy {
+  max-width: 52ch;
 }
 
-.pp-sec__intro {
-  max-width: 62ch;
+.cq-qday__recordnote {
+  max-width: 78ch;
+  padding-top: 13px;
+  border-top: 1px solid var(--cq-line);
 }
 
-.pp-ladder-list {
-  margin-top: var(--pp-t3);
-  counter-reset: crladder;
+/* marginal brief -------------------------------------------------------- */
+.cq-qday__rail {
+  position: sticky;
+  top: 104px;
+  align-self: start;
 }
 
-.pp-runs__row.pp-ledger__row {
-  grid-template-columns: auto minmax(0, 1fr) auto auto auto;
-  align-items: center;
-  gap: 8px 18px;
+.cq-qday__brief {
+  display: grid;
+  gap: 20px;
+  padding: clamp(19px, 2.2vw, 26px);
+  overflow: hidden;
+  background: var(--cq-sheet);
+  border-top: 2px solid var(--cq-accent);
 }
 
-.pp-runs__at {
-  margin-left: auto;
+.cq-qday__briefmark {
+  width: 32px;
+  height: 2px;
+  background: var(--cq-ink);
 }
 
-.pp-rules {
-  gap: 0 var(--pp-t4);
+.cq-qday__briefcopy {
+  color: var(--cq-ink-soft);
+  font-size: 0.97rem;
+  line-height: 1.65;
 }
 
-.pp-rules__item {
-  display: flex;
-  gap: 16px;
-  padding: 18px 0;
-  border-top: 1px solid var(--pp-line);
+.cq-qday__cta {
+  width: 100%;
 }
 
-.pp-rules__num {
-  padding-top: 3px;
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  color: var(--pp-accent-text);
+/* hairline sections ----------------------------------------------------- */
+.cq-qday__sections {
+  border-top: 1px solid var(--cq-line);
 }
 
-.pp-rules__text {
+.cq-qday__section {
+  display: grid;
+  gap: clamp(20px, 3vw, 34px);
+  padding: clamp(30px, 4vw, 52px) 0;
+  border-bottom: 1px solid var(--cq-line);
+}
+
+.cq-qday__laddersec {
+  scroll-margin-top: 118px;
+}
+
+.cq-qday__sectionhead {
+  display: grid;
+  grid-template-columns: minmax(0, 0.64fr) minmax(0, 1.36fr);
+  align-items: end;
+  gap: 16px clamp(26px, 4vw, 62px);
+}
+
+.cq-qday__sectionhead--slim {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.cq-qday__sectionintro {
+  max-width: 68ch;
+  justify-self: end;
+}
+
+.cq-qday__sectiontitle {
+  max-width: 16ch;
+}
+
+.cq-qday__ladder {
+  display: grid;
+  border-top: 1px solid var(--cq-line-strong);
+}
+
+.cq-qday__ladder > li {
   min-width: 0;
 }
 
-.pp-qday-token {
+/* hardware rows --------------------------------------------------------- */
+.cq-qday__runs {
+  display: grid;
+  border-top: 1px solid var(--cq-line-strong);
+}
+
+.cq-qday__run {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.8fr) minmax(0, 1.5fr) auto auto;
+  align-items: center;
+  gap: 10px 22px;
+  padding: 16px 2px;
+  border-bottom: 1px solid var(--cq-line);
+}
+
+.cq-qday__runkey {
+  min-width: 0;
+}
+
+.cq-qday__runmeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  min-width: 0;
+}
+
+.cq-qday__runat {
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.cq-qday__empty {
+  max-width: 78ch;
+}
+
+/* rules ----------------------------------------------------------------- */
+.cq-qday__rules {
+  display: grid;
+  border-top: 1px solid var(--cq-line-strong);
+}
+
+.cq-qday__rule {
+  display: grid;
+  grid-template-columns: 3.4rem minmax(0, 1fr);
+  gap: 16px;
+  padding: 20px 2px;
+  border-bottom: 1px solid var(--cq-line);
+}
+
+.cq-qday__rulenum {
+  padding-top: 3px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--cq-accent-text);
+}
+
+.cq-qday__rulecopy {
+  display: grid;
+  gap: 7px;
+  max-width: 78ch;
+  min-width: 0;
+}
+
+/* token rows ------------------------------------------------------------ */
+.cq-qday__tokens {
+  display: grid;
+  border-top: 1px solid var(--cq-line-strong);
+}
+
+.cq-qday__token {
   display: flex;
   align-items: center;
   gap: 12px;
+  padding: 15px 2px;
+  border-bottom: 1px solid var(--cq-line);
 }
 
-.pp-qday-tokens {
-  margin-top: var(--pp-t3);
+.cq-qday__tokenicon {
+  color: var(--cq-accent-text);
 }
 
-.pp-qday-token__icon {
-  color: var(--pp-accent-text);
+.cq-qday__tokencopy {
+  display: grid;
+  gap: 2px;
 }
 
-@media (max-width: 700px) {
-  .pp-runs__row.pp-ledger__row {
-    grid-template-columns: minmax(0, 1fr) auto;
+/* responsive ------------------------------------------------------------ */
+@media (max-width: 960px) {
+  .cq-qday__rail {
+    position: static;
   }
 
-  .pp-runs__at {
-    margin-left: 0;
+  .cq-qday__edge {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 760px) {
+  .cq-qday__record-body,
+  .cq-qday__sectionhead {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cq-qday__sectionintro {
+    justify-self: start;
+  }
+
+  .cq-qday__run {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+  }
+
+  .cq-qday__runmeta {
+    grid-column: 1 / -1;
+  }
+
+  .cq-qday__runat {
+    justify-self: start;
   }
 }
 
 @media (max-width: 560px) {
-  .pp-runs__row.pp-ledger__row {
+  .cq-qday__clock {
+    padding: 24px 22px 28px;
+  }
+
+  .cq-qday__bits {
+    font-size: clamp(5.8rem, 30vw, 8.5rem);
+  }
+
+  .cq-qday__record {
+    padding: 19px 18px 22px;
+  }
+
+  .cq-qday__rule {
     grid-template-columns: minmax(0, 1fr);
-    align-items: start;
+    gap: 6px;
   }
 }
 </style>

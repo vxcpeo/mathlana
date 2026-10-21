@@ -33,7 +33,7 @@ const ORBITAL =
     stroke="currentColor"
     :stroke-width="strokeWidth"
     stroke-linecap="round"
-    class="pp-icon"
+    class="cq-icon"
     aria-hidden="true"
     v-html="ORBITAL"
   />
@@ -41,7 +41,7 @@ const ORBITAL =
 </template>
 
 <style scoped>
-.pp-icon {
+.cq-icon {
   flex-shrink: 0;
 }
 </style>

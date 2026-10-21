@@ -24,42 +24,42 @@ const props = defineProps({
 });
 
 const TONES = {
-  brand: "pp-tone-accent",
-  quantum: "pp-tone-accent",
-  proven: "pp-tone-live",
-  caution: "pp-tone-warn",
-  note: "pp-tone-note",
-  muted: "pp-tone-muted",
-  foreground: "pp-tone-ink",
+  brand: "cq-tone-accent",
+  quantum: "cq-tone-accent",
+  proven: "cq-tone-live",
+  caution: "cq-tone-warn",
+  note: "cq-tone-note",
+  muted: "cq-tone-muted",
+  foreground: "cq-tone-ink",
 };
 
 const toneClass = computed(() => TONES[props.tone] ?? TONES.brand);
 </script>
 
 <template>
-  <div class="pp-sheet" :class="class">
+  <div class="cq-sheet" :class="class">
     <div
       v-if="title || subtitle || $slots.header"
-      class="pp-sheet__head"
-      :class="headerSize === 'lg' ? 'pp-sheet__head--lg' : ''"
+      class="cq-sheet__head"
+      :class="headerSize === 'lg' ? 'cq-sheet__head--lg' : ''"
     >
       <slot name="art">
         <span
           v-if="art"
           aria-hidden="true"
-          class="pp-art pp-sheet__art"
-          :class="artResponsive ? 'pp-art--responsive' : ''"
+          class="cq-art cq-sheet__art"
+          :class="artResponsive ? 'cq-art--responsive' : ''"
         >
           <CardArt :name="art" />
         </span>
       </slot>
 
       <slot name="header">
-        <div class="pp-sheet__head-row">
+        <div class="cq-sheet__head-row">
           <Icon v-if="icon" :name="icon" :size="16" :class="toneClass" />
-          <h3 class="pp-sheet__title">{{ title }}</h3>
+          <h3 class="cq-sheet__title">{{ title }}</h3>
         </div>
-        <p v-if="subtitle" class="pp-sheet__sub">{{ subtitle }}</p>
+        <p v-if="subtitle" class="cq-sheet__sub">{{ subtitle }}</p>
       </slot>
 
       <slot name="header-actions" />

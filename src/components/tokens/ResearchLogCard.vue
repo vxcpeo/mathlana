@@ -5,10 +5,9 @@
  */
 import { computed } from "vue";
 import { RouterLink } from "vue-router";
-import CardArt from "@/components/art/CardArt.vue";
 import Icon from "@/components/ui/Icon.vue";
-import PanelCard from "@/components/ui/PanelCard.vue";
 import TokenPicture from "@/components/tokens/TokenPicture.vue";
+import CardArt from "@/components/art/CardArt.vue";
 import { RESEARCH_LOG, TOKENS } from "@/data/tokens";
 import { timeAgo } from "@/lib/format";
 import { usd } from "@/components/tokens/tokenSnapshot";
@@ -45,32 +44,27 @@ const spent = computed(() => usd(props.spentUsd));
 </script>
 
 <template>
-  <PanelCard art="portrait" art-responsive class="pp-research">
-    <template #art>
-      <span aria-hidden="true" class="pp-art pp-research__art">
-        <CardArt name="portrait" />
-      </span>
-    </template>
-
-    <template #header>
-      <h2 id="research-log" class="pp-sheet__title">Research log</h2>
-      <p class="pp-h4">Spent from AI/Quantum pools</p>
-      <p class="pp-figure pp-num">{{ spent }}</p>
-      <p class="pp-tag pp-research__state">
+  <section aria-labelledby="research-log" class="cq-sheet cq-research">
+    <div class="cq-sheet__head cq-research__head">
+      <h2 id="research-log" class="cq-sheet__title">Research log</h2>
+      <CardArt name="portrait" class="cq-research__art" aria-hidden="true" />
+      <p class="cq-h4">Spent from AI/Quantum pools</p>
+      <p class="cq-figure cq-num cq-research__spent">{{ spent }}</p>
+      <p class="cq-tag cq-research__state">
         <span
           aria-hidden="true"
-          class="pp-dot"
-          :class="working ? 'pp-dot--live pp-live-pulse' : ''"
+          class="cq-dot"
+          :class="working ? 'cq-dot--live cq-live-pulse' : ''"
         />
         {{ working ? "An agent is working now" : "No agent working now" }}
       </p>
-    </template>
+    </div>
 
-    <ul class="pp-research__log">
+    <ul class="cq-research__log">
       <li
         v-for="(row, index) in rows"
         :key="`${row.ticker}-${row.at}-${index}`"
-        class="pp-research__row"
+        class="cq-research__row"
       >
         <TokenPicture
           v-if="row.mint"
@@ -78,118 +72,115 @@ const spent = computed(() => usd(props.spentUsd));
           :name="row.ticker.replace('$', '')"
           :size="20"
         />
-        <span v-else aria-hidden="true" class="pp-research__blank" />
+        <span v-else aria-hidden="true" class="cq-research__blank" />
 
-        <span class="pp-research__text">
+        <span class="cq-research__text">
           <RouterLink
             v-if="row.mint"
             :to="`/t/${row.mint}`"
-            class="pp-link pp-mono pp-research__ticker"
+            class="cq-link cq-mono cq-research__ticker"
             >{{ row.ticker }}</RouterLink
           >
-          <span v-else class="pp-mono pp-strong">{{ row.ticker }}</span>
+          <span v-else class="cq-mono cq-strong">{{ row.ticker }}</span>
           {{ row.action }}
         </span>
 
-        <span class="pp-research__time">
+        <span class="cq-research__time">
           <time :datetime="row.at">{{ timeAgo(row.at) }}</time>
         </span>
       </li>
     </ul>
 
-    <RouterLink to="/challenges" class="pp-sheet__foot pp-research__link">
+    <RouterLink to="/challenges" class="cq-sheet__foot cq-research__link">
       The challenges
       <Icon name="arrow-up-right" :size="13" />
     </RouterLink>
-  </PanelCard>
+  </section>
 </template>
 
 <style scoped>
-.pp-research {
-  min-width: 0;
-}
-
-.pp-research__art {
-  display: flex;
-  justify-content: flex-end;
-  height: 58px;
+.cq-research {
+  gap: 0;
   overflow: clip;
 }
 
-.pp-research__state {
+.cq-research__head {
+  gap: 4px;
+  padding: 16px clamp(16px, 2vw, 20px) 14px;
+}
+
+.cq-research__spent {
+  margin: 6px 0 2px;
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  color: var(--cq-ink);
+}
+
+.cq-research__state {
   justify-self: start;
-  margin-top: 4px;
-  background: var(--pp-sheet);
+  margin-top: 6px;
+  background: transparent;
 }
 
-.pp-research__log {
+.cq-research__log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
-  border-top: 1px solid var(--pp-line);
 }
 
-.pp-research__row {
+.cq-research__row {
   display: grid;
   grid-template-columns: 20px minmax(0, 1fr) auto;
   align-items: center;
   gap: 10px;
-  padding: 9px 22px;
-  border-bottom: 1px solid var(--pp-line-soft);
+  padding: 9px clamp(16px, 2vw, 20px);
+  border-bottom: 1px solid var(--cq-line-soft);
 }
 
-.pp-research__row:last-child {
+.cq-research__row:last-child {
   border-bottom: 0;
 }
 
-.pp-research__blank {
+.cq-research__blank {
   width: 20px;
   height: 20px;
-  border: 1px solid var(--pp-line);
+  border: 1px solid var(--cq-line);
   border-radius: 4px;
-  background: var(--pp-sheet-sunk);
+  background: var(--cq-sheet-sunk);
 }
 
-.pp-research__text {
+.cq-research__text {
   min-width: 0;
   font-size: 0.8rem;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
   overflow-wrap: anywhere;
 }
 
-.pp-research__ticker {
+.cq-research__ticker {
   font-weight: 600;
 }
 
-.pp-research__time {
-  font-family: var(--pp-mono);
+.cq-research__time {
+  font-family: var(--cq-mono);
   font-size: 0.66rem;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
   white-space: nowrap;
 }
 
-.pp-research__link {
+.cq-research__link {
   margin-top: auto;
   justify-content: space-between;
-  color: var(--pp-muted);
-  font-family: var(--pp-mono);
+  padding: 12px clamp(16px, 2vw, 20px);
+  color: var(--cq-muted);
+  font-family: var(--cq-mono);
   font-size: 0.68rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  transition: color var(--pp-fast) var(--pp-ease);
+  text-decoration: none;
+  transition: color var(--cq-fast) var(--cq-ease);
 }
 
-.pp-research__link:hover {
-  color: var(--pp-ink);
-}
-
-@media (max-width: 640px) {
-  .pp-research__art {
-    display: none;
-  }
-}
-
-@media (max-width: 560px) {
-  .pp-research__row {
-    padding-inline: 16px;
-  }
+.cq-research__link:hover {
+  color: var(--cq-ink);
 }
 </style>

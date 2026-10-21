@@ -1,6 +1,6 @@
 <script setup>
 /**
- * `/challenges/:slug` — one public problem: the brief, the record it defends,
+ * `/challenges/:slug` — one public problem: the running head, its record stage,
  * what that record is worth, and the tokens racing on it.
  */
 import { computed, watch } from "vue";
@@ -146,27 +146,31 @@ const openChallenges = CHALLENGES.filter((entry) => entry.open);
 
 <template>
   <!-- /challenges/q-day -> /q-day -->
-  <div v-if="redirecting" class="pp-page pp-redirect" />
+  <div v-if="redirecting" class="cq-page cq-chredirect" />
 
-  <div v-else-if="!challenge || !detail" class="pp-page">
-    <div class="pp-head">
-      <p class="pp-kicker">{{ NOT_FOUND.eyebrow }}</p>
-      <h1 class="pp-runhead">{{ NOT_FOUND.title }}</h1>
-      <p class="pp-lede">{{ NOT_FOUND.body }}</p>
-    </div>
+  <div v-else-if="!challenge || !detail" class="cq-page cq-ch404">
+    <header class="cq-pagehead cq-ch404__head">
+      <div class="cq-pagehead__head">
+        <p class="cq-kicker">{{ NOT_FOUND.eyebrow }}</p>
+        <h1 class="cq-runhead">{{ NOT_FOUND.title }}</h1>
+      </div>
+      <div class="cq-pagehead__edge">
+        <p class="cq-lede cq-ch404__body">{{ NOT_FOUND.body }}</p>
+      </div>
+    </header>
 
-    <section class="pp-sec">
-      <ul class="pp-ledger">
-        <li v-for="entry in openChallenges" :key="entry.slug">
+    <section class="cq-sheet cq-ch404__list">
+      <ul class="cq-ch404__ledger">
+        <li v-for="entry in openChallenges" :key="entry.slug" class="cq-ch404__item">
           <RouterLink
             :to="CARD_COPY[entry.slug].href ?? `/challenges/${entry.slug}`"
-            class="pp-ledger__row pp-ledger__row--link pp-404"
+            class="cq-ch404__row"
           >
-            <span class="pp-stack--tight">
-              <span class="pp-h3">{{ entry.name }}</span>
-              <span class="pp-small">{{ CARD_COPY[entry.slug].hostLabel }}</span>
+            <span class="cq-ch404__who">
+              <span class="cq-h3">{{ entry.name }}</span>
+              <span class="cq-small">{{ CARD_COPY[entry.slug].hostLabel }}</span>
             </span>
-            <span class="pp-inline pp-404__open"
+            <span class="cq-ch404__open"
               >Open<Icon name="arrow-right" :size="14"
             /></span>
           </RouterLink>
@@ -174,12 +178,14 @@ const openChallenges = CHALLENGES.filter((entry) => entry.open);
       </ul>
     </section>
 
-    <div class="pp-band">
-      <RouterLink to="/challenges" class="pp-btn pp-btn--lg">{{ NOT_FOUND.cta }}</RouterLink>
+    <div class="cq-band cq-ch404__band">
+      <RouterLink to="/challenges" class="cq-btn cq-btn--lg cq-ch404__cta">{{
+        NOT_FOUND.cta
+      }}</RouterLink>
     </div>
   </div>
 
-  <div v-else class="pp-page">
+  <div v-else class="cq-page cq-chdetail">
     <ChallengeHero
       :host-icon="detail.hostIcon"
       :host-label="detail.hostLabel"
@@ -193,130 +199,180 @@ const openChallenges = CHALLENGES.filter((entry) => entry.open);
       :cta-note="detail.ctaNote"
     />
 
-    <div class="pp-stage">
-      <div class="pp-wide pp-detail__metrics">
-        <MetricPanel v-for="panel in panels" :key="panel.title" :panel="panel" />
-      </div>
+    <div class="cq-stage cq-chdetail__stage">
+      <div class="cq-stage__main">
+        <div class="cq-chdetail__figures">
+          <MetricPanel v-for="panel in panels" :key="panel.title" :panel="panel" />
+        </div>
 
-      <div class="pp-margin">
         <section
           v-for="panel in panels"
           :key="panel.title"
-          class="pp-margin__block pp-facts__block"
+          class="cq-sheet cq-chfacts"
         >
-          <p class="pp-eyebrow">{{ panel.direction }}</p>
+          <div class="cq-chfacts__head">
+            <p class="cq-eyebrow">{{ panel.direction }}</p>
 
-          <dl class="pp-facts__list">
-            <div class="pp-kv">
-              <dt class="pp-kv__k">Where it started</dt>
-              <dd class="pp-kv__v">{{ panel.start }}</dd>
+            <p v-if="panel.progressRight" class="cq-tag cq-tag--sm cq-chfacts__target">
+              {{ panel.progressRight }}
+            </p>
+          </div>
+
+          <dl class="cq-chfacts__list">
+            <div class="cq-kv">
+              <dt class="cq-kv__k">Where it started</dt>
+              <dd class="cq-kv__v">{{ panel.start }}</dd>
             </div>
-            <div v-if="panel.extra" class="pp-kv">
-              <dt class="pp-kv__k">
-                {{ panel.extra.label }}<span class="pp-facts__dot" aria-hidden="true">·</span
-                ><span class="pp-facts__note">{{ panel.extra.labelNote }}</span>
+            <div v-if="panel.extra" class="cq-kv">
+              <dt class="cq-kv__k">
+                {{ panel.extra.label }}<span class="cq-chfacts__dot" aria-hidden="true">·</span
+                ><span class="cq-chfacts__note">{{ panel.extra.labelNote }}</span>
               </dt>
-              <dd class="pp-kv__v">
-                {{ panel.extra.value }} <span class="pp-facts__unit">{{ panel.extra.unit }}</span>
+              <dd class="cq-kv__v">
+                {{ panel.extra.value }} <span class="cq-chfacts__unit">{{ panel.extra.unit }}</span>
               </dd>
             </div>
           </dl>
-
-          <p v-if="panel.progressRight" class="pp-tag pp-tag--sm pp-facts__target">
-            {{ panel.progressRight }}
-          </p>
 
           <a
             :href="panel.leaderboard"
             target="_blank"
             rel="noreferrer"
-            class="pp-link pp-facts__board"
+            class="cq-link cq-chfacts__board"
             >Official leaderboard<Icon name="external-link" :size="12"
           /></a>
         </section>
       </div>
-    </div>
 
-    <!-- What's at stake: the Proximity Prize is scored twice. -->
-    <section v-if="stakes.kind === 'bounds'" class="pp-sec">
-      <div class="pp-sec__head">
-        <h2 class="pp-h2">{{ stakes.heading }}</h2>
-      </div>
+      <aside class="cq-stage__edge cq-chdetail__edge">
+        <!-- What's at stake: the Proximity Prize is scored twice. -->
+        <section v-if="stakes.kind === 'bounds'" class="cq-band cq-chstakes">
+          <div class="cq-chstakes__head">
+            <h2 class="cq-h2">{{ stakes.heading }}</h2>
+          </div>
 
-      <div class="pp-stakes__bounds">
-        <section
-          v-for="bound in stakes.bounds"
-          :key="bound.id"
-          :aria-labelledby="bound.id"
-          class="pp-stakes__bound"
-        >
-          <div class="pp-inline pp-stakes__boundhead">
-            <h3 :id="bound.id" class="pp-h3">{{ bound.title }}</h3>
-            <VerbBadge v-bind="bound.badge" />
+          <section
+            v-for="bound in stakes.bounds"
+            :key="bound.id"
+            :aria-labelledby="bound.id"
+            class="cq-chstakes__bound"
+          >
+            <div class="cq-chstakes__boundhead">
+              <h3 :id="bound.id" class="cq-h3">{{ bound.title }}</h3>
+              <VerbBadge v-bind="bound.badge" />
+            </div>
+
+            <StakesCard
+              :protects-label="bound.protectsLabel"
+              :protects="bound.protects"
+              :value="bound.value"
+              :unit="bound.unit"
+            >
+              <template #number-note>
+                <p class="cq-small" v-html="bound.numberNote" />
+              </template>
+
+              <template #extra>
+                <div class="cq-chstakes__interval">
+                  <div
+                    class="cq-meter cq-chstakes__rail"
+                    aria-hidden="true"
+                    title="Bits, from 0 to the 128-bit target"
+                  >
+                    <span
+                      class="cq-chstakes__proven"
+                      :style="{ width: `${stakes.provenWidth}%` }"
+                    />
+                    <span
+                      class="cq-chstakes__reach"
+                      :style="{ width: `${stakes.reachWidth}%` }"
+                    />
+                  </div>
+                  <ul class="cq-inline cq-chstakes__legend">
+                    <li class="cq-inline cq-chstakes__key">
+                      <span aria-hidden="true" class="cq-dot cq-dot--live" />Proven safe<span
+                        class="cq-num cq-chstakes__tone"
+                        >{{ stakes.lowerText }}</span
+                      >
+                    </li>
+                    <li class="cq-inline cq-chstakes__key">
+                      <span aria-hidden="true" class="cq-dot cq-chstakes__dot" />Still open
+                    </li>
+                    <li class="cq-inline cq-chstakes__key">
+                      <span
+                        aria-hidden="true"
+                        class="cq-dot cq-chstakes__dot cq-chstakes__dot--reach"
+                      />Proven out of reach<span class="cq-num cq-chstakes__tone">{{
+                        stakes.upperText
+                      }}</span>
+                    </li>
+                  </ul>
+                  <p class="cq-small">
+                    The truth lies between {{ stakes.lowerText }} and {{ stakes.upperText }} bits.
+                  </p>
+                </div>
+              </template>
+
+              <template #scale>
+                <p class="cq-small">{{ stakes.scaleIntro }}</p>
+                <table class="cq-table cq-chstakes__table">
+                  <tbody>
+                    <tr v-for="row in stakes.scaleRows" :key="row.label">
+                      <td :class="row.tone === 'proven' ? 'cq-tone-live' : ''">{{ row.label }}</td>
+                      <td class="cq-table__num">{{ row.value }}</td>
+                      <td class="cq-table__num" v-html="row.when" />
+                    </tr>
+                  </tbody>
+                </table>
+              </template>
+
+              <template #footnote>
+                {{ stakes.footnote }}
+                <a
+                  :href="stakes.sourceHref"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="cq-link cq-chstakes__source"
+                  >Source: the challenge's own rules<Icon name="external-link" :size="12"
+                /></a>
+              </template>
+            </StakesCard>
+          </section>
+        </section>
+
+        <!-- Everything else: one stake block under one heading. -->
+        <section v-else :aria-labelledby="stakes.id" class="cq-band cq-chstakes">
+          <div class="cq-chstakes__head">
+            <h2 :id="stakes.id" class="cq-h2">What's at stake</h2>
+            <VerbBadge v-bind="stakes.badge" />
           </div>
 
           <StakesCard
-            :protects-label="bound.protectsLabel"
-            :protects="bound.protects"
-            :value="bound.value"
-            :unit="bound.unit"
+            :protects-label="stakes.protectsLabel"
+            :protects="stakes.protects"
+            :value="stakes.value"
+            :unit="stakes.unit"
           >
             <template #number-note>
-              <p class="pp-small" v-html="bound.numberNote" />
-            </template>
-
-            <template #extra>
-              <div class="pp-interval">
-                <div
-                  class="pp-meter pp-interval__rail"
-                  aria-hidden="true"
-                  title="Bits, from 0 to the 128-bit target"
-                >
-                  <span
-                    class="pp-interval__proven"
-                    :style="{ width: `${stakes.provenWidth}%` }"
-                  />
-                  <span
-                    class="pp-interval__reach"
-                    :style="{ width: `${stakes.reachWidth}%` }"
-                  />
-                </div>
-                <ul class="pp-inline pp-interval__legend">
-                  <li class="pp-inline pp-interval__key">
-                    <span aria-hidden="true" class="pp-dot pp-dot--live" />Proven safe<span
-                      class="pp-num pp-tone-ink"
-                      >{{ stakes.lowerText }}</span
-                    >
-                  </li>
-                  <li class="pp-inline pp-interval__key">
-                    <span aria-hidden="true" class="pp-dot pp-interval__dot" />Still open
-                  </li>
-                  <li class="pp-inline pp-interval__key">
-                    <span
-                      aria-hidden="true"
-                      class="pp-dot pp-interval__dot pp-interval__dot--reach"
-                    />Proven out of reach<span class="pp-num pp-tone-ink">{{
-                      stakes.upperText
-                    }}</span>
-                  </li>
-                </ul>
-                <p class="pp-small">
-                  The truth lies between {{ stakes.lowerText }} and {{ stakes.upperText }} bits.
-                </p>
-              </div>
+              <p class="cq-small" v-html="stakes.numberNote" />
             </template>
 
             <template #scale>
-              <p class="pp-small">{{ stakes.scaleIntro }}</p>
-              <table class="pp-table pp-stake__table">
-                <tbody>
-                  <tr v-for="row in stakes.scaleRows" :key="row.label">
-                    <td :class="row.tone === 'proven' ? 'pp-tone-live' : ''">{{ row.label }}</td>
-                    <td class="pp-table__num">{{ row.value }}</td>
-                    <td class="pp-table__num" v-html="row.when" />
-                  </tr>
-                </tbody>
-              </table>
+              <ul class="cq-chscale">
+                <li v-for="row in stakes.scaleRows" :key="row.label" class="cq-chscale__row">
+                  <span
+                    class="cq-chscale__label"
+                    :class="row.tone === 'proven' ? 'cq-tone-live' : ''"
+                    >{{ row.label }}</span
+                  >
+                  <span
+                    class="cq-chscale__value cq-num"
+                    :class="row.tone === 'proven' ? 'cq-tone-live' : 'cq-tone-ink'"
+                    >{{ row.value }}</span
+                  >
+                </li>
+              </ul>
+              <p v-if="stakes.scaleNoteAfter" class="cq-small" v-html="stakes.scaleNoteAfter" />
             </template>
 
             <template #footnote>
@@ -325,276 +381,413 @@ const openChallenges = CHALLENGES.filter((entry) => entry.open);
                 :href="stakes.sourceHref"
                 target="_blank"
                 rel="noreferrer"
-                class="pp-link pp-stake__source"
+                class="cq-link cq-chstakes__source"
                 >Source: the challenge's own rules<Icon name="external-link" :size="12"
               /></a>
             </template>
           </StakesCard>
         </section>
-      </div>
-    </section>
+      </aside>
+    </div>
 
-    <!-- Everything else: one stake block under one heading. -->
-    <section v-else :aria-labelledby="stakes.id" class="pp-sec">
-      <div class="pp-sec__head">
-        <h2 :id="stakes.id" class="pp-h2">What's at stake</h2>
-        <VerbBadge v-bind="stakes.badge" />
+    <section class="cq-sheet cq-chtokens">
+      <div class="cq-chtokens__head">
+        <h2 class="cq-h2">Tokens on this challenge</h2>
       </div>
 
-      <StakesCard
-        :protects-label="stakes.protectsLabel"
-        :protects="stakes.protects"
-        :value="stakes.value"
-        :unit="stakes.unit"
-      >
-        <template #number-note>
-          <p class="pp-small" v-html="stakes.numberNote" />
-        </template>
-
-        <template #scale>
-          <ul class="pp-scale">
-            <li v-for="row in stakes.scaleRows" :key="row.label" class="pp-scale__row">
-              <span
-                class="pp-scale__label"
-                :class="row.tone === 'proven' ? 'pp-tone-live' : ''"
-                >{{ row.label }}</span
-              >
-              <span
-                class="pp-scale__value pp-num"
-                :class="row.tone === 'proven' ? 'pp-tone-live' : 'pp-tone-ink'"
-                >{{ row.value }}</span
-              >
-            </li>
-          </ul>
-          <p v-if="stakes.scaleNoteAfter" class="pp-small" v-html="stakes.scaleNoteAfter" />
-        </template>
-
-        <template #footnote>
-          {{ stakes.footnote }}
-          <a
-            :href="stakes.sourceHref"
-            target="_blank"
-            rel="noreferrer"
-            class="pp-link pp-stake__source"
-            >Source: the challenge's own rules<Icon name="external-link" :size="12"
-          /></a>
-        </template>
-      </StakesCard>
-    </section>
-
-    <section class="pp-sec">
-      <div class="pp-sec__head">
-        <h2 class="pp-h2">Tokens on this challenge</h2>
-      </div>
-
-      <ul v-if="tokens.length" class="pp-grid pp-grid--2 pp-tokens">
-        <li v-for="token in tokens" :key="token.mint" class="pp-tokens__item">
+      <ul v-if="tokens.length" class="cq-chtokens__list">
+        <li v-for="token in tokens" :key="token.mint" class="cq-chtokens__item">
           <TokenGridCard :token="token" :market="market[token.mint] ?? null" />
         </li>
       </ul>
-      <p v-else class="pp-note">No token works on it yet.</p>
+      <p v-else class="cq-note cq-chtokens__empty">No token works on it yet.</p>
     </section>
   </div>
 </template>
 
 <style scoped>
-.pp-redirect {
+.cq-chredirect {
   min-height: 40vh;
 }
 
-.pp-404 {
-  padding: 18px 4px;
+/* ---------- not found ---------------------------------------------------- */
+
+.cq-ch404__body {
+  max-width: 48ch;
+}
+
+.cq-ch404__list {
+  margin-bottom: clamp(22px, 3vw, 34px);
+  overflow: clip;
+}
+
+.cq-ch404__ledger {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cq-ch404__item + .cq-ch404__item {
+  border-top: 1px solid var(--cq-line-soft);
+}
+
+.cq-ch404__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 20px;
+  padding: 18px clamp(20px, 2.6vw, 30px);
+  color: var(--cq-ink);
   text-decoration: none;
 }
 
-.pp-404__open {
-  gap: 6px;
-  font-family: var(--pp-mono);
-  font-size: 0.74rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--pp-accent-text);
+.cq-ch404__row:hover,
+.cq-ch404__row:focus-visible {
+  background: var(--cq-sheet-soft);
 }
 
-.pp-detail__metrics {
-  gap: var(--pp-t3);
-}
-
-.pp-facts__block {
-  gap: 12px;
-}
-
-.pp-facts__list {
+.cq-ch404__who {
   display: grid;
-}
-
-.pp-facts__list .pp-kv {
-  grid-template-columns: minmax(0, 1fr);
   gap: 2px;
+  min-width: 0;
 }
 
-.pp-facts__list .pp-kv__v {
-  text-align: left;
+.cq-ch404__open {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--cq-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cq-accent-text);
 }
 
-.pp-facts__dot {
+.cq-ch404__band {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  padding: clamp(18px, 2.4vw, 26px) clamp(20px, 2.8vw, 34px);
+}
+
+/* ---------- data stage --------------------------------------------------- */
+
+.cq-chdetail__stage {
+  padding-top: clamp(22px, 3.2vw, 44px);
+  align-items: start;
+}
+
+.cq-chdetail__figures {
+  display: grid;
+  gap: clamp(18px, 2vw, 28px);
+}
+
+.cq-chfacts {
+  display: grid;
+  min-width: 0;
+}
+
+.cq-chfacts__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 14px;
+  padding: 13px clamp(18px, 2.4vw, 26px);
+  border-bottom: 1px solid var(--cq-line);
+  background: var(--cq-sheet-soft);
+}
+
+.cq-chfacts__target {
+  flex-shrink: 0;
+}
+
+.cq-chfacts__list {
+  display: grid;
+  margin: 0;
+  padding: 4px clamp(18px, 2.4vw, 26px);
+}
+
+.cq-chfacts__dot {
   padding: 0 4px;
-  color: var(--pp-line-strong);
+  color: var(--cq-line-strong);
 }
 
-.pp-facts__note {
-  color: var(--pp-muted);
+.cq-chfacts__note {
+  color: var(--cq-muted);
 }
 
-.pp-facts__unit {
-  color: var(--pp-muted);
+.cq-chfacts__unit {
+  color: var(--cq-muted);
 }
 
-.pp-facts__target {
-  justify-self: start;
-}
-
-.pp-facts__board {
+.cq-chfacts__board {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: var(--pp-mono);
+  justify-self: start;
+  margin: 2px clamp(18px, 2.4vw, 26px) 18px;
+  font-family: var(--cq-mono);
   font-size: 0.72rem;
 }
 
-.pp-stakes__bounds {
-  display: grid;
-  gap: var(--pp-t5);
+@media (max-width: 560px) {
+  .cq-chfacts .cq-kv {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+
+  .cq-chfacts .cq-kv__v {
+    text-align: left;
+  }
 }
 
-.pp-stakes__bound {
+/* ---------- stakes, dark edge ------------------------------------------- */
+
+.cq-chstakes.cq-band {
+  --cq-ink: #f2f5fc;
+  --cq-ink-soft: #d4dceb;
+  --cq-muted: #a1aec2;
+  --cq-muted-ground: #bcc7d8;
+  --cq-line: #2b3546;
+  --cq-line-soft: #222b39;
+  --cq-line-strong: #475568;
+  --cq-sheet-soft: #151c27;
+  --cq-sheet-sunk: #27303e;
+  --cq-accent-text: #b9c4ff;
+  --cq-accent-soft: #1b2442;
+  --cq-accent-line: #3a4a86;
+  --cq-live: #5fd6a4;
+  --cq-live-surface: #0d2b20;
   display: grid;
-  gap: var(--pp-t3);
+  align-items: stretch;
+  gap: 0;
+  margin: 0;
+  padding: clamp(20px, 2.4vw, 28px);
+  border: 1px solid #232c3b;
+  border-radius: var(--cq-radius-lg);
+  align-self: start;
 }
 
-.pp-stakes__boundhead {
+.cq-chstakes__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px 14px;
+  padding-bottom: clamp(12px, 1.6vw, 18px);
 }
 
-.pp-stakes__boundhead .pp-h3 {
+.cq-chstakes__head .cq-h2 {
+  font-size: clamp(1.4rem, 2vw, 1.85rem);
+  color: var(--cq-ink);
+}
+
+.cq-chstakes__bound + .cq-chstakes__bound {
+  margin-top: clamp(20px, 2.6vw, 28px);
+  padding-top: clamp(18px, 2.2vw, 26px);
+  border-top: 1px solid var(--cq-line);
+}
+
+.cq-chstakes__boundhead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  padding-bottom: 2px;
+}
+
+.cq-chstakes__boundhead .cq-h3 {
   min-width: 0;
   overflow-wrap: anywhere;
+  color: var(--cq-ink);
 }
 
-.pp-stakes__bound + .pp-stakes__bound {
-  padding-top: var(--pp-t5);
-  border-top: 1px solid var(--pp-line);
-}
-
-.pp-interval {
+.cq-chstakes__interval {
   display: grid;
   gap: 10px;
-  margin-top: 4px;
+  padding-top: 4px;
 }
 
-.pp-interval__rail {
+.cq-chstakes__rail {
   position: relative;
   height: 8px;
-  background: var(--pp-sheet-sunk);
+  background: var(--cq-sheet-sunk);
   border-radius: 999px;
   overflow: hidden;
 }
 
-.pp-interval__proven,
-.pp-interval__reach {
+.cq-chstakes__proven,
+.cq-chstakes__reach {
   position: absolute;
   top: 0;
   bottom: 0;
   display: block;
 }
 
-.pp-interval__proven {
+.cq-chstakes__proven {
   left: 0;
-  background: var(--pp-live);
+  background: var(--cq-live);
 }
 
-.pp-interval__reach {
+.cq-chstakes__reach {
   right: 0;
-  background: color-mix(in srgb, var(--pp-line-strong) 70%, transparent);
+  background: #566276;
 }
 
-.pp-interval__legend {
+.cq-chstakes__legend {
   gap: 6px 16px;
-  font-size: 0.72rem;
-  color: var(--pp-muted);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: var(--cq-mono);
+  font-size: 0.68rem;
+  line-height: 1.45;
+  color: var(--cq-muted);
 }
 
-.pp-interval__key {
+.cq-chstakes__key {
   gap: 6px;
 }
 
-.pp-interval__dot {
-  background: var(--pp-line-strong);
+.cq-chstakes__tone {
+  color: var(--cq-ink);
 }
 
-.pp-interval__dot--reach {
-  background: color-mix(in srgb, var(--pp-line-strong) 70%, transparent);
+.cq-chstakes__dot {
+  background: #7b8799;
 }
 
-.pp-stake__table {
-  font-size: 0.8rem;
+.cq-chstakes__dot--reach {
+  background: #566276;
 }
 
-.pp-stake__table td:first-child {
-  padding-left: 0;
+.cq-chstakes__table {
+  width: 100%;
+  font-size: 0.75rem;
 }
 
-.pp-stake__table td:last-child {
-  padding-right: 0;
+.cq-chstakes__table td {
+  padding: 7px 0;
+  border-top: 1px solid var(--cq-line-soft);
+  overflow-wrap: anywhere;
 }
 
-.pp-stake__source {
+.cq-chstakes__table td + td {
+  padding-left: 12px;
+  text-align: right;
+}
+
+.cq-chstakes__source {
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 3px;
   margin-left: 4px;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
-.pp-scale {
+.cq-chscale {
   display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.pp-scale__row {
+.cq-chscale__row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: baseline;
   gap: 12px;
-  padding: 8px 0;
-  border-bottom: 1px solid var(--pp-line-soft);
+  padding: 9px 0;
+  border-bottom: 1px solid var(--cq-line-soft);
 }
 
-.pp-scale__row:last-child {
+.cq-chscale__row:last-child {
   border-bottom: 0;
 }
 
-.pp-scale__label {
+.cq-chscale__label {
   font-size: 0.78rem;
-  color: var(--pp-muted);
+  line-height: 1.45;
+  color: var(--cq-muted);
 }
 
-.pp-scale__value {
-  font-size: 0.82rem;
-}
-
-.pp-tokens {
-  margin-top: var(--pp-t3);
-}
-
-.pp-tokens__item {
-  min-width: 0;
+.cq-chscale__value {
+  font-size: 0.8rem;
+  color: var(--cq-ink);
+  text-align: right;
 }
 
 @media (max-width: 560px) {
-  .pp-scale__row {
+  .cq-chscale__row {
     grid-template-columns: minmax(0, 1fr);
     gap: 2px;
+  }
+
+  .cq-chscale__value {
+    text-align: left;
+  }
+}
+
+/* ---------- tokens ------------------------------------------------------- */
+
+.cq-chtokens {
+  margin-top: clamp(28px, 4vw, 56px);
+  display: grid;
+  min-width: 0;
+}
+
+.cq-chtokens__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 18px;
+  padding: clamp(18px, 2.4vw, 26px) clamp(20px, 2.8vw, 32px);
+  border-bottom: 1px solid var(--cq-line);
+  background: var(--cq-sheet-soft);
+}
+
+.cq-chtokens__head .cq-h2 {
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+}
+
+.cq-chtokens__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cq-chtokens__item {
+  min-width: 0;
+  padding: 0 clamp(18px, 2.6vw, 30px);
+}
+
+.cq-chtokens__item + .cq-chtokens__item {
+  border-top: 1px solid var(--cq-line-soft);
+}
+
+.cq-chtokens__empty {
+  margin: clamp(18px, 2.4vw, 26px) clamp(20px, 2.8vw, 32px);
+}
+
+@media (max-width: 1180px) {
+  .cq-chdetail__edge {
+    gap: 14px;
+  }
+
+  .cq-chdetail__stage {
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  }
+}
+
+@media (max-width: 960px) {
+  .cq-chdetail__stage {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 </style>

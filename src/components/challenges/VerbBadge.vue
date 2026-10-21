@@ -11,22 +11,22 @@ const props = defineProps({
 
 /** The registry still hands over the old Tailwind colour hints; map them. */
 const tint = computed(() =>
-  props.iconClass?.includes("brand") ? "pp-tone-accent" : "pp-tone-ink",
+  props.iconClass?.includes("brand") ? "cq-tone-accent" : "cq-tone-ink",
 );
 </script>
 
 <template>
-  <span class="pp-tag pp-tag--accent pp-verb">
-    <ChallengeIcon :name="icon" class="pp-verb__icon" :class="tint" />{{ verb }}
+  <span class="cq-tag cq-tag--accent cq-verb">
+    <ChallengeIcon :name="icon" class="cq-verb__icon" :class="tint" />{{ verb }}
   </span>
 </template>
 
 <style scoped>
-.pp-verb {
+.cq-verb {
   gap: 7px;
 }
 
-.pp-verb__icon {
+.cq-verb__icon {
   width: 13px;
   height: 13px;
   flex-shrink: 0;

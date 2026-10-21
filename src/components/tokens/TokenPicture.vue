@@ -16,8 +16,8 @@ const box = computed(() => ({ width: `${props.size}px`, height: `${props.size}px
 
 <template>
   <div
-    class="pp-pic"
-    :class="shape === 'circle' ? 'pp-pic--circle' : ''"
+    class="cq-pic"
+    :class="shape === 'circle' ? 'cq-pic--circle' : ''"
     :style="box"
   >
     <img
@@ -25,26 +25,26 @@ const box = computed(() => ({ width: `${props.size}px`, height: `${props.size}px
       :alt="`${name}'s picture`"
       loading="lazy"
       decoding="async"
-      class="pp-pic__img"
+      class="cq-pic__img"
     />
   </div>
 </template>
 
 <style scoped>
-.pp-pic {
+.cq-pic {
   position: relative;
   flex-shrink: 0;
   overflow: clip;
-  border: 1px solid var(--pp-line);
+  border: 1px solid var(--cq-line);
   border-radius: 6px;
-  background: var(--pp-sheet-sunk);
+  background: var(--cq-sheet-sunk);
 }
 
-.pp-pic--circle {
+.cq-pic--circle {
   border-radius: 999px;
 }
 
-.pp-pic__img {
+.cq-pic__img {
   position: absolute;
   inset: 0;
   width: 100%;

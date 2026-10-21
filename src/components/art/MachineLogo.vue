@@ -43,7 +43,7 @@ defineExpose({ has });
     :viewBox="logo.viewBox"
     role="img"
     :aria-label="maker"
-    class="pp-maker-svg"
+    class="cq-maker-svg"
     v-html="logo.body"
   />
 </template>

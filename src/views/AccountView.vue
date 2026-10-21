@@ -4,7 +4,7 @@
  *
  * The page is a single empty-state plate with a compact facts margin. The
  * reference hands sign-in to Privy with the copy
- * "Sign in to Qubitlane" / "By email or with a Solana wallet"; here that panel is
+ * "Sign in to Qubitess" / "By email or with a Solana wallet"; here that panel is
  * rendered inline and resolved entirely in the browser — the email path never
  * leaves the page and the wallet path only calls `window.solana` /
  * `window.solflare` when the extension is installed. No external auth API is
@@ -25,7 +25,7 @@ const WORDS = {
   signedInAs: "Signed in as {who}",
   signInPrompt: "Sign in to see the tokens you launched.",
   empty: "You haven't launched a token yet.",
-  landingHeader: "Sign in to Qubitlane",
+  landingHeader: "Sign in to Qubitess",
   loginMessage: "By email or with a Solana wallet",
   cancelled: "Sign-in was closed before it finished.",
   invalid: "That didn't work. Try again.",
@@ -36,7 +36,7 @@ const WALLETS = [
   { key: "solflare", name: "Solflare" },
 ];
 
-const STORAGE_KEY = "qubitlane:signin";
+const STORAGE_KEY = "qubitess:signin";
 
 const account = ref(null); // { kind: "email" | "wallet", who, address? }
 const panelOpen = ref(false);
@@ -149,22 +149,28 @@ const walletHint = computed(() => {
 </script>
 
 <template>
-  <div class="pp-page pp-account">
-    <div class="pp-head pp-account__head">
-      <span class="pp-account__folio" aria-hidden="true" />
-      <h1 class="pp-runhead pp-account__title">{{ WORDS.title }}</h1>
-    </div>
+  <div class="cq-page cq-account">
+    <header class="cq-pagehead cq-account__head">
+      <div class="cq-pagehead__head">
+        <span class="cq-account__folio" aria-hidden="true" />
+        <h1 class="cq-runhead cq-account__title">{{ WORDS.title }}</h1>
+      </div>
 
-    <div class="pp-stage pp-account__stage">
-      <section class="pp-wide pp-account__plate">
-        <span class="pp-account__plate-mark" aria-hidden="true" />
-        <span class="pp-account__plate-art" aria-hidden="true">
+      <div class="cq-pagehead__edge cq-account__headedge">
+        <span class="cq-account__headmark" aria-hidden="true" />
+      </div>
+    </header>
+
+    <section class="cq-account__stage">
+      <div class="cq-sheet cq-account__plate">
+        <span class="cq-account__plate-mark" aria-hidden="true" />
+        <span class="cq-account__plate-art" aria-hidden="true">
           <CardArt name="figure" />
         </span>
 
-        <div class="pp-account__plate-body">
+        <div class="cq-account__plate-body">
           <template v-if="account">
-            <p class="pp-lede pp-account__empty">{{ WORDS.empty }}</p>
+            <p class="cq-lede cq-account__empty">{{ WORDS.empty }}</p>
             <AppButton variant="outline" @click="signOut">
               {{ WORDS.signOut }}
             </AppButton>
@@ -173,28 +179,26 @@ const walletHint = computed(() => {
             <AppButton size="lg" @click="openPanel">{{ WORDS.signIn }}</AppButton>
           </template>
         </div>
-      </section>
 
-      <div class="pp-margin pp-account__margin">
-        <div class="pp-margin__block pp-account__fact">
+        <div class="cq-account__fact">
           <template v-if="account">
-            <span class="pp-account__fact-line" aria-hidden="true" />
-            <p class="pp-account__fact-value">
-              <Icon name="wallet" :size="16" class="pp-account__fact-icon" />
+            <span class="cq-account__fact-line" aria-hidden="true" />
+            <p class="cq-account__fact-value">
+              <Icon name="wallet" :size="16" class="cq-account__fact-icon" />
               <span>{{ signedInLabel }}</span>
             </p>
           </template>
           <template v-else>
-            <p class="pp-small pp-account__note">{{ WORDS.signInPrompt }}</p>
+            <p class="cq-small cq-account__note">{{ WORDS.signInPrompt }}</p>
           </template>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Sign-in panel. Stands in for the reference's Privy modal. -->
     <div
       v-if="panelOpen"
-      class="pp-account__scrim"
+      class="cq-account__scrim"
       role="presentation"
       @click.self="closePanel"
     >
@@ -202,16 +206,16 @@ const walletHint = computed(() => {
         role="dialog"
         aria-modal="true"
         aria-labelledby="signin-title"
-        class="pp-account__dialog"
+        class="cq-account__dialog"
       >
-        <div class="pp-account__dialog-head">
-          <span class="pp-account__brand" role="img" aria-label="Qubitlane">
+        <div class="cq-account__dialog-head">
+          <span class="cq-account__brand" role="img" aria-label="Qubitess">
             <BrandMark />
             <span
               aria-hidden="true"
               translate="no"
-              class="pp-account__wordmark"
-              >Qubit<span class="pp-account__wordmark-accent">lane</span></span
+              class="cq-account__wordmark"
+              >Qubit<span class="cq-account__wordmark-accent">ess</span></span
             >
           </span>
           <AppButton variant="ghost" size="icon" aria-label="Close" @click="closePanel">
@@ -219,14 +223,14 @@ const walletHint = computed(() => {
           </AppButton>
         </div>
 
-        <div class="pp-account__dialog-title">
-          <h2 id="signin-title" class="pp-h2">{{ WORDS.landingHeader }}</h2>
-          <p class="pp-small">{{ WORDS.loginMessage }}</p>
+        <div class="cq-account__dialog-title">
+          <h2 id="signin-title" class="cq-h2">{{ WORDS.landingHeader }}</h2>
+          <p class="cq-small">{{ WORDS.loginMessage }}</p>
         </div>
 
-        <form class="pp-account__form" @submit.prevent="signInWithEmail">
-          <div class="pp-field">
-            <label for="signin-email" class="pp-field__label">Email</label>
+        <form class="cq-account__form" @submit.prevent="signInWithEmail">
+          <div class="cq-field">
+            <label for="signin-email" class="cq-field__label">Email</label>
             <input
               id="signin-email"
               v-model="email"
@@ -234,12 +238,12 @@ const walletHint = computed(() => {
               name="email"
               autocomplete="email"
               placeholder="you@example.com"
-              class="pp-input"
+              class="cq-input"
             />
           </div>
           <AppButton
             type="submit"
-            class="pp-btn--full pp-account__submit"
+            class="cq-btn--full cq-account__submit"
             :disabled="busy === 'email'"
           >
             <Icon v-if="busy === 'email'" name="loader-circle" />
@@ -247,33 +251,33 @@ const walletHint = computed(() => {
           </AppButton>
         </form>
 
-        <div class="pp-account__divider">
-          <span aria-hidden="true" class="pp-account__divider-line" />
+        <div class="cq-account__divider">
+          <span aria-hidden="true" class="cq-account__divider-line" />
           or
-          <span aria-hidden="true" class="pp-account__divider-line" />
+          <span aria-hidden="true" class="cq-account__divider-line" />
         </div>
 
-        <div class="pp-account__wallets">
+        <div class="cq-account__wallets">
           <AppButton
             v-for="wallet in WALLETS"
             :key="wallet.key"
             variant="outline"
-            class="pp-btn--full pp-account__wallet"
+            class="cq-btn--full cq-account__wallet"
             :disabled="busy === wallet.key"
             @click="signInWithWallet(wallet.key)"
           >
             <Icon name="wallet" />
             Continue with {{ wallet.name }}
-            <span v-if="installed[wallet.key]" class="pp-tag pp-tag--sm pp-account__installed"
+            <span v-if="installed[wallet.key]" class="cq-tag cq-tag--sm cq-account__installed"
               >Installed</span
             >
           </AppButton>
         </div>
 
-        <p v-if="notice" class="pp-field__error">{{ notice }}</p>
-        <p v-else-if="walletHint" class="pp-small">{{ walletHint }}</p>
+        <p v-if="notice" class="cq-field__error">{{ notice }}</p>
+        <p v-else-if="walletHint" class="cq-small">{{ walletHint }}</p>
 
-        <p class="pp-tiny pp-account__preview">
+        <p class="cq-tiny cq-account__preview">
           This preview keeps the session in your browser only. No email is sent and no
           account is created.
         </p>
@@ -283,77 +287,103 @@ const walletHint = computed(() => {
 </template>
 
 <style scoped>
-.pp-account {
-  padding-bottom: var(--pp-t6);
+.cq-account {
+  padding-bottom: clamp(28px, 4vw, 56px);
 }
 
-.pp-account__head {
-  position: relative;
-  gap: 12px;
-  padding-top: var(--pp-t6);
-  padding-bottom: var(--pp-t5);
+/* running head -------------------------------------------------------- */
+.cq-account__head {
+  align-items: end;
 }
 
-.pp-account__folio {
+.cq-account__folio {
   display: block;
   width: 32px;
   height: 32px;
-  border-top: 1px solid var(--pp-accent);
-  border-left: 1px solid var(--pp-accent);
+  margin-bottom: 14px;
+  border-top: 1px solid var(--cq-accent);
+  border-left: 1px solid var(--cq-accent);
   opacity: 0.8;
 }
 
-.pp-account__title {
-  font-size: clamp(3.2rem, 9vw, 7rem);
-  line-height: 0.9;
+.cq-account__title {
+  margin-top: 0;
+  font-size: clamp(46px, 9vw, 112px);
+  line-height: 0.88;
   letter-spacing: -0.055em;
 }
 
-.pp-account__stage {
-  padding-top: var(--pp-t4);
-  align-items: stretch;
+.cq-account__headedge {
+  align-items: flex-end;
+  padding-bottom: 10px;
 }
 
-.pp-account__plate {
+.cq-account__headmark {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: clamp(260px, 38vh, 400px);
-  padding: clamp(22px, 3vw, 36px);
-  background: var(--pp-sheet);
-  border: 1px solid var(--pp-line);
-  border-radius: 2px;
-  overflow: hidden;
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-right: 1px solid var(--cq-line-strong);
+  border-bottom: 1px solid var(--cq-line-strong);
 }
 
-.pp-account__plate-mark {
+.cq-account__headmark::before {
+  content: "";
   position: absolute;
-  top: 22px;
-  right: 22px;
-  width: 24px;
-  height: 24px;
-  border-top: 1px solid var(--pp-line-strong);
-  border-right: 1px solid var(--pp-line-strong);
+  right: 8px;
+  bottom: 8px;
+  width: 6px;
+  height: 6px;
+  background: var(--cq-accent);
 }
 
-.pp-account__plate-art {
+/* plate --------------------------------------------------------------- */
+.cq-account__stage {
+  display: grid;
+  place-items: start center;
+  padding-top: clamp(4px, 1vw, 12px);
+}
+
+.cq-account__plate {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  min-height: clamp(260px, 38vh, 380px);
+  padding: clamp(22px, 3vw, 36px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: end;
+  gap: clamp(20px, 3vw, 34px);
+  overflow: clip;
+}
+
+.cq-account__plate-mark {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  border-top: 1px solid var(--cq-line-strong);
+  border-right: 1px solid var(--cq-line-strong);
+}
+
+.cq-account__plate-art {
   position: absolute;
   right: -8%;
-  bottom: -12%;
+  bottom: -14%;
   display: block;
-  width: min(72%, 560px);
-  color: var(--pp-accent);
-  opacity: 0.22;
+  width: min(68%, 420px);
+  color: var(--cq-accent);
+  opacity: 0.2;
   pointer-events: none;
 }
 
-.pp-account__plate-art :deep(svg) {
+.cq-account__plate-art :deep(svg) {
   width: 100%;
   height: auto;
 }
 
-.pp-account__plate-body {
+.cq-account__plate-body {
   position: relative;
   z-index: 1;
   display: flex;
@@ -362,54 +392,52 @@ const walletHint = computed(() => {
   gap: 18px;
 }
 
-.pp-account__empty {
+.cq-account__empty {
   max-width: 26ch;
   margin-right: auto;
 }
 
-.pp-account__margin {
-  align-content: start;
+.cq-account__fact {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--cq-line);
 }
 
-.pp-account__fact {
-  gap: 12px;
-  padding-left: 14px;
-  border-top: 1px solid var(--pp-line);
-  border-left: 2px solid var(--pp-accent);
-}
-
-.pp-account__fact-line {
+.cq-account__fact-line {
   display: block;
   width: 28px;
   height: 2px;
-  background: var(--pp-accent);
+  background: var(--cq-accent);
 }
 
-.pp-account__fact-value {
+.cq-account__fact-value {
   display: flex;
   align-items: center;
   gap: 10px;
   min-width: 0;
   font-size: 0.88rem;
   line-height: 1.5;
-  color: var(--pp-ink);
+  color: var(--cq-ink);
   overflow-wrap: anywhere;
 }
 
-.pp-account__fact-icon {
+.cq-account__fact-icon {
   flex-shrink: 0;
-  color: var(--pp-accent-text);
+  color: var(--cq-accent-text);
 }
 
-.pp-account__note {
-  max-width: 32ch;
+.cq-account__note {
+  max-width: 42ch;
   font-size: 0.9rem;
   line-height: 1.55;
-  color: var(--pp-ink-soft);
+  color: var(--cq-ink-soft);
 }
 
 /* Sign-in dialog */
-.pp-account__scrim {
+.cq-account__scrim {
   position: fixed;
   inset: 0;
   z-index: 80;
@@ -421,28 +449,28 @@ const walletHint = computed(() => {
   backdrop-filter: blur(6px);
 }
 
-.pp-account__dialog {
+.cq-account__dialog {
   display: grid;
-  gap: var(--pp-t3);
+  gap: var(--cq-t3);
   width: min(100%, 32rem);
   max-height: calc(100dvh - 32px);
   overflow-y: auto;
   padding: clamp(20px, 3vw, 30px);
-  background: var(--pp-sheet);
-  border: 1px solid var(--pp-line-strong);
-  border-top: 3px solid var(--pp-accent);
-  border-radius: 2px;
-  box-shadow: var(--pp-shadow);
+  background: var(--cq-sheet);
+  border: 1px solid var(--cq-line-strong);
+  border-top: 3px solid var(--cq-accent);
+  border-radius: var(--cq-radius);
+  box-shadow: var(--cq-shadow);
 }
 
-.pp-account__dialog-head {
+.cq-account__dialog-head {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
 }
 
-.pp-account__brand {
+.cq-account__brand {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
@@ -450,132 +478,107 @@ const walletHint = computed(() => {
   font-size: 1.15rem;
 }
 
-.pp-account__wordmark {
-  font-family: var(--pp-display);
+.cq-account__wordmark {
+  font-family: var(--cq-display);
   font-weight: 620;
   letter-spacing: -0.03em;
-  color: var(--pp-ink);
+  color: var(--cq-ink);
 }
 
-.pp-account__wordmark-accent {
-  color: var(--pp-accent-text);
+.cq-account__wordmark-accent {
+  color: var(--cq-accent-text);
 }
 
-.pp-account__dialog-title {
+.cq-account__dialog-title {
   display: grid;
   gap: 4px;
 }
 
-.pp-account__form {
+.cq-account__form {
   display: grid;
   gap: 12px;
 }
 
-.pp-account__submit {
+.cq-account__submit {
   width: 100%;
 }
 
-.pp-account__divider {
+.cq-account__divider {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: var(--pp-mono);
+  font-family: var(--cq-mono);
   font-size: 0.66rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
 }
 
-.pp-account__divider-line {
+.cq-account__divider-line {
   flex: 1;
   height: 1px;
-  background: var(--pp-line);
+  background: var(--cq-line);
 }
 
-.pp-account__wallets {
+.cq-account__wallets {
   display: grid;
   gap: 8px;
 }
 
-.pp-account__wallet {
+.cq-account__wallet {
   width: 100%;
   justify-content: flex-start;
-  font-family: var(--pp-body);
+  font-family: var(--cq-body);
   font-size: 0.88rem;
   letter-spacing: 0;
   text-transform: none;
 }
 
-.pp-account__installed {
+.cq-account__installed {
   margin-left: auto;
 }
 
-.pp-account__preview {
+.cq-account__preview {
   padding-top: 4px;
-  border-top: 1px dashed var(--pp-line-strong);
+  border-top: 1px dashed var(--cq-line-strong);
 }
 
-@media (max-width: 1180px) {
-  .pp-account__stage {
-    align-items: stretch;
+@media (max-width: 960px) {
+  .cq-account__headedge {
+    align-items: flex-start;
   }
 
-  .pp-account__margin {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .pp-account__note {
-    max-width: 60ch;
-  }
-}
-
-@media (max-width: 900px) {
-  .pp-account__head {
-    padding-top: var(--pp-t5);
-  }
-
-  .pp-account__plate {
-    min-height: 320px;
+  .cq-account__plate {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 560px) {
-  .pp-account {
-    padding-bottom: var(--pp-t5);
+  .cq-account__title {
+    font-size: clamp(40px, 15vw, 64px);
   }
 
-  .pp-account__title {
-    font-size: clamp(2.9rem, 15vw, 4rem);
-  }
-
-  .pp-account__plate {
-    min-height: 260px;
+  .cq-account__plate {
+    min-height: 250px;
     padding: 18px;
   }
 
-  .pp-account__plate-mark {
-    top: 16px;
-    right: 16px;
-    width: 18px;
-    height: 18px;
-  }
-
-  .pp-account__plate-art {
+  .cq-account__plate-art {
     right: -18%;
     bottom: -8%;
-    width: 92%;
+    width: 88%;
   }
 
-  .pp-account__empty {
+  .cq-account__empty {
     max-width: 24ch;
   }
 
-  .pp-account__dialog {
+  .cq-account__dialog {
     padding: 18px;
     max-height: calc(100dvh - 24px);
   }
 
-  .pp-account__scrim {
+  .cq-account__scrim {
     padding: 12px;
   }
 }

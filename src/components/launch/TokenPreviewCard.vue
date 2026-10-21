@@ -1,6 +1,6 @@
 <script setup>
 /**
- * "How it shows on Qubitlane" — the token card as it will appear in the
+ * "How it shows on Qubitess" — the token card as it will appear in the
  * directory, driven live by the form. With no picture picked it falls back to
  * the quantum seal carrying the ticker's first letter.
  */
@@ -23,156 +23,171 @@ const quoteNote = `Trades against ${QUOTE_ASSET.symbol}, ${QUOTE_ASSET.name}'s t
 </script>
 
 <template>
-  <div class="pp-preview">
-    <p class="pp-h4 pp-preview__caption">
-      <span aria-hidden="true" class="pp-preview__dot"></span>How it shows on Qubitlane
-    </p>
+  <section class="cq-sheet cq-lprev">
+    <header class="cq-lprev__head">
+      <p class="cq-h4 cq-lprev__caption">
+        <span aria-hidden="true" class="cq-lprev__dot"></span>How it shows on Qubitess
+      </p>
+      <span aria-hidden="true" class="cq-lprev__tick"></span>
+    </header>
 
-    <div class="pp-sheet pp-preview__sheet">
-      <a href="/t/preview" class="pp-preview__link">
-        <div class="pp-preview__ident">
-          <div class="pp-preview__avatar">
-            <img
-              v-if="pictureUrl"
-              :src="pictureUrl"
-              :alt="`${tokenTicker}'s picture`"
-              class="pp-preview__img"
-            />
-            <svg
-              v-else
-              viewBox="0 0 100 100"
-              class="pp-preview__seal"
-              role="img"
-              :aria-label="`${tokenTicker}'s picture`"
-              aria-hidden="false"
+    <a href="/t/preview" class="cq-lprev__link">
+      <div class="cq-lprev__ident">
+        <div class="cq-lprev__avatar">
+          <img
+            v-if="pictureUrl"
+            :src="pictureUrl"
+            :alt="`${tokenTicker}'s picture`"
+            class="cq-lprev__img"
+          />
+          <svg
+            v-else
+            viewBox="0 0 100 100"
+            class="cq-lprev__seal"
+            role="img"
+            :aria-label="`${tokenTicker}'s picture`"
+            aria-hidden="false"
+          >
+            <g transform="rotate(0 50 50)" fill="none" stroke-width="1.5">
+              <path
+                d="M18 82 A64 64 0 0 1 82 18"
+                class="cq-lprev__arc"
+                vector-effect="non-scaling-stroke"
+              ></path>
+              <circle
+                cx="82"
+                cy="18"
+                r="3.2"
+                class="cq-lprev__node"
+                stroke="none"
+              ></circle>
+            </g>
+            <text
+              x="50"
+              y="50"
+              text-anchor="middle"
+              dominant-baseline="central"
+              class="cq-lprev__initial"
+              font-size="44"
+              letter-spacing="-1"
             >
-              <g transform="rotate(0 50 50)" fill="none" stroke-width="1.5">
-                <path
-                  d="M18 82 A64 64 0 0 1 82 18"
-                  class="pp-preview__arc"
-                  vector-effect="non-scaling-stroke"
-                ></path>
-                <circle
-                  cx="82"
-                  cy="18"
-                  r="3.2"
-                  class="pp-preview__node"
-                  stroke="none"
-                ></circle>
-              </g>
-              <text
-                x="50"
-                y="50"
-                text-anchor="middle"
-                dominant-baseline="central"
-                class="pp-preview__initial"
-                font-size="44"
-                letter-spacing="-1"
-              >
-                {{ initial }}
-              </text>
-            </svg>
-          </div>
-
-          <div class="pp-preview__meta">
-            <h3 translate="no" class="pp-preview__name">{{ tokenName }}</h3>
-            <p class="pp-preview__ticker">
-              <span translate="no" class="pp-preview__sym">${{ tokenTicker }}</span>
-              <span :title="quoteNote" class="pp-tag pp-tag--sm pp-preview__quote">
-                <img :src="QUOTE_ASSET.logo" alt="" class="pp-preview__qlogo" />
-                <span translate="no" aria-hidden="true">{{ QUOTE_ASSET.symbol }}</span>
-                <span class="sr-only">{{ quoteNote }}</span>
-              </span>
-            </p>
-          </div>
+              {{ initial }}
+            </text>
+          </svg>
         </div>
 
-        <div class="pp-preview__stats">
-          <span class="pp-preview__status">
-            <span aria-hidden="true" class="pp-preview__pending"></span>Waiting for fees
-          </span>
-          <span class="pp-preview__sessions pp-num">0 sessions</span>
-        </div>
-
-        <p class="pp-preview__empty">No trades yet</p>
-
-        <div class="pp-preview__foot">
-          <p class="pp-preview__line">
-            <Icon
-              :name="challenge.group === 'stress' ? 'crosshair' : 'shield'"
-              :size="14"
-              class="pp-preview__icon"
-            />
-            <span class="pp-preview__goaltxt"
-              ><span class="pp-preview__goalname">{{
-                challenge.group === "stress" ? "Stress test" : "Defend"
-              }}</span
-              ><span aria-hidden="true" class="pp-preview__slash"> / </span>{{ challenge.goal }}</span
-            >
-          </p>
-          <p class="pp-preview__line">
-            <Icon :name="challenge.icon" :size="14" class="pp-preview__icon" />
-            <span class="pp-preview__labeltxt">{{ challenge.label }}</span>
+        <div class="cq-lprev__meta">
+          <h3 translate="no" class="cq-lprev__name">{{ tokenName }}</h3>
+          <p class="cq-lprev__ticker">
+            <span translate="no" class="cq-lprev__sym">${{ tokenTicker }}</span>
+            <span :title="quoteNote" class="cq-tag cq-tag--sm cq-lprev__quote">
+              <img :src="QUOTE_ASSET.logo" alt="" class="cq-lprev__qlogo" />
+              <span translate="no" aria-hidden="true">{{ QUOTE_ASSET.symbol }}</span>
+              <span class="sr-only">{{ quoteNote }}</span>
+            </span>
           </p>
         </div>
-      </a>
-    </div>
-  </div>
+      </div>
+
+      <div class="cq-lprev__stats">
+        <span class="cq-lprev__status">
+          <span aria-hidden="true" class="cq-lprev__pending"></span>Waiting for fees
+        </span>
+        <span class="cq-lprev__sessions cq-num">0 sessions</span>
+      </div>
+
+      <p class="cq-lprev__empty">No trades yet</p>
+
+      <div class="cq-lprev__foot">
+        <p class="cq-lprev__line">
+          <Icon
+            :name="challenge.group === 'stress' ? 'crosshair' : 'shield'"
+            :size="14"
+            class="cq-lprev__icon"
+          />
+          <span class="cq-lprev__goaltxt"
+            ><span class="cq-lprev__goalname">{{
+              challenge.group === "stress" ? "Stress test" : "Defend"
+            }}</span
+            ><span aria-hidden="true" class="cq-lprev__slash"> / </span>{{ challenge.goal }}</span
+          >
+        </p>
+        <p class="cq-lprev__line">
+          <Icon :name="challenge.icon" :size="14" class="cq-lprev__icon" />
+          <span class="cq-lprev__labeltxt">{{ challenge.label }}</span>
+        </p>
+      </div>
+    </a>
+  </section>
 </template>
 
 <style scoped>
-.pp-preview {
+.cq-lprev {
   display: grid;
-  gap: 10px;
   min-width: 0;
+  overflow: hidden;
+  background: var(--cq-sheet);
+  border-top: 1px solid var(--cq-line-strong);
+  box-shadow: none;
 }
 
-.pp-preview__caption {
+.cq-lprev__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 16px 11px;
+  border-bottom: 1px solid var(--cq-line);
+}
+
+.cq-lprev__caption {
   display: flex;
   align-items: center;
   gap: 8px;
+  min-width: 0;
 }
 
-.pp-preview__dot {
+.cq-lprev__dot {
   width: 6px;
   height: 6px;
   flex: 0 0 auto;
-  border-radius: 0;
-  background: var(--pp-accent);
+  background: var(--cq-accent);
 }
 
-.pp-preview__sheet {
-  pointer-events: none;
-  border-top-color: var(--pp-line-strong);
+.cq-lprev__tick {
+  width: 24px;
+  height: 1px;
+  flex: 0 0 auto;
+  background: var(--cq-line-strong);
 }
 
-.pp-preview__link {
+.cq-lprev__link {
   display: grid;
   gap: 12px;
   min-width: 0;
-  padding: 14px 0;
+  padding: 14px 16px 16px;
+  pointer-events: none;
 }
 
-.pp-preview__ident {
+.cq-lprev__ident {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 11px;
   min-width: 0;
 }
 
-.pp-preview__avatar {
+.cq-lprev__avatar {
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   flex: 0 0 auto;
   overflow: hidden;
-  border: 1px solid var(--pp-line-strong);
-  border-radius: 0;
+  border: 1px solid var(--cq-line-strong);
   background: #171610;
 }
 
-.pp-preview__img,
-.pp-preview__seal {
+.cq-lprev__img,
+.cq-lprev__seal {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -180,40 +195,40 @@ const quoteNote = `Trades against ${QUOTE_ASSET.symbol}, ${QUOTE_ASSET.name}'s t
   object-fit: cover;
 }
 
-.pp-preview__arc {
-  stroke: var(--pp-accent);
+.cq-lprev__arc {
+  stroke: var(--cq-accent);
 }
 
-.pp-preview__node {
-  fill: var(--pp-accent);
+.cq-lprev__node {
+  fill: var(--cq-accent);
 }
 
-.pp-preview__initial {
+.cq-lprev__initial {
   fill: #fff;
   color: #fff;
-  font-family: var(--pp-display);
+  font-family: var(--cq-display);
   font-weight: 620;
   letter-spacing: -1px;
 }
 
-.pp-preview__meta {
+.cq-lprev__meta {
   display: grid;
   gap: 4px;
   min-width: 0;
 }
 
-.pp-preview__name {
+.cq-lprev__name {
   min-width: 0;
-  font-family: var(--pp-display);
-  font-size: 1.08rem;
+  font-family: var(--cq-display);
+  font-size: 1.04rem;
   font-weight: 500;
   letter-spacing: -0.01em;
   line-height: 1.2;
-  color: var(--pp-ink);
+  color: var(--cq-ink);
   overflow-wrap: anywhere;
 }
 
-.pp-preview__ticker {
+.cq-lprev__ticker {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -221,26 +236,25 @@ const quoteNote = `Trades against ${QUOTE_ASSET.symbol}, ${QUOTE_ASSET.name}'s t
   min-width: 0;
 }
 
-.pp-preview__sym {
-  font-family: var(--pp-mono);
-  font-size: 0.76rem;
-  color: var(--pp-ink-soft);
+.cq-lprev__sym {
+  font-family: var(--cq-mono);
+  font-size: 0.73rem;
+  color: var(--cq-ink-soft);
   overflow-wrap: anywhere;
 }
 
-.pp-preview__quote {
+.cq-lprev__quote {
   gap: 5px;
   padding-right: 7px;
-  color: var(--pp-ink-soft);
+  color: var(--cq-ink-soft);
 }
 
-.pp-preview__qlogo {
+.cq-lprev__qlogo {
   width: 14px;
   height: 14px;
-  border-radius: 0;
 }
 
-.pp-preview__stats {
+.cq-lprev__stats {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -249,70 +263,69 @@ const quoteNote = `Trades against ${QUOTE_ASSET.symbol}, ${QUOTE_ASSET.name}'s t
   min-width: 0;
 }
 
-.pp-preview__status {
+.cq-lprev__status {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  font-size: 0.74rem;
-  color: var(--pp-muted);
+  font-size: 0.72rem;
+  color: var(--cq-muted);
   white-space: nowrap;
 }
 
-.pp-preview__pending {
+.cq-lprev__pending {
   width: 7px;
   height: 7px;
   flex: 0 0 auto;
-  border: 1px solid var(--pp-line-strong);
-  border-radius: 0;
+  border: 1px solid var(--cq-line-strong);
 }
 
-.pp-preview__sessions {
-  font-size: 0.72rem;
-  color: var(--pp-muted);
+.cq-lprev__sessions {
+  font-size: 0.69rem;
+  color: var(--cq-muted);
   white-space: nowrap;
 }
 
-.pp-preview__empty {
-  font-size: 0.78rem;
-  color: var(--pp-muted);
+.cq-lprev__empty {
+  font-size: 0.76rem;
+  color: var(--cq-muted);
 }
 
-.pp-preview__foot {
+.cq-lprev__foot {
   display: grid;
   gap: 8px;
   padding-top: 12px;
-  border-top: 1px solid var(--pp-line);
+  border-top: 1px solid var(--cq-line);
 }
 
-.pp-preview__line {
+.cq-lprev__line {
   display: flex;
   align-items: flex-start;
   gap: 7px;
   min-width: 0;
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   line-height: 1.45;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
 }
 
-.pp-preview__icon {
+.cq-lprev__icon {
   flex: 0 0 auto;
   margin-top: 1px;
-  color: var(--pp-accent-text);
+  color: var(--cq-accent-text);
 }
 
-.pp-preview__goaltxt,
-.pp-preview__labeltxt {
+.cq-lprev__goaltxt,
+.cq-lprev__labeltxt {
   min-width: 0;
   text-wrap: pretty;
   overflow-wrap: anywhere;
 }
 
-.pp-preview__goalname {
+.cq-lprev__goalname {
   font-weight: 620;
-  color: var(--pp-ink-soft);
+  color: var(--cq-ink-soft);
 }
 
-.pp-preview__slash {
-  color: var(--pp-line-strong);
+.cq-lprev__slash {
+  color: var(--cq-line-strong);
 }
 </style>

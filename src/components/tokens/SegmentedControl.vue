@@ -14,13 +14,13 @@ defineEmits(["update:modelValue"]);
 </script>
 
 <template>
-  <div role="group" :aria-label="ariaLabel" class="pp-seg">
+  <div role="group" :aria-label="ariaLabel" class="cq-seg">
     <button
       v-for="item in items"
       :key="item.key"
       type="button"
       :aria-pressed="item.key === modelValue"
-      class="pp-seg__item"
+      class="cq-seg__item"
       :class="{ 'is-pressed': item.key === modelValue }"
       @click="$emit('update:modelValue', item.key)"
     >

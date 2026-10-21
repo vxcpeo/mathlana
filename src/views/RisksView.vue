@@ -22,12 +22,12 @@ const SECTIONS = [
   {
     n: "03",
     title: "Results take time to count",
-    body: "A result checked by Qubitlane still needs the organizers' check, which can take hours, and may be refused.",
+    body: "A result checked by Qubitess still needs the organizers' check, which can take hours, and may be refused.",
   },
   {
     n: "04",
     title: "Services can fail",
-    body: "Qubitlane relies on Solana, pump.fun, a launch and fee-routing service, AI model providers, quantum computers and their clouds, and the challenges' platforms. Any of them can be slow or stop, and a quantum machine's answer always carries noise.",
+    body: "Qubitess relies on Solana, pump.fun, a launch and fee-routing service, AI model providers, quantum computers and their clouds, and the challenges' platforms. Any of them can be slow or stop, and a quantum machine's answer always carries noise.",
   },
 ];
 </script>

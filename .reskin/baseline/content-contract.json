@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "projectName": "qubitlane-website",
-    "title": "qubitlane-website",
+    "projectName": "qubitess-website",
+    "title": "qubitess-website",
     "lang": "en"
   },
   "routes": [
@@ -27,1334 +27,1254 @@
   "visibleText": [
     {
       "value": "-bit key",
-      "count": 4
+      "count": 2
     },
     {
       "value": ", goes on chain with the token.",
-      "count": 2
-    },
-    {
-      "value": ", or",
-      "count": 2
-    },
-    {
-      "value": ". The address may be mistyped, or the token may predate the directory.",
-      "count": 2
-    },
-    {
-      "value": "'s tokenized stock on Solana. Its fees and its opening buy are in",
-      "count": 2
-    },
-    {
-      "value": "% of what you pasted sits behind a public key that is already on chain.",
-      "count": 2
-    },
-    {
-      "value": "% to graduation",
-      "count": 2
-    },
-    {
-      "value": "$0.00",
-      "count": 2
-    },
-    {
-      "value": "0 bits",
-      "count": 2
-    },
-    {
-      "value": "0 sessions",
-      "count": 2
-    },
-    {
-      "value": "15 bits",
-      "count": 2
-    },
-    {
-      "value": "24h change",
-      "count": 2
-    },
-    {
-      "value": "A large enough quantum computer runs Shor's algorithm and reads a private key from its public key. Mathlana runs that attack on real quantum computers today, and measures how small the machine that breaks a real key could be.",
       "count": 1
     },
     {
-      "value": "A large enough quantum computer runs Shor's algorithm and reads a private key from its public key. Qubitlane runs that attack on real quantum computers today, and measures how small the machine that breaks a real key could be.",
+      "value": ", or",
+      "count": 1
+    },
+    {
+      "value": ". The address may be mistyped, or the token may predate the directory.",
+      "count": 1
+    },
+    {
+      "value": "'s tokenized stock on Solana. Its fees and its opening buy are in",
+      "count": 1
+    },
+    {
+      "value": "% of what you pasted sits behind a public key that is already on chain.",
+      "count": 1
+    },
+    {
+      "value": "% to graduation",
+      "count": 1
+    },
+    {
+      "value": "$0.00",
+      "count": 1
+    },
+    {
+      "value": "0 bits",
+      "count": 1
+    },
+    {
+      "value": "0 sessions",
+      "count": 1
+    },
+    {
+      "value": "15 bits",
+      "count": 1
+    },
+    {
+      "value": "24h change",
+      "count": 1
+    },
+    {
+      "value": "A large enough quantum computer runs Shor's algorithm and reads a private key from its public key. Qubitess runs that attack on real quantum computers today, and measures how small the machine that breaks a real key could be.",
       "count": 1
     },
     {
       "value": "A public prize was awarded on 24 April 2026 for breaking a 15-bit key on a quantum computer.",
-      "count": 2
-    },
-    {
-      "value": "A token's chat pushes any task to IBM, IQM or IonQ, and shows the machine's answer.",
-      "count": 2
-    },
-    {
-      "value": "A token's image, redrawn 1:1 by a real quantum computer.",
-      "count": 2
-    },
-    {
-      "value": "A token's page shows its quantum-drawn picture, its market, the AI/Quantum pool that pays for its agent, and every session the agent runs on its challenge.",
-      "count": 2
-    },
-    {
-      "value": "A wallet key is walked address by address until 20 in a row have never received. Its own keys stay behind a hash until an address spends.",
-      "count": 2
-    },
-    {
-      "value": "About",
-      "count": 2
-    },
-    {
-      "value": "About Mathlana",
       "count": 1
     },
     {
-      "value": "About Qubitlane",
+      "value": "A token's chat pushes any task to IBM, IQM or IonQ, and shows the machine's answer.",
+      "count": 1
+    },
+    {
+      "value": "A token's image, redrawn 1:1 by a real quantum computer.",
+      "count": 1
+    },
+    {
+      "value": "A token's page shows its quantum-drawn picture, its market, the AI/Quantum pool that pays for its agent, and every session the agent runs on its challenge.",
+      "count": 1
+    },
+    {
+      "value": "A wallet key is walked address by address until 20 in a row have never received. Its own keys stay behind a hash until an address spends.",
+      "count": 1
+    },
+    {
+      "value": "About",
+      "count": 1
+    },
+    {
+      "value": "About Qubitess",
       "count": 1
     },
     {
       "value": "Addresses of Bitcoin, Ethereum or Solana, one per line, or a Bitcoin wallet's xpub, ypub or zpub.",
-      "count": 2
-    },
-    {
-      "value": "Agents build Shor's attack on practice keys that use Bitcoin's own curve equation, with real field arithmetic. Mathlana checks every step on every point of the curve, runs an attack on a real quantum computer only when it can beat random guessing, and counts a key size broken after three confirmed runs with fresh keys.",
       "count": 1
     },
     {
-      "value": "Agents build Shor's attack on practice keys that use Bitcoin's own curve equation, with real field arithmetic. Qubitlane checks every step on every point of the curve, runs an attack on a real quantum computer only when it can beat random guessing, and counts a key size broken after three confirmed runs with fresh keys.",
+      "value": "Agents build Shor's attack on practice keys that use Bitcoin's own curve equation, with real field arithmetic. Qubitess checks every step on every point of the curve, runs an attack on a real quantum computer only when it can beat random guessing, and counts a key size broken after three confirmed runs with fresh keys.",
       "count": 1
     },
     {
       "value": "AI",
-      "count": 4
+      "count": 2
     },
     {
       "value": "AI and quantum board",
-      "count": 2
-    },
-    {
-      "value": "AI is starting to find new math fast. Elliptic curves and lattices have structure that new math can exploit, so they may fall sooner than planned, possibly before quantum computers. Hashes have no such structure: hash-based cryptography with machine-checked proofs is the way out.",
-      "count": 2
-    },
-    {
-      "value": "AI-accelerated math",
-      "count": 4
-    },
-    {
-      "value": "AI/Quantum pool",
-      "count": 2
-    },
-    {
-      "value": "and",
-      "count": 6
-    },
-    {
-      "value": "are closing in on the math that guards them. Mathlana measures how close, live.",
       "count": 1
     },
     {
-      "value": "are closing in on the math that guards them. Qubitlane measures how close, live.",
+      "value": "AI is starting to find new math fast. Elliptic curves and lattices have structure that new math can exploit, so they may fall sooner than planned, possibly before quantum computers. Hashes have no such structure: hash-based cryptography with machine-checked proofs is the way out.",
+      "count": 1
+    },
+    {
+      "value": "AI-accelerated math",
+      "count": 2
+    },
+    {
+      "value": "AI/Quantum pool",
+      "count": 1
+    },
+    {
+      "value": "and",
+      "count": 3
+    },
+    {
+      "value": "are closing in on the math that guards them. Qubitess measures how close, live.",
       "count": 1
     },
     {
       "value": "Art made of real quantum measurements, a grain an ordinary computer can only imitate. Platform covers the cost.",
-      "count": 2
-    },
-    {
-      "value": "Bitcoin ·",
-      "count": 2
-    },
-    {
-      "value": "Bitcoin and Ethereum keys are",
-      "count": 2
-    },
-    {
-      "value": "Bitcoin, Ethereum and Solana sign with elliptic curves. Two forces could break them, and Mathlana works on both.",
       "count": 1
     },
     {
-      "value": "Bitcoin, Ethereum and Solana sign with elliptic curves. Two forces could break them, and Qubitlane works on both.",
+      "value": "Bitcoin ·",
+      "count": 1
+    },
+    {
+      "value": "Bitcoin and Ethereum keys are",
+      "count": 1
+    },
+    {
+      "value": "Bitcoin, Ethereum and Solana sign with elliptic curves. Two forces could break them, and Qubitess works on both.",
       "count": 1
     },
     {
       "value": "Bitcoin, Ethereum, Solana.",
-      "count": 2
-    },
-    {
-      "value": "bits",
-      "count": 8
-    },
-    {
-      "value": "Bits proven safe",
-      "count": 2
-    },
-    {
-      "value": "Bits where it stops being safe",
-      "count": 2
-    },
-    {
-      "value": "bits.",
-      "count": 4
-    },
-    {
-      "value": "by",
-      "count": 2
-    },
-    {
-      "value": "byte·cycles",
-      "count": 2
-    },
-    {
-      "value": "Change",
-      "count": 2
-    },
-    {
-      "value": "Check",
-      "count": 2
-    },
-    {
-      "value": "Check a wallet",
-      "count": 6
-    },
-    {
-      "value": "Checked",
-      "count": 2
-    },
-    {
-      "value": "Checked by Mathlana",
       "count": 1
     },
     {
-      "value": "Checked by Qubitlane",
+      "value": "bits",
+      "count": 4
+    },
+    {
+      "value": "Bits proven safe",
+      "count": 1
+    },
+    {
+      "value": "Bits where it stops being safe",
+      "count": 1
+    },
+    {
+      "value": "bits.",
+      "count": 2
+    },
+    {
+      "value": "by",
+      "count": 1
+    },
+    {
+      "value": "byte·cycles",
+      "count": 1
+    },
+    {
+      "value": "Change",
+      "count": 1
+    },
+    {
+      "value": "Check",
+      "count": 1
+    },
+    {
+      "value": "Check a wallet",
+      "count": 3
+    },
+    {
+      "value": "Checked",
+      "count": 1
+    },
+    {
+      "value": "Checked by Qubitess",
       "count": 1
     },
     {
       "value": "Choose a picture",
-      "count": 4
+      "count": 2
     },
     {
       "value": "Choose a picture first",
-      "count": 2
-    },
-    {
-      "value": "Clear",
-      "count": 2
-    },
-    {
-      "value": "Connecting",
-      "count": 2
-    },
-    {
-      "value": "Continue with",
-      "count": 3
-    },
-    {
-      "value": "Created by",
-      "count": 2
-    },
-    {
-      "value": "Description",
-      "count": 2
-    },
-    {
-      "value": "Draw it",
-      "count": 2
-    },
-    {
-      "value": "Draw it again",
-      "count": 2
-    },
-    {
-      "value": "Drawn on",
-      "count": 2
-    },
-    {
-      "value": "Each level is a key size. A level has two wins: the smallest correct attack, which moves to whoever shrinks it further, and the break, owned for good after three confirmed runs on one machine.",
-      "count": 2
-    },
-    {
-      "value": "Each token's fees fill its AI/Quantum pool, which pays an AI agent and quantum computer runs on a cryptography challenge, live and in public. A result counts only when a machine checks it.",
-      "count": 2
-    },
-    {
-      "value": "ECDSA.fail",
-      "count": 6
-    },
-    {
-      "value": "Elliptic curves (ECDSA, Ed25519): your wallet's keys, at risk from both threats",
-      "count": 2
-    },
-    {
-      "value": "Email",
-      "count": 3
-    },
-    {
-      "value": "Entanglement check",
-      "count": 2
-    },
-    {
-      "value": "Every run comes out new.",
-      "count": 2
-    },
-    {
-      "value": "Every run is registered here before it is sent and stays public, failures included. Each uses a fresh practice key drawn after the attack was fixed: its commitment shows at once, the key itself with the verdict.",
-      "count": 2
-    },
-    {
-      "value": "Every token funds an agent.",
-      "count": 2
-    },
-    {
-      "value": "Every token trades against",
-      "count": 2
-    },
-    {
-      "value": "Exposure check",
-      "count": 4
-    },
-    {
-      "value": "Fees pay for every session. Nothing is paid in advance, so a quiet token researches less often, never worse.",
-      "count": 2
-    },
-    {
-      "value": "For scale",
-      "count": 2
-    },
-    {
-      "value": "From a token to a result a machine has checked, in four steps, all in public.",
-      "count": 2
-    },
-    {
-      "value": "From trades, being collected",
-      "count": 2
-    },
-    {
-      "value": "Go home",
-      "count": 3
-    },
-    {
-      "value": "Green marks only what Mathlana's check or Lean proved. The agent's notes and milestones are its own word.",
       "count": 1
     },
     {
-      "value": "Green marks only what Qubitlane's check or Lean proved. The agent's notes and milestones are its own word.",
+      "value": "Clear",
+      "count": 1
+    },
+    {
+      "value": "Connecting",
+      "count": 1
+    },
+    {
+      "value": "Continue with",
+      "count": 1
+    },
+    {
+      "value": "Created by",
+      "count": 1
+    },
+    {
+      "value": "Description",
+      "count": 1
+    },
+    {
+      "value": "Draw it",
+      "count": 1
+    },
+    {
+      "value": "Draw it again",
+      "count": 1
+    },
+    {
+      "value": "Drawn on",
+      "count": 1
+    },
+    {
+      "value": "Each level is a key size. A level has two wins: the smallest correct attack, which moves to whoever shrinks it further, and the break, owned for good after three confirmed runs on one machine.",
+      "count": 1
+    },
+    {
+      "value": "Each token's fees fill its AI/Quantum pool, which pays an AI agent and quantum computer runs on a cryptography challenge, live and in public. A result counts only when a machine checks it.",
+      "count": 1
+    },
+    {
+      "value": "ECDSA.fail",
+      "count": 3
+    },
+    {
+      "value": "Elliptic curves (ECDSA, Ed25519): your wallet's keys, at risk from both threats",
+      "count": 1
+    },
+    {
+      "value": "Email",
+      "count": 1
+    },
+    {
+      "value": "Entanglement check",
+      "count": 1
+    },
+    {
+      "value": "ess",
+      "count": 4
+    },
+    {
+      "value": "Every run comes out new.",
+      "count": 1
+    },
+    {
+      "value": "Every run is registered here before it is sent and stays public, failures included. Each uses a fresh practice key drawn after the attack was fixed: its commitment shows at once, the key itself with the verdict.",
+      "count": 1
+    },
+    {
+      "value": "Every token funds an agent.",
+      "count": 1
+    },
+    {
+      "value": "Every token trades against",
+      "count": 1
+    },
+    {
+      "value": "Exposure check",
+      "count": 2
+    },
+    {
+      "value": "Fees pay for every session. Nothing is paid in advance, so a quiet token researches less often, never worse.",
+      "count": 1
+    },
+    {
+      "value": "For scale",
+      "count": 1
+    },
+    {
+      "value": "From a token to a result a machine has checked, in four steps, all in public.",
+      "count": 1
+    },
+    {
+      "value": "From trades, being collected",
+      "count": 1
+    },
+    {
+      "value": "Go home",
+      "count": 1
+    },
+    {
+      "value": "Green marks only what Qubitess's check or Lean proved. The agent's notes and milestones are its own word.",
       "count": 1
     },
     {
       "value": "Hardware runs",
-      "count": 2
-    },
-    {
-      "value": "Hash-based signatures, made smaller.",
-      "count": 2
-    },
-    {
-      "value": "Hash-based: the way out",
-      "count": 2
-    },
-    {
-      "value": "Hash-based: the way out, made smaller and proven sound",
-      "count": 2
-    },
-    {
-      "value": "How a level is won",
-      "count": 2
-    },
-    {
-      "value": "How close it is",
-      "count": 2
-    },
-    {
-      "value": "How it reads each chain",
-      "count": 2
-    },
-    {
-      "value": "How it shows on Mathlana",
       "count": 1
     },
     {
-      "value": "How it shows on Qubitlane",
+      "value": "Hash-based signatures, made smaller.",
+      "count": 1
+    },
+    {
+      "value": "Hash-based: the way out",
+      "count": 1
+    },
+    {
+      "value": "Hash-based: the way out, made smaller and proven sound",
+      "count": 1
+    },
+    {
+      "value": "How a level is won",
+      "count": 1
+    },
+    {
+      "value": "How close it is",
+      "count": 1
+    },
+    {
+      "value": "How it reads each chain",
+      "count": 1
+    },
+    {
+      "value": "How it shows on Qubitess",
       "count": 1
     },
     {
       "value": "How it works",
-      "count": 6
+      "count": 3
     },
     {
-      "value": "How Mathlana works on them",
-      "count": 1
-    },
-    {
-      "value": "How Qubitlane works on them",
+      "value": "How Qubitess works on them",
       "count": 1
     },
     {
       "value": "How sound hash-based proof systems are, proven.",
-      "count": 2
-    },
-    {
-      "value": "If the math behind wallet signatures weakens, through quantum computers or AI-accelerated math, coins behind a public key are the first within reach. Paste a wallet to see how much sits where, and the one calm step that fits.",
-      "count": 2
-    },
-    {
-      "value": "in 24h",
-      "count": 2
-    },
-    {
-      "value": "In the pool now",
-      "count": 2
-    },
-    {
-      "value": "Installed",
-      "count": 3
-    },
-    {
-      "value": "is better",
-      "count": 2
-    },
-    {
-      "value": "Is your money behind a public key?",
-      "count": 4
-    },
-    {
-      "value": "Its number: the public record",
-      "count": 2
-    },
-    {
-      "value": "Its picture",
-      "count": 2
-    },
-    {
-      "value": "Its score comes with it.",
-      "count": 2
-    },
-    {
-      "value": "Its test also passes when the quantum computer is swapped for random numbers: the circuit carried the answer in as constants. Mathlana's check would not count that run.",
       "count": 1
     },
     {
-      "value": "Its test also passes when the quantum computer is swapped for random numbers: the circuit carried the answer in as constants. Qubitlane's check would not count that run.",
+      "value": "If the math behind wallet signatures weakens, through quantum computers or AI-accelerated math, coins behind a public key are the first within reach. Paste a wallet to see how much sits where, and the one calm step that fits.",
+      "count": 1
+    },
+    {
+      "value": "in 24h",
+      "count": 1
+    },
+    {
+      "value": "In the pool now",
+      "count": 1
+    },
+    {
+      "value": "Installed",
+      "count": 1
+    },
+    {
+      "value": "is better",
+      "count": 1
+    },
+    {
+      "value": "Is your money behind a public key?",
+      "count": 2
+    },
+    {
+      "value": "Its number: the public record",
+      "count": 1
+    },
+    {
+      "value": "Its picture",
+      "count": 1
+    },
+    {
+      "value": "Its score comes with it.",
+      "count": 1
+    },
+    {
+      "value": "Its test also passes when the quantum computer is swapped for random numbers: the circuit carried the answer in as constants. Qubitess's check would not count that run.",
       "count": 1
     },
     {
       "value": "Keep savings at fresh addresses, whose keys stay hidden until they sign. Never rush a migration: hurried moves are where funds are most often lost.",
-      "count": 2
-    },
-    {
-      "value": "Keys broken on a real quantum computer",
-      "count": 2
-    },
-    {
-      "value": "lana",
-      "count": 8
-    },
-    {
-      "value": "lane",
-      "count": 4
-    },
-    {
-      "value": "Later",
-      "count": 4
-    },
-    {
-      "value": "Latest fees paid in",
-      "count": 2
-    },
-    {
-      "value": "Lattice records",
-      "count": 4
-    },
-    {
-      "value": "Lattices (ML-DSA, FHE): the new risk",
-      "count": 2
-    },
-    {
-      "value": "Lattices such as ML-DSA and FHE, once a public venue checks results by machine.",
-      "count": 2
-    },
-    {
-      "value": "Launch a Q-Day token",
-      "count": 2
-    },
-    {
-      "value": "launch a token",
-      "count": 2
-    },
-    {
-      "value": "Launch a token",
-      "count": 14
-    },
-    {
-      "value": "Launch a token on it",
-      "count": 2
-    },
-    {
-      "value": "Launching costs",
-      "count": 2
-    },
-    {
-      "value": "Legal",
-      "count": 3
-    },
-    {
-      "value": "Live quantum computer stats",
-      "count": 2
-    },
-    {
-      "value": "Live quantum tasks",
-      "count": 2
-    },
-    {
-      "value": "Make it quantum",
-      "count": 2
-    },
-    {
-      "value": "Market cap",
-      "count": 4
-    },
-    {
-      "value": "Math",
-      "count": 8
-    },
-    {
-      "value": "Math and cryptography research agents, on Solana.",
-      "count": 3
-    },
-    {
-      "value": "Mathlana has no token at",
       "count": 1
     },
     {
-      "value": "Mathlana runs on its own quantum time on IBM Cloud and AWS, and sends each portrait to the machine whose turn comes soonest.",
+      "value": "Keys broken on a real quantum computer",
+      "count": 1
+    },
+    {
+      "value": "Later",
+      "count": 2
+    },
+    {
+      "value": "Latest fees paid in",
+      "count": 1
+    },
+    {
+      "value": "Lattice records",
+      "count": 2
+    },
+    {
+      "value": "Lattices (ML-DSA, FHE): the new risk",
+      "count": 1
+    },
+    {
+      "value": "Lattices such as ML-DSA and FHE, once a public venue checks results by machine.",
+      "count": 1
+    },
+    {
+      "value": "Launch a Q-Day token",
+      "count": 1
+    },
+    {
+      "value": "launch a token",
+      "count": 1
+    },
+    {
+      "value": "Launch a token",
+      "count": 6
+    },
+    {
+      "value": "Launch a token on it",
+      "count": 1
+    },
+    {
+      "value": "Launching costs",
+      "count": 1
+    },
+    {
+      "value": "Legal",
+      "count": 1
+    },
+    {
+      "value": "Live quantum computer stats",
+      "count": 1
+    },
+    {
+      "value": "Live quantum tasks",
+      "count": 1
+    },
+    {
+      "value": "Make it quantum",
+      "count": 1
+    },
+    {
+      "value": "Market cap",
+      "count": 2
+    },
+    {
+      "value": "Math and cryptography research agents, on Solana.",
       "count": 1
     },
     {
       "value": "Money at risk",
-      "count": 2
-    },
-    {
-      "value": "more",
-      "count": 4
-    },
-    {
-      "value": "Name",
-      "count": 2
-    },
-    {
-      "value": "Name it",
-      "count": 2
-    },
-    {
-      "value": "Neither is a date. Both show which way the work is moving.",
-      "count": 2
-    },
-    {
-      "value": "Next",
-      "count": 4
-    },
-    {
-      "value": "Next step",
-      "count": 2
-    },
-    {
-      "value": "No notes yet. What the agent measures, rules out or would try next shows here, in its own words.",
-      "count": 2
-    },
-    {
-      "value": "No progress yet",
-      "count": 2
-    },
-    {
-      "value": "No result yet. A result shows here the moment Mathlana's check passes.",
       "count": 1
     },
     {
-      "value": "No result yet. A result shows here the moment Qubitlane's check passes.",
+      "value": "more",
+      "count": 2
+    },
+    {
+      "value": "Name",
+      "count": 1
+    },
+    {
+      "value": "Name it",
+      "count": 1
+    },
+    {
+      "value": "Neither is a date. Both show which way the work is moving.",
+      "count": 1
+    },
+    {
+      "value": "Next",
+      "count": 2
+    },
+    {
+      "value": "Next step",
+      "count": 1
+    },
+    {
+      "value": "No notes yet. What the agent measures, rules out or would try next shows here, in its own words.",
+      "count": 1
+    },
+    {
+      "value": "No progress yet",
+      "count": 1
+    },
+    {
+      "value": "No result yet. A result shows here the moment Qubitess's check passes.",
       "count": 1
     },
     {
       "value": "No run yet. A run is allowed only when the machine's own calibration says the attack can beat random guessing, and no attack is that small today.",
-      "count": 2
-    },
-    {
-      "value": "No session milestones yet",
-      "count": 2
-    },
-    {
-      "value": "No token at that address",
-      "count": 2
-    },
-    {
-      "value": "No token races on Q-Day yet.",
-      "count": 2
-    },
-    {
-      "value": "No token works on it yet.",
-      "count": 2
-    },
-    {
-      "value": "No trades yet",
-      "count": 2
-    },
-    {
-      "value": "None yet",
-      "count": 2
-    },
-    {
-      "value": "Not open for tokens yet. It opens here when its results can be checked the same way.",
-      "count": 2
-    },
-    {
-      "value": "Nothing here",
-      "count": 3
-    },
-    {
-      "value": "Nothing you pasted shows a public key on chain. Every key behind these addresses is still behind a hash.",
-      "count": 2
-    },
-    {
-      "value": "of",
-      "count": 4
-    },
-    {
-      "value": "of 256",
-      "count": 2
-    },
-    {
-      "value": "Of the token's share of every trade's fee, locked on chain:",
-      "count": 2
-    },
-    {
-      "value": "of trading.",
-      "count": 2
-    },
-    {
-      "value": "Official",
-      "count": 2
-    },
-    {
-      "value": "Official leaderboard",
-      "count": 8
-    },
-    {
-      "value": "on a",
-      "count": 2
-    },
-    {
-      "value": "Once a public venue checks them by machine.",
-      "count": 2
-    },
-    {
-      "value": "One calm step",
-      "count": 2
-    },
-    {
-      "value": "One of a kind",
-      "count": 2
-    },
-    {
-      "value": "Open",
-      "count": 4
-    },
-    {
-      "value": "Opening buy",
-      "count": 2
-    },
-    {
-      "value": "Optional",
-      "count": 2
-    },
-    {
-      "value": "or",
-      "count": 3
-    },
-    {
-      "value": "Our clock counts a break only when the same decoder fails on random numbers and the true key wins on the machine, three times, each with a fresh key.",
-      "count": 2
-    },
-    {
-      "value": "Paid in by fees",
-      "count": 2
-    },
-    {
-      "value": "Paired with",
-      "count": 2
-    },
-    {
-      "value": "Paper search by arXiv, IACR ePrint and Semantic Scholar. Thank you to arXiv for use of its open access interoperability.",
-      "count": 3
-    },
-    {
-      "value": "Paste your addresses or a Bitcoin xpub. Nothing is stored, and no wallet connects.",
-      "count": 2
-    },
-    {
-      "value": "Pays for its AI agent, quantum runs and computer time.",
-      "count": 2
-    },
-    {
-      "value": "Pick a challenge",
-      "count": 2
-    },
-    {
-      "value": "Pools spent",
-      "count": 2
-    },
-    {
-      "value": "precompile.fast",
-      "count": 4
-    },
-    {
-      "value": "Price",
-      "count": 4
-    },
-    {
-      "value": "Privacy",
-      "count": 2
-    },
-    {
-      "value": "Product",
-      "count": 3
-    },
-    {
-      "value": "Progress",
-      "count": 2
-    },
-    {
-      "value": "proof of quantum",
-      "count": 2
-    },
-    {
-      "value": "Proven out of reach",
-      "count": 2
-    },
-    {
-      "value": "Proven safe",
-      "count": 2
-    },
-    {
-      "value": "pump.fun",
-      "count": 4
-    },
-    {
-      "value": "Q-Day",
-      "count": 2
-    },
-    {
-      "value": "Q-Day clock",
-      "count": 6
-    },
-    {
-      "value": "quantum",
-      "count": 2
-    },
-    {
-      "value": "Quantum computer time costs the platform $96 a minute, and the platform covers it. So runs are strictly limited: 2 portraits a day each, one at a time.",
-      "count": 2
-    },
-    {
-      "value": "quantum computers",
-      "count": 2
-    },
-    {
-      "value": "Quantum computers",
-      "count": 4
-    },
-    {
-      "value": "Quantum computers and AI-accelerated math are closing in on the math that guards crypto wallets. Mathlana measures how close, in public, and funds the work on the way out.",
       "count": 1
     },
     {
-      "value": "Quantum computers and AI-accelerated math are closing in on the math that guards crypto wallets. Qubitlane measures how close, in public, and funds the work on the way out.",
+      "value": "No session milestones yet",
+      "count": 1
+    },
+    {
+      "value": "No token at that address",
+      "count": 1
+    },
+    {
+      "value": "No token races on Q-Day yet.",
+      "count": 1
+    },
+    {
+      "value": "No token works on it yet.",
+      "count": 1
+    },
+    {
+      "value": "No trades yet",
+      "count": 1
+    },
+    {
+      "value": "None yet",
+      "count": 1
+    },
+    {
+      "value": "Not open for tokens yet. It opens here when its results can be checked the same way.",
+      "count": 1
+    },
+    {
+      "value": "Nothing here",
+      "count": 1
+    },
+    {
+      "value": "Nothing you pasted shows a public key on chain. Every key behind these addresses is still behind a hash.",
+      "count": 1
+    },
+    {
+      "value": "of",
+      "count": 2
+    },
+    {
+      "value": "of 256",
+      "count": 1
+    },
+    {
+      "value": "Of the token's share of every trade's fee, locked on chain:",
+      "count": 1
+    },
+    {
+      "value": "of trading.",
+      "count": 1
+    },
+    {
+      "value": "Official",
+      "count": 1
+    },
+    {
+      "value": "Official leaderboard",
+      "count": 4
+    },
+    {
+      "value": "on a",
+      "count": 1
+    },
+    {
+      "value": "Once a public venue checks them by machine.",
+      "count": 1
+    },
+    {
+      "value": "One calm step",
+      "count": 1
+    },
+    {
+      "value": "One of a kind",
+      "count": 1
+    },
+    {
+      "value": "Open",
+      "count": 2
+    },
+    {
+      "value": "Opening buy",
+      "count": 1
+    },
+    {
+      "value": "Optional",
+      "count": 1
+    },
+    {
+      "value": "or",
+      "count": 1
+    },
+    {
+      "value": "Our clock counts a break only when the same decoder fails on random numbers and the true key wins on the machine, three times, each with a fresh key.",
+      "count": 1
+    },
+    {
+      "value": "Paid in by fees",
+      "count": 1
+    },
+    {
+      "value": "Paired with",
+      "count": 1
+    },
+    {
+      "value": "Paper search by arXiv, IACR ePrint and Semantic Scholar. Thank you to arXiv for use of its open access interoperability.",
+      "count": 1
+    },
+    {
+      "value": "Paste your addresses or a Bitcoin xpub. Nothing is stored, and no wallet connects.",
+      "count": 1
+    },
+    {
+      "value": "Pays for its AI agent, quantum runs and computer time.",
+      "count": 1
+    },
+    {
+      "value": "Pick a challenge",
+      "count": 1
+    },
+    {
+      "value": "Pools spent",
+      "count": 1
+    },
+    {
+      "value": "precompile.fast",
+      "count": 2
+    },
+    {
+      "value": "Price",
+      "count": 2
+    },
+    {
+      "value": "Privacy",
+      "count": 1
+    },
+    {
+      "value": "Product",
+      "count": 1
+    },
+    {
+      "value": "Progress",
+      "count": 1
+    },
+    {
+      "value": "proof of quantum",
+      "count": 1
+    },
+    {
+      "value": "Proven out of reach",
+      "count": 1
+    },
+    {
+      "value": "Proven safe",
+      "count": 1
+    },
+    {
+      "value": "pump.fun",
+      "count": 2
+    },
+    {
+      "value": "Q-Day",
+      "count": 1
+    },
+    {
+      "value": "Q-Day clock",
+      "count": 3
+    },
+    {
+      "value": "quantum",
+      "count": 1
+    },
+    {
+      "value": "Quantum computer time costs the platform $96 a minute, and the platform covers it. So runs are strictly limited: 2 portraits a day each, one at a time.",
+      "count": 1
+    },
+    {
+      "value": "quantum computers",
+      "count": 1
+    },
+    {
+      "value": "Quantum computers",
+      "count": 2
+    },
+    {
+      "value": "Quantum computers and AI-accelerated math are closing in on the math that guards crypto wallets. Qubitess measures how close, in public, and funds the work on the way out.",
       "count": 1
     },
     {
       "value": "Quantum computers and AI-accelerated math could both break the math that guards crypto wallets. Every record below is public, and a machine checked it.",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Quantum computers are scarce, so each portrait waits its turn in the machine's queue: usually about 3 minutes, start to picture, and up to 10 to 15 minutes at busy times.",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Quantum portrait",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Quantum version",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Quantum-drawn picture",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Qubit",
       "count": 4
     },
     {
-      "value": "Qubitlane has no token at",
+      "value": "Qubitess has no token at",
       "count": 1
     },
     {
-      "value": "Qubitlane runs on its own quantum time on IBM Cloud and AWS, and sends each portrait to the machine whose turn comes soonest.",
+      "value": "Qubitess runs on its own quantum time on IBM Cloud and AWS, and sends each portrait to the machine whose turn comes soonest.",
       "count": 1
     },
     {
       "value": "qubits",
-      "count": 6
+      "count": 3
     },
     {
       "value": "qubits × Toffoli",
-      "count": 4
+      "count": 2
     },
     {
       "value": "Qubits × Toffoli gates",
-      "count": 2
+      "count": 1
     },
     {
       "value": "qubits. The entanglement score,",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Read-only. Nothing is saved or logged, and no wallet or signature is asked for.",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Real measurements",
-      "count": 2
+      "count": 1
     },
     {
       "value": "real quantum computer",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Real qubits, not AI.",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Reference attack",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Research",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Research log",
-      "count": 2
-    },
-    {
-      "value": "Research may find nothing, and a token promises no return. Mathlana is not affiliated with the Ethereum Foundation, Yukon or any challenge's organizers.",
       "count": 1
     },
     {
-      "value": "Research may find nothing, and a token promises no return. Qubitlane is not affiliated with the Ethereum Foundation, Yukon or any challenge's organizers.",
-      "count": 2
+      "value": "Research may find nothing, and a token promises no return. Qubitess is not affiliated with the Ethereum Foundation, Yukon or any challenge's organizers.",
+      "count": 1
     },
     {
       "value": "Research starts after about",
-      "count": 2
-    },
-    {
-      "value": "Results",
-      "count": 2
-    },
-    {
-      "value": "Risks",
-      "count": 2
-    },
-    {
-      "value": "Run any task",
-      "count": 2
-    },
-    {
-      "value": "Run by Mathlana",
       "count": 1
     },
     {
-      "value": "Run by Qubitlane",
+      "value": "Results",
+      "count": 1
+    },
+    {
+      "value": "Risks",
+      "count": 1
+    },
+    {
+      "value": "Run any task",
+      "count": 1
+    },
+    {
+      "value": "Run by Qubitess",
       "count": 1
     },
     {
       "value": "running instances",
-      "count": 2
-    },
-    {
-      "value": "Running quantum computers:",
-      "count": 4
-    },
-    {
-      "value": "See every token",
-      "count": 2
-    },
-    {
-      "value": "See it live",
-      "count": 2
-    },
-    {
-      "value": "See the challenges",
-      "count": 3
-    },
-    {
-      "value": "See the ladder",
-      "count": 2
-    },
-    {
-      "value": "sessions",
-      "count": 2
-    },
-    {
-      "value": "Sessions",
-      "count": 2
-    },
-    {
-      "value": "Shor's algorithm against crypto wallet keys",
-      "count": 4
-    },
-    {
-      "value": "Shor's attack on practice keys, run on real quantum computers under a strict check.",
-      "count": 2
-    },
-    {
-      "value": "sig.golf",
-      "count": 4
-    },
-    {
-      "value": "Sign in",
-      "count": 3
-    },
-    {
-      "value": "Sign in to launch",
-      "count": 2
-    },
-    {
-      "value": "Smallest correct attack",
-      "count": 2
-    },
-    {
-      "value": "so far.",
-      "count": 2
-    },
-    {
-      "value": "SOL plus Solana's fees, paid by your wallet.",
-      "count": 2
-    },
-    {
-      "value": "Solscan",
-      "count": 4
-    },
-    {
-      "value": "Some balances could not be read or priced, so the totals may count less. This check reads the address itself: nothing is stored, and no wallet connects.",
-      "count": 2
-    },
-    {
-      "value": "Source: the challenge's own rules",
-      "count": 4
-    },
-    {
-      "value": "Spent",
-      "count": 2
-    },
-    {
-      "value": "Spent from AI/Quantum pools",
-      "count": 2
-    },
-    {
-      "value": "Still open",
-      "count": 2
-    },
-    {
-      "value": "Stress test",
-      "count": 2
-    },
-    {
-      "value": "Terms",
-      "count": 2
-    },
-    {
-      "value": "than at the start",
-      "count": 2
-    },
-    {
-      "value": "The agent starts once fees fund it; the board shows where it stands.",
-      "count": 2
-    },
-    {
-      "value": "The agent's notes",
-      "count": 2
-    },
-    {
-      "value": "The biggest key a real quantum computer has broken under the strict check",
-      "count": 2
-    },
-    {
-      "value": "The biggest key a real quantum computer has broken, under the strict check",
-      "count": 2
-    },
-    {
-      "value": "The calm response",
-      "count": 2
-    },
-    {
-      "value": "The challenges",
-      "count": 2
-    },
-    {
-      "value": "The EVM's cryptography proven correct in Lean, with its gas measured.",
-      "count": 2
-    },
-    {
-      "value": "The EVM's cryptography, proven correct.",
-      "count": 2
-    },
-    {
-      "value": "The first session's chat, workbench and timeline show here, live, the moment it starts.",
-      "count": 2
-    },
-    {
-      "value": "The ladder",
-      "count": 2
-    },
-    {
-      "value": "The Proximity Prize",
-      "count": 6
-    },
-    {
-      "value": "The public record, under other rules",
-      "count": 2
-    },
-    {
-      "value": "The smallest known circuit that breaks a Bitcoin key, and how fast it shrinks.",
-      "count": 2
-    },
-    {
-      "value": "The smallest known quantum circuit that breaks a Bitcoin key",
-      "count": 2
-    },
-    {
-      "value": "The truth lies between",
-      "count": 2
-    },
-    {
-      "value": "This page doesn't exist, or it moved.",
-      "count": 3
-    },
-    {
-      "value": "This preview keeps the session in your browser only. No email is sent and no account is created.",
-      "count": 3
-    },
-    {
-      "value": "Ticker",
-      "count": 2
-    },
-    {
-      "value": "Token",
-      "count": 2
-    },
-    {
-      "value": "Token's share: 60% pool, 20% creator, 20% Mathlana",
       "count": 1
     },
     {
-      "value": "Token's share: 60% pool, 20% creator, 20% Qubitlane",
+      "value": "Running quantum computers:",
+      "count": 2
+    },
+    {
+      "value": "See every token",
+      "count": 1
+    },
+    {
+      "value": "See it live",
+      "count": 1
+    },
+    {
+      "value": "See the challenges",
+      "count": 1
+    },
+    {
+      "value": "See the ladder",
+      "count": 1
+    },
+    {
+      "value": "sessions",
+      "count": 1
+    },
+    {
+      "value": "Sessions",
+      "count": 1
+    },
+    {
+      "value": "Shor's algorithm against crypto wallet keys",
+      "count": 2
+    },
+    {
+      "value": "Shor's attack on practice keys, run on real quantum computers under a strict check.",
+      "count": 1
+    },
+    {
+      "value": "sig.golf",
+      "count": 2
+    },
+    {
+      "value": "Sign in",
+      "count": 1
+    },
+    {
+      "value": "Sign in to launch",
+      "count": 1
+    },
+    {
+      "value": "Smallest correct attack",
+      "count": 1
+    },
+    {
+      "value": "so far.",
+      "count": 1
+    },
+    {
+      "value": "SOL plus Solana's fees, paid by your wallet.",
+      "count": 1
+    },
+    {
+      "value": "Solscan",
+      "count": 2
+    },
+    {
+      "value": "Some balances could not be read or priced, so the totals may count less. This check reads the address itself: nothing is stored, and no wallet connects.",
+      "count": 1
+    },
+    {
+      "value": "Source: the challenge's own rules",
+      "count": 2
+    },
+    {
+      "value": "Spent",
+      "count": 1
+    },
+    {
+      "value": "Spent from AI/Quantum pools",
+      "count": 1
+    },
+    {
+      "value": "Still open",
+      "count": 1
+    },
+    {
+      "value": "Stress test",
+      "count": 1
+    },
+    {
+      "value": "Terms",
+      "count": 1
+    },
+    {
+      "value": "than at the start",
+      "count": 1
+    },
+    {
+      "value": "The agent starts once fees fund it; the board shows where it stands.",
+      "count": 1
+    },
+    {
+      "value": "The agent's notes",
+      "count": 1
+    },
+    {
+      "value": "The biggest key a real quantum computer has broken under the strict check",
+      "count": 1
+    },
+    {
+      "value": "The biggest key a real quantum computer has broken, under the strict check",
+      "count": 1
+    },
+    {
+      "value": "The calm response",
+      "count": 1
+    },
+    {
+      "value": "The challenges",
+      "count": 1
+    },
+    {
+      "value": "The EVM's cryptography proven correct in Lean, with its gas measured.",
+      "count": 1
+    },
+    {
+      "value": "The EVM's cryptography, proven correct.",
+      "count": 1
+    },
+    {
+      "value": "The first session's chat, workbench and timeline show here, live, the moment it starts.",
+      "count": 1
+    },
+    {
+      "value": "The ladder",
+      "count": 1
+    },
+    {
+      "value": "The Proximity Prize",
+      "count": 3
+    },
+    {
+      "value": "The public record, under other rules",
+      "count": 1
+    },
+    {
+      "value": "The smallest known circuit that breaks a Bitcoin key, and how fast it shrinks.",
+      "count": 1
+    },
+    {
+      "value": "The smallest known quantum circuit that breaks a Bitcoin key",
+      "count": 1
+    },
+    {
+      "value": "The truth lies between",
+      "count": 1
+    },
+    {
+      "value": "This page doesn't exist, or it moved.",
+      "count": 1
+    },
+    {
+      "value": "This preview keeps the session in your browser only. No email is sent and no account is created.",
+      "count": 1
+    },
+    {
+      "value": "Ticker",
+      "count": 1
+    },
+    {
+      "value": "Token",
+      "count": 1
+    },
+    {
+      "value": "Token's share: 60% pool, 20% creator, 20% Qubitess",
       "count": 1
     },
     {
       "value": "Tokens",
-      "count": 2
-    },
-    {
-      "value": "Tokens on Mathlana",
       "count": 1
     },
     {
       "value": "Tokens on Q-Day",
-      "count": 2
+      "count": 1
     },
     {
-      "value": "Tokens on Qubitlane",
+      "value": "Tokens on Qubitess",
       "count": 1
     },
     {
       "value": "Tokens on this challenge",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Two public measures of the quantum threat to today's keys, read live.",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Two threats to your keys, measured live",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Two threats, one target: your keys",
-      "count": 2
+      "count": 1
     },
     {
       "value": "two-qubit steps",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Verified",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Vol 24h",
-      "count": 4
+      "count": 2
     },
     {
       "value": "vs. crypto keys, on Solana",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Waiting for fees",
-      "count": 8
-    },
-    {
-      "value": "Watch them work.",
-      "count": 2
-    },
-    {
-      "value": "What it asks",
-      "count": 2
-    },
-    {
-      "value": "What it does not promise",
-      "count": 2
-    },
-    {
-      "value": "What the answer can be",
-      "count": 2
-    },
-    {
-      "value": "What's at stake",
-      "count": 2
-    },
-    {
-      "value": "When do their wallets break?",
-      "count": 2
-    },
-    {
-      "value": "Where it started",
-      "count": 2
-    },
-    {
-      "value": "Where its fees go",
-      "count": 2
-    },
-    {
-      "value": "Where the fees go",
-      "count": 2
-    },
-    {
-      "value": "Why it matters",
-      "count": 2
-    },
-    {
-      "value": "with your picture redrawn 1:1 by one, with",
-      "count": 2
-    },
-    {
-      "value": "Working",
-      "count": 2
-    },
-    {
-      "value": "Works on",
-      "count": 2
-    },
-    {
-      "value": "Years of math in months: the risks and the way out",
       "count": 4
     },
     {
-      "value": "Your picture",
+      "value": "Watch them work.",
+      "count": 1
+    },
+    {
+      "value": "What it asks",
+      "count": 1
+    },
+    {
+      "value": "What it does not promise",
+      "count": 1
+    },
+    {
+      "value": "What the answer can be",
+      "count": 1
+    },
+    {
+      "value": "What's at stake",
+      "count": 1
+    },
+    {
+      "value": "When do their wallets break?",
+      "count": 1
+    },
+    {
+      "value": "Where it started",
+      "count": 1
+    },
+    {
+      "value": "Where its fees go",
+      "count": 1
+    },
+    {
+      "value": "Where the fees go",
+      "count": 1
+    },
+    {
+      "value": "Why it matters",
+      "count": 1
+    },
+    {
+      "value": "with your picture redrawn 1:1 by one, with",
+      "count": 1
+    },
+    {
+      "value": "Working",
+      "count": 1
+    },
+    {
+      "value": "Works on",
+      "count": 1
+    },
+    {
+      "value": "Years of math in months: the risks and the way out",
       "count": 2
+    },
+    {
+      "value": "Your picture",
+      "count": 1
     },
     {
       "value": "Your picture on the left, its quantum version on the right. Press Draw it and a real quantum computer measures it point by point; the look comes out different every time.",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Your token's fees fill its AI/Quantum pool, which pays for an AI agent and quantum computer runs on the challenge you pick, live and in public.",
-      "count": 2
+      "count": 1
     }
   ],
   "hiddenText": [
     {
       "value": "24h change",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Addresses or a wallet key",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Search by name or ticker…",
-      "count": 2
+      "count": 1
     },
     {
       "value": "Skip to content",
-      "count": 2
+      "count": 1
     }
   ],
   "attributes": [
     {
       "name": "href",
       "value": "/t/preview",
-      "count": 2
+      "count": 1
     },
     {
       "name": "href",
       "value": "#",
-      "count": 2
+      "count": 1
     },
     {
       "name": "href",
       "value": "#ladder",
-      "count": 2
+      "count": 1
     },
     {
       "name": "href",
       "value": "#main",
-      "count": 2
+      "count": 1
     },
     {
       "name": "href",
       "value": "#research",
-      "count": 4
+      "count": 2
     },
     {
       "name": "name",
       "value": "arrow-down",
-      "count": 2
+      "count": 1
     },
     {
       "name": "name",
       "value": "arrow-right",
-      "count": 19
-    },
-    {
-      "name": "name",
-      "value": "arrow-up-right",
-      "count": 23
-    },
-    {
-      "name": "name",
-      "value": "atom",
-      "count": 8
-    },
-    {
-      "name": "name",
-      "value": "badge",
-      "count": 2
-    },
-    {
-      "name": "name",
-      "value": "badge-check",
-      "count": 4
-    },
-    {
-      "name": "name",
-      "value": "check",
-      "count": 2
-    },
-    {
-      "name": "name",
-      "value": "chevron-down",
-      "count": 2
-    },
-    {
-      "name": "name",
-      "value": "circle-check",
-      "count": 2
-    },
-    {
-      "name": "name",
-      "value": "clock",
-      "count": 2
-    },
-    {
-      "name": "name",
-      "value": "code-xml",
-      "count": 2
-    },
-    {
-      "name": "name",
-      "value": "coins",
-      "count": 2
-    },
-    {
-      "name": "name",
-      "value": "compass",
-      "count": 2
-    },
-    {
-      "name": "name",
-      "value": "cpu",
-      "count": 4
-    },
-    {
-      "name": "name",
-      "value": "crosshair",
-      "count": 4
-    },
-    {
-      "name": "name",
-      "value": "email",
-      "count": 3
-    },
-    {
-      "name": "name",
-      "value": "external-link",
-      "count": 18
-    },
-    {
-      "name": "name",
-      "value": "eye",
-      "count": 2
-    },
-    {
-      "name": "name",
-      "value": "figure",
       "count": 10
     },
     {
       "name": "name",
-      "value": "fingerprint-pattern",
+      "value": "arrow-up-right",
+      "count": 12
+    },
+    {
+      "name": "name",
+      "value": "atom",
+      "count": 4
+    },
+    {
+      "name": "name",
+      "value": "badge",
+      "count": 1
+    },
+    {
+      "name": "name",
+      "value": "badge-check",
       "count": 2
+    },
+    {
+      "name": "name",
+      "value": "check",
+      "count": 1
+    },
+    {
+      "name": "name",
+      "value": "chevron-down",
+      "count": 1
+    },
+    {
+      "name": "name",
+      "value": "circle-check",
+      "count": 1
+    },
+    {
+      "name": "name",
+      "value": "clock",
+      "count": 1
+    },
+    {
+      "name": "name",
+      "value": "code-xml",
+      "count": 1
+    },
+    {
+      "name": "name",
+      "value": "coins",
+      "count": 1
+    },
+    {
+      "name": "name",
+      "value": "compass",
+      "count": 1
+    },
+    {
+      "name": "name",
+      "value": "cpu",
+      "count": 2
+    },
+    {
+      "name": "name",
+      "value": "crosshair",
+      "count": 2
+    },
+    {
+      "name": "name",
+      "value": "email",
+      "count": 1
+    },
+    {
+      "name": "name",
+      "value": "external-link",
+      "count": 9
+    },
+    {
+      "name": "name",
+      "value": "eye",
+      "count": 1
+    },
+    {
+      "name": "name",
+      "value": "figure",
+      "count": 5
+    },
+    {
+      "name": "name",
+      "value": "fingerprint-pattern",
+      "count": 1
     },
     {
       "name": "name",
       "value": "gem",
-      "count": 2
+      "count": 1
     },
     {
       "name": "name",
       "value": "image",
-      "count": 2
+      "count": 1
     },
     {
       "name": "name",
       "value": "image-up",
-      "count": 4
-    },
-    {
-      "name": "name",
-      "value": "layers",
       "count": 2
     },
     {
       "name": "name",
+      "value": "layers",
+      "count": 1
+    },
+    {
+      "name": "name",
       "value": "loader-circle",
-      "count": 3
+      "count": 1
     },
     {
       "name": "name",
       "value": "orbit",
-      "count": 4
+      "count": 2
     },
     {
       "name": "name",
@@ -1364,319 +1284,319 @@
     {
       "name": "name",
       "value": "q",
-      "count": 2
+      "count": 1
     },
     {
       "name": "name",
       "value": "quantum",
-      "count": 12
+      "count": 6
     },
     {
       "name": "name",
       "value": "scan-line",
-      "count": 4
+      "count": 2
     },
     {
       "name": "name",
       "value": "seal",
-      "count": 2
+      "count": 1
     },
     {
       "name": "name",
       "value": "search",
-      "count": 2
+      "count": 1
     },
     {
       "name": "name",
       "value": "shield",
-      "count": 6
+      "count": 3
     },
     {
       "name": "name",
       "value": "shield-check",
-      "count": 2
+      "count": 1
     },
     {
       "name": "name",
       "value": "sigma",
-      "count": 8
+      "count": 4
     },
     {
       "name": "name",
       "value": "signature",
-      "count": 2
+      "count": 1
     },
     {
       "name": "name",
       "value": "triangle-alert",
-      "count": 2
+      "count": 1
     },
     {
       "name": "name",
       "value": "wallet",
-      "count": 10
+      "count": 4
     },
     {
       "name": "name",
       "value": "x",
-      "count": 3
+      "count": 1
     },
     {
       "name": "placeholder",
       "value": "0",
-      "count": 2
+      "count": 1
     },
     {
       "name": "placeholder",
       "value": "bc1q…, 0x…, a Solana address, or an xpub",
-      "count": 2
+      "count": 1
     },
     {
       "name": "placeholder",
       "value": "Search by name or ticker…",
-      "count": 2
+      "count": 1
     },
     {
       "name": "placeholder",
       "value": "Sound Proof…",
-      "count": 2
+      "count": 1
     },
     {
       "name": "placeholder",
       "value": "SOUND…",
-      "count": 2
+      "count": 1
     },
     {
       "name": "placeholder",
       "value": "What your token's agent works on, in a sentence…",
-      "count": 2
+      "count": 1
     },
     {
       "name": "placeholder",
       "value": "you@example.com",
-      "count": 3
+      "count": 1
     },
     {
       "name": "src",
       "value": "/brand/token.png",
-      "count": 2
+      "count": 1
     },
     {
       "name": "src",
       "value": "/brand/urania-indigo.png",
-      "count": 4
+      "count": 2
     },
     {
       "name": "src",
       "value": "/brand/urania-ink.png",
-      "count": 4
+      "count": 2
     },
     {
       "name": "title",
       "value": "24h change",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "AI-accelerated math",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "Bits, from 0 to the 128-bit target",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "ECDSA.fail",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "Fees the token's trades earned that are not collected yet. They count in the pool now and reach its credit once collected.",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "How much of what was paid in is spent",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "Its picture",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "Name it",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "Opening buy",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "Pick a challenge",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "Privacy",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "Q-Day clock",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "Quantum computers",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "Risks",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "sig.golf",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "Terms",
-      "count": 2
+      "count": 1
     },
     {
       "name": "title",
       "value": "The Proximity Prize",
-      "count": 4
+      "count": 2
     },
     {
       "name": "to",
       "value": "/",
-      "count": 13
+      "count": 5
     },
     {
       "name": "to",
       "value": "/#how",
-      "count": 4
+      "count": 2
     },
     {
       "name": "to",
       "value": "/challenges",
-      "count": 7
+      "count": 3
     },
     {
       "name": "to",
       "value": "/challenges/ecdsa-fail",
-      "count": 4
+      "count": 2
     },
     {
       "name": "to",
       "value": "/challenges/proximity",
-      "count": 2
+      "count": 1
     },
     {
       "name": "to",
       "value": "/challenges/sig-golf",
-      "count": 2
+      "count": 1
     },
     {
       "name": "to",
       "value": "/exposure",
-      "count": 4
+      "count": 2
     },
     {
       "name": "to",
       "value": "/launch",
-      "count": 14
+      "count": 6
     },
     {
       "name": "to",
       "value": "/launch?track=q-day",
-      "count": 2
+      "count": 1
     },
     {
       "name": "to",
       "value": "/q-day",
-      "count": 6
+      "count": 3
     },
     {
       "name": "to",
       "value": "/tokens",
-      "count": 6
+      "count": 3
     },
     {
       "name": "value",
       "value": "0 bits",
-      "count": 2
+      "count": 1
     }
   ],
   "bindings": [
     {
       "kind": "asset",
       "expr": "`/api/t/${mint}/picture`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "asset",
       "expr": "picture.url",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "asset",
       "expr": "pictureUrl",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "asset",
       "expr": "QUOTE_ASSET.logo",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "attr",
       "expr": "`/api/t/${mint}/picture`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`/challenges/${ecdsa.slug}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`/challenges/${proximity.slug}`",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "attr",
       "expr": "`/challenges/${siggolf.slug}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`/challenges/${token.challengeSlug}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`/launch?track=${track}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`/t/${row.mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`/t/${token.mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
@@ -1686,1287 +1606,1287 @@
     {
       "kind": "attr",
       "expr": "`${name}'s picture`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`${token.name}'s picture`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`${tokenTicker}'s picture`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`https://pump.fun/coin/${mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`https://pump.fun/coin/${token.mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`https://solscan.io/token/${mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "`https://solscan.io/token/${token.mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "art",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "attr",
       "expr": "bound.value",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "CARD_COPY[entry.slug].href ?? `/challenges/${entry.slug}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "card.art",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "card.icon",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "card.to",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "challenge?.host ?? 'https://better.codes'",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "challenge.group === 'stress' ? 'crosshair' : 'shield'",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "challenge.icon",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "challenge.name",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "chip.href",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "copied ? 'check' : 'copy'",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "copy.icon",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "attr",
       "expr": "copy.leaderboard",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "group.icon",
-      "count": 3
+      "count": 2
     },
     {
       "kind": "attr",
       "expr": "group.title",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "group(ecdsa.metrics[0].value)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "group(siggolf.metrics[0].value)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "hostIcon",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "href",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "attr",
       "expr": "href || undefined",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "icon",
-      "count": 8
+      "count": 4
     },
     {
       "kind": "attr",
       "expr": "item.icon",
-      "count": 3
+      "count": 2
     },
     {
       "kind": "attr",
       "expr": "item.to",
-      "count": 12
+      "count": 5
     },
     {
       "kind": "attr",
       "expr": "lower.value.toFixed(2)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "machine.href",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "machine.url",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "menuOpen ? 'x' : 'menu'",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "name",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "attr",
       "expr": "page.to",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "PAIRING",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "panel.leaderboard",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "picture.url",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "attr",
       "expr": "pictureUrl",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "QUOTE_ASSET.logo",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "attr",
       "expr": "quoteNote",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "row.icon",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "row.meta.icon",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "row.ticker.replace('$', '')",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "section.title",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "attr",
       "expr": "stakes.sourceHref",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "attr",
       "expr": "stakes.value",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "step.cta.to",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "theme.icon",
-      "count": 6
+      "count": 2
     },
     {
       "kind": "attr",
       "expr": "ticker",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "to",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "to || undefined",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "token.mint",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "attr",
       "expr": "token.name",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "attr",
       "expr": "upper.value.toFixed(2)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "art",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "form",
       "expr": "card.art",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "card.icon",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "challenge.group === 'stress' ? 'crosshair' : 'shield'",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "challenge.icon",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "challenge.name",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "copied ? 'check' : 'copy'",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "copy.icon",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "form",
       "expr": "group.icon",
-      "count": 3
+      "count": 2
     },
     {
       "kind": "form",
       "expr": "hostIcon",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "icon",
-      "count": 8
+      "count": 4
     },
     {
       "kind": "form",
       "expr": "item.icon",
-      "count": 3
+      "count": 2
     },
     {
       "kind": "form",
       "expr": "menuOpen ? 'x' : 'menu'",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "name",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "form",
       "expr": "row.icon",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "row.meta.icon",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "row.ticker.replace('$', '')",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "theme.icon",
-      "count": 6
+      "count": 2
     },
     {
       "kind": "form",
       "expr": "to || href ? undefined : type",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "form",
       "expr": "token.name",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "asks",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "bits",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "block.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "body",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "bound.title",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "bucket.count",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "bucket.key === \"public\" ? \"Behind a public key\" : bucket.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "CARD_COPY[entry.slug].hostLabel",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "card.badge",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "card.body",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "card.cta",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "card.title",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "challenge.description",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "challenge.goal",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "challenge.group === \"stress\" ? \"Stress test\" : \"Defend\"",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "challenge.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "challenge.name",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "challenge.note",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "challenge.status",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "challengeAsks(challenge)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "CHALLENGES_PAGE.subtitle",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "CHALLENGES_PAGE.title",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "change.arrow",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "change.label",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "chip.model",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "CIRCUIT?.improvementLabel ?? \"88.1% smaller\"",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "circuitValue",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "clock.description",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "clock.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "clock.note",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "clock.of",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "clock.unit",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "clock.value",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "clockBits",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "clockNote",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "clockTarget",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "compactUsd(m?.marketCapUsd)",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "compactUsd(m?.volume24hUsd)",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "copy.hostLabel",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "copy.recordType",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "countLabel",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "interpolation",
       "expr": "ctaNote",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "delta",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "description",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "direction === \"lower\" ? \"Lower\" : \"Higher\"",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "display",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "emptyMessage",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "entry.name",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "error",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "example",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "eyebrow",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "from",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "graduated ? \"Graduated\" : \"Curve\"",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "graduation",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "group.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "group(checked)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "group(sessions)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "group(TOKENS.length)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "group(verified)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "group(working)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "headline",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "hint",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "hostLabel",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "index",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "initial",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "item.body",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "item.label",
-      "count": 14
+      "count": 6
     },
     {
       "kind": "interpolation",
       "expr": "item.title",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "label",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "LAUNCH.feeSol",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "launchedToday",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "level.bits",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "level.challenger",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "level.curve",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "level.hardware",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "level.moved",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "level.qubits",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "level.state",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "level.steps",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "line",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "machine.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "machine.model",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "machine.qubits",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "machineCount",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "machineCount - SHOWN.length",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "milestone.note",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "milestone.title",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "mint",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "moreLabel",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "name",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "NOT_FOUND.body",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "NOT_FOUND.cta",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "NOT_FOUND.eyebrow",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "NOT_FOUND.title",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "note",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "note.body",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "note.n",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "note.title",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "notice",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "open ? \"Hide\" : \"Draw it\"",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "page.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "PAIRING",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.description",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.direction",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.extra.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.extra.labelNote",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.extra.unit",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.extra.value",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.progressLabel",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.progressRight",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.recordLabel",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.start",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.title",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.unit",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "panel.value",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "percent(row.bps)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "priceLabel(m?.priceUsd)",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "problem",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "progressLabel",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "protects",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "protectsLabel",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "qualifier",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "QUOTE_ASSET.name",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "QUOTE_ASSET.symbol",
-      "count": 10
+      "count": 5
     },
     {
       "kind": "interpolation",
       "expr": "quoteNote",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "result.machine.model",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "result.machine.qubits",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "result.next.body",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "result.next.title",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "result.score",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.action",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.address",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.chainLabel",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.direction",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.footnote",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.label",
-      "count": 8
+      "count": 4
     },
     {
       "kind": "interpolation",
       "expr": "row.meta.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.metric.description",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.metric.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.metric.unit",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.prefix",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.record.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.record.value",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.share",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.short",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.spend",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.subtitle",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.ticker",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "row.title",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.typeLabel",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.unit",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "row.value",
-      "count": 8
+      "count": 4
     },
     {
       "kind": "interpolation",
       "expr": "rule.body",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "rule.n",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "rule.title",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "run.bits ?? run.keyBits ?? \"—\"",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "run.counted === false ? \"Not counted\" : \"Counted\"",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "runMachine(run)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "runQubits(run)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "sessions",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "share",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "shortAddress(token.creator)",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "signedInLabel",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "snapshot.description",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "spent",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "stakes.footnote",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "stakes.heading",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "stakes.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "stakes.lowerText",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "stakes.note",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "stakes.scaleIntro",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "stakes.upperText",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "stat.label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "stat.value",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "statusText",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "step.body",
-      "count": 4
-    },
-    {
-      "kind": "interpolation",
-      "expr": "step.cta.label",
       "count": 2
     },
     {
       "kind": "interpolation",
+      "expr": "step.cta.label",
+      "count": 1
+    },
+    {
+      "kind": "interpolation",
       "expr": "step.n",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "step.title",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
@@ -2976,217 +2896,217 @@
     {
       "kind": "interpolation",
       "expr": "subtitle",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "targetBits",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "timeAgo(row.at)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "timeAgo(run.at)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "timeAgo(token.createdAt)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "title",
-      "count": 12
+      "count": 6
     },
     {
       "kind": "interpolation",
       "expr": "token.challengeDescription",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "token.challengeLabel",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "token.challengeVerb",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "token.name",
-      "count": 8
+      "count": 4
     },
     {
       "kind": "interpolation",
       "expr": "token.ticker",
-      "count": 8
+      "count": 4
     },
     {
       "kind": "interpolation",
       "expr": "tokenName",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "tokenTicker",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "total ? \"Some lines were not read\" : \"Nothing was checked\"",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "unit",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "interpolation",
       "expr": "updated",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "usd(collected)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "usd(inPool)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "usd(paidIn)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "usd(spent)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "usdRound(firstAfter)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "usdRound(traded)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "value",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "verb",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "wallet.name",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "walletHint",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "why",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "WORDS.empty",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "WORDS.landingHeader",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "WORDS.loginMessage",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "WORDS.signIn",
-      "count": 6
+      "count": 2
     },
     {
       "kind": "interpolation",
       "expr": "WORDS.signInPrompt",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "WORDS.signOut",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "WORDS.title",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "workedExample",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "interpolation",
       "expr": "working ? \"An agent is working now\" : \"No agent working now\"",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "`/challenges/${ecdsa.slug}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "`/challenges/${proximity.slug}`",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "link",
       "expr": "`/challenges/${siggolf.slug}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "`/challenges/${token.challengeSlug}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "`/launch?track=${track}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "`/t/${row.mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "`/t/${token.mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
@@ -3196,463 +3116,463 @@
     {
       "kind": "link",
       "expr": "`https://pump.fun/coin/${mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "`https://pump.fun/coin/${token.mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "`https://solscan.io/token/${mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "`https://solscan.io/token/${token.mint}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "CARD_COPY[entry.slug].href ?? `/challenges/${entry.slug}`",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "card.to",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "challenge?.host ?? 'https://better.codes'",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "chip.href",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "copy.leaderboard",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "href",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "link",
       "expr": "href || undefined",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "item.to",
-      "count": 12
+      "count": 5
     },
     {
       "kind": "link",
       "expr": "machine.href",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "machine.url",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "page.to",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "panel.leaderboard",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "stakes.sourceHref",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "link",
       "expr": "step.cta.to",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "to",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "link",
       "expr": "to || undefined",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "model",
       "expr": "challengeSlug",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "model",
       "expr": "description",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "model",
       "expr": "email",
-      "count": 3
+      "count": 1
     },
     {
       "kind": "model",
       "expr": "error",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "model",
       "expr": "filter",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "model",
       "expr": "name",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "model",
       "expr": "openingBuy",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "model",
       "expr": "picture",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "model",
       "expr": "query",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "model",
       "expr": "raw",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "prop",
       "expr": "bound.unit",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "prop",
       "expr": "bound.value",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "prop",
       "expr": "group.subtitle",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "prop",
       "expr": "group.title",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "prop",
       "expr": "group(ecdsa.metrics[0].value)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "prop",
       "expr": "group(siggolf.metrics[0].value)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "prop",
       "expr": "lower.value.toFixed(2)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "prop",
       "expr": "section.title",
-      "count": 6
+      "count": 3
     },
     {
       "kind": "prop",
       "expr": "siggolf.metrics[0].label",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "prop",
       "expr": "stakes.unit",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "prop",
       "expr": "stakes.value",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "prop",
       "expr": "upper.value.toFixed(2)",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "text",
       "expr": "art.body",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "text",
       "expr": "body",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "text",
       "expr": "bound.numberNote",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "text",
       "expr": "html",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "text",
       "expr": "logo.body",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "text",
       "expr": "ORBITAL",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "text",
       "expr": "row.when",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "text",
       "expr": "stakes.numberNote",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "text",
       "expr": "stakes.scaleNoteAfter",
-      "count": 2
+      "count": 1
     }
   ],
   "events": [
     {
       "event": "change",
       "handler": "pick",
-      "count": 2
+      "count": 1
     },
     {
       "event": "click",
       "handler": "$emit('sign-in')",
-      "count": 3
+      "count": 1
     },
     {
       "event": "click",
       "handler": "$emit('update:modelValue', item.key)",
-      "count": 2
+      "count": 1
     },
     {
       "event": "click",
       "handler": "clear",
-      "count": 2
+      "count": 1
     },
     {
       "event": "click",
       "handler": "closePanel",
-      "count": 6
+      "count": 2
     },
     {
       "event": "click",
       "handler": "copyAddress",
-      "count": 2
+      "count": 1
     },
     {
       "event": "click",
       "handler": "draw",
-      "count": 4
+      "count": 2
     },
     {
       "event": "click",
       "handler": "launch",
-      "count": 2
+      "count": 1
     },
     {
       "event": "click",
       "handler": "menuOpen = !menuOpen",
-      "count": 3
+      "count": 1
     },
     {
       "event": "click",
       "handler": "menuOpen = false",
-      "count": 6
+      "count": 2
     },
     {
       "event": "click",
       "handler": "open = !open",
-      "count": 2
+      "count": 1
     },
     {
       "event": "click",
       "handler": "openPanel",
-      "count": 3
+      "count": 1
     },
     {
       "event": "click",
       "handler": "selected = row.slug",
-      "count": 2
+      "count": 1
     },
     {
       "event": "click",
       "handler": "setMode(theme.key)",
-      "count": 3
+      "count": 1
     },
     {
       "event": "click",
       "handler": "signInWithWallet(wallet.key)",
-      "count": 3
+      "count": 1
     },
     {
       "event": "click",
       "handler": "signOut",
-      "count": 3
+      "count": 1
     },
     {
       "event": "input",
       "handler": "error = ''",
-      "count": 2
+      "count": 1
     },
     {
       "event": "input",
       "handler": "onTicker",
-      "count": 2
+      "count": 1
     },
     {
       "event": "submit",
       "handler": "check",
-      "count": 2
+      "count": 1
     },
     {
       "event": "submit",
       "handler": "launch",
-      "count": 2
+      "count": 1
     },
     {
       "event": "submit",
       "handler": "signInWithEmail",
-      "count": 3
+      "count": 1
     }
   ],
   "links": [
     {
       "kind": "href",
       "target": "/t/preview",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "href",
       "target": "#",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "href",
       "target": "#ladder",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "href",
       "target": "#main",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "href",
       "target": "#research",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "to",
       "target": "/",
-      "count": 13
+      "count": 5
     },
     {
       "kind": "to",
       "target": "/#how",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "to",
       "target": "/challenges",
-      "count": 7
+      "count": 3
     },
     {
       "kind": "to",
       "target": "/challenges/ecdsa-fail",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "to",
       "target": "/challenges/proximity",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "to",
       "target": "/challenges/sig-golf",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "to",
       "target": "/exposure",
-      "count": 4
-    },
-    {
-      "kind": "to",
-      "target": "/launch",
-      "count": 14
-    },
-    {
-      "kind": "to",
-      "target": "/launch?track=q-day",
       "count": 2
     },
     {
       "kind": "to",
-      "target": "/q-day",
+      "target": "/launch",
       "count": 6
     },
     {
       "kind": "to",
+      "target": "/launch?track=q-day",
+      "count": 1
+    },
+    {
+      "kind": "to",
+      "target": "/q-day",
+      "count": 3
+    },
+    {
+      "kind": "to",
       "target": "/tokens",
-      "count": 6
+      "count": 3
     }
   ],
   "assets": [
     {
       "kind": "src",
       "value": "/brand/token.png",
-      "count": 2
+      "count": 1
     },
     {
       "kind": "src",
       "value": "/brand/urania-indigo.png",
-      "count": 4
+      "count": 2
     },
     {
       "kind": "src",
       "value": "/brand/urania-ink.png",
-      "count": 4
+      "count": 2
     }
   ],
   "forms": [
@@ -3660,37 +3580,37 @@
       "tag": "input",
       "name": "",
       "type": "",
-      "count": 6
+      "count": 3
     },
     {
       "tag": "input",
       "name": "",
       "type": "file",
-      "count": 2
+      "count": 1
     },
     {
       "tag": "input",
       "name": "email",
       "type": "email",
-      "count": 3
+      "count": 1
     },
     {
       "tag": "input",
       "name": "q",
       "type": "search",
-      "count": 2
+      "count": 1
     },
     {
       "tag": "textarea",
       "name": "",
       "type": "",
-      "count": 2
+      "count": 1
     },
     {
       "tag": "textarea",
       "name": "wallet",
       "type": "",
-      "count": 2
+      "count": 1
     }
   ],
   "i18n": [],

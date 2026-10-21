@@ -7,10 +7,10 @@
 /** The platform's own token, pinned to the top of the directory. */
 export const OFFICIAL_TOKEN = {
   mint: "sL9DG8BYMZQz4sJ8FdLPrSUWLAPqqNHBJ7zdZYTpump",
-  name: "Qubitlane",
-  ticker: "$QUBITLANE",
+  name: "Qubitess",
+  ticker: "$QUBITESS",
   official: true,
-  creator: "Qubitlane",
+  creator: "Qubitess",
   createdAt: null,
   challengeSlug: null,
   graduated: true,

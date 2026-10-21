@@ -42,72 +42,74 @@ async function copyAddress() {
 
 <template>
   <section
-    :aria-label="`${token.name}, the official Qubitlane token`"
-    class="pp-official"
+    :aria-label="`${token.name}, the official Qubitess token`"
+    class="cq-sheet cq-official"
   >
-    <div class="pp-official__id">
-      <img
-        src="/brand/token.png"
-        :alt="`${token.name}'s picture`"
-        width="48"
-        height="48"
-        loading="lazy"
-        decoding="async"
-        class="pp-thumb"
-      />
-      <div class="pp-official__names">
-        <div class="pp-inline pp-official__line">
-          <h2
-            translate="no"
-            class="pp-h3"
-          >
-            {{ token.name }}
-          </h2>
-          <span class="pp-tag pp-tag--accent">
-            <Icon name="badge-check" :size="12" :stroke-width="1.75" />Official
-          </span>
-        </div>
-        <div class="pp-inline pp-official__line">
-          <span translate="no" class="pp-mono pp-small pp-strong">{{ token.ticker }}</span>
-          <NvdaChip />
-          <button
-            type="button"
-            :title="token.mint"
-            :aria-label="copied ? 'Address copied' : 'Copy the token address'"
-            class="pp-tag pp-official__copy"
-            @click="copyAddress"
-          >
-            <span translate="no">{{ label }}</span>
-            <Icon :name="copied ? 'check' : 'copy'" :size="12" />
-          </button>
+    <div class="cq-sheet__head cq-official__head">
+      <div class="cq-official__id">
+        <img
+          src="/brand/token.png"
+          :alt="`${token.name}'s picture`"
+          width="48"
+          height="48"
+          loading="lazy"
+          decoding="async"
+          class="cq-thumb"
+        />
+        <div class="cq-official__names">
+          <div class="cq-inline cq-official__line">
+            <h2
+              translate="no"
+              class="cq-h3"
+            >
+              {{ token.name }}
+            </h2>
+            <span class="cq-tag cq-tag--accent">
+              <Icon name="badge-check" :size="12" :stroke-width="1.75" />Official
+            </span>
+          </div>
+          <div class="cq-inline cq-official__line">
+            <span translate="no" class="cq-mono cq-small cq-strong">{{ token.ticker }}</span>
+            <NvdaChip />
+            <button
+              type="button"
+              :title="token.mint"
+              :aria-label="copied ? 'Address copied' : 'Copy the token address'"
+              class="cq-tag cq-official__copy"
+              @click="copyAddress"
+            >
+              <span translate="no">{{ label }}</span>
+              <Icon :name="copied ? 'check' : 'copy'" :size="12" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
-    <dl class="pp-official__facts">
-      <div class="pp-official__fact">
-        <dt class="pp-h4">Market cap</dt>
-        <dd class="pp-num pp-official__value">{{ compactUsd(m?.marketCapUsd) }}</dd>
+    <dl class="cq-official__facts">
+      <div class="cq-official__fact">
+        <dt class="cq-h4">Market cap</dt>
+        <dd class="cq-num cq-official__value">{{ compactUsd(m?.marketCapUsd) }}</dd>
       </div>
-      <div class="pp-official__fact">
-        <dt class="pp-h4">24h change</dt>
-        <dd class="pp-num pp-official__value">
+      <div class="cq-official__fact">
+        <dt class="cq-h4">24h change</dt>
+        <dd class="cq-num cq-official__value">
           <template v-if="change">{{ change.arrow }} {{ change.label }}</template>
           <template v-else>-</template>
         </dd>
       </div>
-      <div class="pp-official__fact">
-        <dt class="pp-h4">Price</dt>
-        <dd class="pp-num pp-official__value">{{ priceLabel(m?.priceUsd) }}</dd>
+      <div class="cq-official__fact">
+        <dt class="cq-h4">Price</dt>
+        <dd class="cq-num cq-official__value">{{ priceLabel(m?.priceUsd) }}</dd>
       </div>
-      <div class="pp-official__fact">
-        <dt class="pp-h4">Vol 24h</dt>
-        <dd class="pp-num pp-official__value">{{ compactUsd(m?.volume24hUsd) }}</dd>
+      <div class="cq-official__fact">
+        <dt class="cq-h4">Vol 24h</dt>
+        <dd class="cq-num cq-official__value">{{ compactUsd(m?.volume24hUsd) }}</dd>
       </div>
-      <div class="pp-official__fact">
-        <dt class="pp-h4">{{ graduated ? "Graduated" : "Curve" }}</dt>
+      <div class="cq-official__fact cq-official__fact--meter">
+        <dt class="cq-h4">{{ graduated ? "Graduated" : "Curve" }}</dt>
         <dd
-          class="pp-meter pp-official__meter"
+          class="cq-meter cq-official__meter"
           role="meter"
           aria-label="Curve"
           aria-valuemin="0"
@@ -115,7 +117,7 @@ async function copyAddress() {
           :aria-valuenow="Math.round(graduation)"
         >
           <div
-            class="pp-meter__fill pp-official__fill"
+            class="cq-meter__fill cq-official__fill"
             :style="{ transform: `scaleX(${curve})` }"
           />
         </dd>
@@ -125,83 +127,95 @@ async function copyAddress() {
 </template>
 
 <style scoped>
-.pp-official {
-  display: grid;
-  gap: var(--pp-t3);
-  padding: 16px 0 18px;
-  border-top: 3px solid var(--pp-accent);
-  border-bottom: 1px solid var(--pp-line);
+.cq-official {
+  overflow: clip;
 }
 
-.pp-official__id {
+.cq-official__head {
+  padding: 16px clamp(16px, 2vw, 22px) 15px;
+}
+
+.cq-official__id {
   display: flex;
   align-items: center;
   gap: 14px;
   min-width: 0;
 }
 
-.pp-official__names {
+.cq-official__names {
   display: grid;
   gap: 6px;
   min-width: 0;
 }
 
-.pp-official__line {
+.cq-official__line {
   gap: 8px 10px;
   min-width: 0;
 }
 
-.pp-official__copy {
+.cq-official__copy {
   gap: 6px;
   padding: 2px 8px;
-  background: var(--pp-sheet);
+  background: transparent;
   cursor: pointer;
-  transition: border-color var(--pp-fast) var(--pp-ease), color var(--pp-fast) var(--pp-ease);
+  transition: border-color var(--cq-fast) var(--cq-ease), color var(--cq-fast) var(--cq-ease);
 }
 
-.pp-official__copy:hover {
-  border-color: var(--pp-ink);
-  color: var(--pp-ink);
+.cq-official__copy:hover {
+  border-color: var(--cq-ink);
+  color: var(--cq-ink);
 }
 
-.pp-official__facts {
+/* Figures as full-width ledger rows: label left, figure right. */
+.cq-official__facts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
-  gap: 14px 20px;
-  min-width: 0;
+  gap: 0;
+  margin: 0;
 }
 
-.pp-official__fact {
-  display: grid;
-  gap: 5px;
-  align-content: start;
-  min-width: 0;
+.cq-official__fact {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px clamp(16px, 2vw, 22px);
+  border-top: 1px solid var(--cq-line-soft);
 }
 
-.pp-official__value {
-  font-size: 0.92rem;
-  color: var(--pp-ink);
+.cq-official__fact:first-child {
+  border-top: 0;
+}
+
+.cq-official__fact--meter {
+  align-items: center;
+}
+
+.cq-official__value {
+  min-width: 0;
+  font-size: 0.94rem;
+  color: var(--cq-ink);
+  text-align: right;
   overflow-wrap: anywhere;
 }
 
-.pp-official__meter {
-  height: 6px;
+.cq-official__meter {
+  width: min(46%, 220px);
+  height: 5px;
+  flex: 0 0 auto;
 }
 
-.pp-official__fill {
+.cq-official__fill {
   width: 100%;
   transform-origin: left center;
 }
 
-@media (min-width: 1320px) {
-  .pp-official {
-    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-    align-items: center;
-    gap: var(--pp-t3) var(--pp-t4);
+@media (max-width: 560px) {
+  .cq-official__id {
+    align-items: flex-start;
   }
 
-  .pp-official__facts {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+  .cq-official__meter {
+    width: min(52%, 160px);
   }
 }
 </style>

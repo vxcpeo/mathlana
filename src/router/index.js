@@ -2,15 +2,15 @@ import { createRouter, createWebHistory } from "vue-router";
 import { CHALLENGES } from "@/data/challenges";
 import { ALL_TOKENS } from "@/data/tokens";
 
-/** "Tokens · Qubitlane" — the separator the reference uses in every <title>. */
-const t = (page) => `${page} · Qubitlane`;
+/** "Tokens · Qubitess" — the separator the reference uses in every <title>. */
+const t = (page) => `${page} · Qubitess`;
 
 const routes = [
   {
     path: "/",
     name: "home",
     component: () => import("@/views/HomeView.vue"),
-    meta: { title: "Qubitlane: When do Bitcoin, Ethereum and Solana wallets break?" },
+    meta: { title: "Qubitess: When do Bitcoin, Ethereum and Solana wallets break?" },
   },
   {
     path: "/tokens",
@@ -22,7 +22,7 @@ const routes = [
     path: "/t/:mint",
     name: "token",
     component: () => import("@/views/TokenDetailView.vue"),
-    // Resolved per token: "Quantum Sword Cat ($QSC) · Qubitlane".
+    // Resolved per token: "Quantum Sword Cat ($QSC) · Qubitess".
     meta: { title: t("Token") },
   },
   {
@@ -35,7 +35,7 @@ const routes = [
     path: "/challenges/:slug",
     name: "challenge",
     component: () => import("@/views/ChallengeDetailView.vue"),
-    // Resolved per challenge: "sig.golf · Qubitlane".
+    // Resolved per challenge: "sig.golf · Qubitess".
     meta: { title: t("Challenge") },
   },
   {
@@ -60,7 +60,7 @@ const routes = [
     path: "/about",
     name: "about",
     component: () => import("@/views/AboutView.vue"),
-    meta: { title: t("About Qubitlane") },
+    meta: { title: t("About Qubitess") },
   },
   {
     path: "/terms",
@@ -124,5 +124,5 @@ function resolveTitle(to) {
 }
 
 router.afterEach((to) => {
-  document.title = resolveTitle(to) ?? to.meta?.title ?? "Qubitlane";
+  document.title = resolveTitle(to) ?? to.meta?.title ?? "Qubitess";
 });

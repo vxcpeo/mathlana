@@ -9,20 +9,20 @@ const props = defineProps({
 });
 
 const tones = {
-  brand: "pp-tag--accent",
-  proven: "pp-tag--live",
-  caution: "pp-tag--warn",
-  failed: "pp-tag--alert",
-  note: "pp-tag--note",
-  quantum: "pp-tag--accent",
+  brand: "cq-tag--accent",
+  proven: "cq-tag--live",
+  caution: "cq-tag--warn",
+  failed: "cq-tag--alert",
+  note: "cq-tag--note",
+  quantum: "cq-tag--accent",
   quiet: "",
-  solid: "pp-tag--accent",
+  solid: "cq-tag--accent",
   outline: "",
 };
 
 const classes = computed(() => [
-  "pp-tag",
-  props.size === "sm" ? "pp-tag--sm" : "",
+  "cq-tag",
+  props.size === "sm" ? "cq-tag--sm" : "",
   tones[props.tone] ?? "",
   props.class,
 ]);

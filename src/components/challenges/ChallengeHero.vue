@@ -1,5 +1,5 @@
 <script setup>
-/** Challenge detail masthead: host, verb, name, the brief, and the launch CTA. */
+/** Challenge detail running head: host, verb, name, the brief, and the launch CTA. */
 import { RouterLink } from "vue-router";
 import ChallengeIcon from "@/components/challenges/ChallengeIcon.vue";
 import VerbBadge from "@/components/challenges/VerbBadge.vue";
@@ -20,123 +20,154 @@ defineProps({
 </script>
 
 <template>
-  <section class="pp-head pp-hero">
-    <div class="pp-head__row pp-hero__row">
-      <div class="pp-stack pp-hero__main">
-        <div class="pp-inline pp-hero__meta">
-          <p class="pp-eyebrow pp-inline pp-hero__host">
-            <ChallengeIcon :name="hostIcon" class="pp-hero__hosticon" />{{ hostLabel }}
-          </p>
-          <VerbBadge :verb="verb" :icon="verbIcon" :icon-class="verbIconClass" />
-        </div>
+  <header class="cq-pagehead cq-chero">
+    <div class="cq-pagehead__head cq-chero__head">
+      <p class="cq-kicker cq-chero__kicker">
+        <ChallengeIcon :name="hostIcon" class="cq-chero__hosticon" />{{ hostLabel }}
+      </p>
 
-        <h1 class="pp-runhead">{{ name }}</h1>
+      <h1 class="cq-runhead cq-chero__name">{{ name }}</h1>
 
-        <div class="pp-grid pp-grid--2 pp-hero__facts">
-          <div class="pp-stack--tight">
-            <h2 class="pp-h4">What it asks</h2>
-            <p class="pp-body">{{ asks }}</p>
-          </div>
-          <div v-if="why" class="pp-stack--tight">
-            <h2 class="pp-h4">Why it matters</h2>
-            <p class="pp-body">{{ why }}</p>
-          </div>
-        </div>
-
-        <div class="pp-inline pp-hero__cta">
-          <RouterLink :to="`/launch?track=${track}`" class="pp-btn pp-btn--lg"
-            >Launch a token on it</RouterLink
-          >
-          <p class="pp-tiny pp-hero__note">{{ ctaNote }}</p>
-        </div>
+      <div class="cq-chero__meta">
+        <VerbBadge :verb="verb" :icon="verbIcon" :icon-class="verbIconClass" />
+        <RouterLink :to="`/launch?track=${track}`" class="cq-btn cq-btn--lg"
+          >Launch a token on it</RouterLink
+        >
       </div>
 
-      <div class="pp-hero__art" aria-hidden="true">
-        <img src="/brand/urania-ink.png" alt="" class="pp-hero__ink" />
-        <img src="/brand/urania-indigo.png" alt="" class="pp-hero__indigo" />
+      <p class="cq-tiny cq-chero__note">{{ ctaNote }}</p>
+
+      <span class="cq-chero__art" aria-hidden="true">
+        <img src="/brand/urania-ink.png" alt="" class="cq-chero__ink" />
+        <img src="/brand/urania-indigo.png" alt="" class="cq-chero__indigo" />
+      </span>
+    </div>
+
+    <div class="cq-pagehead__edge cq-chero__edge">
+      <div class="cq-chero__summary">
+        <h2 class="cq-h4">What it asks</h2>
+        <p class="cq-lede cq-chero__asks">{{ asks }}</p>
+      </div>
+
+      <div v-if="why" class="cq-chero__summary">
+        <h2 class="cq-h4">Why it matters</h2>
+        <p class="cq-small cq-chero__why">{{ why }}</p>
       </div>
     </div>
-  </section>
+  </header>
 </template>
 
 <style scoped>
-.pp-hero {
-  gap: var(--pp-t4);
-}
-
-.pp-hero__row {
+.cq-chero {
+  position: relative;
   align-items: start;
-  gap: clamp(24px, 4vw, 56px);
+  padding-top: clamp(6px, 1.4vw, 22px);
 }
 
-.pp-hero__main {
-  flex: 1 1 38rem;
+.cq-chero__head {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: var(--cq-t3);
   min-width: 0;
-  gap: var(--pp-t4);
+  padding-bottom: var(--cq-t2);
 }
 
-.pp-hero__meta {
+.cq-chero__kicker {
+  gap: 8px;
+  color: var(--cq-muted);
+}
+
+.cq-chero__hosticon {
+  width: 15px;
+  height: 15px;
+  color: var(--cq-accent-text);
+}
+
+.cq-chero__name {
+  position: relative;
+  z-index: 1;
+  max-width: 14ch;
+  overflow-wrap: anywhere;
+}
+
+.cq-chero__meta {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 10px 14px;
 }
 
-.pp-hero__host {
-  gap: 8px;
+.cq-chero__note {
+  position: relative;
+  z-index: 1;
+  max-width: 54ch;
+  color: var(--cq-muted);
 }
 
-.pp-hero__hosticon {
-  width: 16px;
-  height: 16px;
-  color: var(--pp-accent-text);
+.cq-chero__edge {
+  display: grid;
+  gap: var(--cq-t3);
+  align-content: start;
+  padding-bottom: 0;
 }
 
-.pp-hero__art {
-  display: none;
+.cq-chero__summary {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
 }
 
-.pp-hero__art img {
+.cq-chero__asks {
+  font-size: clamp(1rem, 1.15vw, 1.12rem);
+  line-height: 1.55;
+}
+
+.cq-chero__why {
+  color: var(--cq-muted);
+}
+
+.cq-chero__art {
+  position: absolute;
+  right: clamp(-18px, -1vw, 0px);
+  bottom: -14px;
+  z-index: 0;
+  width: clamp(120px, 16vw, 210px);
+  height: clamp(130px, 17vw, 220px);
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.cq-chero__art img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  object-position: bottom;
-  -webkit-mask-image: linear-gradient(to bottom, #000 58%, transparent 96%);
-  mask-image: linear-gradient(to bottom, #000 58%, transparent 96%);
+  object-position: bottom right;
+  -webkit-mask-image: linear-gradient(to bottom, #000 45%, transparent 94%);
+  mask-image: linear-gradient(to bottom, #000 45%, transparent 94%);
 }
 
-.pp-hero__indigo {
+.cq-chero__indigo {
   display: none;
 }
 
-.pp-hero__facts {
-  gap: var(--pp-t3) var(--pp-t4);
-}
-
-.pp-hero__cta {
-  gap: 14px;
-  align-items: center;
-}
-
-.pp-hero__note {
-  max-width: 46ch;
-}
-
-:global(.dark) .pp-hero__ink {
+:global(.dark) .cq-chero__ink {
   display: none;
 }
 
-:global(.dark) .pp-hero__indigo {
+:global(.dark) .cq-chero__indigo {
   display: block;
 }
 
-@media (min-width: 900px) {
-  .pp-hero__row {
-    flex-wrap: nowrap;
+@media (max-width: 960px) {
+  .cq-chero__name {
+    max-width: 18ch;
   }
 
-  .pp-hero__art {
-    display: block;
-    flex: 0 0 clamp(13rem, 20vw, 18rem);
-    height: clamp(14rem, 22vw, 20rem);
-    min-width: 0;
+  .cq-chero__art {
+    display: none;
   }
 }
 </style>

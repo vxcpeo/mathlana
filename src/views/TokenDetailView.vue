@@ -55,99 +55,101 @@ const stakes = computed(() => {
 </script>
 
 <template>
-  <div class="pp-page">
+  <div class="cq-page">
     <template v-if="token">
-      <div class="pp-head">
-        <div class="pp-token__title">
-          <h1 class="pp-runhead pp-runhead--tight">
+      <header class="cq-pagehead cq-token__pagehead">
+        <div class="cq-pagehead__head cq-token__head">
+          <h1 class="cq-runhead cq-runhead--tight cq-token__name">
             {{ token.name }}
           </h1>
 
-          <div class="pp-inline pp-token__ids">
-            <span class="pp-mono pp-token__ticker">{{ token.ticker }}</span>
+          <div class="cq-inline cq-token__ids">
+            <span class="cq-mono cq-token__ticker">{{ token.ticker }}</span>
             <NvdaChip />
-            <a href="#research" class="pp-token__status">
-              <span class="pp-inline pp-token__dotlabel">
-                <span aria-hidden="true" class="pp-dot" />
+            <a href="#research" class="cq-token__status">
+              <span class="cq-inline cq-token__dotlabel">
+                <span aria-hidden="true" class="cq-dot" />
                 Waiting for fees
               </span>
             </a>
           </div>
-        </div>
 
-        <div class="pp-inline pp-token__meta">
-          <RouterLink
-            v-if="token.challengeSlug"
-            :to="`/challenges/${token.challengeSlug}`"
-            class="pp-inline pp-token__metalink"
-          >
-            <Icon name="sigma" :size="13" class="pp-tone-accent" />Works on
-            {{ token.challengeLabel }}
-          </RouterLink>
-
-          <span class="pp-mono pp-token__creator">
-            Created by {{ shortAddress(token.creator) }}
-          </span>
-
-          <nav class="pp-inline pp-token__links">
-            <a
-              :href="`https://pump.fun/coin/${token.mint}`"
-              target="_blank"
-              rel="noreferrer"
-              class="pp-tag pp-token__link"
-              >pump.fun<Icon name="external-link" :size="11"
-            /></a>
-            <a
-              :href="`https://solscan.io/token/${token.mint}`"
-              target="_blank"
-              rel="noreferrer"
-              class="pp-tag pp-token__link"
-              >Solscan<Icon name="external-link" :size="11"
-            /></a>
-          </nav>
-        </div>
-
-        <p v-if="stakes" class="pp-token__stake">
-          <Icon name="shield" :size="14" class="pp-token__stakeicon pp-tone-accent" />
-          <span class="pp-token__staketext">
-            <span class="pp-strong">{{ stakes.label }}</span>
-            <span aria-hidden="true" class="pp-token__sep">·</span>{{ stakes.note }}
-          </span>
-        </p>
-
-        <p v-if="snapshot.description" class="pp-lede">
-          {{ snapshot.description }}
-        </p>
-
-        <a href="#research" class="pp-plate pp-token__board">
-          <AiQuantumIcon class="pp-token__boardmark pp-tone-accent" />
-          <span class="pp-token__boardbody">
-            <span class="pp-inline pp-token__boardhead">
-              <span class="pp-h3">AI and quantum board</span>
-              <span class="pp-inline pp-token__dotlabel">
-                <span aria-hidden="true" class="pp-dot" />
-                Waiting for fees
-              </span>
-            </span>
-            <span class="pp-small"
-              >The agent starts once fees fund it; the board shows where it stands.</span
+          <div class="cq-inline cq-token__meta">
+            <RouterLink
+              v-if="token.challengeSlug"
+              :to="`/challenges/${token.challengeSlug}`"
+              class="cq-inline cq-token__metalink"
             >
-          </span>
-          <span class="pp-inline pp-token__boardcta">
-            <span>See it live</span>
-            <Icon name="arrow-down" :size="14" :stroke-width="1.75" />
-          </span>
-        </a>
-      </div>
+              <Icon name="sigma" :size="13" class="cq-tone-accent" />Works on
+              {{ token.challengeLabel }}
+            </RouterLink>
 
-      <div class="pp-stage pp-token__stage">
-        <div class="pp-wide">
-          <dl class="pp-stats pp-token__stats">
-            <div v-for="stat in stats" :key="stat.label" class="pp-stat">
-              <dt class="pp-stat__label">{{ stat.label }}</dt>
-              <dd class="pp-stat__value pp-num">
+            <span class="cq-mono cq-token__creator">
+              Created by {{ shortAddress(token.creator) }}
+            </span>
+
+            <nav class="cq-inline cq-token__links">
+              <a
+                :href="`https://pump.fun/coin/${token.mint}`"
+                target="_blank"
+                rel="noreferrer"
+                class="cq-tag cq-token__link"
+                >pump.fun<Icon name="external-link" :size="11"
+              /></a>
+              <a
+                :href="`https://solscan.io/token/${token.mint}`"
+                target="_blank"
+                rel="noreferrer"
+                class="cq-tag cq-token__link"
+                >Solscan<Icon name="external-link" :size="11"
+              /></a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="cq-pagehead__edge cq-token__summary">
+          <p v-if="snapshot.description" class="cq-lede">
+            {{ snapshot.description }}
+          </p>
+
+          <p v-if="stakes" class="cq-token__stake">
+            <Icon name="shield" :size="14" class="cq-token__stakeicon cq-tone-accent" />
+            <span class="cq-token__staketext">
+              <span class="cq-strong">{{ stakes.label }}</span>
+              <span aria-hidden="true" class="cq-token__sep">·</span>{{ stakes.note }}
+            </span>
+          </p>
+
+          <a href="#research" class="cq-plate cq-token__board">
+            <AiQuantumIcon class="cq-token__boardmark cq-tone-accent" />
+            <span class="cq-token__boardbody">
+              <span class="cq-inline cq-token__boardhead">
+                <span class="cq-h3">AI and quantum board</span>
+                <span class="cq-inline cq-token__dotlabel">
+                  <span aria-hidden="true" class="cq-dot" />
+                  Waiting for fees
+                </span>
+              </span>
+              <span class="cq-small"
+                >The agent starts once fees fund it; the board shows where it stands.</span
+              >
+            </span>
+            <span class="cq-inline cq-token__boardcta">
+              <span>See it live</span>
+              <Icon name="arrow-down" :size="14" :stroke-width="1.75" />
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <div class="cq-stage cq-token__stage">
+        <div class="cq-stage__main">
+          <dl class="cq-sheet cq-token__stats">
+            <div v-for="stat in stats" :key="stat.label" class="cq-token__stat">
+              <dt class="cq-h4">{{ stat.label }}</dt>
+              <dd class="cq-num cq-token__statvalue">
                 <span v-if="stat.value !== null">{{ stat.value }}</span>
-                <span v-else class="pp-tone-muted">-</span>
+                <span v-else class="cq-tone-muted">-</span>
               </dd>
             </div>
           </dl>
@@ -156,71 +158,74 @@ const stakes = computed(() => {
 
           <ResearchPanel :token="token" :pool="snapshot.pool" />
 
-          <div class="pp-split">
-            <section class="pp-sec" aria-labelledby="results-title">
-              <div class="pp-sec__head">
-                <h2 id="results-title" class="pp-h2">Results</h2>
-                <a
-                  :href="challenge?.host ?? 'https://better.codes'"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="pp-inline pp-token__boardlink"
-                  >Official leaderboard<Icon name="external-link" :size="11"
-                /></a>
-              </div>
-              <p class="pp-empty pp-small">
-                No result yet. A result shows here the moment Qubitlane's check passes.
-              </p>
-            </section>
-
-            <FeeSplitPanel />
-          </div>
+          <section class="cq-sheet cq-token__results" aria-labelledby="results-title">
+            <div class="cq-sheet__head cq-token__resultshead">
+              <h2 id="results-title" class="cq-h2">Results</h2>
+              <a
+                :href="challenge?.host ?? 'https://better.codes'"
+                target="_blank"
+                rel="noreferrer"
+                class="cq-inline cq-token__boardlink"
+                >Official leaderboard<Icon name="external-link" :size="11"
+              /></a>
+            </div>
+            <p class="cq-empty cq-small cq-token__empty">
+              No result yet. A result shows here the moment Qubitess's check passes.
+            </p>
+          </section>
         </div>
 
-        <div class="pp-margin pp-token__margin">
-          <div class="pp-art-frame pp-token__picture">
+        <aside class="cq-stage__edge cq-token__edge">
+          <div class="cq-sheet cq-token__picture">
             <TokenPicture :mint="token.mint" :name="token.name" :size="132" />
           </div>
 
           <PoolPanel :pool="snapshot.pool" />
-        </div>
+
+          <FeeSplitPanel />
+        </aside>
       </div>
     </template>
 
     <template v-else>
-      <div class="pp-head">
-        <p class="pp-kicker">
-          <span aria-hidden="true" class="pp-dot pp-dot--live pp-live-pulse" />Token
-        </p>
-        <h1 class="pp-runhead">No token at that address</h1>
-        <p class="pp-lede">
-          Qubitlane has no token at
-          <span class="pp-mono pp-token__mint">{{ mint }}</span>. The address may be mistyped, or
-          the token may predate the directory.
-        </p>
-        <div class="pp-inline pp-token__actions">
-          <AppButton to="/tokens" size="lg">
-            See every token
-            <Icon name="arrow-right" :size="15" />
-          </AppButton>
-          <a
-            :href="`https://pump.fun/coin/${mint}`"
-            target="_blank"
-            rel="noreferrer"
-            class="pp-tag pp-token__link"
-            >pump.fun<Icon name="external-link" :size="11"
-          /></a>
-          <a
-            :href="`https://solscan.io/token/${mint}`"
-            target="_blank"
-            rel="noreferrer"
-            class="pp-tag pp-token__link"
-            >Solscan<Icon name="external-link" :size="11"
-          /></a>
+      <header class="cq-pagehead cq-token__pagehead">
+        <div class="cq-pagehead__head cq-token__head">
+          <p class="cq-kicker">
+            <span aria-hidden="true" class="cq-dot cq-dot--live cq-live-pulse" />Token
+          </p>
+          <h1 class="cq-runhead">No token at that address</h1>
         </div>
-      </div>
 
-      <p class="pp-note pp-token__fallback">
+        <div class="cq-pagehead__edge cq-token__summary">
+          <p class="cq-lede">
+            Qubitess has no token at
+            <span class="cq-mono cq-token__mint">{{ mint }}</span>. The address may be mistyped, or
+            the token may predate the directory.
+          </p>
+          <div class="cq-inline cq-token__actions">
+            <AppButton to="/tokens" size="lg">
+              See every token
+              <Icon name="arrow-right" :size="15" />
+            </AppButton>
+            <a
+              :href="`https://pump.fun/coin/${mint}`"
+              target="_blank"
+              rel="noreferrer"
+              class="cq-tag cq-token__link"
+              >pump.fun<Icon name="external-link" :size="11"
+            /></a>
+            <a
+              :href="`https://solscan.io/token/${mint}`"
+              target="_blank"
+              rel="noreferrer"
+              class="cq-tag cq-token__link"
+              >Solscan<Icon name="external-link" :size="11"
+            /></a>
+          </div>
+        </div>
+      </header>
+
+      <p class="cq-note cq-token__fallback">
         A token's page shows its quantum-drawn picture, its market, the AI/Quantum pool that pays
         for its agent, and every session the agent runs on its challenge.
       </p>
@@ -229,202 +234,245 @@ const stakes = computed(() => {
 </template>
 
 <style scoped>
-.pp-token__title {
+.cq-token__pagehead {
+  align-items: start;
+}
+
+.cq-token__stage {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.cq-token__head {
   display: grid;
-  gap: 10px;
+  gap: clamp(12px, 1.5vw, 18px);
   min-width: 0;
 }
 
-.pp-token__ids {
+.cq-token__name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.cq-token__ids {
   gap: 10px 14px;
   min-width: 0;
 }
 
-.pp-token__ticker {
+.cq-token__ticker {
   font-size: 0.98rem;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
   overflow-wrap: anywhere;
 }
 
-.pp-token__status {
+.cq-token__status {
   color: inherit;
 }
 
-.pp-token__dotlabel {
+.cq-token__dotlabel {
   gap: 7px;
-  font-family: var(--pp-mono);
+  font-family: var(--cq-mono);
   font-size: 0.7rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
   white-space: nowrap;
 }
 
-.pp-token__dotlabel .pp-dot {
-  color: var(--pp-line-strong);
+.cq-token__dotlabel .cq-dot {
+  color: var(--cq-line-strong);
 }
 
-.pp-token__meta {
+.cq-token__meta {
   gap: 8px 20px;
   min-width: 0;
-  font-family: var(--pp-mono);
+  font-family: var(--cq-mono);
   font-size: 0.72rem;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
 }
 
-.pp-token__metalink {
+.cq-token__metalink {
   gap: 6px;
-  color: var(--pp-muted);
-  transition: color var(--pp-fast) var(--pp-ease);
+  color: var(--cq-muted);
+  transition: color var(--cq-fast) var(--cq-ease);
 }
 
-.pp-token__metalink:hover {
-  color: var(--pp-accent-text);
+.cq-token__metalink:hover {
+  color: var(--cq-accent-text);
 }
 
-.pp-token__creator {
+.cq-token__creator {
   min-width: 0;
   overflow-wrap: anywhere;
 }
 
-.pp-token__links {
+.cq-token__links {
   gap: 8px;
 }
 
-.pp-token__link {
-  background: var(--pp-sheet);
-  transition: border-color var(--pp-fast) var(--pp-ease), color var(--pp-fast) var(--pp-ease);
+.cq-token__link {
+  background: var(--cq-sheet);
+  transition: border-color var(--cq-fast) var(--cq-ease), color var(--cq-fast) var(--cq-ease);
 }
 
-.pp-token__link:hover {
-  border-color: var(--pp-ink);
-  color: var(--pp-ink);
+.cq-token__link:hover {
+  border-color: var(--cq-ink);
+  color: var(--cq-ink);
 }
 
-.pp-token__stake {
+.cq-token__summary {
+  gap: clamp(12px, 1.5vw, 18px);
+}
+
+.cq-token__stake {
   display: flex;
   align-items: flex-start;
   gap: 10px;
   max-width: 72ch;
   font-size: 0.88rem;
-  color: var(--pp-ink-soft);
+  color: var(--cq-ink-soft);
 }
 
-.pp-token__stakeicon {
+.cq-token__stakeicon {
   margin-top: 3px;
   flex-shrink: 0;
 }
 
-.pp-token__staketext {
+.cq-token__staketext {
   min-width: 0;
   overflow-wrap: anywhere;
 }
 
-.pp-token__sep {
+.cq-token__sep {
   padding: 0 6px;
-  color: var(--pp-line-strong);
+  color: var(--cq-line-strong);
 }
 
-.pp-token__board {
+.cq-token__board {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
+  align-self: stretch;
   gap: 14px;
-  transition: border-color var(--pp-fast) var(--pp-ease), background-color var(--pp-fast) var(--pp-ease);
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: border-color var(--cq-fast) var(--cq-ease), background-color var(--cq-fast) var(--cq-ease);
 }
 
-.pp-token__board:hover {
-  border-color: var(--pp-accent-line);
-  background: var(--pp-accent-soft);
+.cq-token__board:hover {
+  border-color: var(--cq-accent-line);
+  background: var(--cq-accent-soft);
 }
 
-.pp-token__boardmark {
+.cq-token__boardmark {
   font-size: 22px;
 }
 
-.pp-token__boardbody {
+.cq-token__boardbody {
   display: grid;
   gap: 3px;
   min-width: 0;
 }
 
-.pp-token__boardhead {
+.cq-token__boardhead {
   gap: 4px 14px;
   min-width: 0;
 }
 
-.pp-token__boardcta {
+.cq-token__boardcta {
+  grid-column: 1 / -1;
   gap: 6px;
-  font-family: var(--pp-mono);
+  font-family: var(--cq-mono);
   font-size: 0.68rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--pp-accent-text);
+  color: var(--cq-accent-text);
   white-space: nowrap;
 }
 
-.pp-token__stage {
-  padding-top: var(--pp-t4);
+/* Four figures as one ruled sheet, label left, figure right. */
+.cq-token__stats {
+  gap: 0;
+  overflow: clip;
 }
 
-.pp-token__stats {
-  margin-top: var(--pp-t1);
+.cq-token__stat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px clamp(16px, 2vw, 22px);
+  border-bottom: 1px solid var(--cq-line-soft);
 }
 
-.pp-token__boardlink {
-  gap: 6px;
-  font-family: var(--pp-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.04em;
-  color: var(--pp-muted);
-  transition: color var(--pp-fast) var(--pp-ease);
+.cq-token__stat:last-child {
+  border-bottom: 0;
 }
 
-.pp-token__boardlink:hover {
-  color: var(--pp-accent-text);
+.cq-token__stat .cq-h4 {
+  color: var(--cq-muted);
 }
 
-.pp-token__margin {
-  gap: var(--pp-t3);
-}
-
-.pp-token__picture {
-  display: grid;
-  justify-self: start;
-  padding: 14px;
-}
-
-.pp-token__mint {
+.cq-token__statvalue {
+  font-size: 1rem;
+  color: var(--cq-ink);
+  text-align: right;
   overflow-wrap: anywhere;
 }
 
-.pp-token__actions {
+.cq-token__results {
+  gap: 0;
+  overflow: clip;
+}
+
+.cq-token__resultshead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 16px;
+  padding: 16px clamp(16px, 2vw, 22px) 13px;
+}
+
+.cq-token__resultshead .cq-h2 {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+.cq-token__boardlink {
+  gap: 6px;
+  font-family: var(--cq-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--cq-muted);
+  transition: color var(--cq-fast) var(--cq-ease);
+}
+
+.cq-token__boardlink:hover {
+  color: var(--cq-accent-text);
+}
+
+.cq-token__empty {
+  border-top: 0;
+  margin: 0;
+  padding: 2px clamp(16px, 2vw, 22px) 20px;
+}
+
+.cq-token__picture {
+  display: grid;
+  place-items: center;
+  padding: clamp(14px, 2vw, 20px);
+}
+
+.cq-token__mint {
+  overflow-wrap: anywhere;
+}
+
+.cq-token__actions {
   gap: 10px;
 }
 
-.pp-token__fallback {
-  margin-top: var(--pp-t4);
+.cq-token__fallback {
+  margin-top: var(--cq-t4);
   max-width: 72ch;
-}
-
-@media (max-width: 1180px) {
-  .pp-token__margin {
-    grid-template-columns: minmax(0, 1fr);
-    order: -1;
-  }
-}
-
-@media (max-width: 560px) {
-  .pp-token__stats {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .pp-token__board {
-    grid-template-columns: auto minmax(0, 1fr);
-  }
-
-  .pp-token__boardcta {
-    grid-column: 1 / -1;
-  }
 }
 </style>

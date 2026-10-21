@@ -24,209 +24,240 @@ const PAGES = [
 </script>
 
 <template>
-  <article class="pp-page pp-doc">
-    <div class="pp-head pp-doc__head">
-      <h1 class="pp-runhead pp-doc__title">{{ title }}</h1>
-
-      <div class="pp-doc__meta">
-        <p class="pp-kicker pp-doc__eyebrow">{{ eyebrow }}</p>
-        <span class="pp-doc__meta-rule" aria-hidden="true" />
-        <p class="pp-eyebrow pp-doc__stamp">{{ updated }}</p>
+  <article class="cq-page cq-doc">
+    <div class="cq-pagehead cq-doc__head" role="presentation">
+      <div class="cq-pagehead__head">
+        <p class="cq-kicker cq-doc__eyebrow">{{ eyebrow }}</p>
+        <h1 class="cq-runhead cq-doc__title">{{ title }}</h1>
       </div>
 
-      <nav aria-label="Legal pages" class="pp-doc__nav">
-        <RouterLink
-          v-for="page in PAGES"
-          :key="page.key"
-          :to="page.to"
-          :aria-current="page.key === current ? 'page' : undefined"
-          class="pp-doc__nav-link"
-          :class="page.key === current ? 'pp-doc__nav-link--current' : ''"
-        >
-          <span class="pp-doc__nav-mark" aria-hidden="true" />
-          <span class="pp-doc__nav-label">{{ page.label }}</span>
-        </RouterLink>
-      </nav>
+      <div class="cq-pagehead__edge cq-doc__headedge">
+        <p class="cq-eyebrow cq-doc__stamp">{{ updated }}</p>
+        <span aria-hidden="true" class="cq-doc__edgemark" />
+      </div>
     </div>
 
-    <div class="pp-doc__body">
-      <ol class="pp-doc__clauses">
-        <slot />
-      </ol>
+    <div class="cq-stage cq-doc__stage">
+      <div class="cq-stage__main">
+        <div class="cq-sheet cq-doc__document">
+          <ol class="cq-doc__clauses">
+            <slot />
+          </ol>
+        </div>
+      </div>
+
+      <div class="cq-stage__edge cq-doc__edge">
+        <span aria-hidden="true" class="cq-doc__edge-mark" />
+        <nav aria-label="Legal pages" class="cq-doc__nav">
+          <RouterLink
+            v-for="page in PAGES"
+            :key="page.key"
+            :to="page.to"
+            :aria-current="page.key === current ? 'page' : undefined"
+            class="cq-doc__nav-link"
+            :class="page.key === current ? 'cq-doc__nav-link--current' : ''"
+          >
+            <span class="cq-doc__nav-mark" aria-hidden="true" />
+            <span class="cq-doc__nav-label">{{ page.label }}</span>
+          </RouterLink>
+        </nav>
+      </div>
     </div>
   </article>
 </template>
 
 <style scoped>
-.pp-doc {
-  width: 100%;
-  max-width: 76rem;
-  padding-bottom: var(--pp-t6);
+.cq-doc {
+  padding-bottom: clamp(28px, 4vw, 56px);
 }
 
-.pp-doc__head {
-  gap: var(--pp-t3);
-  padding-top: var(--pp-t6);
-  padding-bottom: 0;
-  border-bottom: 0;
+/* running head -------------------------------------------------------- */
+.cq-doc__head {
+  align-items: end;
 }
 
-.pp-doc__title {
+.cq-doc__title {
   max-width: 12ch;
-  font-size: clamp(3.25rem, 12vw, 9rem);
-  line-height: 0.82;
+  margin-top: 10px;
+  font-size: clamp(52px, 10vw, 132px);
+  line-height: 0.84;
   letter-spacing: -0.06em;
   overflow-wrap: anywhere;
 }
 
-.pp-doc__meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px var(--pp-t3);
-  padding-top: var(--pp-t3);
-  border-top: 1px solid var(--pp-line);
+.cq-doc__headedge {
+  align-items: flex-start;
+  padding-bottom: 10px;
 }
 
-.pp-doc__eyebrow {
-  flex-shrink: 0;
+.cq-doc__stamp {
+  margin: 0;
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cq-muted);
 }
 
-.pp-doc__meta-rule {
-  flex: 1 1 60px;
-  min-width: 40px;
-  height: 1px;
-  background: var(--pp-line);
-}
-
-.pp-doc__stamp {
-  flex-shrink: 0;
-  margin-left: auto;
-  color: var(--pp-ink-soft);
-}
-
-.pp-doc__nav {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: var(--pp-t2);
-  border-top: 1px solid var(--pp-line);
-  border-bottom: 1px solid var(--pp-line);
-}
-
-.pp-doc__nav-link {
+.cq-doc__edgemark {
   position: relative;
-  display: flex;
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin-top: 6px;
+  border-top: 1px solid var(--cq-accent);
+  border-right: 1px solid var(--cq-accent);
+  opacity: 0.7;
+}
+
+.cq-doc__edgemark::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 8px;
+  height: 1px;
+  background: var(--cq-accent);
+}
+
+/* document stage ------------------------------------------------------ */
+.cq-doc__stage {
+  margin-top: clamp(2px, 0.6vw, 8px);
+}
+
+.cq-doc__document {
+  min-width: 0;
+  overflow: clip;
+}
+
+.cq-doc__clauses {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* contents edge ------------------------------------------------------- */
+.cq-doc__edge {
+  gap: 14px;
+  position: sticky;
+  top: 96px;
+  align-self: start;
+}
+
+.cq-doc__edge-mark {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--cq-line);
+}
+
+.cq-doc__nav {
+  display: grid;
+  gap: 0;
+  min-width: 0;
+}
+
+.cq-doc__nav-link {
+  position: relative;
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr);
   align-items: center;
   gap: 10px;
   min-width: 0;
-  padding: 14px clamp(10px, 1.6vw, 20px);
-  border-right: 1px solid var(--pp-line);
-  font-family: var(--pp-mono);
-  font-size: 0.7rem;
+  padding: 11px 2px;
+  border-bottom: 1px solid var(--cq-line-soft);
+  font-family: var(--cq-mono);
+  font-size: 0.68rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--pp-ink-soft);
-  transition: color var(--pp-fast) var(--pp-ease), background-color var(--pp-fast) var(--pp-ease);
+  color: var(--cq-muted);
+  transition: color var(--cq-fast) var(--cq-ease), border-color var(--cq-fast) var(--cq-ease);
 }
 
-.pp-doc__nav-link:last-child {
-  border-right: 0;
+.cq-doc__nav-link:hover,
+.cq-doc__nav-link:focus-visible {
+  color: var(--cq-ink);
+  border-bottom-color: var(--cq-line-strong);
 }
 
-.pp-doc__nav-link:hover {
-  color: var(--pp-ink);
-  background: var(--pp-sheet-soft);
-}
-
-.pp-doc__nav-link:focus-visible {
-  z-index: 1;
-}
-
-.pp-doc__nav-mark {
+.cq-doc__nav-mark {
   width: 6px;
   height: 6px;
   flex-shrink: 0;
   border: 1px solid currentColor;
   rotate: 45deg;
-  opacity: 0.55;
+  opacity: 0.6;
 }
 
-.pp-doc__nav-link--current {
-  color: var(--pp-accent-text);
-  background: var(--pp-accent-soft);
+.cq-doc__nav-link--current {
+  color: var(--cq-accent-text);
 }
 
-.pp-doc__nav-link--current::before {
+.cq-doc__nav-link--current::before {
   content: "";
   position: absolute;
-  inset: 0 auto 0 0;
-  width: 2px;
-  background: var(--pp-accent);
+  left: -10px;
+  top: 50%;
+  width: 3px;
+  height: 16px;
+  translate: 0 -50%;
+  background: var(--cq-accent);
 }
 
-.pp-doc__nav-link--current .pp-doc__nav-mark {
+.cq-doc__nav-link--current .cq-doc__nav-mark {
   background: currentColor;
   opacity: 1;
 }
 
-.pp-doc__nav-label {
+.cq-doc__nav-label {
   min-width: 0;
   overflow-wrap: anywhere;
 }
 
-.pp-doc__body {
-  padding-top: var(--pp-t4);
-}
-
-.pp-doc__clauses {
-  background: var(--pp-sheet);
-  border: 1px solid var(--pp-line);
-  border-radius: 2px;
-}
-
-@media (max-width: 900px) {
-  .pp-doc__head {
-    padding-top: var(--pp-t5);
+@media (max-width: 960px) {
+  .cq-doc__headedge {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
   }
 
-  .pp-doc__stamp {
-    margin-left: 0;
+  .cq-doc__edgemark {
+    margin-top: 0;
+  }
+
+  .cq-doc__edge {
+    position: static;
+  }
+
+  .cq-doc__nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid var(--cq-line);
+  }
+
+  .cq-doc__nav-link {
+    border-bottom: 0;
+    padding: 12px 10px;
+  }
+
+  .cq-doc__nav-link--current::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    translate: none;
   }
 }
 
 @media (max-width: 560px) {
-  .pp-doc {
-    padding-bottom: var(--pp-t5);
+  .cq-doc__title {
+    font-size: clamp(44px, 16vw, 72px);
   }
 
-  .pp-doc__title {
-    font-size: clamp(2.9rem, 16vw, 4.2rem);
-  }
-
-  .pp-doc__meta {
-    align-items: flex-start;
-    gap: 8px 12px;
-  }
-
-  .pp-doc__meta-rule {
-    flex-basis: 100%;
-    order: 3;
-  }
-
-  .pp-doc__stamp {
-    flex-basis: 100%;
-  }
-
-  .pp-doc__nav-link {
-    gap: 7px;
-    padding: 12px 9px;
-    font-size: 0.64rem;
+  .cq-doc__nav-link {
+    padding: 11px 6px;
+    font-size: 0.62rem;
     letter-spacing: 0.08em;
-  }
-
-  .pp-doc__nav-mark {
-    width: 5px;
-    height: 5px;
   }
 }
 </style>

@@ -1,53 +1,85 @@
 {
   "old": {
-    "display": "Mathlana",
-    "slug": "mathlana",
+    "display": "Qubitlane",
+    "slug": "qubitlane",
     "variants": {
-      "display": "Mathlana",
-      "lower": "mathlana",
-      "upper": "MATHLANA",
-      "title": "Mathlana",
-      "kebab": "mathlana",
-      "snake": "mathlana",
-      "camel": "mathlana",
-      "pascal": "Mathlana",
-      "compact": "Mathlana",
-      "compactLower": "mathlana",
-      "first": "Mathlana",
-      "firstLower": "mathlana",
-      "firstUpper": "MATHLANA"
+      "display": "Qubitlane",
+      "lower": "qubitlane",
+      "upper": "QUBITLANE",
+      "title": "Qubitlane",
+      "kebab": "qubitlane",
+      "snake": "qubitlane",
+      "camel": "qubitlane",
+      "pascal": "Qubitlane",
+      "compact": "Qubitlane",
+      "compactLower": "qubitlane",
+      "first": "Qubitlane",
+      "firstLower": "qubitlane",
+      "firstUpper": "QUBITLANE"
     },
     "variantList": [
       {
-        "value": "Mathlana",
+        "value": "Qubitlane",
         "kind": "display"
       },
       {
-        "value": "mathlana",
+        "value": "qubitlane",
         "kind": "lower"
       },
       {
-        "value": "MATHLANA",
+        "value": "QUBITLANE",
         "kind": "upper"
       }
     ],
-    "domains": [
-      "mathlana.si",
-      "mathlana.si`"
-    ],
+    "domains": [],
     "handles": [],
-    "emails": [
-      "privacy@mathlana.si"
-    ],
+    "emails": [],
     "packageNames": [
-      "mathlana-website"
+      "qubitess-website"
     ],
     "initials": "",
     "allowFiles": [],
     "allowStrings": []
   },
   "usedBrands": [
-    "Mathlana"
+    "Mathlana",
+    "Qubitlane",
+    "Qubitess",
+    "GhostPay",
+    "Cifruna",
+    "Zero Art Protocol",
+    "Provenia",
+    "Loch",
+    "Tidevel",
+    "Miston",
+    "Ivorane",
+    "Filza",
+    "Backers",
+    "Kudorix",
+    "Tessella",
+    "Nummula",
+    "ORAsol",
+    "Attesio",
+    "YOVINX",
+    "Settiva",
+    "Seclura",
+    "Cindral",
+    "Stakri",
+    "Tracefolio",
+    "Tracevio",
+    "lockRH",
+    "Latchera",
+    "Pretiola",
+    "Clepsyra",
+    "Trovane",
+    "Librova",
+    "Ledgiva",
+    "Actoria",
+    "Custoria",
+    "Remitia",
+    "Holdavia",
+    "QUIVANTA",
+    "Leverix"
   ],
   "notes": ""
 }

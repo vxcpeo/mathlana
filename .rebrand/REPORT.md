@@ -1,14 +1,14 @@
 # Rebrand report
 
-> 摘要：已将 **Mathlana** 更换为 **Qubitlane**（`qubitlane.xyz` / @qubitlane），验证结论：**通过**。
+> 摘要：已将 **Qubitlane** 更换为 **Qubitess**（`qubitess.xyz` / @qubitess），验证结论：**通过**。
 
-- Generated: 2026-10-20T01:45:59+08:00
+- Generated: 2026-10-22T01:48:20+08:00
 - Project: `E:\workspace\chuangye\solana\mathlana\website`
-- Old brand: **Mathlana**
-- New brand: **Qubitlane**
-- Domain: `qubitlane.xyz`
-- X: `@qubitlane`
-- Email: `hello@qubitlane.xyz`
+- Old brand: **Qubitlane**
+- New brand: **Qubitess**
+- Domain: `qubitess.xyz`
+- X: `@qubitess`
+- Email: `hello@qubitess.xyz`
 - Verdict: **PASS**
 
 ## Gates
@@ -20,30 +20,30 @@
 | assets | PASS | 0 problem(s) |
 | references | PASS | 2 checked, 0 problem(s) |
 | build_test | PASS | test skipped: script not defined |
-| availability | PASS | selected qubitlane via chrome-cdp |
-| brand_registry | PASS | current Qubitlane; history 1 entry |
+| availability | PASS | selected qubitess via chrome-cdp |
+| brand_registry | PASS | current Qubitess; history 2 entries |
 | browser | PASS | 2 screenshot(s), 0 problem(s) |
 
 ## Availability evidence
 
 - Method: `chrome-cdp`
-- Selected: `qubitlane`
+- Selected: `qubitess`
 - Evidence directory: `.rebrand/availability/`
 
 
 ## Brand registry
 
 - File: `brand.txt`
-- Current: `Qubitlane`
-- History: Mathlana
+- Current: `Qubitess`
+- History: Mathlana, Qubitlane
 
 ## Changes
 
-- Files changed: 88
-- Replacements: 94
-- Renames: 1
-- Assets replaced: 1
-- Backup: `E:/workspace/chuangye/solana/mathlana/website/.rebrand/backup/20261020-010921`
+- Files changed: 0
+- Replacements: 0
+- Renames: 0
+- Assets replaced: 0
+- Backup: `None`
 
 ## Build and test
 
@@ -60,7 +60,6 @@
 
 ## Protected / residual
 
-- **strings**: `MATHLANA_PROGRAM_ID`
 - **thirdParty**: `@coral-xyz/anchor`, `@solana/spl-token`, `@solana/web3.js`, `@tailwindcss/vite`, `@vitejs/plugin-vue`, `amazon`, `angular`, `anthropic`, `apple`, `aws`, `bootstrap`, `cloudflare`, `deepseek`, `digitalocean`, `discord`, `django`, `docker`, `facebook`, `fastapi`, `figma`, `flask`, `github`, `gitlab`, `google`, `googleanalytics`, `googletagmanager`, `heroku`, `hotjar`, `instagram`, `intercom`
 
 ## Rollback

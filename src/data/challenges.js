@@ -94,13 +94,13 @@ export const CHALLENGES = [
     slug: "q-day",
     name: "Q-Day",
     host: null,
-    hostLabel: "by Qubitlane",
+    hostLabel: "by Qubitess",
     group: "quantum",
     verb: "Defend",
     icon: "atom",
     open: true,
     asks:
-      "Build Shor's attack on practice elliptic-curve keys with real field arithmetic, in Python. Qubitlane checks every step on every point of the curve, runs the attack on a real quantum computer only when it can beat random guessing, and counts a level broken after three confirmed runs.",
+      "Build Shor's attack on practice elliptic-curve keys with real field arithmetic, in Python. Qubitess checks every step on every point of the curve, runs the attack on a real quantum computer only when it can beat random guessing, and counts a level broken after three confirmed runs.",
     metrics: [
       {
         label: "Q-Day clock",
@@ -125,7 +125,7 @@ export const CHALLENGES = [
     icon: "cpu",
     open: true,
     asks:
-      "Build the cheapest reversible quantum circuit for one point addition on secp256k1, in Rust. A machine simulates it, and Qubitlane checks it again on 102,400 fresh inputs.",
+      "Build the cheapest reversible quantum circuit for one point addition on secp256k1, in Rust. A machine simulates it, and Qubitess checks it again on 102,400 fresh inputs.",
     metrics: [
       {
         label: "Point addition",

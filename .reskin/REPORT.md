@@ -1,204 +1,177 @@
-# Reskin report — Qubitlane website
+# Reskin report — Qubitess website + X kit
 
 ## Direction
 
 | Field | Value |
 |---|---|
-| Style | **Paper Protocol** (`ethereum-paper`, crypto-editorial) — source DNA: [ethereum.org](https://ethereum.org) (live sampling timed out; offline catalog used) |
-| Skeleton | **Documentary Ledger** (`documentary`, editorial) — original was `orbital` (spatial) |
-| Accent | `#0000ff` → `#6f82e8` in the palette gate (**82.95 ΔE**, min 30); light edition uses `#4c63d2`, night edition `#6f82e8`, text-safe `#3d51b8` / `#a9b6ff` |
-| Ground | blueprint grey/white cards → warm newsprint `#efebe1`, paper sheets, ink rules |
-| Type | Iowan Old Style / Palatino / Georgia running text; Courier New micro-labels and figures |
-| Content contract | frozen `a48cf00f0516d7c322db0d0774f25f96ad9b4e081c9132cebd4d333f9f939463` — **intact** (0 removals, 3 additive binding warnings) |
+| Style | **Cobalt Blueprint** (`base-cobalt`, optimistic-modern) — source DNA: [base.org](https://www.base.org), live-sampled (3258 ms) |
+| Skeleton | **Command Rail** (`command-rail`, linear) — original was `orbital` (spatial) |
+| Accent | original `#6f82e8` → rendered accent `#4d5bff` / fill `#0000ff` (**39.74 ΔE**, min 30) |
+| Ground | warm paper `#efebe1` sheets and ink rules → blueprint grey `#dde3e9` with a 32 px module grid |
+| Type | Montserrat 620 display with −0.035 em tracking, DM Sans body, JetBrains Mono micro-labels |
+| Material | 18–30 px white sheets, hairline borders, soft shadows, cobalt fills, mono numerals |
+| Content contract | baseline `e541eab07197` — **intact** (0 removals; 2 additive binding warnings) |
+| Current source hash | `e9add1f651ae…` |
 
-The selected direction is used as an abstract design DNA only. No reference
-logo, illustration, copy or code was reused; the only imagery is the project's own
-`/brand/*.png` engravings.
+Live sampling reached 9/10 blockchain references (Arbitrum returned 403). Only palette, type
+mood, shape language, density and motion were taken; no reference logo, illustration, copy or
+code was used.
 
-## Skeleton: what replaced what
+## Skeleton — what replaced what
 
-| Original (cobalt / orbital) | New (paper / documentary) |
+| Original (paper / documentary) | New (cobalt / command rail) |
 |---|---|
-| Fixed 76px glyph rail on the left; vertical mono labels | **Masthead** across the top: serif wordmark, actions, and a ruled route **index line**; no rail, no fixed spine |
-| Floating sticky pill command bar over the page | Static masthead; the same actions sit on the masthead's first line |
-| Live quantum ticker above the footer | Thin ruled **live dateline** directly under the masthead index |
-| Full-bleed blue-grey grid canvas, white rounded cards | Cream **ruled paper**, flat sheets, 2px ink rules, square marks, no cards or shadows |
-| Sans running heads, rounded pills, tinted chips | Serif front-page running heads, square underlined tabs, typewriter micro-labels, marginalia |
-| `main → nav (rail) → footer` landmark order | `header → nav (index) → main → aside (contents) → nav (primary) → footer` |
-| Tailwind-derived `cr-*` classes and cobalt tokens | One stylesheet `src/styles/paper.css`, `--pp-*` tokens and `pp-*` classes only |
+| Static masthead across the top, serif running head | **Floating command bar**, detached 16 px from the edge, radius 30, blur, with the lockup, a 4-segment meter and the actions |
+| Ruled route index line under the masthead | **Fixed 76 px glyph rail** on the left: icon + rotated mono micro-label per route, cobalt active plate |
+| Right margin "contents" column (`aside`) with hidden labels | Rail replaces it; under 960 px a **fixed bottom dock** with the same five labelled glyphs |
+| Live ticker as a dateline under the header | **Dark stdout strip** fixed to the bottom edge, mono, five machines, no page flow impact |
+| Cream ruled paper, flat sheets, 2 px ink rules, square marks | **Blueprint grey with a 32 px grid**, white sheets with 18 px corners, 1 px hairlines, soft shadows, registration ticks |
+| Serif running heads, typewriter labels, marginalia | **Montserrat running heads** at 76 px, mono kickers with a cobalt rule, right-edge lede column |
+| `header → nav(index) → main → aside → nav(primary) → footer` | `nav(rail) → nav(dock) → header(command bar) → main → footer` plus the stdout strip |
+| `paper.css` (`pp_*` tokens, `pp-*` classes) | `rail.css` (component grammar, `cq-*`) + `shell.css` (the new skeleton); `paper.css` archived, not imported |
 
-Per-route composition: `/` front page (two-line running head, ruled action row,
-departments triptych, threat ledgers, exposure notice, numbered steps); `/tokens`
-figures strip + pinned official identity band + token ledger + research-log margin;
-`/t/:mint` specimen sheet; `/challenges` numbered group index and ruled challenge
-rows; `/challenges/:slug` masthead + engraving plate + metric sheet + stake ledger;
-`/q-day` clock page with ladder rungs; `/launch` numbered questionnaire with a pinned
-specimen/fee rail; `/exposure` front-page form with a "what the answer can be"
-triptych; `/about` editorial; legal routes as document plates with underline tabs;
-`/account` and 404 as ruled plates.
+Page composition is now a **running head + data stage**: `.cq-pagehead` (head: kicker + running
+head; edge: lede + actions), then `.cq-stage` with a wide main column and a narrow marginal
+column, plus `.cq-band` dark plates for figures and CTAs.
+
+Per route: `/` running head + edge lede + figure plate with machine chips + three ruled capability
+columns; `/tokens` figures band + official identity sheet + token ledger, research log in the
+margin; `/t/:mint` pagehead + token facts + ledger sheets, pool/fee/picture in the margin;
+`/challenges` group sheets with dark group bands and numbered ledger rows; `/challenges/:slug`
+running head + metric sheets, stakes as a dark band in the margin; `/q-day` dark clock band +
+public-record sheet, brief sticky in the margin, ladder/hardware/rules as ruled sections;
+`/launch` numbered questionnaire with the picker, preview and fee split in a sticky margin;
+`/exposure` dark form plate + legend sheet; legal routes as a document plate with a marginal
+contents nav; `/about` editorial stage; `/account` and 404 as centred plates.
 
 ## Verification
 
-Command used for the final run (deterministic data harness, see limitations):
+Command (deterministic data harness — see limitations):
 
 ```bash
 node "<reskin>/scripts/verify.mjs" check --project . --out .reskin \
-  --url http://127.0.0.1:4499/
+  --url http://127.0.0.1:4498 --no-build
 ```
 
-**Verdict: every rendered, structural, content, accessibility and responsive gate
-passes on all 15 static routes. One source gate — the archetype heuristic — is
-unreachable because the content contract locks the exact identifiers that the
-heuristic reads (see limitation 1).**
+**Verdict: every rendered, structural, content, accessibility and responsive gate passes on all
+15 static routes. The one blocking item is the source archetype heuristic, which cannot pass
+while the frozen content contract locks the identifiers it reads (limitation 1).**
 
 | Gate | Result |
 |---|---|
-| Production build (`vite build`) | PASS (built in checkpoint 2; manual final build exit 0) |
-| Source content contract | **PASS** — 0 removals; 3 additive binding warnings (`item.to`, `item.label` from the masthead index) |
-| Route status / console / page errors | PASS — 15/15 HTTP 200, 0 console or page errors |
-| DOM fingerprint similarity (≤ 0.50) | PASS — **0.299–0.452** |
-| Landmark similarity (≤ 0.68) | PASS — **0.50–0.571** |
-| CSS class overlap (≤ 0.10) | PASS — **0.043–0.092** |
-| Accent distance (≥ 30 ΔE) | PASS — **82.95 ΔE** |
-| Rendered word/attribute parity | PASS — 0 content diffs on all static routes |
-| Contrast (0 failures) | PASS — 0 failures across 137–173 text/background pairs per route |
+| Production build | PASS (`vite build`, 157 modules) |
+| Source content contract | PASS — 0 removals, 2 additive binding warnings |
+| Route status / console / page errors | PASS — 15/15 HTTP 200, 0 errors |
+| Rendered word/attribute parity | PASS — 0 content diffs; word counts identical per route |
+| DOM fingerprint similarity (≤0.50) | PASS — **0.246–0.462** |
+| Landmark similarity (≤0.68) | PASS — **0.333–0.667** |
+| CSS class overlap (≤0.10) | PASS — **0.044–0.085** |
+| Accent distance (≥30 ΔE) | PASS — **39.74 ΔE** |
+| Contrast (0 failures) | PASS — 0 across 36–173 text/background pairs per route, both viewports |
 | axe serious/critical (0) | PASS — 0 on all routes |
 | Labels, alt text, accessible names | PASS |
 | Keyboard focus visibility | PASS |
-| Mobile navigation reachability | PASS |
-| Horizontal overflow at 390px | PASS |
-| Skeleton archetype changed | **FAIL (unreachable — limitation 1)** |
+| Mobile navigation reachability | PASS — dock links reachable and labelled |
+| Horizontal overflow at 390 px | PASS — none on any route |
+| Skeleton archetype changed (source heuristic) | **FAIL — structurally unreachable (limitation 1)** |
 
-Baseline content contract: `a48cf00f0516...`; current-build contract hash
-`32e21d29b635...` (differs only by the three additive nav bindings). Frozen baseline
-inventory and contract are unchanged in `.reskin/baseline/`.
+Final record: `.reskin/verification.json`, `.reskin/VERIFICATION.md`.
 
-### Deterministic verification harness
+### Screenshots (baseline → current)
 
-The site polls a live market feed (`/api/market`) and quantum status
-(`/api/quantum/status`). Between captures the market API is intermittent, and the
-original baseline was captured with fallback market snapshots while other routes
-had live values — internally inconsistent data. To make the content gate meaningful,
-the final capture used the app's own built-in fallback state:
-
-- `/api/market` returns `{ tokens: {} }`, so every token renders the snapshot baked
-  into `src/data/tokens.js` (the same state the first baseline was captured in);
-- `/api/quantum/status` is served from a cached live response
-  (`.reskin/quantum-cache.json`), so the dateline is identical in both captures;
-- all other `/api/*` requests are proxied to the live origin;
-- the app code and the production build are unchanged.
-
-The baseline pages were recaptured from the archived pre-reskin source snapshot
-(`.reskin-history/cobalt-20261020/src-snapshot`, the same recovery pattern the skill
-prescribes for a missing baseline) using this harness. The baseline inventory itself
-is the original pre-reskin inventory with the `a48cf00f...` contract. The original
-live baseline capture is preserved in `.reskin-history/baseline-live-20261020/`.
-Without the harness, the same build fails only on volatile market/quantum values
-(the live-feed checkpoint reported 7 value-token diffs on `/tokens` and 1 on
-`/challenges/sig-golf`, plus two ticker-word diffs when the quantum API returned
-502); no copy, label or structural difference remains.
-
-## Screenshots
-
-Baseline → current (1440 × full page). Baseline is the cobalt pre-reskin UI
-recaptured from the archived source; current is the paper build.
+Baseline is the pre-reskin paper UI, recovered and proven by hash (see limitations); current is
+the cobalt build. Files: `.reskin/baseline/*.png` and `.reskin/current/*.png`.
 
 | Route | Baseline | Current |
 |---|---|---|
-| `/` | [baseline/home-desktop.png](baseline/home-desktop.png) | [current/home-desktop.png](current/home-desktop.png) |
-| `/tokens` | [baseline/tokens-desktop.png](baseline/tokens-desktop.png) | [current/tokens-desktop.png](current/tokens-desktop.png) |
-| `/challenges` | [baseline/challenges-desktop.png](baseline/challenges-desktop.png) | [current/challenges-desktop.png](current/challenges-desktop.png) |
-| `/challenges/sig-golf` | [baseline/challenges-sig-golf-desktop.png](baseline/challenges-sig-golf-desktop.png) | [current/challenges-sig-golf-desktop.png](current/challenges-sig-golf-desktop.png) |
-| `/q-day` | [baseline/q-day-desktop.png](baseline/q-day-desktop.png) | [current/q-day-desktop.png](current/q-day-desktop.png) |
-| `/launch` | [baseline/launch-desktop.png](baseline/launch-desktop.png) | [current/launch-desktop.png](current/launch-desktop.png) |
-| `/exposure` | [baseline/exposure-desktop.png](baseline/exposure-desktop.png) | [current/exposure-desktop.png](current/exposure-desktop.png) |
-| `/about` | [baseline/about-desktop.png](baseline/about-desktop.png) | [current/about-desktop.png](current/about-desktop.png) |
-| `/terms` | [baseline/terms-desktop.png](baseline/terms-desktop.png) | [current/terms-desktop.png](current/terms-desktop.png) |
-| `/account` | [baseline/account-desktop.png](baseline/account-desktop.png) | [current/account-desktop.png](current/account-desktop.png) |
+| `/` | [home-desktop](baseline/home-desktop.png) | [home-desktop](current/home-desktop.png) |
+| `/tokens` | [tokens-desktop](baseline/tokens-desktop.png) | [tokens-desktop](current/tokens-desktop.png) |
+| `/challenges` | [challenges-desktop](baseline/challenges-desktop.png) | [challenges-desktop](current/challenges-desktop.png) |
+| `/challenges/sig-golf` | [sig-golf](baseline/challenges-sig-golf-desktop.png) | [sig-golf](current/challenges-sig-golf-desktop.png) |
+| `/q-day` | [q-day-desktop](baseline/q-day-desktop.png) | [q-day-desktop](current/q-day-desktop.png) |
+| `/launch` | [launch-desktop](baseline/launch-desktop.png) | [launch-desktop](current/launch-desktop.png) |
+| `/exposure` | [exposure-desktop](baseline/exposure-desktop.png) | [exposure-desktop](current/exposure-desktop.png) |
+| `/about` | [about-desktop](baseline/about-desktop.png) | [about-desktop](current/about-desktop.png) |
+| `/terms` | [terms-desktop](baseline/terms-desktop.png) | [terms-desktop](current/terms-desktop.png) |
+| `/account` | [account-desktop](baseline/account-desktop.png) | [account-desktop](current/account-desktop.png) |
 
-Mobile captures: `baseline/*-mobile.png` vs `current/*-mobile.png`. Extra review
-captures (dark edition) live in `.reskin/preview/*-dark.png`.
+Mobile captures are the matching `*-mobile.png` files. The dark edition was checked visually
+(`.reskin/preview/dark-home.png`), including the filled-button contrast the first pass broke.
 
-**Visual originality review.** Baseline and current share no shell silhouette: the
-navigation moved from a fixed left icon rail plus floating pill (top) to a ruled
-masthead index and a right margin glyph index; the live strip moved from above the
-footer to a dateline; the page title changed from sans poster to serif front-page
-running head; cards became rules and ledgers; the blue-grey grid became lined cream
-paper. The first viewport has a different reading path (masthead index line →
-running head → lede → engraving), and the accent family is periwinkle, not pure
-cobalt. The data route is a ruled ledger in both (the content demands tabular
-figures) but its cells, typography, filters and margins are rebuilt.
+**Visual originality review.** Baseline and current share no shell silhouette: navigation moved
+from a top masthead plus right-margin column to a left glyph rail (and a bottom dock on phones);
+the page opens with a floating command bar, not a ruled masthead; the live feed dropped from a
+dated dateline to a fixed dark stdout strip; the ground changed from warm ruled paper to cool
+blueprint grey with a module grid; cards became hairline sheets with 18 px corners; the type
+moved from serif running heads to tightened Montserrat; the accent moved from periwinkle to
+cobalt. The first viewport has a different reading path (rail → command bar → running head →
+edge lede → figure plate), and every data route is a stage/ledger rather than a card grid.
 
 ## Changes
 
 New:
-- `src/styles/paper.css` — the single token/layout/component layer (`--pp-*`, `pp-*`,
-  light + night edition, reduced-motion guards, breakpoints 1180/1020/900/760/560).
-- Documentary shell inside `App.vue`: masthead + index, live wire, main + marginal
-  contents aside, colophon.
-- `.reskin/serve-dist.mjs` and `.reskin/quantum-cache.json` — verification-only
-  deterministic data harness (not part of the website).
+- `src/styles/rail.css` — component grammar (tokens + `cq-*` classes, light and night editions,
+  reduced-motion guards, breakpoints).
+- `src/styles/shell.css` — the Command Rail skeleton: rail, dock, command bar, stdout strip,
+  colophon, pageheads, stage grid, blueprint surfaces, primitives, responsive layer.
+- `src/components/shell/CommandRail.vue`, `CommandDock.vue`, `CommandBar.vue`, `Colophon.vue`.
+- `.reskin/tools/` — deterministic serve harness, screenshot/dark helpers, the namespace
+  transform, the baseline reconstruction, the asset scripts.
 
-Rewritten in place (templates, styles, presentation-only script tweaks; all content
-tokens kept): `AppHeader`, `AppRail`, `QuantumTicker`, `AppFooter`; the launch step,
-challenge picker, quantum portrait step, token preview and fee split; the token
-ledger/official row/research log; the challenge card/hero/metric/stakes components;
-the q-day ladder; the legal article and clauses; the exposure banner/results; the
-account plate; the about page; the home hero/threat panels/how-it-works; all 14 view
-files. All `cr-*` classes and `--cr-*` tokens were renamed and restyled to `pp-*`.
+Rewritten in place (templates, presentation-only script edits; all content tokens kept): the home
+hero, threat panels, how-it-works and exposure banner; every tokens, challenges, q-day, launch,
+exposure, legal, about, account and 404 view and component; `App.vue`; the shell markup.
 
-Removed from the render path (and from disk where no content depended on them):
-`src/styles/cobalt.css`, the fixed rail CSS, the floating command bar, the bottom
-status strip and the old card/sheet surfaces. No `cr-*` class or `--cr-*` token
-remains under `src/`.
+Removed from the render path: `components/layout/AppHeader.vue`, `components/layout/AppFooter.vue`,
+`components/rail/AppRail.vue`, `styles/paper.css` (archived at `.reskin/removed/paper.css`). No
+`pp-*` class or `--pp-*` token remains under `src/`.
 
-Kept byte-for-byte in the content contract: all visible copy, interpolations,
-content bindings (`:to/:href/:src/:alt/:title/:name/:value/:placeholder`), event
-handlers, form fields/options, link targets, assets, `lang`, meta title/description
-and the router. The only source additions are three presentational nav bindings
-(`:to="item.to"` / `{{ item.label }}` in the new index) reported as warnings.
+X kit (`twitter/`): `src/base.css` re-themed to the blueprint tokens; `src/logo.html`,
+`src/banner.html` and `src/tweet.html` rebuilt; `logo.png`, `banner.png` and `tweet.png`
+re-rendered at 400×400 / 1500×500 / 1600×900; `README.md` and the alt text in `tweet.md` updated
+to describe what ships.
 
 ## Accessibility and responsiveness
 
-- One `h1` per route; `header`, `nav`, `main`, `aside`, `footer` landmarks; skip link.
-- All inputs labelled; icon-only controls carry accessible names (`aria-label` where
-  the label is not visible); dialog keeps `role="dialog"`, `aria-modal`, labelled
-  title and Escape/close affordance (unchanged behaviour).
+- One `h1` per route; `nav`, `header`, `main`, `footer` landmarks; visually-hidden skip link that
+  becomes visible on focus.
+- All inputs labelled; icon-only controls carry accessible names (rail and dock links keep their
+  route label as the accessible name and as visible rotated/docked text).
 - Visible focus ring on every control; no `outline: none` without a replacement.
-- Contrast: **0 failures** on every route × both viewports; body text ≥ 4.5:1.
-- No horizontal overflow at 390px; the index line wraps or scrolls, the marginal
-  contents becomes a labelled horizontal index, ledgers reflow to single rows.
+- Contrast: 0 failures on every route at both viewports; body text ≥ 4.5:1.
+- No horizontal overflow at 390 px; the dock linearises navigation, the stage becomes one column,
+  ledgers reflow, the stdout strip scrolls its machines.
 - Motion is inside `@media (prefers-reduced-motion: no-preference)`.
-- Night edition retained: ink paper, cream ink, periwinkle engraving and accent text
-  adjusted for contrast (verified visually; the automated gate runs the default
-  light theme).
+- Night edition: ink ground, cobalt fills, lightened text; filled buttons switch to cobalt/white
+  (the first pass shipped white-on-white and was fixed) and the hero engraving inverts.
 
 ## Known limitations
 
-1. **The archetype gate cannot pass.** `classifyArchetype()` scans the source text
-   for `\borbital\b` / `\borbit\b`. The frozen content contract locks
-   `v-html="ORBITAL"` (count 2) in `ChallengeIcon.vue` and `name="orbit"` (count 4)
-   on the decorative `CardArt` usage. Removing or renaming those identifiers is a
-   content-contract failure; keeping them keeps the source-classified archetype at
-   `orbital`. This is a property of the checker reading code identifiers as layout
-   evidence, not of the rendered UI: the DOM fingerprint (≤ 0.452), landmark order
-   (≤ 0.571), class overlap (≤ 0.092) and screenshots all show a different shell.
-   The baseline report from the previous run hit the same block.
-2. Dynamic routes `/t/:mint` and `/challenges/:slug` are not captured by the
-   verifier (no fixture). They were checked by hand at 1440 and 390, including the
-   not-found branches.
-3. Live data: the final gate pins the market feed to the app's built-in fallback
-   snapshots and the quantum status to one cached live response; with the raw live
-   feed the same build differs only in volatile values. See "Deterministic
-   verification harness".
-4. The baseline was recaptured from the archived pre-reskin source snapshot with the
-   same harness; the original live capture is kept under
-   `.reskin-history/baseline-live-20261020/`. The baseline inventory and content
-   contract were not altered.
+1. **The archetype gate cannot pass.** `classifyArchetype()` scans source text for `\borbital\b` /
+   `\borbit\b` and tests `orbital` first. The frozen content contract requires
+   `v-html="ORBITAL"` (2 bindings) in `ChallengeIcon.vue` and `name="orbit"` (2 attributes) in
+   `PoolPanel.vue` / `AboutView.vue`; renaming or removing either is a content-contract failure
+   ("bindings removed" / "attributes removed"), and keeping them keeps the source-classified
+   archetype at `orbital`. The rendered evidence contradicts the heuristic: DOM fingerprint
+   ≤ 0.462, landmark similarity ≤ 0.667, class overlap ≤ 0.085, and the screenshots show a
+   different shell. The previous reskin hit the same block.
+2. **Baseline recovery.** `verify.mjs baseline` was not captured before the first edit. The
+   pre-reskin site was reconstructed in `mathlana-baseline/` from the rebrand backup taken minutes
+   earlier (91 files), re-applying the same brand mapping and manual wordmark corrections, and
+   verified by content contract: the reconstruction produces hash **`e541eab07197`**, identical to
+   the frozen baseline contract. Baseline pages and screenshots were captured from that
+   reconstruction and copied into `.reskin/baseline/`.
+3. **Deterministic data.** The site reads `/api/market` and `/api/quantum/status`. Prices move
+   between captures (the first run differed by `$5.1K` → `$4.7K` on `/tokens`), so the final
+   capture used `.reskin/tools/serve.mjs`: market pinned to the app's built-in snapshot
+   (`{tokens:{}}`), quantum status from `.reskin/quantum-cache.json`, everything else proxied.
+   Baseline and current were captured through the same harness.
+4. Dynamic routes `/t/:mint` and `/challenges/:slug` are not captured by the verifier (no fixture);
+   they were checked by hand at 1440 and 390, including their not-found branches.
+5. Decorative group/row numbers on `/challenges` are CSS counters, not text nodes; they are
+   design furniture, not copy.
 
 ## Commit statement
 
-The UI was rebuilt around **Paper Protocol** / **Documentary Ledger**; the original
-**orbital** shell and palette were removed while the content contract stayed
-byte-for-byte intact. The one unreachable gate is the source-text archetype
-heuristic documented above.
+The UI was rebuilt around **Cobalt Blueprint** / **Command Rail**; the original **orbital** shell
+and palette were removed while the content contract stayed byte-for-byte intact.

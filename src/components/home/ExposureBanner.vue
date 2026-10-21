@@ -22,31 +22,31 @@ const CARDS = [
 </script>
 
 <template>
-  <section class="pp-page pp-sec">
-    <div class="pp-exposure">
-      <div class="pp-exposure__head">
-        <p class="pp-kicker">
+  <section class="cq-page cq-sec">
+    <div class="cq-exposure">
+      <div class="cq-exposure__head">
+        <p class="cq-kicker">
           <Icon name="scan-line" :size="15" />
           Exposure check
         </p>
-        <h2 class="pp-runhead pp-runhead--tight">Is your money behind a public key?</h2>
-        <p class="pp-lede">
+        <h2 class="cq-runhead cq-runhead--tight">Is your money behind a public key?</h2>
+        <p class="cq-lede">
           Paste your addresses or a Bitcoin xpub. Nothing is stored, and no wallet connects.
         </p>
       </div>
 
-      <ul class="pp-exposure__facts">
-        <li v-for="card in CARDS" :key="card.title" class="pp-exposure__fact">
-          <Icon :name="card.icon" :size="16" class="pp-tone-accent" />
-          <span class="pp-exposure__fact-text">
-            <span class="pp-exposure__fact-title">{{ card.title }}</span>
-            <span class="pp-exposure__fact-body">{{ card.body }}</span>
+      <ul class="cq-exposure__facts">
+        <li v-for="card in CARDS" :key="card.title" class="cq-exposure__fact">
+          <Icon :name="card.icon" :size="16" class="cq-tone-accent" />
+          <span class="cq-exposure__fact-text">
+            <span class="cq-exposure__fact-title">{{ card.title }}</span>
+            <span class="cq-exposure__fact-body">{{ card.body }}</span>
           </span>
         </li>
       </ul>
 
-      <div class="pp-exposure__foot">
-        <RouterLink to="/exposure" class="pp-btn pp-btn--line">
+      <div class="cq-exposure__foot">
+        <RouterLink to="/exposure" class="cq-btn cq-btn--line">
           Check a wallet
           <Icon name="arrow-right" :size="14" />
         </RouterLink>
@@ -56,60 +56,60 @@ const CARDS = [
 </template>
 
 <style scoped>
-.pp-exposure {
+.cq-exposure {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
   gap: clamp(24px, 4vw, 64px);
   padding: clamp(26px, 3vw, 44px);
-  background: var(--pp-sheet);
-  border: 1px solid var(--pp-line);
-  border-left: 3px solid var(--pp-accent);
-  border-radius: var(--pp-radius);
+  background: var(--cq-sheet);
+  border: 1px solid var(--cq-line);
+  border-left: 3px solid var(--cq-accent);
+  border-radius: var(--cq-radius);
 }
 
-.pp-exposure__head {
+.cq-exposure__head {
   display: grid;
   gap: 12px;
   align-content: start;
 }
 
-.pp-exposure__facts {
+.cq-exposure__facts {
   display: grid;
   gap: 0;
   align-content: start;
-  border-top: 1px solid var(--pp-line);
+  border-top: 1px solid var(--cq-line);
 }
 
-.pp-exposure__fact {
+.cq-exposure__fact {
   display: grid;
   grid-template-columns: 22px minmax(0, 1fr);
   gap: 10px;
   align-items: start;
   padding: 14px 0;
-  border-bottom: 1px solid var(--pp-line-soft);
+  border-bottom: 1px solid var(--cq-line-soft);
 }
 
-.pp-exposure__fact-text {
+.cq-exposure__fact-text {
   display: grid;
   gap: 3px;
   min-width: 0;
 }
 
-.pp-exposure__fact-title {
-  font-family: var(--pp-display);
+.cq-exposure__fact-title {
+  font-family: var(--cq-display);
   font-size: 0.94rem;
   font-weight: 620;
   letter-spacing: -0.01em;
-  color: var(--pp-ink);
+  color: var(--cq-ink);
 }
 
-.pp-exposure__fact-body {
+.cq-exposure__fact-body {
   font-size: 0.8rem;
   line-height: 1.5;
-  color: var(--pp-muted);
+  color: var(--cq-muted);
 }
 
-.pp-exposure__foot {
+.cq-exposure__foot {
   grid-column: 1 / -1;
   display: flex;
   justify-content: flex-end;
@@ -117,11 +117,11 @@ const CARDS = [
 }
 
 @media (max-width: 860px) {
-  .pp-exposure {
+  .cq-exposure {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .pp-exposure__foot {
+  .cq-exposure__foot {
     justify-content: flex-start;
   }
 }

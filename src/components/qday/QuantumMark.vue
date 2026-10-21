@@ -13,7 +13,7 @@
     stroke="currentColor"
     stroke-width="1.5"
     stroke-linecap="round"
-    class="pp-mark"
+    class="cq-qring"
     aria-hidden="true"
   >
     <circle cx="12" cy="12" r="9" />
@@ -25,7 +25,7 @@
 </template>
 
 <style scoped>
-.pp-mark {
+.cq-qring {
   flex-shrink: 0;
 }
 </style>

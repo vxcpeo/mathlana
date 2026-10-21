@@ -10,7 +10,7 @@ const PAIRING = "Trades against NVDAx, NVIDIA's tokenized stock";
 </script>
 
 <template>
-  <span :title="PAIRING" class="pp-tag pp-tag--sm pp-nvda">
+  <span :title="PAIRING" class="cq-tag cq-tag--sm cq-nvda">
     <img
       :src="QUOTE_ASSET.logo"
       alt=""
@@ -18,7 +18,7 @@ const PAIRING = "Trades against NVDAx, NVIDIA's tokenized stock";
       height="14"
       loading="lazy"
       decoding="async"
-      class="pp-nvda__logo"
+      class="cq-nvda__logo"
     />
     <span translate="no" aria-hidden="true">{{ QUOTE_ASSET.symbol }}</span>
     <span class="sr-only">{{ PAIRING }}</span>
@@ -26,16 +26,16 @@ const PAIRING = "Trades against NVDAx, NVIDIA's tokenized stock";
 </template>
 
 <style scoped>
-.pp-nvda {
+.cq-nvda {
   gap: 4px;
   padding: 1px 6px 1px 3px;
   border-radius: 4px;
-  background: var(--pp-sheet);
+  background: var(--cq-sheet);
   text-transform: none;
   letter-spacing: 0.01em;
 }
 
-.pp-nvda__logo {
+.cq-nvda__logo {
   width: 13px;
   height: 13px;
   border-radius: 2px;

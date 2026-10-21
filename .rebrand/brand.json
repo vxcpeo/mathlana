@@ -1,87 +1,114 @@
 {
   "old": {
-    "display": "Mathlana",
-    "slug": "mathlana",
+    "display": "Qubitlane",
+    "slug": "qubitlane",
     "variants": {
-      "display": "Mathlana",
-      "lower": "mathlana",
-      "upper": "MATHLANA",
-      "title": "Mathlana",
-      "kebab": "mathlana",
-      "snake": "mathlana",
-      "camel": "mathlana",
-      "pascal": "Mathlana",
-      "compact": "Mathlana",
-      "compactLower": "mathlana",
-      "first": "Mathlana",
-      "firstLower": "mathlana",
-      "firstUpper": "MATHLANA"
+      "display": "Qubitlane",
+      "lower": "qubitlane",
+      "upper": "QUBITLANE",
+      "title": "Qubitlane",
+      "kebab": "qubitlane",
+      "snake": "qubitlane",
+      "camel": "qubitlane",
+      "pascal": "Qubitlane",
+      "compact": "Qubitlane",
+      "compactLower": "qubitlane",
+      "first": "Qubitlane",
+      "firstLower": "qubitlane",
+      "firstUpper": "QUBITLANE"
     },
     "variantList": [
       {
-        "value": "Mathlana",
+        "value": "Qubitlane",
         "kind": "display"
       },
       {
-        "value": "mathlana",
+        "value": "qubitlane",
         "kind": "lower"
       },
       {
-        "value": "MATHLANA",
+        "value": "QUBITLANE",
         "kind": "upper"
       }
     ],
     "domains": [
-      "mathlana.si",
-      "mathlana.si`"
+      "qubitlane.xyz`",
+      "qubitlane.xyz"
     ],
-    "handles": [],
+    "handles": [
+      "qubitlane"
+    ],
     "emails": [
-      "privacy@mathlana.si"
+      "hello@qubitlane.xyz",
+      "privacy@qubitlane.xyz"
     ],
-    "packageNames": [
-      "mathlana-website"
-    ],
+    "packageNames": [],
     "initials": "",
     "allowFiles": [
-      "vite.config.js"
+      "website/brand.txt"
     ],
-    "allowStrings": [
-      "../contracts/programs/mathlana",
-      "../contracts/idl/mathlana.json",
-      "contracts/idl/mathlana.json",
-      "programs/mathlana"
-    ]
+    "allowStrings": []
   },
   "usedBrands": [
-    "Mathlana"
+    "Mathlana",
+    "Qubitlane",
+    "GhostPay",
+    "Cifruna",
+    "Zero Art Protocol",
+    "Provenia",
+    "Loch",
+    "Tidevel",
+    "Miston",
+    "Ivorane",
+    "Filza",
+    "Backers",
+    "Kudorix",
+    "Tessella",
+    "Nummula",
+    "ORAsol",
+    "Attesio",
+    "YOVINX",
+    "Settiva",
+    "Seclura",
+    "Cindral",
+    "Stakri",
+    "Tracefolio",
+    "Tracevio",
+    "lockRH",
+    "Latchera",
+    "Pretiola",
+    "Clepsyra",
+    "Trovane",
+    "Librova",
+    "Ledgiva",
+    "Actoria"
   ],
-  "notes": "vite.config.js keeps the /api proxy pointed at the original data origin (functional). contracts/ paths are the on-chain program, which is not renamed in this project scope. MATHLANA_PROGRAM_ID is a protected functional identifier.",
+  "notes": "",
   "new": {
-    "display": "Qubitlane",
-    "slug": "qubitlane",
-    "handle": "qubitlane",
-    "domain": "qubitlane.xyz",
-    "email": "hello@qubitlane.xyz",
-    "url": "https://qubitlane.xyz",
+    "display": "Qubitess",
+    "slug": "qubitess",
+    "handle": "qubitess",
+    "domain": "qubitess.xyz",
+    "email": "hello@qubitess.xyz",
+    "url": "https://qubitess.xyz",
     "note": "Availability is a snapshot; register the domain and X account separately."
   },
   "selection": {
-    "candidate": "qubitlane",
-    "score": 95,
-    "checkedAt": "2026-10-19T17:05:31.814Z",
+    "candidate": "qubitess",
+    "score": 86,
+    "checkedAt": "2026-10-21T16:40:53.089Z",
     "evidence": [
       {
         "kind": "domain",
         "status": "available",
         "signal": "rdap-unregistered",
-        "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-xyz-rdap.png"
+        "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\.rebrand\\availability\\qubitess-xyz-rdap.png"
       },
       {
         "kind": "x",
         "status": "available",
         "signal": "not-found-text",
-        "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-x.png"
+        "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\.rebrand\\availability\\qubitess-x.png"
       }
     ]
   }

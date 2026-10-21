@@ -33,41 +33,41 @@ const display = computed(() =>
 </script>
 
 <template>
-  <div class="pp-metric" :class="muted ? 'pp-metric--muted' : ''">
-    <div class="pp-metric__top">
-      <div class="pp-metric__text">
-        <p class="pp-metric__label">{{ label }}</p>
-        <p v-if="description" class="pp-metric__desc">{{ description }}</p>
+  <div class="cq-metric" :class="muted ? 'cq-metric--muted' : ''">
+    <div class="cq-metric__top">
+      <div class="cq-metric__text">
+        <p class="cq-metric__label">{{ label }}</p>
+        <p v-if="description" class="cq-metric__desc">{{ description }}</p>
       </div>
-      <div class="pp-metric__readout">
-        <p class="pp-metric__value">
-          <span class="pp-num">{{ display }}</span>
-          <span v-if="unit" class="pp-metric__unit">{{ unit }}</span>
+      <div class="cq-metric__readout">
+        <p class="cq-metric__value">
+          <span class="cq-num">{{ display }}</span>
+          <span v-if="unit" class="cq-metric__unit">{{ unit }}</span>
         </p>
-        <p v-if="note" class="pp-metric__note">{{ note }}</p>
+        <p v-if="note" class="cq-metric__note">{{ note }}</p>
       </div>
     </div>
 
-    <div v-if="progress !== null" class="pp-meter pp-metric__meter">
+    <div v-if="progress !== null" class="cq-meter cq-metric__meter">
       <div
-        class="pp-meter__fill"
+        class="cq-meter__fill"
         :style="{ width: `${Math.max(0, Math.min(100, progress))}%` }"
       />
     </div>
 
     <div
       v-if="from || delta || direction || leaderboard"
-      class="pp-metric__foot"
+      class="cq-metric__foot"
     >
       <span v-if="from">{{ from }}</span>
-      <span v-if="delta" class="pp-metric__delta">{{ delta }}</span>
-      <span v-if="direction" class="pp-metric__dir"
+      <span v-if="delta" class="cq-metric__delta">{{ delta }}</span>
+      <span v-if="direction" class="cq-metric__dir"
         >{{ direction === "lower" ? "Lower" : "Higher" }} is better</span
       >
       <a
         v-if="leaderboard"
         href="#"
-        class="pp-link pp-metric__board"
+        class="cq-link cq-metric__board"
         >Official leaderboard<sup aria-hidden="true">↗</sup></a
       >
     </div>

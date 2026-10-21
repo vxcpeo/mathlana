@@ -16,25 +16,25 @@ const props = defineProps({
 
 const variants = {
   default: "",
-  outline: "pp-btn--line",
-  secondary: "pp-btn--line",
-  ghost: "pp-btn--quiet",
-  destructive: "pp-btn--alert",
-  link: "pp-btn--quiet pp-btn--linkish",
+  outline: "cq-btn--line",
+  secondary: "cq-btn--line",
+  ghost: "cq-btn--quiet",
+  destructive: "cq-btn--alert",
+  link: "cq-btn--quiet cq-btn--linkish",
 };
 
 const sizes = {
-  sm: "pp-btn--sm",
+  sm: "cq-btn--sm",
   default: "",
-  lg: "pp-btn--lg",
-  icon: "pp-btn--icon",
+  lg: "cq-btn--lg",
+  icon: "cq-btn--icon",
 };
 
 const classes = computed(() => [
-  "pp-btn",
+  "cq-btn",
   variants[props.variant] ?? "",
   sizes[props.size] ?? "",
-  props.rounded ? "pp-btn--square" : "",
+  props.rounded ? "cq-btn--square" : "",
   props.class,
 ]);
 </script>

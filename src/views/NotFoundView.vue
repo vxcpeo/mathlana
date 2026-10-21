@@ -12,231 +12,289 @@ import AppButton from "@/components/ui/AppButton.vue";
 
 <template>
   <!-- The layout already provides <main id="main">, so the page root is a div. -->
-  <div class="pp-page pp-notfound">
-    <section class="pp-notfound__plate">
-      <div class="pp-notfound__bar">
-        <RouterLink to="/" class="pp-command__brand">
-          <span
-            class="pp-inline"
-            role="img"
-            aria-label="Qubitlane home"
-          >
-            <BrandMark />
-            <span
-              aria-hidden="true"
-              translate="no"
-              class="pp-command__wordmark"
-              >Qubit<span>lane</span></span
-            >
-          </span>
-        </RouterLink>
-        <span class="pp-notfound__bar-rule" aria-hidden="true" />
-        <span class="pp-notfound__bar-mark" aria-hidden="true" />
+  <div class="cq-page cq-notfound">
+    <header class="cq-pagehead cq-notfound__head">
+      <div class="cq-pagehead__head">
+        <h1 class="cq-runhead cq-notfound__title">Nothing here</h1>
       </div>
 
-      <div class="pp-notfound__main">
-        <div class="pp-notfound__copy">
-          <span class="pp-notfound__folio" aria-hidden="true" />
-          <h1 class="pp-runhead pp-notfound__title">Nothing here</h1>
-          <p class="pp-lede pp-notfound__lede">
-            This page doesn't exist, or it moved.
-          </p>
-          <div class="pp-inline pp-notfound__actions">
-            <AppButton to="/" size="lg">Go home</AppButton>
-            <AppButton to="/challenges" variant="outline" size="lg"
-              >See the challenges</AppButton
+      <div class="cq-pagehead__edge cq-notfound__headedge">
+        <span class="cq-notfound__folio" aria-hidden="true" />
+      </div>
+    </header>
+
+    <div class="cq-notfound__stage">
+      <section class="cq-sheet cq-notfound__plate">
+        <div class="cq-notfound__bar">
+          <RouterLink to="/" class="cq-notfound__brand">
+            <span
+              class="cq-notfound__lock"
+              role="img"
+              aria-label="Qubitess home"
             >
+              <BrandMark />
+              <span
+                aria-hidden="true"
+                translate="no"
+                class="cq-notfound__wordmark"
+                >Qubit<span>ess</span></span
+              >
+            </span>
+          </RouterLink>
+          <span class="cq-notfound__bar-rule" aria-hidden="true" />
+          <span class="cq-notfound__bar-mark" aria-hidden="true" />
+        </div>
+
+        <div class="cq-notfound__main">
+          <div class="cq-notfound__copy">
+            <p class="cq-lede cq-notfound__lede">
+              This page doesn't exist, or it moved.
+            </p>
+            <div class="cq-inline cq-notfound__actions">
+              <AppButton to="/" size="lg">Go home</AppButton>
+              <AppButton to="/challenges" variant="outline" size="lg"
+                >See the challenges</AppButton
+              >
+            </div>
+          </div>
+
+          <div class="cq-notfound__art" aria-hidden="true">
+            <CardArt name="figure" />
           </div>
         </div>
 
-        <div class="pp-notfound__art" aria-hidden="true">
-          <CardArt name="figure" />
+        <div class="cq-notfound__foot" aria-hidden="true">
+          <span class="cq-notfound__foot-mark" />
+          <span class="cq-notfound__foot-rule" />
+          <span class="cq-notfound__foot-mark" />
         </div>
-      </div>
-
-      <div class="pp-notfound__foot" aria-hidden="true">
-        <span class="pp-notfound__foot-mark" />
-        <span class="pp-notfound__foot-rule" />
-        <span class="pp-notfound__foot-mark" />
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.pp-notfound {
-  padding-top: var(--pp-t6);
-  padding-bottom: var(--pp-t6);
+.cq-notfound {
+  padding-bottom: clamp(28px, 4vw, 56px);
 }
 
-.pp-notfound__plate {
-  width: 100%;
-  max-width: 72rem;
-  background: var(--pp-sheet);
-  border: 1px solid var(--pp-line);
-  border-radius: 2px;
+/* running head -------------------------------------------------------- */
+.cq-notfound__head {
+  align-items: end;
 }
 
-.pp-notfound__bar {
-  display: flex;
-  align-items: center;
-  gap: var(--pp-t3);
-  padding: 16px clamp(18px, 3vw, 30px);
-  border-bottom: 1px solid var(--pp-line);
+.cq-notfound__title {
+  font-size: clamp(56px, 12vw, 152px);
+  line-height: 0.82;
+  letter-spacing: -0.06em;
 }
 
-.pp-notfound__bar-rule {
-  flex: 1;
-  height: 1px;
-  background: var(--pp-line);
+.cq-notfound__headedge {
+  align-items: flex-end;
+  padding-bottom: 10px;
 }
 
-.pp-notfound__bar-mark {
-  width: 9px;
-  height: 9px;
-  flex-shrink: 0;
-  border: 1px solid var(--pp-accent);
-  rotate: 45deg;
-}
-
-.pp-notfound__main {
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.55fr);
-  gap: clamp(24px, 4vw, 64px);
-  align-items: center;
-  min-height: clamp(340px, 52vh, 540px);
-  padding: clamp(28px, 5vw, 60px);
-}
-
-.pp-notfound__copy {
-  display: grid;
-  align-content: center;
-  justify-items: start;
-  gap: clamp(16px, 2vw, 24px);
-  min-width: 0;
-}
-
-.pp-notfound__folio {
+.cq-notfound__folio {
   position: relative;
   display: block;
   width: 42px;
   height: 42px;
-  border-top: 1px solid var(--pp-accent);
-  border-left: 1px solid var(--pp-accent);
+  border-top: 1px solid var(--cq-accent);
+  border-left: 1px solid var(--cq-accent);
 }
 
-.pp-notfound__folio::before,
-.pp-notfound__folio::after {
+.cq-notfound__folio::before,
+.cq-notfound__folio::after {
   content: "";
   position: absolute;
-  background: var(--pp-accent-line);
+  background: var(--cq-accent-line);
 }
 
-.pp-notfound__folio::before {
+.cq-notfound__folio::before {
   top: 50%;
   left: 0;
   width: 100%;
   height: 1px;
 }
 
-.pp-notfound__folio::after {
+.cq-notfound__folio::after {
   top: 0;
   left: 50%;
   width: 1px;
   height: 100%;
 }
 
-.pp-notfound__title {
-  font-size: clamp(3.4rem, 9vw, 7.4rem);
-  line-height: 0.86;
-  letter-spacing: -0.055em;
+/* centred plate ------------------------------------------------------- */
+.cq-notfound__stage {
+  display: grid;
+  place-items: start center;
+  padding-top: clamp(2px, 0.8vw, 10px);
 }
 
-.pp-notfound__lede {
+.cq-notfound__plate {
+  width: 100%;
+  max-width: 720px;
+  overflow: clip;
+}
+
+.cq-notfound__bar {
+  display: flex;
+  align-items: center;
+  gap: var(--cq-t3);
+  padding: 14px clamp(18px, 3vw, 28px);
+  border-bottom: 1px solid var(--cq-line);
+  background: var(--cq-sheet-soft);
+}
+
+.cq-notfound__brand {
+  display: inline-flex;
+  align-items: center;
+  color: var(--cq-ink);
+}
+
+.cq-notfound__lock {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.cq-notfound__lock :deep(svg) {
+  width: 22px;
+  height: auto;
+  color: var(--cq-accent);
+}
+
+.cq-notfound__wordmark {
+  font-family: var(--cq-display);
+  font-weight: var(--cq-display-weight);
+  letter-spacing: var(--cq-display-tracking);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--cq-ink);
+}
+
+.cq-notfound__wordmark > span {
+  color: var(--cq-accent-text);
+}
+
+.cq-notfound__bar-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--cq-line);
+}
+
+.cq-notfound__bar-mark {
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border: 1px solid var(--cq-accent);
+  rotate: 45deg;
+}
+
+.cq-notfound__main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(200px, 0.75fr);
+  gap: clamp(24px, 4vw, 52px);
+  align-items: center;
+  min-height: clamp(240px, 40vh, 360px);
+  padding: clamp(26px, 4.4vw, 48px);
+}
+
+.cq-notfound__copy {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: clamp(16px, 2vw, 22px);
+  min-width: 0;
+}
+
+.cq-notfound__lede {
   max-width: 34ch;
-  color: var(--pp-ink-soft);
+  color: var(--cq-ink-soft);
 }
 
-.pp-notfound__actions {
+.cq-notfound__actions {
   gap: 10px;
-  padding-top: var(--pp-t2);
 }
 
-.pp-notfound__art {
+.cq-notfound__art {
   display: block;
   min-width: 0;
-  color: var(--pp-accent);
+  color: var(--cq-accent);
   opacity: 0.28;
 }
 
-.pp-notfound__art :deep(svg) {
+.cq-notfound__art :deep(svg) {
   width: 100%;
   height: auto;
-  max-height: 340px;
+  max-height: 300px;
 }
 
-.pp-notfound__foot {
+.cq-notfound__foot {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 14px clamp(18px, 3vw, 30px);
-  border-top: 1px solid var(--pp-line);
+  padding: 12px clamp(18px, 3vw, 28px);
+  border-top: 1px solid var(--cq-line);
+  background: var(--cq-sheet-soft);
 }
 
-.pp-notfound__foot-mark {
+.cq-notfound__foot-mark {
   width: 5px;
   height: 5px;
   flex-shrink: 0;
-  background: var(--pp-accent);
+  background: var(--cq-accent);
 }
 
-.pp-notfound__foot-rule {
+.cq-notfound__foot-rule {
   flex: 1;
   height: 1px;
-  background: var(--pp-line);
+  background: var(--cq-line);
 }
 
-@media (max-width: 900px) {
-  .pp-notfound {
-    padding-top: var(--pp-t5);
-    padding-bottom: var(--pp-t5);
+@media (max-width: 960px) {
+  .cq-notfound__headedge {
+    align-items: flex-start;
   }
+}
 
-  .pp-notfound__main {
+@media (max-width: 720px) {
+  .cq-notfound__main {
     grid-template-columns: minmax(0, 1fr);
     min-height: 0;
   }
 
-  .pp-notfound__art {
+  .cq-notfound__art {
     display: none;
   }
 }
 
 @media (max-width: 560px) {
-  .pp-notfound__bar {
+  .cq-notfound__title {
+    font-size: clamp(44px, 15vw, 72px);
+  }
+
+  .cq-notfound__bar {
     padding: 12px 14px;
     gap: 12px;
   }
 
-  .pp-notfound__main {
+  .cq-notfound__main {
     padding: 26px 16px 30px;
     gap: 20px;
   }
 
-  .pp-notfound__title {
-    font-size: clamp(3rem, 15vw, 4.2rem);
-  }
-
-  .pp-notfound__actions {
+  .cq-notfound__actions {
     align-items: stretch;
     width: 100%;
   }
 
-  .pp-notfound__actions :deep(.pp-btn) {
+  .cq-notfound__actions :deep(.cq-btn) {
     flex: 1 1 12rem;
   }
 
-  .pp-notfound__foot {
+  .cq-notfound__foot {
     padding: 12px 14px;
   }
 }

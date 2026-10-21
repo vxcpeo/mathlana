@@ -1,0 +1,1744 @@
+{
+  "schemaVersion": 1,
+  "project": "E:\\workspace\\chuangye\\solana\\mathlana\\website",
+  "generatedAt": "2026-10-20T00:58:58+08:00",
+  "git": {
+    "isGit": false
+  },
+  "packageManager": {
+    "name": "pnpm",
+    "lockfile": "pnpm-lock.yaml"
+  },
+  "stats": {
+    "files": 96,
+    "textFiles": 90,
+    "imageFiles": 6
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "kind": "text",
+      "size": 65,
+      "hash": "9fff0746f9224b03b26f1c4fae822550687f78fdef7dc79ff9c81bf97f92c156",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "README.md",
+      "kind": "text",
+      "size": 6423,
+      "hash": "f9b86f4f3e8a861006788b0c551ed02130e0fa27e1a56f85fb7e54a5836feeeb",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 10
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 10
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "index.html",
+      "kind": "text",
+      "size": 1131,
+      "hash": "cd8c3176a44849d049e4df2f232fa004dd2d75c3fc7b3cadefef38a7f814f3b4",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 5
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 5
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "package.json",
+      "kind": "text",
+      "size": 620,
+      "hash": "2100fc453885caf2bda5e84b56c6ab196425cd18dedd8360e2bf0c9f0f3e37e7",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "vite.config.js",
+      "kind": "text",
+      "size": 1139,
+      "hash": "af3b0d8f3bc6070def9fd14b2e6e42906dd76f27a904448b4086f0ec96416297",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "public/icon.svg",
+      "kind": "text",
+      "size": 532,
+      "hash": "ba84ef00ea9a01b4e353f3c1c68ce73b41c8e54826ef8f84269f5398e636f1a3",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "public/brand/mark.svg",
+      "kind": "text",
+      "size": 397,
+      "hash": "7a835094106d7440e537df0a3cf154cd71d482d83df2428aa96643d805cffcf1",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/App.vue",
+      "kind": "text",
+      "size": 614,
+      "hash": "18ce1948775e936033a170cabadcbf794a5500fcbf2a2c45736fbdd06600e13d",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/main.js",
+      "kind": "text",
+      "size": 228,
+      "hash": "324693397335610afb7a20b22ec187b4ef6135ff63b6da14ec5df1a15659474c",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/style.css",
+      "kind": "text",
+      "size": 13844,
+      "hash": "8e07b58bd2387decb9c11244f1781ff13702dfd523afccf4f36ee070bb016f81",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/about/MachineChips.vue",
+      "kind": "text",
+      "size": 6312,
+      "hash": "6ab845e4abf42559da147e4df72471e49da92e223a647b9b690df853cadfcc63",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/art/CardArt.vue",
+      "kind": "text",
+      "size": 12869,
+      "hash": "cddb4c982c66883b0ac492d9ee3c3c7c921420a48d256d6acf9c17b035049172",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/art/MachineLogo.vue",
+      "kind": "text",
+      "size": 13540,
+      "hash": "acda06478977cc354c2cf96ebf6927696dbd4bb6966380d8250deb1ea1d79269",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/brand/BrandMark.vue",
+      "kind": "text",
+      "size": 679,
+      "hash": "12106a9123e6971a9074dd018b4fc427015222135b3537d2168ee5048829edb4",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/challenges/ChallengeCard.vue",
+      "kind": "text",
+      "size": 6875,
+      "hash": "09f27f17863261f4e359ccd2fdc0fbac90b3390db903675076d1cdc897ba9b0f",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/challenges/ChallengeHero.vue",
+      "kind": "text",
+      "size": 3597,
+      "hash": "bc4934dedbef6fc7b981c49a8ceab1a1751ea5e0efb50a27ea6792fc663fb57d",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/challenges/ChallengeIcon.vue",
+      "kind": "text",
+      "size": 1256,
+      "hash": "d3dfae1b17d13f97ed58fac0eb45d9294b06b074e1efa9fc513890fbe2430853",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/challenges/MetricPanel.vue",
+      "kind": "text",
+      "size": 3302,
+      "hash": "12c6001947cfaa57d4b5b51120edbb9be8fd93056ee310406ecb712039299d66",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/challenges/StakesCard.vue",
+      "kind": "text",
+      "size": 1980,
+      "hash": "f9ba61b82c6e776b80e7c1e27340414d68f27f99895f9473485f670169709b32",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/challenges/ThreatGroupHeader.vue",
+      "kind": "text",
+      "size": 1397,
+      "hash": "ee0c1b865ec4ee257befb87c4a5dcb3a4a79ea634cc59fe8ec0194e2554efb95",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/challenges/UpcomingCard.vue",
+      "kind": "text",
+      "size": 1199,
+      "hash": "7597f320ae6eebf137d9665c703f972de3de9b54fc70c5dd85789b6e2ca4067e",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/challenges/VerbBadge.vue",
+      "kind": "text",
+      "size": 614,
+      "hash": "ba043c37e97cb62906f39d14a73293ee274e1e90cb145dc20527d92dd8de9ae5",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/challenges/presentation.js",
+      "kind": "text",
+      "size": 12194,
+      "hash": "43cd69c80e70a7a03b267936779e3b79c92978870221c6d1106aafef9eb791d8",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 6
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 6
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/exposure/CloseArt.vue",
+      "kind": "text",
+      "size": 1709,
+      "hash": "3a84964feeae14466f3eb44b59bf5731df6fb1c8dcb57e150cf277f6d72dccff",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/exposure/ExposureResults.vue",
+      "kind": "text",
+      "size": 7569,
+      "hash": "0a972f1f2c1e7318b02503583557e235d3944bf8d2a2ca623f89d889f44fc3f7",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/exposure/FormArt.vue",
+      "kind": "text",
+      "size": 1695,
+      "hash": "e17fa84acbeaf3200459decb3d7d29776cde3bcb80aa3a9545e4829667a05f83",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/exposure/QuantumMark.vue",
+      "kind": "text",
+      "size": 633,
+      "hash": "4eddea8d60ee9dd38db9e737d0969534f3c5fe1fb13d7797ced1cb6718cace44",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/exposure/classify.js",
+      "kind": "text",
+      "size": 21101,
+      "hash": "82c65dc518155237f1e947f93c13411eec9ec6e00b335c80abf19c4053d83ebb",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/home/ExposureBanner.vue",
+      "kind": "text",
+      "size": 2600,
+      "hash": "2b561985b83bc24247da9798ec889c27e0ebac58ced090fd2d6a4882b48821c7",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/home/HomeHero.vue",
+      "kind": "text",
+      "size": 9051,
+      "hash": "ff74b9440e66b8d1966db1ea3c701d120f1a6972bcdfbb49b77d5d14e2482dbf",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/home/HowItWorks.vue",
+      "kind": "text",
+      "size": 3539,
+      "hash": "b203cacd73e0b92a2fbda66e74fbf057a8c7390cbddf4790a6f1240c0797dd68",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/home/ThreatPanels.vue",
+      "kind": "text",
+      "size": 6587,
+      "hash": "78070d06daddc4f426802bdc3dcc7eec157b52f317b77c12cb9cb443182cd3d8",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/home/ThreatRow.vue",
+      "kind": "text",
+      "size": 3346,
+      "hash": "2ed2a7d7435150f5948afa94584ab8fca20570a3016c2cc0aa447edfbd685ca9",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/launch/ChallengePicker.vue",
+      "kind": "text",
+      "size": 3009,
+      "hash": "4bded8c358afa6d616db5a86ee767a5810f278b62afadb3a289b22aeb20168b0",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/launch/FeeSplitPanel.vue",
+      "kind": "text",
+      "size": 2966,
+      "hash": "aac90dfc7693b300dc55a2d220276063ca68a51a1957b9568e68f4c22036721a",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/launch/LaunchGlyph.vue",
+      "kind": "text",
+      "size": 1264,
+      "hash": "e521e99728393a8707e19a1c583ada76fdfbad79b37ae88d6dcf2ff54b6dc282",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/launch/LaunchStep.vue",
+      "kind": "text",
+      "size": 750,
+      "hash": "f51476188ced0c8742e7c2126f02a248d31af82b4899fb8c2a1e935b0c5c76f8",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/launch/QuantumPortraitStep.vue",
+      "kind": "text",
+      "size": 15123,
+      "hash": "93c8f203b681728236852e7a2f839526a7d672ce8b445b0acc40d3e30272f3fc",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/launch/TokenPreviewCard.vue",
+      "kind": "text",
+      "size": 5790,
+      "hash": "ea647ea00cc19fdcacbd194204b8026f96e7e7a6eb0bf9ae7c6b89cd21447af5",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/launch/launchChallenges.js",
+      "kind": "text",
+      "size": 2719,
+      "hash": "236e05cab0ba8feef72aa7c76663dd40f20d3f60941f906d13ba0c3249e24e0a",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/launch/launchFields.js",
+      "kind": "text",
+      "size": 1410,
+      "hash": "f865bfc9aad88ef50c1626982c0e6e3be0fff1f19a019137186ccf1075d5a9b4",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/layout/AppFooter.vue",
+      "kind": "text",
+      "size": 7315,
+      "hash": "8a85da948674631cd5dccfa953d32df513ac89bf90aeb98a70f2d9aa39215ef8",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/layout/AppHeader.vue",
+      "kind": "text",
+      "size": 3265,
+      "hash": "db850a22227def04653a496afe42315f0206258273ff07cc32398f2c7e4b891d",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/layout/QuantumTicker.vue",
+      "kind": "text",
+      "size": 3475,
+      "hash": "247e36192eb86586fb569448ac1a78a4ffbb3012b3a115ad857966450810a0c5",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/legal/LegalArticle.vue",
+      "kind": "text",
+      "size": 2021,
+      "hash": "188fec58a66a5534aa24f5fe7beccb831cceb58d36802d728ad9a61f5372e0e9",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/legal/LegalSection.vue",
+      "kind": "text",
+      "size": 1046,
+      "hash": "a00a132defbd20422b16fe950c194671c94a514ef2bbd2e47871d84dbf4f4ff1",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/qday/LadderCard.vue",
+      "kind": "text",
+      "size": 1988,
+      "hash": "194475523eb6fe3c576e7df94a6c96785091ec9d4999613b27fb3d2a07678258",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/qday/QuantumMark.vue",
+      "kind": "text",
+      "size": 667,
+      "hash": "bbf03a011048511cee8e355fe539808ce0e10af3fb1e94376cd721cd3b329a45",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/AiQuantumIcon.vue",
+      "kind": "text",
+      "size": 633,
+      "hash": "8e5a26677581d5663a1b50108f36daf2faa9aaec0bb46514ec6a671a7b96058e",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/FeeSplitPanel.vue",
+      "kind": "text",
+      "size": 1586,
+      "hash": "145d4fcc074c28a61b3ebc0e6d1765932480d5630d7480bbeba20386cc2f2f10",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/NvdaChip.vue",
+      "kind": "text",
+      "size": 831,
+      "hash": "dc2f1c7fbc5997786a47fa5459e9376a86481a7612c34dd53014ed963efcde8a",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/OfficialTokenRow.vue",
+      "kind": "text",
+      "size": 6338,
+      "hash": "f7373bd6bff7ac9fefdfabfdab6fc21240a1a8a9ff15369602b4871e47077553",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/PoolPanel.vue",
+      "kind": "text",
+      "size": 4473,
+      "hash": "0d6b7c7c0ec837907686613791b34c4dca06de8c10c4fea7d77a35d345b7e409",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/ProgressPanel.vue",
+      "kind": "text",
+      "size": 3672,
+      "hash": "88cf0d73f101a5bf2cf0e1bf9d1384c89b5cb385978cbb148ed54731953d83f8",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 4
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 4
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/ResearchLogCard.vue",
+      "kind": "text",
+      "size": 3868,
+      "hash": "8f75c378ff0cda4f6e17bb2cadec632a9291e45e38360770e0309a6f7119de26",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/ResearchPanel.vue",
+      "kind": "text",
+      "size": 3167,
+      "hash": "472848ed75012af5f8e0711d2127df3c41ef49acb623128776d4e93b60f27f5b",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/SegmentedControl.vue",
+      "kind": "text",
+      "size": 1456,
+      "hash": "ccc5a01c143a7bf22c6a25ff3c65cf084070ed1d58f58d1d0240c9283e3b8794",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/TokenGridCard.vue",
+      "kind": "text",
+      "size": 6414,
+      "hash": "a03076fc72c6570c9f89f46dd8d0a248006f0d86f0ad0a161171babcc15ebaa6",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/TokenPicture.vue",
+      "kind": "text",
+      "size": 915,
+      "hash": "3257f7fdd5d09495282bb07f9b2f209f1513e6614737fdf5090cbf33c54ab5f2",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/market.js",
+      "kind": "text",
+      "size": 1316,
+      "hash": "e73647bd197af606d9d706805d251b8c7ce809d757c76cff0e82aeff35b292cc",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/tokens/tokenSnapshot.js",
+      "kind": "text",
+      "size": 2093,
+      "hash": "e8002807a74f53740ea1a6ce3c9ab8c2040c0efef9a8b9c24fc67049d8bcdf9b",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/ui/AppBadge.vue",
+      "kind": "text",
+      "size": 1361,
+      "hash": "561937086d973bb20fadb4d3ce901bcd8029a5b397445e7304b8364612779330",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/ui/AppButton.vue",
+      "kind": "text",
+      "size": 2408,
+      "hash": "3f050f9671a71bbd7fd9060cf56a304683456a390e55c38de090036f48b86e89",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/ui/Icon.vue",
+      "kind": "text",
+      "size": 10277,
+      "hash": "bae7a7d27acd57866a1d34182862255eb0d5eba42f000190c582071d4997a835",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/ui/MetricLine.vue",
+      "kind": "text",
+      "size": 3078,
+      "hash": "c427b0a102459df15cbf763eecfd23caa0203221c9f385c692559ac3cac41fc0",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/ui/PanelCard.vue",
+      "kind": "text",
+      "size": 2787,
+      "hash": "9fc1e68187f754f247161a92785ccf52d2aec3b19b1a1499064f47d8b20ed554",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/composables/useMarket.js",
+      "kind": "text",
+      "size": 1439,
+      "hash": "e22bb8da423265b23d5958bd0044d09fc4275b3ce79a2e8123b616aba1e07b25",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/composables/useQuantumStatus.js",
+      "kind": "text",
+      "size": 1948,
+      "hash": "53c102cb5915bc4e12febfe6c578889ea3b4c5894b5492877b6c51b2b0789f47",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/composables/useTheme.js",
+      "kind": "text",
+      "size": 1801,
+      "hash": "bb90c836be1fc9891975f44794a6b68b376075ef5d34b7d80485ccffc7fc8c51",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/data/challenges.js",
+      "kind": "text",
+      "size": 8150,
+      "hash": "e69aa9e4536825f31f43589d56f75f1115acb01e8709f3c055570f2137dce164",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 3
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 3
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/data/onchain.js",
+      "kind": "text",
+      "size": 1573,
+      "hash": "dac35aaf69414395743a9df6e1589e1c1ff0076e705bd1e0d193030589458dc7",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 3
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 3
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/data/tokens.js",
+      "kind": "text",
+      "size": 3220,
+      "hash": "c2ef8c3525f28935e49df4a30a3fd825f5ecc2dde69e11dc92dbeb45b802790b",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 3
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 3
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/idl/mathlana.json",
+      "kind": "text",
+      "size": 50018,
+      "hash": "e16613d9e3cf9ee05733108c4c29d0c760d12b662cb14d761d4fa6ebda5fbabf",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/lib/format.js",
+      "kind": "text",
+      "size": 3139,
+      "hash": "a268d9db5a54019c9d29573a1abe18e07659abd87239a305725fc4547f8527ea",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/lib/program.js",
+      "kind": "text",
+      "size": 6402,
+      "hash": "f42df8b3b800dc51d80ba1762a1d80b0b04c1383d08961f10a7450ee680e8ecf",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 4
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 4
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/router/index.js",
+      "kind": "text",
+      "size": 3533,
+      "hash": "d6f21801d894ea7fe1023894be74259bb2a28505e0345cc3b29a25832eafc138",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 7
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 7
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/AboutView.vue",
+      "kind": "text",
+      "size": 16579,
+      "hash": "bbe96e1cd9832410fb6f97f10a74d17fe607b39514d9e875266c28f86c1dd62b",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 8
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 8
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/AccountView.vue",
+      "kind": "text",
+      "size": 9297,
+      "hash": "a884d119a784e48c230070227fc276b7aaac6dcfe637cd8bc0f1cc58bdf3592a",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 4
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 4
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/ChallengeDetailView.vue",
+      "kind": "text",
+      "size": 15242,
+      "hash": "6f46b2c516b0f749f2007dceaa1bf1864bf39dda76119bac4717a2225fc44140",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/ChallengesView.vue",
+      "kind": "text",
+      "size": 2630,
+      "hash": "f58c48465d0c1c2d3bc91edf8e102e9abb6ad54bde11da75d09d7b7e943fd729",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/ExposureView.vue",
+      "kind": "text",
+      "size": 18498,
+      "hash": "2e03be575324a409a0ebe7115139890e33dc3359e94348faa1e4445ca9619801",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/HomeView.vue",
+      "kind": "text",
+      "size": 390,
+      "hash": "6c34f08f44508660bf57e2ac69aab0e60f06d43468e657b67dfa456e2c5e8db6",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/LaunchView.vue",
+      "kind": "text",
+      "size": 7921,
+      "hash": "73f6c786fc3056d1884e085e99dc1586c71646b69b6a74e63d380ec6d37f9560",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/NotFoundView.vue",
+      "kind": "text",
+      "size": 1697,
+      "hash": "5ada9a88e40146b019b06b0e6771e7ae7481905a78a4d978ec8929b60fda5644",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/PrivacyView.vue",
+      "kind": "text",
+      "size": 2472,
+      "hash": "80a5a0129610414b36b2612fa30bc2e200899a3e65b96cfe6779b16f6b20c8fb",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/QDayView.vue",
+      "kind": "text",
+      "size": 13352,
+      "hash": "267df8c5f9024e9c751c6a3946e2df25192427ab1b01426de0a3b203500c219c",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 4
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 4
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/RisksView.vue",
+      "kind": "text",
+      "size": 1492,
+      "hash": "e3fd5a31ed3985523dcb95957e175b3ebb9a298f7033b7178427acf956aa9c3c",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/TermsView.vue",
+      "kind": "text",
+      "size": 3454,
+      "hash": "10e44e44047050bda82178d963309e777dacca1dee4f83ed5caab34ee7272ebb",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 12
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 12
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/TokenDetailView.vue",
+      "kind": "text",
+      "size": 11726,
+      "hash": "014ce0547ef4bdbb7ada4df7421259db1f140fed8af92907fbdae1edc6fb8813",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 2
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/TokensView.vue",
+      "kind": "text",
+      "size": 10030,
+      "hash": "c694530421813d078302e38d8399be9165ac5425fff3cbb2da515aa006e4a498",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Mathlana",
+          "count": 4
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Mathlana",
+          "count": 4
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "public/icon.svg",
+      "kind": "image",
+      "size": 532,
+      "hash": "ba84ef00ea9a01b4e353f3c1c68ce73b41c8e54826ef8f84269f5398e636f1a3",
+      "brandHits": []
+    },
+    {
+      "path": "public/brand/mark.svg",
+      "kind": "image",
+      "size": 397,
+      "hash": "7a835094106d7440e537df0a3cf154cd71d482d83df2428aa96643d805cffcf1",
+      "brandHits": []
+    },
+    {
+      "path": "public/brand/token.png",
+      "kind": "image",
+      "size": 17200,
+      "hash": "8465b24e16494197f5e7c033b1d712b6d782695f5fb898c51670280423570b95",
+      "brandHits": []
+    },
+    {
+      "path": "public/brand/urania-indigo.png",
+      "kind": "image",
+      "size": 1101862,
+      "hash": "6bdd3d758edb2b24ead6e2f83bce75a16d1ca6e05a6e3ca6c877f6a56a1c66ee",
+      "brandHits": []
+    },
+    {
+      "path": "public/brand/urania-ink.png",
+      "kind": "image",
+      "size": 1338414,
+      "hash": "79f462816fb24527ecf4476b3386cac8a41480cb843193b7989b03cc1a987912",
+      "brandHits": []
+    },
+    {
+      "path": "public/coins/nvdax.png",
+      "kind": "image",
+      "size": 6717,
+      "hash": "eef86fb067b31a0662913d5a22424853d1d1fab684caf126936215eb70255970",
+      "brandHits": []
+    }
+  ],
+  "assets": [
+    {
+      "path": "public/icon.svg",
+      "format": "svg",
+      "kind": "icon",
+      "bytes": 532,
+      "width": 32.0,
+      "height": 32.0,
+      "aspect": 1.0,
+      "hasAlpha": false,
+      "colors": [
+        "#0b0d1a",
+        "#ffffff",
+        "#ffffff",
+        "#6c86ff",
+        "#6c86ff"
+      ],
+      "text": [],
+      "containsBrand": false,
+      "usedBy": [
+        "index.html"
+      ],
+      "needsVisualReview": true,
+      "title": "",
+      "viewBox": "0 0 32 32"
+    },
+    {
+      "path": "public/brand/mark.svg",
+      "format": "svg",
+      "kind": "photo",
+      "bytes": 397,
+      "width": 600.0,
+      "height": 480.0,
+      "aspect": 1.25,
+      "hasAlpha": false,
+      "colors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#6C86FF",
+        "#6C86FF"
+      ],
+      "text": [],
+      "containsBrand": false,
+      "usedBy": [],
+      "needsVisualReview": false,
+      "title": "",
+      "viewBox": "0 0 600 480"
+    },
+    {
+      "path": "public/brand/token.png",
+      "format": "png",
+      "kind": "photo",
+      "bytes": 17200,
+      "width": 800,
+      "height": 800,
+      "aspect": 1.0,
+      "hasAlpha": false,
+      "colors": [
+        "#0b0d1a",
+        "#ffffff",
+        "#020411",
+        "#708bff",
+        "#9d9ea3",
+        "#070810",
+        "#0a0c19",
+        "#080a17"
+      ],
+      "text": [],
+      "containsBrand": false,
+      "usedBy": [
+        "src/components/tokens/OfficialTokenRow.vue"
+      ],
+      "needsVisualReview": false
+    },
+    {
+      "path": "public/brand/urania-indigo.png",
+      "format": "png",
+      "kind": "photo",
+      "bytes": 1101862,
+      "width": 1584,
+      "height": 2000,
+      "aspect": 0.792,
+      "hasAlpha": true,
+      "colors": [
+        "#000000",
+        "#1e2647",
+        "#181f3a",
+        "#35427d",
+        "#171e37",
+        "#1a213e",
+        "#151b32",
+        "#171d37"
+      ],
+      "text": [],
+      "containsBrand": false,
+      "usedBy": [
+        "src/components/challenges/ChallengeHero.vue",
+        "src/components/home/HomeHero.vue"
+      ],
+      "needsVisualReview": false
+    },
+    {
+      "path": "public/brand/urania-ink.png",
+      "format": "png",
+      "kind": "photo",
+      "bytes": 1338414,
+      "width": 1584,
+      "height": 2000,
+      "aspect": 0.792,
+      "hasAlpha": true,
+      "colors": [
+        "#000000",
+        "#06070e",
+        "#030408",
+        "#04050a",
+        "#05060c",
+        "#040409",
+        "#070810",
+        "#090b16"
+      ],
+      "text": [],
+      "containsBrand": false,
+      "usedBy": [
+        "src/components/challenges/ChallengeHero.vue",
+        "src/components/home/HomeHero.vue"
+      ],
+      "needsVisualReview": false
+    },
+    {
+      "path": "public/coins/nvdax.png",
+      "format": "png",
+      "kind": "photo",
+      "bytes": 6717,
+      "width": 128,
+      "height": 128,
+      "aspect": 1.0,
+      "hasAlpha": true,
+      "colors": [
+        "#78b808",
+        "#3c5c04",
+        "#ffffff",
+        "#79ba08",
+        "#3a5804",
+        "#4d7605",
+        "#76b508",
+        "#74b601"
+      ],
+      "text": [],
+      "containsBrand": false,
+      "usedBy": [],
+      "needsVisualReview": false
+    }
+  ],
+  "brand": {
+    "display": "Mathlana",
+    "slug": "mathlana",
+    "confidence": 0.795,
+    "source": "scan",
+    "evidence": [
+      {
+        "value": "Mathlana",
+        "source": "readme:h1",
+        "weight": 1,
+        "files": [
+          "README.md"
+        ]
+      },
+      {
+        "value": "Mathlana",
+        "source": "html:title",
+        "weight": 1,
+        "files": [
+          "index.html"
+        ]
+      },
+      {
+        "value": "Mathlana",
+        "source": "html:og:site_name",
+        "weight": 1,
+        "files": [
+          "index.html"
+        ]
+      },
+      {
+        "value": "Mathlana",
+        "source": "html:og:title",
+        "weight": 1,
+        "files": [
+          "index.html"
+        ]
+      },
+      {
+        "value": "Mathlana",
+        "source": "package:name",
+        "weight": 1,
+        "files": [
+          "package.json"
+        ]
+      }
+    ],
+    "alternatives": [
+      {
+        "value": "Reading on-chain state",
+        "score": 8.0
+      },
+      {
+        "value": "Mathlana Website",
+        "score": 8.0
+      },
+      {
+        "value": "Getting started",
+        "score": 8.0
+      },
+      {
+        "value": "Layout",
+        "score": 8.0
+      },
+      {
+        "value": "text-brand-text",
+        "score": 7.0
+      }
+    ],
+    "variants": {
+      "display": "Mathlana",
+      "lower": "mathlana",
+      "upper": "MATHLANA",
+      "title": "Mathlana",
+      "kebab": "mathlana",
+      "snake": "mathlana",
+      "camel": "mathlana",
+      "pascal": "Mathlana",
+      "compact": "Mathlana",
+      "compactLower": "mathlana",
+      "first": "Mathlana",
+      "firstLower": "mathlana",
+      "firstUpper": "MATHLANA"
+    },
+    "variantList": [
+      {
+        "value": "Mathlana",
+        "kind": "display"
+      },
+      {
+        "value": "mathlana",
+        "kind": "lower"
+      },
+      {
+        "value": "MATHLANA",
+        "kind": "upper"
+      }
+    ],
+    "domains": [
+      {
+        "host": "mathlana.si",
+        "urls": [
+          "https://mathlana.si/",
+          "https://mathlana.si"
+        ],
+        "functional": false,
+        "files": [
+          "README.md",
+          "index.html",
+          "vite.config.js"
+        ],
+        "sources": []
+      },
+      {
+        "host": "mathlana.si`",
+        "urls": [
+          "https://mathlana.si`"
+        ],
+        "functional": false,
+        "files": [
+          "README.md"
+        ],
+        "sources": []
+      }
+    ],
+    "handles": [],
+    "emails": [
+      "privacy@mathlana.si"
+    ],
+    "packageNames": [
+      "mathlana-website"
+    ],
+    "initials": "",
+    "usedBrands": [
+      "Mathlana"
+    ]
+  },
+  "protected": {
+    "urls": [],
+    "hosts": [],
+    "strings": [
+      "MATHLANA_PROGRAM_ID"
+    ],
+    "thirdParty": [
+      "@coral-xyz/anchor",
+      "@solana/spl-token",
+      "@solana/web3.js",
+      "@tailwindcss/vite",
+      "@vitejs/plugin-vue",
+      "amazon",
+      "angular",
+      "anthropic",
+      "apple",
+      "aws",
+      "bootstrap",
+      "cloudflare",
+      "deepseek",
+      "digitalocean",
+      "discord",
+      "django",
+      "docker",
+      "facebook",
+      "fastapi",
+      "figma",
+      "flask",
+      "github",
+      "gitlab",
+      "google",
+      "googleanalytics",
+      "googletagmanager",
+      "heroku",
+      "hotjar",
+      "instagram",
+      "intercom",
+      "javascript",
+      "jquery",
+      "kubernetes",
+      "laravel",
+      "linkedin",
+      "meta",
+      "microsoft",
+      "mixpanel",
+      "netlify",
+      "nextjs",
+      "node",
+      "notion",
+      "npm",
+      "nuxt",
+      "openai",
+      "paypal",
+      "plausible",
+      "pnpm",
+      "posthog",
+      "python",
+      "rails",
+      "react",
+      "segment",
+      "sentry",
+      "shopify",
+      "slack",
+      "stripe",
+      "svelte",
+      "tailwind",
+      "tailwindcss",
+      "tiktok",
+      "twitter",
+      "typescript",
+      "vercel",
+      "vite",
+      "vue",
+      "vue-router",
+      "webpack",
+      "wordpress",
+      "x",
+      "yarn",
+      "youtube",
+      "zendesk"
+    ]
+  },
+  "palette": {
+    "primary": "#6c86ff",
+    "accent": "#1c1c21",
+    "background": "#0a0a0c",
+    "foreground": "#f5f5f7",
+    "colors": [
+      "#1f70c1",
+      "#6c86ff",
+      "#0b0d1a",
+      "#4a63e8",
+      "#ffffff",
+      "#f5f5f7",
+      "#1ba737",
+      "#7e7e88",
+      "#929293",
+      "#3dd68c",
+      "#efeff1",
+      "#0f8a55"
+    ],
+    "cssVars": {
+      "background": "#0a0a0c",
+      "foreground": "#f5f5f7",
+      "card-foreground": "#f5f5f7",
+      "popover-foreground": "#f5f5f7",
+      "primary": "#6c86ff",
+      "primary-foreground": "#0b0d1a",
+      "secondary-foreground": "#f5f5f7",
+      "muted-foreground": "#a8a8b3",
+      "accent": "#1c1c21",
+      "accent-foreground": "#f5f5f7",
+      "brand": "#6c86ff",
+      "brand-surface": "#6c86ff",
+      "brand-border": "#6c86ff",
+      "brand-text": "#8da2ff",
+      "proven-surface": "#3dd68c",
+      "proven-text": "#3dd68c",
+      "caution-surface": "#f2b43c",
+      "caution-text": "#f2b43c",
+      "failed-surface": "#f2555a",
+      "failed-text": "#f26166",
+      "note-surface": "#c4a7ff",
+      "note-text": "#c4a7ff",
+      "quantum-surface": "#5bd7e8",
+      "quantum-text": "#5bd7e8",
+      "quiet-surface": "#7e7e88",
+      "quiet-text": "#a8a8b3",
+      "sidebar-foreground": "#f5f5f7",
+      "sidebar-primary": "#6c86ff",
+      "sidebar-primary-foreground": "#0b0d1a",
+      "sidebar-accent": "#1c1c21",
+      "sidebar-accent-foreground": "#f5f5f7"
+    }
+  },
+  "routes": [
+    "/"
+  ],
+  "web": {
+    "isWeb": true,
+    "entryHtml": [
+      "index.html"
+    ],
+    "hasPackageJson": true
+  },
+  "brandRegistry": {
+    "path": "brand.txt",
+    "exists": false,
+    "history": [],
+    "current": null,
+    "warnings": []
+  },
+  "warnings": []
+}

@@ -1,0 +1,17 @@
+﻿import fs from 'node:fs';
+const v = JSON.parse(fs.readFileSync('.reskin/verification.json','utf8'));
+console.log('generatedAt', v.generatedAt);
+console.log('passed', v.passed, 'failures', v.failures.length);
+const fps = v.gates.pages.filter(p=>p.structure?.fingerprintSimilarity!=null).map(p=>p.structure.fingerprintSimilarity);
+const lms = v.gates.pages.filter(p=>p.structure?.landmarkSimilarity!=null).map(p=>p.structure.landmarkSimilarity);
+const cls = v.gates.pages.filter(p=>p.structure?.classOverlap!=null).map(p=>p.structure.classOverlap);
+console.log('fp', Math.min(...fps), Math.max(...fps));
+console.log('lm', Math.min(...lms), Math.max(...lms));
+console.log('cls', Math.min(...cls), Math.max(...cls));
+console.log('accent', v.gates.skeleton.accent);
+console.log('source hash', v.gates.sourceContract.hash);
+console.log('source issues', v.gates.sourceContract.issues.length, 'warnings', v.gates.sourceContract.warnings.length);
+const routes = v.gates.pages.map(p=>p.route);
+console.log('routes', routes.length, routes.filter(r=>!r.includes(':')).length);
+console.log('usability axe values', [...new Set(v.gates.pages.map(p=>p.usability?.axe?.serious?.length))]);
+console.log('screenshots', JSON.stringify(v.gates.pages.find(p=>p.route==='/')?.screenshots));

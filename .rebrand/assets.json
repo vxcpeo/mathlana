@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-10-20T01:06:47+08:00",
+  "palette": {
+    "primary": "#6c86ff",
+    "accent": "#1c1c21",
+    "background": "#0a0a0c",
+    "foreground": "#f5f5f7"
+  },
+  "items": [
+    {
+      "source": "public/icon.svg",
+      "generated": "E:/workspace/chuangye/solana/mathlana/website/.rebrand/generated/public/icon.svg",
+      "kind": "icon",
+      "format": "svg",
+      "width": 32,
+      "height": 32,
+      "bytes": 565,
+      "manual": false
+    }
+  ],
+  "manualReview": [],
+  "generatedRoot": "E:/workspace/chuangye/solana/mathlana/website/.rebrand/generated"
+}

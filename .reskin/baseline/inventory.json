@@ -1,0 +1,4924 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-20T16:01:39.583Z",
+  "project": {
+    "root": "E:/workspace/chuangye/solana/mathlana/website",
+    "name": "qubitlane-website",
+    "vueVersion": "^3.5.13",
+    "nuxt": false,
+    "dependencies": [
+      "@coral-xyz/anchor",
+      "@solana/spl-token",
+      "@solana/web3.js",
+      "@tailwindcss/vite",
+      "@vitejs/plugin-vue",
+      "tailwindcss",
+      "vite",
+      "vue",
+      "vue-router"
+    ],
+    "packageManager": "pnpm",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "frameworks": [
+      "@tailwindcss/vite",
+      "tailwindcss"
+    ]
+  },
+  "stats": {
+    "filesScanned": 153,
+    "vueFiles": 136,
+    "routes": 17,
+    "staticTextTokens": 683,
+    "bindingTokens": 970,
+    "eventTokens": 59,
+    "classNames": 1487,
+    "colors": 74
+  },
+  "routes": [
+    {
+      "path": "/",
+      "dynamic": false
+    },
+    {
+      "path": "/about",
+      "dynamic": false
+    },
+    {
+      "path": "/account",
+      "dynamic": false
+    },
+    {
+      "path": "/challenges",
+      "dynamic": false
+    },
+    {
+      "path": "/challenges/:slug",
+      "dynamic": true
+    },
+    {
+      "path": "/challenges/ecdsa-fail",
+      "dynamic": false,
+      "source": "link"
+    },
+    {
+      "path": "/challenges/proximity",
+      "dynamic": false,
+      "source": "link"
+    },
+    {
+      "path": "/challenges/sig-golf",
+      "dynamic": false,
+      "source": "link"
+    },
+    {
+      "path": "/exposure",
+      "dynamic": false
+    },
+    {
+      "path": "/launch",
+      "dynamic": false
+    },
+    {
+      "path": "/privacy",
+      "dynamic": false
+    },
+    {
+      "path": "/q-day",
+      "dynamic": false
+    },
+    {
+      "path": "/risks",
+      "dynamic": false
+    },
+    {
+      "path": "/t/:mint",
+      "dynamic": true
+    },
+    {
+      "path": "/t/preview",
+      "dynamic": false,
+      "source": "link"
+    },
+    {
+      "path": "/terms",
+      "dynamic": false
+    },
+    {
+      "path": "/tokens",
+      "dynamic": false
+    }
+  ],
+  "unresolvedRoutes": [],
+  "archetype": {
+    "id": "orbital",
+    "family": "spatial",
+    "traits": {
+      "sidebar": true,
+      "topbar": false,
+      "cards": true,
+      "hero": true,
+      "table": true,
+      "grid": true,
+      "tabs": true,
+      "modal": true,
+      "charts": false,
+      "sticky": true,
+      "orbital": true,
+      "terminal": false,
+      "bento": false,
+      "ticker": true,
+      "gallery": false
+    }
+  },
+  "palette": [
+    {
+      "hex": "#000000",
+      "count": 10
+    },
+    {
+      "hex": "#ffffff",
+      "count": 8
+    },
+    {
+      "hex": "#0b0d10",
+      "count": 5
+    },
+    {
+      "hex": "#0a0b0d",
+      "count": 4
+    },
+    {
+      "hex": "#0000ff",
+      "count": 2
+    },
+    {
+      "hex": "#181b20",
+      "count": 2
+    },
+    {
+      "hex": "#b9baff",
+      "count": 2
+    },
+    {
+      "hex": "#c9cfff",
+      "count": 2
+    },
+    {
+      "hex": "#0b6b47",
+      "count": 1
+    },
+    {
+      "hex": "#0f2a20",
+      "count": 1
+    },
+    {
+      "hex": "#101215",
+      "count": 1
+    },
+    {
+      "hex": "#14143a",
+      "count": 1
+    },
+    {
+      "hex": "#14161a",
+      "count": 1
+    },
+    {
+      "hex": "#1b1e23",
+      "count": 1
+    },
+    {
+      "hex": "#221a3d",
+      "count": 1
+    },
+    {
+      "hex": "#23272d",
+      "count": 1
+    },
+    {
+      "hex": "#2b2f36",
+      "count": 1
+    },
+    {
+      "hex": "#2f2408",
+      "count": 1
+    },
+    {
+      "hex": "#33150e",
+      "count": 1
+    },
+    {
+      "hex": "#3a3a8f",
+      "count": 1
+    },
+    {
+      "hex": "#3f444b",
+      "count": 1
+    },
+    {
+      "hex": "#464c55",
+      "count": 1
+    },
+    {
+      "hex": "#4a4f57",
+      "count": 1
+    },
+    {
+      "hex": "#4b2fa8",
+      "count": 1
+    },
+    {
+      "hex": "#5b6068",
+      "count": 1
+    },
+    {
+      "hex": "#6ee7b7",
+      "count": 1
+    },
+    {
+      "hex": "#7a5200",
+      "count": 1
+    },
+    {
+      "hex": "#9aa6ff",
+      "count": 1
+    },
+    {
+      "hex": "#a2a8b1",
+      "count": 1
+    },
+    {
+      "hex": "#a62600",
+      "count": 1
+    },
+    {
+      "hex": "#aeb5be",
+      "count": 1
+    },
+    {
+      "hex": "#b3b9c1",
+      "count": 1
+    }
+  ],
+  "fonts": [],
+  "classNames": [
+    "-mt-2",
+    "-right-2.5",
+    "-right-8",
+    "-rotate-[8deg]",
+    "-top-8",
+    "-translate-y-1/2",
+    "0",
+    "1",
+    "2xl:grid-cols-4",
+    "<",
+    "===",
+    ">",
+    "?",
+    "@container",
+    "@min-[25rem]:col-span-1",
+    "@min-[25rem]:grid-cols-[minmax(0,1fr)_auto_auto]",
+    "@min-[25rem]:min-w-[9.5rem]",
+    "CHIP,",
+    "GROUP_LABEL",
+    "HEAD_ICON",
+    "INPUT",
+    "ROW_ARROW",
+    "ROW_LINK",
+    "ROW_STATIC",
+    "ROW_SUB",
+    "ROW_TITLE",
+    "STATIC_ICON",
+    "STATUS_BRAND",
+    "STATUS_QUIET",
+    "TEXTAREA_CLASS",
+    "[",
+    "[&:nth-child(2n)]:border-r-0",
+    "[&:nth-child(n+3)]:border-b-0",
+    "[&>p]:whitespace-nowrap",
+    "[&>span]:whitespace-nowrap",
+    "[&>svg]:size-7",
+    "[&_svg:not([class*=",
+    "[&_svg]:pointer-events-none",
+    "[&_svg]:shrink-0",
+    "[--segmented-radius:var(--radius)]",
+    "[-webkit-mask-image:linear-gradient(to_bottom,black_58%,transparent_96%)]",
+    "[INPUT_CLASS,",
+    "[contain-intrinsic-size:auto_23rem]",
+    "[content-visibility:auto]",
+    "[mask-image:linear-gradient(to_bottom,black_58%,transparent_96%)]",
+    "`lucide",
+    "absolute",
+    "active:not-aria-[haspopup]:translate-y-px",
+    "active:scale-[0.96]",
+    "animate-quantum-pulse",
+    "animate-spin",
+    "artResponsive",
+    "aspect-[1584/2000]",
+    "aspect-square",
+    "backdrop-blur",
+    "backdrop-blur-sm",
+    "bg-[#0b0d10]",
+    "bg-[#0b0d10]/80",
+    "bg-[#0b0d10]/85",
+    "bg-background",
+    "bg-background/80",
+    "bg-background/90",
+    "bg-black/40",
+    "bg-border",
+    "bg-brand",
+    "bg-brand-border",
+    "bg-brand-surface",
+    "bg-brand-text",
+    "bg-brand/45",
+    "bg-card",
+    "bg-caution",
+    "bg-caution-surface",
+    "bg-clip-padding",
+    "bg-failed-surface",
+    "bg-foreground/70",
+    "bg-ink",
+    "bg-linear-to-b",
+    "bg-linear-to-r",
+    "bg-muted",
+    "bg-muted/40",
+    "bg-primary",
+    "bg-proven",
+    "bg-quiet",
+    "bg-quiet/45",
+    "bg-transparent",
+    "block",
+    "border",
+    "border-0",
+    "border-b",
+    "border-brand-border",
+    "border-brand-border/60",
+    "border-brand-text",
+    "border-caution-border",
+    "border-dashed",
+    "border-failed-border",
+    "border-foreground/15",
+    "border-foreground/20",
+    "border-foreground/25",
+    "border-input",
+    "border-l",
+    "border-muted-foreground",
+    "border-note-text",
+    "border-r",
+    "border-t",
+    "border-transparent",
+    "border-y",
+    "bottom-0",
+    "bottom-1",
+    "bottom-2",
+    "brand-mark",
+    "brand-mark__ring",
+    "brand-mark__tail",
+    "break-all",
+    "bucket.tone",
+    "change?.up",
+    "class",
+    "classes",
+    "col-span-2",
+    "col-start-2",
+    "copy.statusTone",
+    "cr-404",
+    "cr-404__open",
+    "cr-about",
+    "cr-about__close",
+    "cr-about__close-block",
+    "cr-about__close-block--quiet",
+    "cr-about__cta",
+    "cr-about__group",
+    "cr-about__head",
+    "cr-about__head-grid",
+    "cr-about__lede",
+    "cr-about__machines",
+    "cr-about__preamble",
+    "cr-about__promise",
+    "cr-about__promise-mark",
+    "cr-about__promises",
+    "cr-about__row",
+    "cr-about__row--static",
+    "cr-about__row-arrow",
+    "cr-about__row-copy",
+    "cr-about__row-icon",
+    "cr-about__row-icon--quiet",
+    "cr-about__row-sub",
+    "cr-about__row-title",
+    "cr-about__rows",
+    "cr-about__sec",
+    "cr-about__sec-head",
+    "cr-about__sec-mark",
+    "cr-about__sec-title",
+    "cr-about__step",
+    "cr-about__step-body",
+    "cr-about__step-n",
+    "cr-about__step-title",
+    "cr-about__steps",
+    "cr-about__threat",
+    "cr-about__threat-art",
+    "cr-about__threat-head",
+    "cr-about__threat-kind",
+    "cr-about__threat-name",
+    "cr-about__threat-title",
+    "cr-about__threats",
+    "cr-about__title",
+    "cr-accent",
+    "cr-account",
+    "cr-account__brand",
+    "cr-account__dialog",
+    "cr-account__dialog-head",
+    "cr-account__dialog-title",
+    "cr-account__divider",
+    "cr-account__divider-line",
+    "cr-account__empty",
+    "cr-account__fact",
+    "cr-account__fact-icon",
+    "cr-account__fact-line",
+    "cr-account__fact-value",
+    "cr-account__folio",
+    "cr-account__form",
+    "cr-account__head",
+    "cr-account__installed",
+    "cr-account__margin",
+    "cr-account__note",
+    "cr-account__plate",
+    "cr-account__plate-art",
+    "cr-account__plate-body",
+    "cr-account__plate-mark",
+    "cr-account__preview",
+    "cr-account__scrim",
+    "cr-account__stage",
+    "cr-account__submit",
+    "cr-account__title",
+    "cr-account__wallet",
+    "cr-account__wallets",
+    "cr-account__wordmark",
+    "cr-account__wordmark-accent",
+    "cr-app",
+    "cr-aqi",
+    "cr-art",
+    "cr-art-fill-accent",
+    "cr-art-fill-ink",
+    "cr-art-frame",
+    "cr-art-seal",
+    "cr-art-stroke-accent",
+    "cr-art-stroke-ink",
+    "cr-art-svg",
+    "cr-band",
+    "cr-body",
+    "cr-brandmark",
+    "cr-brandmark__ring",
+    "cr-brandmark__tail",
+    "cr-btn",
+    "cr-btn--full",
+    "cr-btn--lg",
+    "cr-btn--line",
+    "cr-btn--sm",
+    "cr-btn--wide-hide",
+    "cr-callout",
+    "cr-callout--alert",
+    "cr-cards",
+    "cr-cards__item",
+    "cr-chip",
+    "cr-chip--count",
+    "cr-chip__arrow",
+    "cr-chip__logo",
+    "cr-chip__model",
+    "cr-chips",
+    "cr-choice",
+    "cr-choice__icon",
+    "cr-choice__main",
+    "cr-choice__mark",
+    "cr-choice__sub",
+    "cr-choice__title",
+    "cr-choice__val",
+    "cr-choices",
+    "cr-choices__glyph",
+    "cr-choices__group",
+    "cr-choices__legend",
+    "cr-choices__rows",
+    "cr-close-art",
+    "cr-command",
+    "cr-command__actions",
+    "cr-command__brand",
+    "cr-command__menu",
+    "cr-command__sheet",
+    "cr-command__spacer",
+    "cr-command__wordmark",
+    "cr-crow",
+    "cr-crow__arrow",
+    "cr-crow__asks",
+    "cr-crow__big",
+    "cr-crow__board",
+    "cr-crow__clock",
+    "cr-crow__clockfig",
+    "cr-crow__clockicon",
+    "cr-crow__clocktext",
+    "cr-crow__cta",
+    "cr-crow__foot",
+    "cr-crow__head",
+    "cr-crow__host",
+    "cr-crow__icon",
+    "cr-crow__id",
+    "cr-crow__linkline",
+    "cr-crow__meter",
+    "cr-crow__metric",
+    "cr-crow__metrichead",
+    "cr-crow__metrictext",
+    "cr-crow__name",
+    "cr-crow__open",
+    "cr-crow__record",
+    "cr-crow__scale",
+    "cr-crow__titleline",
+    "cr-crow__type",
+    "cr-crow__unit",
+    "cr-crow__value",
+    "cr-detail__metrics",
+    "cr-doc",
+    "cr-doc__body",
+    "cr-doc__clause",
+    "cr-doc__clause-body",
+    "cr-doc__clause-index",
+    "cr-doc__clause-text",
+    "cr-doc__clause-title",
+    "cr-doc__clauses",
+    "cr-doc__eyebrow",
+    "cr-doc__head",
+    "cr-doc__meta",
+    "cr-doc__meta-rule",
+    "cr-doc__nav",
+    "cr-doc__nav-label",
+    "cr-doc__nav-link",
+    "cr-doc__nav-mark",
+    "cr-doc__stamp",
+    "cr-doc__title",
+    "cr-dot",
+    "cr-dot--live",
+    "cr-drop",
+    "cr-drop__change",
+    "cr-drop__empty",
+    "cr-drop__icon",
+    "cr-drop__img",
+    "cr-empty",
+    "cr-entry",
+    "cr-entry__byline",
+    "cr-entry__curve",
+    "cr-entry__delta",
+    "cr-entry__fact",
+    "cr-entry__facts",
+    "cr-entry__fill",
+    "cr-entry__goto",
+    "cr-entry__graduation",
+    "cr-entry__lead",
+    "cr-entry__mission",
+    "cr-entry__missionline",
+    "cr-entry__missiontext",
+    "cr-entry__name",
+    "cr-entry__names",
+    "cr-entry__price",
+    "cr-entry__sep",
+    "cr-entry__sessions",
+    "cr-entry__state",
+    "cr-entry__status",
+    "cr-entry__tagline",
+    "cr-entry__value",
+    "cr-expo",
+    "cr-expo__actions",
+    "cr-expo__aside",
+    "cr-expo__asidefoot",
+    "cr-expo__body",
+    "cr-expo__buttons",
+    "cr-expo__chaincopy",
+    "cr-expo__chainlist",
+    "cr-expo__chainrow",
+    "cr-expo__chains",
+    "cr-expo__closeart",
+    "cr-expo__delta",
+    "cr-expo__figure",
+    "cr-expo__footnote",
+    "cr-expo__form",
+    "cr-expo__formart",
+    "cr-expo__formhead",
+    "cr-expo__hint",
+    "cr-expo__legend",
+    "cr-expo__legendcopy",
+    "cr-expo__legendicon",
+    "cr-expo__legenditem",
+    "cr-expo__legendlist",
+    "cr-expo__mdesc",
+    "cr-expo__measure",
+    "cr-expo__measures",
+    "cr-expo__meter",
+    "cr-expo__mfig",
+    "cr-expo__mgo",
+    "cr-expo__mname",
+    "cr-expo__mnum",
+    "cr-expo__mtext",
+    "cr-expo__no",
+    "cr-expo__panel",
+    "cr-expo__paste",
+    "cr-expo__privacy",
+    "cr-expo__privacyicon",
+    "cr-expo__qm",
+    "cr-exposure",
+    "cr-exposure__fact",
+    "cr-exposure__fact-body",
+    "cr-exposure__fact-text",
+    "cr-exposure__fact-title",
+    "cr-exposure__facts",
+    "cr-exposure__foot",
+    "cr-exposure__head",
+    "cr-eyebrow",
+    "cr-facts__block",
+    "cr-facts__board",
+    "cr-facts__dot",
+    "cr-facts__list",
+    "cr-facts__note",
+    "cr-facts__target",
+    "cr-facts__unit",
+    "cr-fee",
+    "cr-fee__art",
+    "cr-fee__bar",
+    "cr-fee__body",
+    "cr-fee__dot",
+    "cr-fee__example",
+    "cr-fee__key",
+    "cr-fee__label",
+    "cr-fee__list",
+    "cr-fee__name",
+    "cr-fee__note",
+    "cr-fee__pc",
+    "cr-fee__row",
+    "cr-fee__seg",
+    "cr-fee__seg--b",
+    "cr-fee__seg--c",
+    "cr-fee__share",
+    "cr-fee__table",
+    "cr-field",
+    "cr-field-row",
+    "cr-field__error",
+    "cr-field__label",
+    "cr-figure",
+    "cr-foot"
+  ],
+  "designSignals": {
+    "frameworks": [
+      "@tailwindcss/vite",
+      "tailwindcss"
+    ],
+    "cssVars": [
+      "--alert",
+      "--cr-accent",
+      "--cr-accent-line",
+      "--cr-accent-soft",
+      "--cr-accent-text",
+      "--cr-alert",
+      "--cr-alert-surface",
+      "--cr-body",
+      "--cr-display",
+      "--cr-ease",
+      "--cr-fast",
+      "--cr-frame",
+      "--cr-ground",
+      "--cr-ink",
+      "--cr-ink-soft",
+      "--cr-line",
+      "--cr-line-soft",
+      "--cr-line-strong",
+      "--cr-live",
+      "--cr-live-surface",
+      "--cr-max",
+      "--cr-mono",
+      "--cr-muted",
+      "--cr-muted-ground",
+      "--cr-note",
+      "--cr-note-surface",
+      "--cr-radius",
+      "--cr-radius-lg",
+      "--cr-radius-sm",
+      "--cr-rail",
+      "--cr-shadow",
+      "--cr-shadow-tight",
+      "--cr-sheet",
+      "--cr-sheet-soft",
+      "--cr-sheet-sunk",
+      "--cr-t1",
+      "--cr-t2",
+      "--cr-t3",
+      "--cr-t4",
+      "--cr-t5",
+      "--cr-t6",
+      "--cr-warn",
+      "--cr-warn-surface",
+      "--current",
+      "--line",
+      "--quiet",
+      "--segmented-radius"
+    ],
+    "colorVars": [
+      {
+        "name": "--cr-accent",
+        "value": "#0000ff"
+      },
+      {
+        "name": "--cr-accent-line",
+        "value": "#3a3a8f"
+      },
+      {
+        "name": "--cr-accent-soft",
+        "value": "#14143a"
+      },
+      {
+        "name": "--cr-accent-text",
+        "value": "#9aa6ff"
+      },
+      {
+        "name": "--cr-alert",
+        "value": "#ff9b7a"
+      },
+      {
+        "name": "--cr-alert-surface",
+        "value": "#33150e"
+      },
+      {
+        "name": "--cr-ground",
+        "value": "#0a0b0d"
+      },
+      {
+        "name": "--cr-ink",
+        "value": "#f3f4f6"
+      },
+      {
+        "name": "--cr-ink-soft",
+        "value": "#cfd3d9"
+      },
+      {
+        "name": "--cr-line",
+        "value": "#2b2f36"
+      },
+      {
+        "name": "--cr-line-soft",
+        "value": "#23272d"
+      },
+      {
+        "name": "--cr-line-strong",
+        "value": "#464c55"
+      },
+      {
+        "name": "--cr-live",
+        "value": "#6ee7b7"
+      },
+      {
+        "name": "--cr-live-surface",
+        "value": "#0f2a20"
+      },
+      {
+        "name": "--cr-muted",
+        "value": "#a2a8b1"
+      },
+      {
+        "name": "--cr-muted-ground",
+        "value": "#b3b9c1"
+      },
+      {
+        "name": "--cr-note",
+        "value": "#bea8ff"
+      },
+      {
+        "name": "--cr-note-surface",
+        "value": "#221a3d"
+      },
+      {
+        "name": "--cr-sheet",
+        "value": "#14161a"
+      },
+      {
+        "name": "--cr-sheet-soft",
+        "value": "#1b1e23"
+      },
+      {
+        "name": "--cr-sheet-sunk",
+        "value": "#101215"
+      },
+      {
+        "name": "--cr-warn",
+        "value": "#f5c86b"
+      },
+      {
+        "name": "--cr-warn-surface",
+        "value": "#2f2408"
+      }
+    ],
+    "mediaQueries": [
+      "@media (max-width: 1000px)",
+      "@media (max-width: 1024px)",
+      "@media (max-width: 1100px)",
+      "@media (max-width: 1180px)",
+      "@media (max-width: 560px)",
+      "@media (max-width: 620px)",
+      "@media (max-width: 640px)",
+      "@media (max-width: 700px)",
+      "@media (max-width: 720px)",
+      "@media (max-width: 760px)",
+      "@media (max-width: 860px)",
+      "@media (max-width: 900px)",
+      "@media (min-width: 1180px)",
+      "@media (min-width: 1181px)",
+      "@media (min-width: 1320px)",
+      "@media (min-width: 560px)",
+      "@media (min-width: 900px)",
+      "@media (prefers-reduced-motion: no-preference)"
+    ],
+    "darkMode": true
+  },
+  "structure": {
+    "tagCounts": {
+      "a": 36,
+      "aiquantumicon": 4,
+      "appbadge": 10,
+      "appbutton": 54,
+      "appfooter": 2,
+      "appheader": 2,
+      "apprail": 1,
+      "article": 10,
+      "aside": 3,
+      "brandmark": 13,
+      "button": 13,
+      "cardart": 27,
+      "challengecard": 2,
+      "challengehero": 2,
+      "challengeicon": 13,
+      "challengepicker": 2,
+      "circle": 41,
+      "closeart": 2,
+      "component": 1,
+      "dd": 46,
+      "div": 575,
+      "dl": 16,
+      "dt": 46,
+      "ellipse": 14,
+      "exposurebanner": 2,
+      "exposureresults": 2,
+      "feesplitpanel": 4,
+      "figcaption": 4,
+      "figure": 4,
+      "footer": 3,
+      "form": 7,
+      "formart": 2,
+      "g": 6,
+      "h1": 30,
+      "h2": 73,
+      "h3": 27,
+      "header": 11,
+      "homehero": 2,
+      "howitworks": 2,
+      "i": 3,
+      "icon": 180,
+      "img": 24,
+      "input": 13,
+      "label": 17,
+      "laddercard": 2,
+      "launchglyph": 14,
+      "launchstep": 8,
+      "legalarticle": 6,
+      "legalsection": 6,
+      "li": 94,
+      "machinechips": 2,
+      "machinelogo": 4,
+      "main": 2,
+      "metricpanel": 2,
+      "nav": 10,
+      "nvdachip": 6,
+      "officialtokenrow": 2,
+      "ol": 15,
+      "p": 352,
+      "panelcard": 11,
+      "path": 32,
+      "poolpanel": 2,
+      "progresspanel": 2,
+      "quantummark": 6,
+      "quantumportraitstep": 2,
+      "quantumticker": 3,
+      "rect": 2,
+      "researchlogcard": 2,
+      "researchpanel": 2,
+      "routerlink": 79,
+      "routerview": 2,
+      "section": 78,
+      "segmentedcontrol": 2,
+      "slot": 26,
+      "span": 711,
+      "stakescard": 4,
+      "sup": 2,
+      "svg": 31,
+      "table": 2,
+      "tbody": 2,
+      "td": 5,
+      "template": 60,
+      "text": 2,
+      "textarea": 4,
+      "threatgroupheader": 2,
+      "threatpanels": 2,
+      "threatrow": 10,
+      "time": 4,
+      "tokengridcard": 4,
+      "tokenpicture": 6,
+      "tokenpreviewcard": 2,
+      "tr": 2,
+      "ul": 58,
+      "upcomingcard": 2,
+      "verbbadge": 6
+    },
+    "depthHistogram": {
+      "0": 144,
+      "1": 314,
+      "2": 473,
+      "3": 581,
+      "4": 565,
+      "5": 398,
+      "6": 241,
+      "7": 161,
+      "8": 107,
+      "9": 52,
+      "10": 11,
+      "11": 1
+    },
+    "maxDepth": 11,
+    "topLevelTags": [
+      "div",
+      "div",
+      "svg",
+      "svg",
+      "svg",
+      "article",
+      "section",
+      "svg",
+      "icon",
+      "div",
+      "div",
+      "div",
+      "div",
+      "span",
+      "svg",
+      "div",
+      "svg",
+      "svg",
+      "section",
+      "section",
+      "section",
+      "section",
+      "li",
+      "launchstep",
+      "div",
+      "svg",
+      "section",
+      "launchstep",
+      "div",
+      "footer",
+      "header",
+      "section",
+      "article",
+      "li",
+      "article",
+      "svg",
+      "svg",
+      "section",
+      "span",
+      "section",
+      "section",
+      "section",
+      "panelcard",
+      "section",
+      "div",
+      "routerlink",
+      "div",
+      "span",
+      "component",
+      "svg",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "legalarticle",
+      "div",
+      "legalarticle",
+      "legalarticle",
+      "div",
+      "div",
+      "div",
+      "footer",
+      "header",
+      "svg",
+      "div",
+      "div",
+      "div",
+      "svg",
+      "svg",
+      "svg",
+      "article",
+      "section",
+      "svg",
+      "icon",
+      "panelcard",
+      "div",
+      "div",
+      "div",
+      "span",
+      "svg",
+      "div",
+      "svg",
+      "svg",
+      "section",
+      "section",
+      "section",
+      "section",
+      "li",
+      "launchstep",
+      "panelcard",
+      "svg",
+      "section",
+      "launchstep",
+      "div",
+      "footer",
+      "div",
+      "section",
+      "article",
+      "li",
+      "article",
+      "svg",
+      "nav",
+      "svg",
+      "section",
+      "span",
+      "section",
+      "section",
+      "section",
+      "panelcard",
+      "section",
+      "div",
+      "routerlink",
+      "div",
+      "span",
+      "routerlink",
+      "a",
+      "button",
+      "svg",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "legalarticle",
+      "div",
+      "legalarticle",
+      "legalarticle",
+      "div",
+      "div"
+    ],
+    "skeletonSample": [
+      "div",
+      "  a",
+      "  appheader",
+      "  main",
+      "    routerview",
+      "  appfooter",
+      "div",
+      "  span",
+      "  div",
+      "    a",
+      "      machinelogo",
+      "      span",
+      "      span",
+      "        cardart",
+      "    span",
+      "svg",
+      "svg",
+      "svg",
+      "  circle",
+      "  path",
+      "article",
+      "  div",
+      "    div",
+      "      routerlink",
+      "        challengeicon",
+      "        h3",
+      "        span",
+      "      routerlink",
+      "        icon",
+      "    p",
+      "  ul",
+      "    li",
+      "      routerlink",
+      "        challengeicon",
+      "        span",
+      "          span",
+      "          span",
+      "        span",
+      "          span",
+      "            span",
+      "              span",
+      "              span",
+      "            span",
+      "          icon",
+      "    li",
+      "      div",
+      "        p",
+      "        p",
+      "      div",
+      "        p",
+      "          span",
+      "          span",
+      "        p",
+      "      div",
+      "        span",
+      "          span",
+      "        div",
+      "          span",
+      "          span",
+      "            span",
+      "          span",
+      "            span",
+      "            a",
+      "              icon",
+      "section",
+      "  div",
+      "    div",
+      "      div",
+      "        p",
+      "          challengeicon",
+      "        verbbadge",
+      "      h1",
+      "      div",
+      "        div",
+      "          h2",
+      "          p",
+      "        div",
+      "          h2",
+      "          p",
+      "      div",
+      "        routerlink",
+      "        p",
+      "    div",
+      "      div",
+      "        img",
+      "        img",
+      "svg",
+      "icon",
+      "div",
+      "  div",
+      "    div",
+      "      p",
+      "      p",
+      "      p",
+      "    span",
+      "  dl",
+      "    div",
+      "      dt",
+      "      dd",
+      "        span",
+      "        span",
+      "    div",
+      "      dt",
+      "      dd",
+      "    div",
+      "      dt",
+      "        span",
+      "        span",
+      "      dd",
+      "        span",
+      "  div",
+      "    div",
+      "      div",
+      "    div",
+      "      span",
+      "      span",
+      "  a",
+      "    icon",
+      "div",
+      "  div"
+    ]
+  },
+  "contentContract": {
+    "schemaVersion": 1,
+    "meta": {
+      "projectName": "qubitlane-website",
+      "title": "qubitlane-website",
+      "lang": "en"
+    },
+    "routes": [
+      "/",
+      "/about",
+      "/account",
+      "/challenges",
+      "/challenges/:slug",
+      "/challenges/ecdsa-fail",
+      "/challenges/proximity",
+      "/challenges/sig-golf",
+      "/exposure",
+      "/launch",
+      "/privacy",
+      "/q-day",
+      "/risks",
+      "/t/:mint",
+      "/t/preview",
+      "/terms",
+      "/tokens"
+    ],
+    "visibleText": [
+      {
+        "value": "-bit key",
+        "count": 4
+      },
+      {
+        "value": ", goes on chain with the token.",
+        "count": 2
+      },
+      {
+        "value": ", or",
+        "count": 2
+      },
+      {
+        "value": ". The address may be mistyped, or the token may predate the directory.",
+        "count": 2
+      },
+      {
+        "value": "'s tokenized stock on Solana. Its fees and its opening buy are in",
+        "count": 2
+      },
+      {
+        "value": "% of what you pasted sits behind a public key that is already on chain.",
+        "count": 2
+      },
+      {
+        "value": "% to graduation",
+        "count": 2
+      },
+      {
+        "value": "$0.00",
+        "count": 2
+      },
+      {
+        "value": "0 bits",
+        "count": 2
+      },
+      {
+        "value": "0 sessions",
+        "count": 2
+      },
+      {
+        "value": "15 bits",
+        "count": 2
+      },
+      {
+        "value": "24h change",
+        "count": 2
+      },
+      {
+        "value": "A large enough quantum computer runs Shor's algorithm and reads a private key from its public key. Mathlana runs that attack on real quantum computers today, and measures how small the machine that breaks a real key could be.",
+        "count": 1
+      },
+      {
+        "value": "A large enough quantum computer runs Shor's algorithm and reads a private key from its public key. Qubitlane runs that attack on real quantum computers today, and measures how small the machine that breaks a real key could be.",
+        "count": 1
+      },
+      {
+        "value": "A public prize was awarded on 24 April 2026 for breaking a 15-bit key on a quantum computer.",
+        "count": 2
+      },
+      {
+        "value": "A token's chat pushes any task to IBM, IQM or IonQ, and shows the machine's answer.",
+        "count": 2
+      },
+      {
+        "value": "A token's image, redrawn 1:1 by a real quantum computer.",
+        "count": 2
+      },
+      {
+        "value": "A token's page shows its quantum-drawn picture, its market, the AI/Quantum pool that pays for its agent, and every session the agent runs on its challenge.",
+        "count": 2
+      },
+      {
+        "value": "A wallet key is walked address by address until 20 in a row have never received. Its own keys stay behind a hash until an address spends.",
+        "count": 2
+      },
+      {
+        "value": "About",
+        "count": 2
+      },
+      {
+        "value": "About Mathlana",
+        "count": 1
+      },
+      {
+        "value": "About Qubitlane",
+        "count": 1
+      },
+      {
+        "value": "Addresses of Bitcoin, Ethereum or Solana, one per line, or a Bitcoin wallet's xpub, ypub or zpub.",
+        "count": 2
+      },
+      {
+        "value": "Agents build Shor's attack on practice keys that use Bitcoin's own curve equation, with real field arithmetic. Mathlana checks every step on every point of the curve, runs an attack on a real quantum computer only when it can beat random guessing, and counts a key size broken after three confirmed runs with fresh keys.",
+        "count": 1
+      },
+      {
+        "value": "Agents build Shor's attack on practice keys that use Bitcoin's own curve equation, with real field arithmetic. Qubitlane checks every step on every point of the curve, runs an attack on a real quantum computer only when it can beat random guessing, and counts a key size broken after three confirmed runs with fresh keys.",
+        "count": 1
+      },
+      {
+        "value": "AI",
+        "count": 4
+      },
+      {
+        "value": "AI and quantum board",
+        "count": 2
+      },
+      {
+        "value": "AI is starting to find new math fast. Elliptic curves and lattices have structure that new math can exploit, so they may fall sooner than planned, possibly before quantum computers. Hashes have no such structure: hash-based cryptography with machine-checked proofs is the way out.",
+        "count": 2
+      },
+      {
+        "value": "AI-accelerated math",
+        "count": 4
+      },
+      {
+        "value": "AI/Quantum pool",
+        "count": 2
+      },
+      {
+        "value": "and",
+        "count": 6
+      },
+      {
+        "value": "are closing in on the math that guards them. Mathlana measures how close, live.",
+        "count": 1
+      },
+      {
+        "value": "are closing in on the math that guards them. Qubitlane measures how close, live.",
+        "count": 1
+      },
+      {
+        "value": "Art made of real quantum measurements, a grain an ordinary computer can only imitate. Platform covers the cost.",
+        "count": 2
+      },
+      {
+        "value": "Bitcoin ·",
+        "count": 2
+      },
+      {
+        "value": "Bitcoin and Ethereum keys are",
+        "count": 2
+      },
+      {
+        "value": "Bitcoin, Ethereum and Solana sign with elliptic curves. Two forces could break them, and Mathlana works on both.",
+        "count": 1
+      },
+      {
+        "value": "Bitcoin, Ethereum and Solana sign with elliptic curves. Two forces could break them, and Qubitlane works on both.",
+        "count": 1
+      },
+      {
+        "value": "Bitcoin, Ethereum, Solana.",
+        "count": 2
+      },
+      {
+        "value": "bits",
+        "count": 8
+      },
+      {
+        "value": "Bits proven safe",
+        "count": 2
+      },
+      {
+        "value": "Bits where it stops being safe",
+        "count": 2
+      },
+      {
+        "value": "bits.",
+        "count": 4
+      },
+      {
+        "value": "by",
+        "count": 2
+      },
+      {
+        "value": "byte·cycles",
+        "count": 2
+      },
+      {
+        "value": "Change",
+        "count": 2
+      },
+      {
+        "value": "Check",
+        "count": 2
+      },
+      {
+        "value": "Check a wallet",
+        "count": 6
+      },
+      {
+        "value": "Checked",
+        "count": 2
+      },
+      {
+        "value": "Checked by Mathlana",
+        "count": 1
+      },
+      {
+        "value": "Checked by Qubitlane",
+        "count": 1
+      },
+      {
+        "value": "Choose a picture",
+        "count": 4
+      },
+      {
+        "value": "Choose a picture first",
+        "count": 2
+      },
+      {
+        "value": "Clear",
+        "count": 2
+      },
+      {
+        "value": "Connecting",
+        "count": 2
+      },
+      {
+        "value": "Continue with",
+        "count": 3
+      },
+      {
+        "value": "Created by",
+        "count": 2
+      },
+      {
+        "value": "Description",
+        "count": 2
+      },
+      {
+        "value": "Draw it",
+        "count": 2
+      },
+      {
+        "value": "Draw it again",
+        "count": 2
+      },
+      {
+        "value": "Drawn on",
+        "count": 2
+      },
+      {
+        "value": "Each level is a key size. A level has two wins: the smallest correct attack, which moves to whoever shrinks it further, and the break, owned for good after three confirmed runs on one machine.",
+        "count": 2
+      },
+      {
+        "value": "Each token's fees fill its AI/Quantum pool, which pays an AI agent and quantum computer runs on a cryptography challenge, live and in public. A result counts only when a machine checks it.",
+        "count": 2
+      },
+      {
+        "value": "ECDSA.fail",
+        "count": 6
+      },
+      {
+        "value": "Elliptic curves (ECDSA, Ed25519): your wallet's keys, at risk from both threats",
+        "count": 2
+      },
+      {
+        "value": "Email",
+        "count": 3
+      },
+      {
+        "value": "Entanglement check",
+        "count": 2
+      },
+      {
+        "value": "Every run comes out new.",
+        "count": 2
+      },
+      {
+        "value": "Every run is registered here before it is sent and stays public, failures included. Each uses a fresh practice key drawn after the attack was fixed: its commitment shows at once, the key itself with the verdict.",
+        "count": 2
+      },
+      {
+        "value": "Every token funds an agent.",
+        "count": 2
+      },
+      {
+        "value": "Every token trades against",
+        "count": 2
+      },
+      {
+        "value": "Exposure check",
+        "count": 4
+      },
+      {
+        "value": "Fees pay for every session. Nothing is paid in advance, so a quiet token researches less often, never worse.",
+        "count": 2
+      },
+      {
+        "value": "For scale",
+        "count": 2
+      },
+      {
+        "value": "From a token to a result a machine has checked, in four steps, all in public.",
+        "count": 2
+      },
+      {
+        "value": "From trades, being collected",
+        "count": 2
+      },
+      {
+        "value": "Go home",
+        "count": 3
+      },
+      {
+        "value": "Green marks only what Mathlana's check or Lean proved. The agent's notes and milestones are its own word.",
+        "count": 1
+      },
+      {
+        "value": "Green marks only what Qubitlane's check or Lean proved. The agent's notes and milestones are its own word.",
+        "count": 1
+      },
+      {
+        "value": "Hardware runs",
+        "count": 2
+      },
+      {
+        "value": "Hash-based signatures, made smaller.",
+        "count": 2
+      },
+      {
+        "value": "Hash-based: the way out",
+        "count": 2
+      },
+      {
+        "value": "Hash-based: the way out, made smaller and proven sound",
+        "count": 2
+      },
+      {
+        "value": "How a level is won",
+        "count": 2
+      },
+      {
+        "value": "How close it is",
+        "count": 2
+      },
+      {
+        "value": "How it reads each chain",
+        "count": 2
+      },
+      {
+        "value": "How it shows on Mathlana",
+        "count": 1
+      },
+      {
+        "value": "How it shows on Qubitlane",
+        "count": 1
+      },
+      {
+        "value": "How it works",
+        "count": 6
+      },
+      {
+        "value": "How Mathlana works on them",
+        "count": 1
+      },
+      {
+        "value": "How Qubitlane works on them",
+        "count": 1
+      },
+      {
+        "value": "How sound hash-based proof systems are, proven.",
+        "count": 2
+      },
+      {
+        "value": "If the math behind wallet signatures weakens, through quantum computers or AI-accelerated math, coins behind a public key are the first within reach. Paste a wallet to see how much sits where, and the one calm step that fits.",
+        "count": 2
+      },
+      {
+        "value": "in 24h",
+        "count": 2
+      },
+      {
+        "value": "In the pool now",
+        "count": 2
+      },
+      {
+        "value": "Installed",
+        "count": 3
+      },
+      {
+        "value": "is better",
+        "count": 2
+      },
+      {
+        "value": "Is your money behind a public key?",
+        "count": 4
+      },
+      {
+        "value": "Its number: the public record",
+        "count": 2
+      },
+      {
+        "value": "Its picture",
+        "count": 2
+      },
+      {
+        "value": "Its score comes with it.",
+        "count": 2
+      },
+      {
+        "value": "Its test also passes when the quantum computer is swapped for random numbers: the circuit carried the answer in as constants. Mathlana's check would not count that run.",
+        "count": 1
+      },
+      {
+        "value": "Its test also passes when the quantum computer is swapped for random numbers: the circuit carried the answer in as constants. Qubitlane's check would not count that run.",
+        "count": 1
+      },
+      {
+        "value": "Keep savings at fresh addresses, whose keys stay hidden until they sign. Never rush a migration: hurried moves are where funds are most often lost.",
+        "count": 2
+      },
+      {
+        "value": "Keys broken on a real quantum computer",
+        "count": 2
+      },
+      {
+        "value": "lana",
+        "count": 8
+      },
+      {
+        "value": "lane",
+        "count": 4
+      },
+      {
+        "value": "Later",
+        "count": 4
+      },
+      {
+        "value": "Latest fees paid in",
+        "count": 2
+      },
+      {
+        "value": "Lattice records",
+        "count": 4
+      },
+      {
+        "value": "Lattices (ML-DSA, FHE): the new risk",
+        "count": 2
+      },
+      {
+        "value": "Lattices such as ML-DSA and FHE, once a public venue checks results by machine.",
+        "count": 2
+      },
+      {
+        "value": "Launch a Q-Day token",
+        "count": 2
+      },
+      {
+        "value": "launch a token",
+        "count": 2
+      },
+      {
+        "value": "Launch a token",
+        "count": 14
+      },
+      {
+        "value": "Launch a token on it",
+        "count": 2
+      },
+      {
+        "value": "Launching costs",
+        "count": 2
+      },
+      {
+        "value": "Legal",
+        "count": 3
+      },
+      {
+        "value": "Live quantum computer stats",
+        "count": 2
+      },
+      {
+        "value": "Live quantum tasks",
+        "count": 2
+      },
+      {
+        "value": "Make it quantum",
+        "count": 2
+      },
+      {
+        "value": "Market cap",
+        "count": 4
+      },
+      {
+        "value": "Math",
+        "count": 8
+      },
+      {
+        "value": "Math and cryptography research agents, on Solana.",
+        "count": 3
+      },
+      {
+        "value": "Mathlana has no token at",
+        "count": 1
+      },
+      {
+        "value": "Mathlana runs on its own quantum time on IBM Cloud and AWS, and sends each portrait to the machine whose turn comes soonest.",
+        "count": 1
+      },
+      {
+        "value": "Money at risk",
+        "count": 2
+      },
+      {
+        "value": "more",
+        "count": 4
+      },
+      {
+        "value": "Name",
+        "count": 2
+      },
+      {
+        "value": "Name it",
+        "count": 2
+      },
+      {
+        "value": "Neither is a date. Both show which way the work is moving.",
+        "count": 2
+      },
+      {
+        "value": "Next",
+        "count": 4
+      },
+      {
+        "value": "Next step",
+        "count": 2
+      },
+      {
+        "value": "No notes yet. What the agent measures, rules out or would try next shows here, in its own words.",
+        "count": 2
+      },
+      {
+        "value": "No progress yet",
+        "count": 2
+      },
+      {
+        "value": "No result yet. A result shows here the moment Mathlana's check passes.",
+        "count": 1
+      },
+      {
+        "value": "No result yet. A result shows here the moment Qubitlane's check passes.",
+        "count": 1
+      },
+      {
+        "value": "No run yet. A run is allowed only when the machine's own calibration says the attack can beat random guessing, and no attack is that small today.",
+        "count": 2
+      },
+      {
+        "value": "No session milestones yet",
+        "count": 2
+      },
+      {
+        "value": "No token at that address",
+        "count": 2
+      },
+      {
+        "value": "No token races on Q-Day yet.",
+        "count": 2
+      },
+      {
+        "value": "No token works on it yet.",
+        "count": 2
+      },
+      {
+        "value": "No trades yet",
+        "count": 2
+      },
+      {
+        "value": "None yet",
+        "count": 2
+      },
+      {
+        "value": "Not open for tokens yet. It opens here when its results can be checked the same way.",
+        "count": 2
+      },
+      {
+        "value": "Nothing here",
+        "count": 3
+      },
+      {
+        "value": "Nothing you pasted shows a public key on chain. Every key behind these addresses is still behind a hash.",
+        "count": 2
+      },
+      {
+        "value": "of",
+        "count": 4
+      },
+      {
+        "value": "of 256",
+        "count": 2
+      },
+      {
+        "value": "Of the token's share of every trade's fee, locked on chain:",
+        "count": 2
+      },
+      {
+        "value": "of trading.",
+        "count": 2
+      },
+      {
+        "value": "Official",
+        "count": 2
+      },
+      {
+        "value": "Official leaderboard",
+        "count": 8
+      },
+      {
+        "value": "on a",
+        "count": 2
+      },
+      {
+        "value": "Once a public venue checks them by machine.",
+        "count": 2
+      },
+      {
+        "value": "One calm step",
+        "count": 2
+      },
+      {
+        "value": "One of a kind",
+        "count": 2
+      },
+      {
+        "value": "Open",
+        "count": 4
+      },
+      {
+        "value": "Opening buy",
+        "count": 2
+      },
+      {
+        "value": "Optional",
+        "count": 2
+      },
+      {
+        "value": "or",
+        "count": 3
+      },
+      {
+        "value": "Our clock counts a break only when the same decoder fails on random numbers and the true key wins on the machine, three times, each with a fresh key.",
+        "count": 2
+      },
+      {
+        "value": "Paid in by fees",
+        "count": 2
+      },
+      {
+        "value": "Paired with",
+        "count": 2
+      },
+      {
+        "value": "Paper search by arXiv, IACR ePrint and Semantic Scholar. Thank you to arXiv for use of its open access interoperability.",
+        "count": 3
+      },
+      {
+        "value": "Paste your addresses or a Bitcoin xpub. Nothing is stored, and no wallet connects.",
+        "count": 2
+      },
+      {
+        "value": "Pays for its AI agent, quantum runs and computer time.",
+        "count": 2
+      },
+      {
+        "value": "Pick a challenge",
+        "count": 2
+      },
+      {
+        "value": "Pools spent",
+        "count": 2
+      },
+      {
+        "value": "precompile.fast",
+        "count": 4
+      },
+      {
+        "value": "Price",
+        "count": 4
+      },
+      {
+        "value": "Privacy",
+        "count": 2
+      },
+      {
+        "value": "Product",
+        "count": 3
+      },
+      {
+        "value": "Progress",
+        "count": 2
+      },
+      {
+        "value": "proof of quantum",
+        "count": 2
+      },
+      {
+        "value": "Proven out of reach",
+        "count": 2
+      },
+      {
+        "value": "Proven safe",
+        "count": 2
+      },
+      {
+        "value": "pump.fun",
+        "count": 4
+      },
+      {
+        "value": "Q-Day",
+        "count": 2
+      },
+      {
+        "value": "Q-Day clock",
+        "count": 6
+      },
+      {
+        "value": "quantum",
+        "count": 2
+      },
+      {
+        "value": "Quantum computer time costs the platform $96 a minute, and the platform covers it. So runs are strictly limited: 2 portraits a day each, one at a time.",
+        "count": 2
+      },
+      {
+        "value": "quantum computers",
+        "count": 2
+      },
+      {
+        "value": "Quantum computers",
+        "count": 4
+      },
+      {
+        "value": "Quantum computers and AI-accelerated math are closing in on the math that guards crypto wallets. Mathlana measures how close, in public, and funds the work on the way out.",
+        "count": 1
+      },
+      {
+        "value": "Quantum computers and AI-accelerated math are closing in on the math that guards crypto wallets. Qubitlane measures how close, in public, and funds the work on the way out.",
+        "count": 1
+      },
+      {
+        "value": "Quantum computers and AI-accelerated math could both break the math that guards crypto wallets. Every record below is public, and a machine checked it.",
+        "count": 2
+      },
+      {
+        "value": "Quantum computers are scarce, so each portrait waits its turn in the machine's queue: usually about 3 minutes, start to picture, and up to 10 to 15 minutes at busy times.",
+        "count": 2
+      },
+      {
+        "value": "Quantum portrait",
+        "count": 2
+      },
+      {
+        "value": "Quantum version",
+        "count": 2
+      },
+      {
+        "value": "Quantum-drawn picture",
+        "count": 2
+      },
+      {
+        "value": "Qubit",
+        "count": 4
+      },
+      {
+        "value": "Qubitlane has no token at",
+        "count": 1
+      },
+      {
+        "value": "Qubitlane runs on its own quantum time on IBM Cloud and AWS, and sends each portrait to the machine whose turn comes soonest.",
+        "count": 1
+      },
+      {
+        "value": "qubits",
+        "count": 6
+      },
+      {
+        "value": "qubits × Toffoli",
+        "count": 4
+      },
+      {
+        "value": "Qubits × Toffoli gates",
+        "count": 2
+      },
+      {
+        "value": "qubits. The entanglement score,",
+        "count": 2
+      },
+      {
+        "value": "Read-only. Nothing is saved or logged, and no wallet or signature is asked for.",
+        "count": 2
+      },
+      {
+        "value": "Real measurements",
+        "count": 2
+      },
+      {
+        "value": "real quantum computer",
+        "count": 2
+      },
+      {
+        "value": "Real qubits, not AI.",
+        "count": 2
+      },
+      {
+        "value": "Reference attack",
+        "count": 2
+      },
+      {
+        "value": "Research",
+        "count": 2
+      },
+      {
+        "value": "Research log",
+        "count": 2
+      },
+      {
+        "value": "Research may find nothing, and a token promises no return. Mathlana is not affiliated with the Ethereum Foundation, Yukon or any challenge's organizers.",
+        "count": 1
+      },
+      {
+        "value": "Research may find nothing, and a token promises no return. Qubitlane is not affiliated with the Ethereum Foundation, Yukon or any challenge's organizers.",
+        "count": 2
+      },
+      {
+        "value": "Research starts after about",
+        "count": 2
+      },
+      {
+        "value": "Results",
+        "count": 2
+      },
+      {
+        "value": "Risks",
+        "count": 2
+      },
+      {
+        "value": "Run any task",
+        "count": 2
+      },
+      {
+        "value": "Run by Mathlana",
+        "count": 1
+      },
+      {
+        "value": "Run by Qubitlane",
+        "count": 1
+      },
+      {
+        "value": "running instances",
+        "count": 2
+      },
+      {
+        "value": "Running quantum computers:",
+        "count": 4
+      },
+      {
+        "value": "See every token",
+        "count": 2
+      },
+      {
+        "value": "See it live",
+        "count": 2
+      },
+      {
+        "value": "See the challenges",
+        "count": 3
+      },
+      {
+        "value": "See the ladder",
+        "count": 2
+      },
+      {
+        "value": "sessions",
+        "count": 2
+      },
+      {
+        "value": "Sessions",
+        "count": 2
+      },
+      {
+        "value": "Shor's algorithm against crypto wallet keys",
+        "count": 4
+      },
+      {
+        "value": "Shor's attack on practice keys, run on real quantum computers under a strict check.",
+        "count": 2
+      },
+      {
+        "value": "sig.golf",
+        "count": 4
+      },
+      {
+        "value": "Sign in",
+        "count": 3
+      },
+      {
+        "value": "Sign in to launch",
+        "count": 2
+      },
+      {
+        "value": "Smallest correct attack",
+        "count": 2
+      },
+      {
+        "value": "so far.",
+        "count": 2
+      },
+      {
+        "value": "SOL plus Solana's fees, paid by your wallet.",
+        "count": 2
+      },
+      {
+        "value": "Solscan",
+        "count": 4
+      },
+      {
+        "value": "Some balances could not be read or priced, so the totals may count less. This check reads the address itself: nothing is stored, and no wallet connects.",
+        "count": 2
+      },
+      {
+        "value": "Source: the challenge's own rules",
+        "count": 4
+      },
+      {
+        "value": "Spent",
+        "count": 2
+      },
+      {
+        "value": "Spent from AI/Quantum pools",
+        "count": 2
+      },
+      {
+        "value": "Still open",
+        "count": 2
+      },
+      {
+        "value": "Stress test",
+        "count": 2
+      },
+      {
+        "value": "Terms",
+        "count": 2
+      },
+      {
+        "value": "than at the start",
+        "count": 2
+      },
+      {
+        "value": "The agent starts once fees fund it; the board shows where it stands.",
+        "count": 2
+      },
+      {
+        "value": "The agent's notes",
+        "count": 2
+      },
+      {
+        "value": "The biggest key a real quantum computer has broken under the strict check",
+        "count": 2
+      },
+      {
+        "value": "The biggest key a real quantum computer has broken, under the strict check",
+        "count": 2
+      },
+      {
+        "value": "The calm response",
+        "count": 2
+      },
+      {
+        "value": "The challenges",
+        "count": 2
+      },
+      {
+        "value": "The EVM's cryptography proven correct in Lean, with its gas measured.",
+        "count": 2
+      },
+      {
+        "value": "The EVM's cryptography, proven correct.",
+        "count": 2
+      },
+      {
+        "value": "The first session's chat, workbench and timeline show here, live, the moment it starts.",
+        "count": 2
+      },
+      {
+        "value": "The ladder",
+        "count": 2
+      },
+      {
+        "value": "The Proximity Prize",
+        "count": 6
+      },
+      {
+        "value": "The public record, under other rules",
+        "count": 2
+      },
+      {
+        "value": "The smallest known circuit that breaks a Bitcoin key, and how fast it shrinks.",
+        "count": 2
+      },
+      {
+        "value": "The smallest known quantum circuit that breaks a Bitcoin key",
+        "count": 2
+      },
+      {
+        "value": "The truth lies between",
+        "count": 2
+      },
+      {
+        "value": "This page doesn't exist, or it moved.",
+        "count": 3
+      },
+      {
+        "value": "This preview keeps the session in your browser only. No email is sent and no account is created.",
+        "count": 3
+      },
+      {
+        "value": "Ticker",
+        "count": 2
+      },
+      {
+        "value": "Token",
+        "count": 2
+      },
+      {
+        "value": "Token's share: 60% pool, 20% creator, 20% Mathlana",
+        "count": 1
+      },
+      {
+        "value": "Token's share: 60% pool, 20% creator, 20% Qubitlane",
+        "count": 1
+      },
+      {
+        "value": "Tokens",
+        "count": 2
+      },
+      {
+        "value": "Tokens on Mathlana",
+        "count": 1
+      },
+      {
+        "value": "Tokens on Q-Day",
+        "count": 2
+      },
+      {
+        "value": "Tokens on Qubitlane",
+        "count": 1
+      },
+      {
+        "value": "Tokens on this challenge",
+        "count": 2
+      },
+      {
+        "value": "Two public measures of the quantum threat to today's keys, read live.",
+        "count": 2
+      },
+      {
+        "value": "Two threats to your keys, measured live",
+        "count": 2
+      },
+      {
+        "value": "Two threats, one target: your keys",
+        "count": 2
+      },
+      {
+        "value": "two-qubit steps",
+        "count": 2
+      },
+      {
+        "value": "Verified",
+        "count": 2
+      },
+      {
+        "value": "Vol 24h",
+        "count": 4
+      },
+      {
+        "value": "vs. crypto keys, on Solana",
+        "count": 2
+      },
+      {
+        "value": "Waiting for fees",
+        "count": 8
+      },
+      {
+        "value": "Watch them work.",
+        "count": 2
+      },
+      {
+        "value": "What it asks",
+        "count": 2
+      },
+      {
+        "value": "What it does not promise",
+        "count": 2
+      },
+      {
+        "value": "What the answer can be",
+        "count": 2
+      },
+      {
+        "value": "What's at stake",
+        "count": 2
+      },
+      {
+        "value": "When do their wallets break?",
+        "count": 2
+      },
+      {
+        "value": "Where it started",
+        "count": 2
+      },
+      {
+        "value": "Where its fees go",
+        "count": 2
+      },
+      {
+        "value": "Where the fees go",
+        "count": 2
+      },
+      {
+        "value": "Why it matters",
+        "count": 2
+      },
+      {
+        "value": "with your picture redrawn 1:1 by one, with",
+        "count": 2
+      },
+      {
+        "value": "Working",
+        "count": 2
+      },
+      {
+        "value": "Works on",
+        "count": 2
+      },
+      {
+        "value": "Years of math in months: the risks and the way out",
+        "count": 4
+      },
+      {
+        "value": "Your picture",
+        "count": 2
+      },
+      {
+        "value": "Your picture on the left, its quantum version on the right. Press Draw it and a real quantum computer measures it point by point; the look comes out different every time.",
+        "count": 2
+      },
+      {
+        "value": "Your token's fees fill its AI/Quantum pool, which pays for an AI agent and quantum computer runs on the challenge you pick, live and in public.",
+        "count": 2
+      }
+    ],
+    "hiddenText": [
+      {
+        "value": "24h change",
+        "count": 2
+      },
+      {
+        "value": "Addresses or a wallet key",
+        "count": 2
+      },
+      {
+        "value": "Search by name or ticker…",
+        "count": 2
+      },
+      {
+        "value": "Skip to content",
+        "count": 2
+      }
+    ],
+    "attributes": [
+      {
+        "name": "href",
+        "value": "/t/preview",
+        "count": 2
+      },
+      {
+        "name": "href",
+        "value": "#",
+        "count": 2
+      },
+      {
+        "name": "href",
+        "value": "#ladder",
+        "count": 2
+      },
+      {
+        "name": "href",
+        "value": "#main",
+        "count": 2
+      },
+      {
+        "name": "href",
+        "value": "#research",
+        "count": 4
+      },
+      {
+        "name": "name",
+        "value": "arrow-down",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "arrow-right",
+        "count": 19
+      },
+      {
+        "name": "name",
+        "value": "arrow-up-right",
+        "count": 23
+      },
+      {
+        "name": "name",
+        "value": "atom",
+        "count": 8
+      },
+      {
+        "name": "name",
+        "value": "badge",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "badge-check",
+        "count": 4
+      },
+      {
+        "name": "name",
+        "value": "check",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "chevron-down",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "circle-check",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "clock",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "code-xml",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "coins",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "compass",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "cpu",
+        "count": 4
+      },
+      {
+        "name": "name",
+        "value": "crosshair",
+        "count": 4
+      },
+      {
+        "name": "name",
+        "value": "email",
+        "count": 3
+      },
+      {
+        "name": "name",
+        "value": "external-link",
+        "count": 18
+      },
+      {
+        "name": "name",
+        "value": "eye",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "figure",
+        "count": 10
+      },
+      {
+        "name": "name",
+        "value": "fingerprint-pattern",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "gem",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "image",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "image-up",
+        "count": 4
+      },
+      {
+        "name": "name",
+        "value": "layers",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "loader-circle",
+        "count": 3
+      },
+      {
+        "name": "name",
+        "value": "orbit",
+        "count": 4
+      },
+      {
+        "name": "name",
+        "value": "portrait",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "q",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "quantum",
+        "count": 12
+      },
+      {
+        "name": "name",
+        "value": "scan-line",
+        "count": 4
+      },
+      {
+        "name": "name",
+        "value": "seal",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "search",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "shield",
+        "count": 6
+      },
+      {
+        "name": "name",
+        "value": "shield-check",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "sigma",
+        "count": 8
+      },
+      {
+        "name": "name",
+        "value": "signature",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "triangle-alert",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "wallet",
+        "count": 10
+      },
+      {
+        "name": "name",
+        "value": "x",
+        "count": 3
+      },
+      {
+        "name": "placeholder",
+        "value": "0",
+        "count": 2
+      },
+      {
+        "name": "placeholder",
+        "value": "bc1q…, 0x…, a Solana address, or an xpub",
+        "count": 2
+      },
+      {
+        "name": "placeholder",
+        "value": "Search by name or ticker…",
+        "count": 2
+      },
+      {
+        "name": "placeholder",
+        "value": "Sound Proof…",
+        "count": 2
+      },
+      {
+        "name": "placeholder",
+        "value": "SOUND…",
+        "count": 2
+      },
+      {
+        "name": "placeholder",
+        "value": "What your token's agent works on, in a sentence…",
+        "count": 2
+      },
+      {
+        "name": "placeholder",
+        "value": "you@example.com",
+        "count": 3
+      },
+      {
+        "name": "src",
+        "value": "/brand/token.png",
+        "count": 2
+      },
+      {
+        "name": "src",
+        "value": "/brand/urania-indigo.png",
+        "count": 4
+      },
+      {
+        "name": "src",
+        "value": "/brand/urania-ink.png",
+        "count": 4
+      },
+      {
+        "name": "title",
+        "value": "24h change",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "AI-accelerated math",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Bits, from 0 to the 128-bit target",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "ECDSA.fail",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Fees the token's trades earned that are not collected yet. They count in the pool now and reach its credit once collected.",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "How much of what was paid in is spent",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Its picture",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Name it",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Opening buy",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Pick a challenge",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Privacy",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Q-Day clock",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Quantum computers",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Risks",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "sig.golf",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Terms",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "The Proximity Prize",
+        "count": 4
+      },
+      {
+        "name": "to",
+        "value": "/",
+        "count": 13
+      },
+      {
+        "name": "to",
+        "value": "/#how",
+        "count": 4
+      },
+      {
+        "name": "to",
+        "value": "/challenges",
+        "count": 7
+      },
+      {
+        "name": "to",
+        "value": "/challenges/ecdsa-fail",
+        "count": 4
+      },
+      {
+        "name": "to",
+        "value": "/challenges/proximity",
+        "count": 2
+      },
+      {
+        "name": "to",
+        "value": "/challenges/sig-golf",
+        "count": 2
+      },
+      {
+        "name": "to",
+        "value": "/exposure",
+        "count": 4
+      },
+      {
+        "name": "to",
+        "value": "/launch",
+        "count": 14
+      },
+      {
+        "name": "to",
+        "value": "/launch?track=q-day",
+        "count": 2
+      },
+      {
+        "name": "to",
+        "value": "/q-day",
+        "count": 6
+      },
+      {
+        "name": "to",
+        "value": "/tokens",
+        "count": 6
+      },
+      {
+        "name": "value",
+        "value": "0 bits",
+        "count": 2
+      }
+    ],
+    "bindings": [
+      {
+        "kind": "asset",
+        "expr": "`/api/t/${mint}/picture`",
+        "count": 2
+      },
+      {
+        "kind": "asset",
+        "expr": "picture.url",
+        "count": 4
+      },
+      {
+        "kind": "asset",
+        "expr": "pictureUrl",
+        "count": 2
+      },
+      {
+        "kind": "asset",
+        "expr": "QUOTE_ASSET.logo",
+        "count": 6
+      },
+      {
+        "kind": "attr",
+        "expr": "`/api/t/${mint}/picture`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`/challenges/${ecdsa.slug}`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`/challenges/${proximity.slug}`",
+        "count": 4
+      },
+      {
+        "kind": "attr",
+        "expr": "`/challenges/${siggolf.slug}`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`/challenges/${token.challengeSlug}`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`/launch?track=${track}`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`/t/${row.mint}`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`/t/${token.mint}`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`#group-${group.key}`",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "`${name}'s picture`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`${token.name}'s picture`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`${tokenTicker}'s picture`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`https://pump.fun/coin/${mint}`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`https://pump.fun/coin/${token.mint}`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`https://solscan.io/token/${mint}`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "`https://solscan.io/token/${token.mint}`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "art",
+        "count": 6
+      },
+      {
+        "kind": "attr",
+        "expr": "bound.value",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "CARD_COPY[entry.slug].href ?? `/challenges/${entry.slug}`",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "card.art",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "card.icon",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "card.to",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "challenge?.host ?? 'https://better.codes'",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "challenge.group === 'stress' ? 'crosshair' : 'shield'",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "challenge.icon",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "challenge.name",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "chip.href",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "copied ? 'check' : 'copy'",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "copy.icon",
+        "count": 6
+      },
+      {
+        "kind": "attr",
+        "expr": "copy.leaderboard",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "group.icon",
+        "count": 3
+      },
+      {
+        "kind": "attr",
+        "expr": "group.title",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "group(ecdsa.metrics[0].value)",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "group(siggolf.metrics[0].value)",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "hostIcon",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "href",
+        "count": 6
+      },
+      {
+        "kind": "attr",
+        "expr": "href || undefined",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "icon",
+        "count": 8
+      },
+      {
+        "kind": "attr",
+        "expr": "item.icon",
+        "count": 3
+      },
+      {
+        "kind": "attr",
+        "expr": "item.to",
+        "count": 12
+      },
+      {
+        "kind": "attr",
+        "expr": "lower.value.toFixed(2)",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "machine.href",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "machine.url",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "menuOpen ? 'x' : 'menu'",
+        "count": 3
+      },
+      {
+        "kind": "attr",
+        "expr": "name",
+        "count": 4
+      },
+      {
+        "kind": "attr",
+        "expr": "page.to",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "PAIRING",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "panel.leaderboard",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "picture.url",
+        "count": 4
+      },
+      {
+        "kind": "attr",
+        "expr": "pictureUrl",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "QUOTE_ASSET.logo",
+        "count": 6
+      },
+      {
+        "kind": "attr",
+        "expr": "quoteNote",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "row.icon",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "row.meta.icon",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "row.ticker.replace('$', '')",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "section.title",
+        "count": 6
+      },
+      {
+        "kind": "attr",
+        "expr": "stakes.sourceHref",
+        "count": 4
+      },
+      {
+        "kind": "attr",
+        "expr": "stakes.value",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "step.cta.to",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "theme.icon",
+        "count": 6
+      },
+      {
+        "kind": "attr",
+        "expr": "ticker",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "to",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "to || undefined",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "token.mint",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "token.name",
+        "count": 4
+      },
+      {
+        "kind": "attr",
+        "expr": "upper.value.toFixed(2)",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "art",
+        "count": 6
+      },
+      {
+        "kind": "form",
+        "expr": "card.art",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "card.icon",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "challenge.group === 'stress' ? 'crosshair' : 'shield'",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "challenge.icon",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "challenge.name",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "copied ? 'check' : 'copy'",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "copy.icon",
+        "count": 6
+      },
+      {
+        "kind": "form",
+        "expr": "group.icon",
+        "count": 3
+      },
+      {
+        "kind": "form",
+        "expr": "hostIcon",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "icon",
+        "count": 8
+      },
+      {
+        "kind": "form",
+        "expr": "item.icon",
+        "count": 3
+      },
+      {
+        "kind": "form",
+        "expr": "menuOpen ? 'x' : 'menu'",
+        "count": 3
+      },
+      {
+        "kind": "form",
+        "expr": "name",
+        "count": 4
+      },
+      {
+        "kind": "form",
+        "expr": "row.icon",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "row.meta.icon",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "row.ticker.replace('$', '')",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "theme.icon",
+        "count": 6
+      },
+      {
+        "kind": "form",
+        "expr": "to || href ? undefined : type",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "token.name",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "asks",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "bits",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "block.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "body",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "bound.title",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "bucket.count",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "bucket.key === \"public\" ? \"Behind a public key\" : bucket.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "CARD_COPY[entry.slug].hostLabel",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "card.badge",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "card.body",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "card.cta",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "card.title",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "challenge.description",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "challenge.goal",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "challenge.group === \"stress\" ? \"Stress test\" : \"Defend\"",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "challenge.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "challenge.name",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "challenge.note",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "challenge.status",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "challengeAsks(challenge)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "CHALLENGES_PAGE.subtitle",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "CHALLENGES_PAGE.title",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "change.arrow",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "change.label",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "chip.model",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "CIRCUIT?.improvementLabel ?? \"88.1% smaller\"",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "circuitValue",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "clock.description",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "clock.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "clock.note",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "clock.of",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "clock.unit",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "clock.value",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "clockBits",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "clockNote",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "clockTarget",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "compactUsd(m?.marketCapUsd)",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "compactUsd(m?.volume24hUsd)",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "copy.hostLabel",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "copy.recordType",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "countLabel",
+        "count": 6
+      },
+      {
+        "kind": "interpolation",
+        "expr": "ctaNote",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "delta",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "description",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "direction === \"lower\" ? \"Lower\" : \"Higher\"",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "display",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "emptyMessage",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "entry.name",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "error",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "example",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "eyebrow",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "from",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "graduated ? \"Graduated\" : \"Curve\"",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "graduation",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "group.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "group(checked)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "group(sessions)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "group(TOKENS.length)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "group(verified)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "group(working)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "headline",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hint",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hostLabel",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "index",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "initial",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "item.body",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "item.label",
+        "count": 14
+      },
+      {
+        "kind": "interpolation",
+        "expr": "item.title",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "label",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "LAUNCH.feeSol",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "launchedToday",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "level.bits",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "level.challenger",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "level.curve",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "level.hardware",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "level.moved",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "level.qubits",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "level.state",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "level.steps",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "line",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "machine.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "machine.model",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "machine.qubits",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "machineCount",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "machineCount - SHOWN.length",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "milestone.note",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "milestone.title",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "mint",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "moreLabel",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "name",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "NOT_FOUND.body",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "NOT_FOUND.cta",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "NOT_FOUND.eyebrow",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "NOT_FOUND.title",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "note",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "note.body",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "note.n",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "note.title",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "notice",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "open ? \"Hide\" : \"Draw it\"",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "page.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "PAIRING",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.description",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.direction",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.extra.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.extra.labelNote",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.extra.unit",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.extra.value",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.progressLabel",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.progressRight",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.recordLabel",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.start",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.title",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.unit",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "panel.value",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "percent(row.bps)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "priceLabel(m?.priceUsd)",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "problem",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "progressLabel",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "protects",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "protectsLabel",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "qualifier",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "QUOTE_ASSET.name",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "QUOTE_ASSET.symbol",
+        "count": 10
+      },
+      {
+        "kind": "interpolation",
+        "expr": "quoteNote",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "result.machine.model",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "result.machine.qubits",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "result.next.body",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "result.next.title",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "result.score",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.action",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.address",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.chainLabel",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.direction",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.footnote",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.label",
+        "count": 8
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.meta.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.metric.description",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.metric.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.metric.unit",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.prefix",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.record.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.record.value",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.share",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.short",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.spend",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.subtitle",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.ticker",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.title",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.typeLabel",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.unit",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.value",
+        "count": 8
+      },
+      {
+        "kind": "interpolation",
+        "expr": "rule.body",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "rule.n",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "rule.title",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "run.bits ?? run.keyBits ?? \"—\"",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "run.counted === false ? \"Not counted\" : \"Counted\"",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "runMachine(run)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "runQubits(run)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "sessions",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "share",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "shortAddress(token.creator)",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "signedInLabel",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "snapshot.description",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "spent",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stakes.footnote",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stakes.heading",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stakes.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stakes.lowerText",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stakes.note",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stakes.scaleIntro",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stakes.upperText",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stat.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stat.value",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "statusText",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "step.body",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "step.cta.label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "step.n",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "step.title",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "String(index + 1).padStart(2, \"0\")",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "subtitle",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "targetBits",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "timeAgo(row.at)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "timeAgo(run.at)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "timeAgo(token.createdAt)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "title",
+        "count": 12
+      },
+      {
+        "kind": "interpolation",
+        "expr": "token.challengeDescription",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "token.challengeLabel",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "token.challengeVerb",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "token.name",
+        "count": 8
+      },
+      {
+        "kind": "interpolation",
+        "expr": "token.ticker",
+        "count": 8
+      },
+      {
+        "kind": "interpolation",
+        "expr": "tokenName",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "tokenTicker",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "total ? \"Some lines were not read\" : \"Nothing was checked\"",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "unit",
+        "count": 6
+      },
+      {
+        "kind": "interpolation",
+        "expr": "updated",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "usd(collected)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "usd(inPool)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "usd(paidIn)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "usd(spent)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "usdRound(firstAfter)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "usdRound(traded)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "value",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "verb",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "wallet.name",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "walletHint",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "why",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "WORDS.empty",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "WORDS.landingHeader",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "WORDS.loginMessage",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "WORDS.signIn",
+        "count": 6
+      },
+      {
+        "kind": "interpolation",
+        "expr": "WORDS.signInPrompt",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "WORDS.signOut",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "WORDS.title",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "workedExample",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "working ? \"An agent is working now\" : \"No agent working now\"",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "`/challenges/${ecdsa.slug}`",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "`/challenges/${proximity.slug}`",
+        "count": 4
+      },
+      {
+        "kind": "link",
+        "expr": "`/challenges/${siggolf.slug}`",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "`/challenges/${token.challengeSlug}`",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "`/launch?track=${track}`",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "`/t/${row.mint}`",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "`/t/${token.mint}`",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "`#group-${group.key}`",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "`https://pump.fun/coin/${mint}`",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "`https://pump.fun/coin/${token.mint}`",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "`https://solscan.io/token/${mint}`",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "`https://solscan.io/token/${token.mint}`",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "CARD_COPY[entry.slug].href ?? `/challenges/${entry.slug}`",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "card.to",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "challenge?.host ?? 'https://better.codes'",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "chip.href",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "copy.leaderboard",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "href",
+        "count": 6
+      },
+      {
+        "kind": "link",
+        "expr": "href || undefined",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "item.to",
+        "count": 12
+      },
+      {
+        "kind": "link",
+        "expr": "machine.href",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "machine.url",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "page.to",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "panel.leaderboard",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "stakes.sourceHref",
+        "count": 4
+      },
+      {
+        "kind": "link",
+        "expr": "step.cta.to",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "to",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "to || undefined",
+        "count": 2
+      },
+      {
+        "kind": "model",
+        "expr": "challengeSlug",
+        "count": 2
+      },
+      {
+        "kind": "model",
+        "expr": "description",
+        "count": 2
+      },
+      {
+        "kind": "model",
+        "expr": "email",
+        "count": 3
+      },
+      {
+        "kind": "model",
+        "expr": "error",
+        "count": 2
+      },
+      {
+        "kind": "model",
+        "expr": "filter",
+        "count": 2
+      },
+      {
+        "kind": "model",
+        "expr": "name",
+        "count": 2
+      },
+      {
+        "kind": "model",
+        "expr": "openingBuy",
+        "count": 2
+      },
+      {
+        "kind": "model",
+        "expr": "picture",
+        "count": 2
+      },
+      {
+        "kind": "model",
+        "expr": "query",
+        "count": 2
+      },
+      {
+        "kind": "model",
+        "expr": "raw",
+        "count": 2
+      },
+      {
+        "kind": "prop",
+        "expr": "bound.unit",
+        "count": 2
+      },
+      {
+        "kind": "prop",
+        "expr": "bound.value",
+        "count": 2
+      },
+      {
+        "kind": "prop",
+        "expr": "group.subtitle",
+        "count": 2
+      },
+      {
+        "kind": "prop",
+        "expr": "group.title",
+        "count": 2
+      },
+      {
+        "kind": "prop",
+        "expr": "group(ecdsa.metrics[0].value)",
+        "count": 2
+      },
+      {
+        "kind": "prop",
+        "expr": "group(siggolf.metrics[0].value)",
+        "count": 2
+      },
+      {
+        "kind": "prop",
+        "expr": "lower.value.toFixed(2)",
+        "count": 2
+      },
+      {
+        "kind": "prop",
+        "expr": "section.title",
+        "count": 6
+      },
+      {
+        "kind": "prop",
+        "expr": "siggolf.metrics[0].label",
+        "count": 2
+      },
+      {
+        "kind": "prop",
+        "expr": "stakes.unit",
+        "count": 2
+      },
+      {
+        "kind": "prop",
+        "expr": "stakes.value",
+        "count": 2
+      },
+      {
+        "kind": "prop",
+        "expr": "upper.value.toFixed(2)",
+        "count": 2
+      },
+      {
+        "kind": "text",
+        "expr": "art.body",
+        "count": 2
+      },
+      {
+        "kind": "text",
+        "expr": "body",
+        "count": 4
+      },
+      {
+        "kind": "text",
+        "expr": "bound.numberNote",
+        "count": 2
+      },
+      {
+        "kind": "text",
+        "expr": "html",
+        "count": 2
+      },
+      {
+        "kind": "text",
+        "expr": "logo.body",
+        "count": 2
+      },
+      {
+        "kind": "text",
+        "expr": "ORBITAL",
+        "count": 2
+      },
+      {
+        "kind": "text",
+        "expr": "row.when",
+        "count": 2
+      },
+      {
+        "kind": "text",
+        "expr": "stakes.numberNote",
+        "count": 2
+      },
+      {
+        "kind": "text",
+        "expr": "stakes.scaleNoteAfter",
+        "count": 2
+      }
+    ],
+    "events": [
+      {
+        "event": "change",
+        "handler": "pick",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "$emit('sign-in')",
+        "count": 3
+      },
+      {
+        "event": "click",
+        "handler": "$emit('update:modelValue', item.key)",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "clear",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "closePanel",
+        "count": 6
+      },
+      {
+        "event": "click",
+        "handler": "copyAddress",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "draw",
+        "count": 4
+      },
+      {
+        "event": "click",
+        "handler": "launch",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "menuOpen = !menuOpen",
+        "count": 3
+      },
+      {
+        "event": "click",
+        "handler": "menuOpen = false",
+        "count": 6
+      },
+      {
+        "event": "click",
+        "handler": "open = !open",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "openPanel",
+        "count": 3
+      },
+      {
+        "event": "click",
+        "handler": "selected = row.slug",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "setMode(theme.key)",
+        "count": 3
+      },
+      {
+        "event": "click",
+        "handler": "signInWithWallet(wallet.key)",
+        "count": 3
+      },
+      {
+        "event": "click",
+        "handler": "signOut",
+        "count": 3
+      },
+      {
+        "event": "input",
+        "handler": "error = ''",
+        "count": 2
+      },
+      {
+        "event": "input",
+        "handler": "onTicker",
+        "count": 2
+      },
+      {
+        "event": "submit",
+        "handler": "check",
+        "count": 2
+      },
+      {
+        "event": "submit",
+        "handler": "launch",
+        "count": 2
+      },
+      {
+        "event": "submit",
+        "handler": "signInWithEmail",
+        "count": 3
+      }
+    ],
+    "links": [
+      {
+        "kind": "href",
+        "target": "/t/preview",
+        "count": 2
+      },
+      {
+        "kind": "href",
+        "target": "#",
+        "count": 2
+      },
+      {
+        "kind": "href",
+        "target": "#ladder",
+        "count": 2
+      },
+      {
+        "kind": "href",
+        "target": "#main",
+        "count": 2
+      },
+      {
+        "kind": "href",
+        "target": "#research",
+        "count": 4
+      },
+      {
+        "kind": "to",
+        "target": "/",
+        "count": 13
+      },
+      {
+        "kind": "to",
+        "target": "/#how",
+        "count": 4
+      },
+      {
+        "kind": "to",
+        "target": "/challenges",
+        "count": 7
+      },
+      {
+        "kind": "to",
+        "target": "/challenges/ecdsa-fail",
+        "count": 4
+      },
+      {
+        "kind": "to",
+        "target": "/challenges/proximity",
+        "count": 2
+      },
+      {
+        "kind": "to",
+        "target": "/challenges/sig-golf",
+        "count": 2
+      },
+      {
+        "kind": "to",
+        "target": "/exposure",
+        "count": 4
+      },
+      {
+        "kind": "to",
+        "target": "/launch",
+        "count": 14
+      },
+      {
+        "kind": "to",
+        "target": "/launch?track=q-day",
+        "count": 2
+      },
+      {
+        "kind": "to",
+        "target": "/q-day",
+        "count": 6
+      },
+      {
+        "kind": "to",
+        "target": "/tokens",
+        "count": 6
+      }
+    ],
+    "assets": [
+      {
+        "kind": "src",
+        "value": "/brand/token.png",
+        "count": 2
+      },
+      {
+        "kind": "src",
+        "value": "/brand/urania-indigo.png",
+        "count": 4
+      },
+      {
+        "kind": "src",
+        "value": "/brand/urania-ink.png",
+        "count": 4
+      }
+    ],
+    "forms": [
+      {
+        "tag": "input",
+        "name": "",
+        "type": "",
+        "count": 6
+      },
+      {
+        "tag": "input",
+        "name": "",
+        "type": "file",
+        "count": 2
+      },
+      {
+        "tag": "input",
+        "name": "email",
+        "type": "email",
+        "count": 3
+      },
+      {
+        "tag": "input",
+        "name": "q",
+        "type": "search",
+        "count": 2
+      },
+      {
+        "tag": "textarea",
+        "name": "",
+        "type": "",
+        "count": 2
+      },
+      {
+        "tag": "textarea",
+        "name": "wallet",
+        "type": "",
+        "count": 2
+      }
+    ],
+    "i18n": [],
+    "i18nKeys": [],
+    "i18nFiles": [],
+    "api": [],
+    "env": []
+  },
+  "contentContractHash": "a48cf00f0516d7c322db0d0774f25f96ad9b4e081c9132cebd4d333f9f939463"
+}

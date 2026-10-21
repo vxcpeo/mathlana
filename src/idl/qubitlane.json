@@ -1,0 +1,2478 @@
+{
+  "address": "MthLnaQ1aZ8Z7dQ3sVJ7hKj2QyWq6rN4vXbC9pLoP1R",
+  "metadata": {
+    "name": "qubitlane",
+    "version": "0.1.0",
+    "spec": "0.1.0"
+  },
+  "instructions": [
+    {
+      "name": "initializeConfig",
+      "discriminator": [
+        208,
+        127,
+        21,
+        1,
+        194,
+        190,
+        196,
+        70
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "treasury"
+        },
+        {
+          "name": "agentAuthority"
+        },
+        {
+          "name": "config",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "launchFeeLamports",
+          "type": "u64"
+        },
+        {
+          "name": "poolBps",
+          "type": "u16"
+        },
+        {
+          "name": "platformBps",
+          "type": "u16"
+        },
+        {
+          "name": "creatorBps",
+          "type": "u16"
+        }
+      ]
+    },
+    {
+      "name": "updateConfig",
+      "discriminator": [
+        29,
+        158,
+        252,
+        191,
+        10,
+        83,
+        219,
+        99
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "signer": true
+        },
+        {
+          "name": "treasury"
+        },
+        {
+          "name": "agentAuthority"
+        },
+        {
+          "name": "config",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "launchFeeLamports",
+          "type": "u64"
+        },
+        {
+          "name": "poolBps",
+          "type": "u16"
+        },
+        {
+          "name": "platformBps",
+          "type": "u16"
+        },
+        {
+          "name": "creatorBps",
+          "type": "u16"
+        },
+        {
+          "name": "paused",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "registerChallenge",
+      "discriminator": [
+        122,
+        247,
+        8,
+        150,
+        192,
+        112,
+        238,
+        145
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "verifier"
+        },
+        {
+          "name": "challenge",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  104,
+                  97,
+                  108,
+                  108,
+                  101,
+                  110,
+                  103,
+                  101
+                ]
+              },
+              {
+                "kind": "arg",
+                "path": "slug"
+              }
+            ]
+          }
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "id",
+          "type": "u16"
+        },
+        {
+          "name": "slug",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "host",
+          "type": "string"
+        },
+        {
+          "name": "hostUrl",
+          "type": "string"
+        },
+        {
+          "name": "group",
+          "type": {
+            "defined": {
+              "name": "ThreatGroup"
+            }
+          }
+        },
+        {
+          "name": "verb",
+          "type": "string"
+        },
+        {
+          "name": "asks",
+          "type": "string"
+        },
+        {
+          "name": "checker",
+          "type": {
+            "defined": {
+              "name": "Checker"
+            }
+          }
+        },
+        {
+          "name": "metrics",
+          "type": {
+            "vec": {
+              "defined": {
+                "name": "Metric"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "setChallengeOpen",
+      "discriminator": [
+        17,
+        110,
+        17,
+        69,
+        141,
+        108,
+        103,
+        134
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "challenge",
+          "writable": true
+        }
+      ],
+      "args": [
+        {
+          "name": "open",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "recordResult",
+      "discriminator": [
+        208,
+        243,
+        63,
+        218,
+        63,
+        116,
+        76,
+        80
+      ],
+      "accounts": [
+        {
+          "name": "verifier",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "challenge",
+          "writable": true
+        },
+        {
+          "name": "tokenRecord"
+        },
+        {
+          "name": "result",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  114,
+                  101,
+                  115,
+                  117,
+                  108,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "challenge"
+              },
+              {
+                "kind": "arg",
+                "path": "metricIndex"
+              },
+              {
+                "kind": "account",
+                "path": "tokenRecord"
+              }
+            ]
+          }
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "tokenRecordAccount",
+          "writable": true,
+          "optional": true
+        }
+      ],
+      "args": [
+        {
+          "name": "metricIndex",
+          "type": "u8"
+        },
+        {
+          "name": "value",
+          "type": "u128"
+        },
+        {
+          "name": "proofUri",
+          "type": "string"
+        },
+        {
+          "name": "checker",
+          "type": {
+            "defined": {
+              "name": "Checker"
+            }
+          }
+        },
+        {
+          "name": "confirmations",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "launchToken",
+      "discriminator": [
+        10,
+        128,
+        86,
+        171,
+        3,
+        137,
+        161,
+        244
+      ],
+      "accounts": [
+        {
+          "name": "creator",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "treasury",
+          "writable": true
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "challenge",
+          "writable": true
+        },
+        {
+          "name": "tokenRecord",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  116,
+                  111,
+                  107,
+                  101,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  111,
+                  111,
+                  108
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "ticker",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "name": "pictureUri",
+          "type": "string"
+        },
+        {
+          "name": "metricIndex",
+          "type": "u8"
+        },
+        {
+          "name": "quoteMint",
+          "type": "pubkey"
+        },
+        {
+          "name": "openingBuy",
+          "type": "u64"
+        },
+        {
+          "name": "launchFeeLamports",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "depositTradeFees",
+      "discriminator": [
+        129,
+        117,
+        77,
+        200,
+        98,
+        227,
+        25,
+        105
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "treasury",
+          "writable": true
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "tokenRecord",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  116,
+                  111,
+                  107,
+                  101,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "creator",
+          "writable": true
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  111,
+                  111,
+                  108
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "spendPool",
+      "discriminator": [
+        179,
+        171,
+        205,
+        113,
+        17,
+        183,
+        69,
+        191
+      ],
+      "accounts": [
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "signer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "tokenRecord",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  116,
+                  111,
+                  107,
+                  101,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  111,
+                  111,
+                  108
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "recipient",
+          "writable": true
+        },
+        {
+          "name": "rent",
+          "address": "SysvarRent111111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "kind",
+          "type": {
+            "defined": {
+              "name": "SpendKind"
+            }
+          }
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "memo",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "registerPortrait",
+      "discriminator": [
+        33,
+        238,
+        134,
+        216,
+        78,
+        35,
+        224,
+        20
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "tokenRecord",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  116,
+                  111,
+                  107,
+                  101,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "portrait",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  111,
+                  114,
+                  116,
+                  114,
+                  97,
+                  105,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "uri",
+          "type": "string"
+        },
+        {
+          "name": "entanglementBps",
+          "type": "u16"
+        },
+        {
+          "name": "measurements",
+          "type": "u32"
+        },
+        {
+          "name": "machine",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "recordCreatorPayout",
+      "discriminator": [
+        153,
+        219,
+        189,
+        19,
+        115,
+        205,
+        59,
+        158
+      ],
+      "accounts": [
+        {
+          "name": "creator",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "tokenRecord",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  116,
+                  111,
+                  107,
+                  101,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "openAgentSession",
+      "discriminator": [
+        237,
+        65,
+        119,
+        131,
+        14,
+        160,
+        242,
+        48
+      ],
+      "accounts": [
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "signer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "tokenRecord",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  116,
+                  111,
+                  107,
+                  101,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "session",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  115,
+                  101,
+                  115,
+                  115,
+                  105,
+                  111,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              },
+              {
+                "kind": "account",
+                "path": "tokenRecord.sessions",
+                "account": "TokenRecord"
+              }
+            ]
+          }
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "transcriptUri",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "closeAgentSession",
+      "discriminator": [
+        146,
+        102,
+        133,
+        204,
+        186,
+        73,
+        201,
+        6
+      ],
+      "accounts": [
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "signer",
+          "signer": true
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "tokenRecord",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  116,
+                  111,
+                  107,
+                  101,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
+          "name": "session",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  115,
+                  101,
+                  115,
+                  115,
+                  105,
+                  111,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              },
+              {
+                "kind": "account",
+                "path": "session.index",
+                "account": "AgentSession"
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "spent",
+          "type": "u64"
+        },
+        {
+          "name": "transcriptUri",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Config",
+      "discriminator": [
+        155,
+        12,
+        170,
+        224,
+        30,
+        250,
+        204,
+        130
+      ]
+    },
+    {
+      "name": "Challenge",
+      "discriminator": [
+        119,
+        250,
+        161,
+        121,
+        119,
+        81,
+        22,
+        208
+      ]
+    },
+    {
+      "name": "TokenRecord",
+      "discriminator": [
+        27,
+        187,
+        32,
+        100,
+        137,
+        253,
+        104,
+        242
+      ]
+    },
+    {
+      "name": "AiQuantumPool",
+      "discriminator": [
+        48,
+        202,
+        80,
+        81,
+        36,
+        91,
+        57,
+        249
+      ]
+    },
+    {
+      "name": "AgentSession",
+      "discriminator": [
+        25,
+        98,
+        70,
+        4,
+        139,
+        110,
+        56,
+        102
+      ]
+    },
+    {
+      "name": "ResultRecord",
+      "discriminator": [
+        149,
+        200,
+        78,
+        8,
+        184,
+        123,
+        188,
+        35
+      ]
+    },
+    {
+      "name": "Portrait",
+      "discriminator": [
+        125,
+        117,
+        145,
+        33,
+        122,
+        1,
+        231,
+        55
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "ConfigInitialized",
+      "discriminator": [
+        181,
+        49,
+        200,
+        156,
+        19,
+        167,
+        178,
+        91
+      ]
+    },
+    {
+      "name": "ConfigUpdated",
+      "discriminator": [
+        40,
+        241,
+        230,
+        122,
+        11,
+        19,
+        198,
+        194
+      ]
+    },
+    {
+      "name": "ChallengeRegistered",
+      "discriminator": [
+        127,
+        126,
+        242,
+        138,
+        119,
+        188,
+        219,
+        171
+      ]
+    },
+    {
+      "name": "ChallengeOpenChanged",
+      "discriminator": [
+        179,
+        112,
+        221,
+        204,
+        11,
+        44,
+        105,
+        174
+      ]
+    },
+    {
+      "name": "TokenLaunched",
+      "discriminator": [
+        225,
+        232,
+        190,
+        147,
+        213,
+        192,
+        220,
+        168
+      ]
+    },
+    {
+      "name": "FeesDeposited",
+      "discriminator": [
+        130,
+        131,
+        74,
+        238,
+        201,
+        54,
+        205,
+        192
+      ]
+    },
+    {
+      "name": "PoolSpent",
+      "discriminator": [
+        173,
+        122,
+        161,
+        105,
+        71,
+        9,
+        43,
+        107
+      ]
+    },
+    {
+      "name": "AgentSessionOpened",
+      "discriminator": [
+        72,
+        121,
+        249,
+        135,
+        249,
+        9,
+        144,
+        56
+      ]
+    },
+    {
+      "name": "AgentSessionClosed",
+      "discriminator": [
+        204,
+        183,
+        180,
+        192,
+        85,
+        148,
+        232,
+        132
+      ]
+    },
+    {
+      "name": "ResultRecorded",
+      "discriminator": [
+        239,
+        92,
+        133,
+        98,
+        80,
+        25,
+        55,
+        13
+      ]
+    },
+    {
+      "name": "PortraitRegistered",
+      "discriminator": [
+        198,
+        137,
+        2,
+        131,
+        99,
+        161,
+        172,
+        119
+      ]
+    },
+    {
+      "name": "CreatorPayoutRecorded",
+      "discriminator": [
+        147,
+        248,
+        216,
+        234,
+        97,
+        207,
+        156,
+        120
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "Paused",
+      "msg": "The protocol is paused."
+    },
+    {
+      "code": 6001,
+      "name": "Unauthorized",
+      "msg": "Only the protocol authority may perform this action."
+    },
+    {
+      "code": 6002,
+      "name": "NotVerifier",
+      "msg": "Only the challenge's verifier may record a result."
+    },
+    {
+      "code": 6003,
+      "name": "Overflow",
+      "msg": "Arithmetic overflow."
+    },
+    {
+      "code": 6004,
+      "name": "LaunchFeeTooLow",
+      "msg": "The launch fee provided is below the configured fee."
+    },
+    {
+      "code": 6005,
+      "name": "InvalidFeeSplit",
+      "msg": "The fee split basis points must add up to 10,000."
+    },
+    {
+      "code": 6006,
+      "name": "InvalidSlug",
+      "msg": "A challenge slug must be 1-32 characters."
+    },
+    {
+      "code": 6007,
+      "name": "InvalidName",
+      "msg": "A name must be 1-48 characters."
+    },
+    {
+      "code": 6008,
+      "name": "InvalidTicker",
+      "msg": "A ticker must be 1-11 characters, including the leading $."
+    },
+    {
+      "code": 6009,
+      "name": "InvalidDescription",
+      "msg": "A description may be at most 280 characters."
+    },
+    {
+      "code": 6010,
+      "name": "InvalidUri",
+      "msg": "A URI may be at most 200 characters."
+    },
+    {
+      "code": 6011,
+      "name": "InvalidHost",
+      "msg": "A host label may be at most 64 characters."
+    },
+    {
+      "code": 6012,
+      "name": "InvalidUnit",
+      "msg": "A unit may be at most 32 characters."
+    },
+    {
+      "code": 6013,
+      "name": "ChallengeClosed",
+      "msg": "That challenge is closed to new tokens."
+    },
+    {
+      "code": 6014,
+      "name": "UnknownMetric",
+      "msg": "The metric index is out of range for this challenge."
+    },
+    {
+      "code": 6015,
+      "name": "InsufficientConfirmations",
+      "msg": "A tied result must still beat the record's confirmation count."
+    },
+    {
+      "code": 6016,
+      "name": "InsufficientPool",
+      "msg": "The pool does not have enough lamports for this spend."
+    },
+    {
+      "code": 6017,
+      "name": "SessionAlreadyClosed",
+      "msg": "The agent session is already closed."
+    },
+    {
+      "code": 6018,
+      "name": "InvalidEntanglementScore",
+      "msg": "The entanglement score must be expressed in basis points (0-10,000)."
+    },
+    {
+      "code": 6019,
+      "name": "WrongChecker",
+      "msg": "The result was accepted by a checker other than the challenge's own."
+    },
+    {
+      "code": 6020,
+      "name": "WrongChallenge",
+      "msg": "That token record does not work on this challenge."
+    },
+    {
+      "code": 6021,
+      "name": "InvalidRecipient",
+      "msg": "The recipient must differ from the pool, the token record, the config and the treasury."
+    },
+    {
+      "code": 6022,
+      "name": "InvalidLabel",
+      "msg": "A metric label must be 1-64 characters."
+    },
+    {
+      "code": 6023,
+      "name": "InvalidVerb",
+      "msg": "A verb may be at most 24 characters."
+    },
+    {
+      "code": 6024,
+      "name": "InvalidAmount",
+      "msg": "The amount must be greater than zero."
+    },
+    {
+      "code": 6025,
+      "name": "InvalidAsks",
+      "msg": "What a challenge asks must be 1-320 characters."
+    }
+  ],
+  "types": [
+    {
+      "name": "ThreatGroup",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Quantum"
+          },
+          {
+            "name": "AiMath"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Direction",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Lower"
+          },
+          {
+            "name": "Higher"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpendKind",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "AiAgent"
+          },
+          {
+            "name": "QuantumRun"
+          },
+          {
+            "name": "ComputerTime"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SessionStatus",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Open"
+          },
+          {
+            "name": "Closed"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Checker",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Lean"
+          },
+          {
+            "name": "Qubitlane"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Metric",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "label",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "unit",
+            "type": "string"
+          },
+          {
+            "name": "direction",
+            "type": {
+              "defined": {
+                "name": "Direction"
+              }
+            }
+          },
+          {
+            "name": "record",
+            "type": "u128"
+          },
+          {
+            "name": "decimals",
+            "type": "u8"
+          },
+          {
+            "name": "baseline",
+            "type": "u128"
+          },
+          {
+            "name": "tokens",
+            "type": "u32"
+          },
+          {
+            "name": "confirmations",
+            "type": "u16"
+          },
+          {
+            "name": "open",
+            "type": "bool"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Config",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "pubkey"
+          },
+          {
+            "name": "treasury",
+            "type": "pubkey"
+          },
+          {
+            "name": "launchFeeLamports",
+            "type": "u64"
+          },
+          {
+            "name": "poolBps",
+            "type": "u16"
+          },
+          {
+            "name": "platformBps",
+            "type": "u16"
+          },
+          {
+            "name": "creatorBps",
+            "type": "u16"
+          },
+          {
+            "name": "paused",
+            "type": "bool"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          },
+          {
+            "name": "agentAuthority",
+            "type": "pubkey"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Challenge",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "id",
+            "type": "u16"
+          },
+          {
+            "name": "slug",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "type": "string"
+          },
+          {
+            "name": "hostUrl",
+            "type": "string"
+          },
+          {
+            "name": "group",
+            "type": {
+              "defined": {
+                "name": "ThreatGroup"
+              }
+            }
+          },
+          {
+            "name": "verb",
+            "type": "string"
+          },
+          {
+            "name": "asks",
+            "type": "string"
+          },
+          {
+            "name": "verifier",
+            "type": "pubkey"
+          },
+          {
+            "name": "checker",
+            "type": {
+              "defined": {
+                "name": "Checker"
+              }
+            }
+          },
+          {
+            "name": "open",
+            "type": "bool"
+          },
+          {
+            "name": "metrics",
+            "type": {
+              "vec": {
+                "defined": {
+                  "name": "Metric"
+                }
+              }
+            }
+          },
+          {
+            "name": "tokenCount",
+            "type": "u32"
+          },
+          {
+            "name": "createdAt",
+            "type": "i64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TokenRecord",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "creator",
+            "type": "pubkey"
+          },
+          {
+            "name": "challenge",
+            "type": "pubkey"
+          },
+          {
+            "name": "metricIndex",
+            "type": "u8"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "ticker",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "pictureUri",
+            "type": "string"
+          },
+          {
+            "name": "portraitUri",
+            "type": "string"
+          },
+          {
+            "name": "quoteMint",
+            "type": "pubkey"
+          },
+          {
+            "name": "poolDeposited",
+            "type": "u64"
+          },
+          {
+            "name": "poolSpent",
+            "type": "u64"
+          },
+          {
+            "name": "sessions",
+            "type": "u32"
+          },
+          {
+            "name": "openingBuy",
+            "type": "u64"
+          },
+          {
+            "name": "verified",
+            "type": "bool"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AiQuantumPool",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "tokenRecord",
+            "type": "pubkey"
+          },
+          {
+            "name": "balance",
+            "type": "u64"
+          },
+          {
+            "name": "deposited",
+            "type": "u64"
+          },
+          {
+            "name": "spent",
+            "type": "u64"
+          },
+          {
+            "name": "spentAi",
+            "type": "u64"
+          },
+          {
+            "name": "spentQuantum",
+            "type": "u64"
+          },
+          {
+            "name": "spentCompute",
+            "type": "u64"
+          },
+          {
+            "name": "spendCount",
+            "type": "u32"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AgentSession",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "tokenRecord",
+            "type": "pubkey"
+          },
+          {
+            "name": "index",
+            "type": "u32"
+          },
+          {
+            "name": "status",
+            "type": {
+              "defined": {
+                "name": "SessionStatus"
+              }
+            }
+          },
+          {
+            "name": "startedAt",
+            "type": "i64"
+          },
+          {
+            "name": "endedAt",
+            "type": "i64"
+          },
+          {
+            "name": "spent",
+            "type": "u64"
+          },
+          {
+            "name": "transcriptUri",
+            "type": "string"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ResultRecord",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "challenge",
+            "type": "pubkey"
+          },
+          {
+            "name": "tokenRecord",
+            "type": "pubkey"
+          },
+          {
+            "name": "metricIndex",
+            "type": "u8"
+          },
+          {
+            "name": "checker",
+            "type": {
+              "defined": {
+                "name": "Checker"
+              }
+            }
+          },
+          {
+            "name": "value",
+            "type": "u128"
+          },
+          {
+            "name": "previous",
+            "type": "u128"
+          },
+          {
+            "name": "recordedAt",
+            "type": "i64"
+          },
+          {
+            "name": "submitter",
+            "type": "pubkey"
+          },
+          {
+            "name": "proofUri",
+            "type": "string"
+          },
+          {
+            "name": "confirmations",
+            "type": "u8"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Portrait",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "measurements",
+            "type": "u32"
+          },
+          {
+            "name": "uri",
+            "type": "string"
+          },
+          {
+            "name": "entanglementBps",
+            "type": "u16"
+          },
+          {
+            "name": "machine",
+            "type": "u8"
+          },
+          {
+            "name": "drawnAt",
+            "type": "i64"
+          },
+          {
+            "name": "drawnBy",
+            "type": "pubkey"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ConfigInitialized",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "pubkey"
+          },
+          {
+            "name": "treasury",
+            "type": "pubkey"
+          },
+          {
+            "name": "launchFeeLamports",
+            "type": "u64"
+          },
+          {
+            "name": "poolBps",
+            "type": "u16"
+          },
+          {
+            "name": "platformBps",
+            "type": "u16"
+          },
+          {
+            "name": "creatorBps",
+            "type": "u16"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ConfigUpdated",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "pubkey"
+          },
+          {
+            "name": "launchFeeLamports",
+            "type": "u64"
+          },
+          {
+            "name": "poolBps",
+            "type": "u16"
+          },
+          {
+            "name": "platformBps",
+            "type": "u16"
+          },
+          {
+            "name": "creatorBps",
+            "type": "u16"
+          },
+          {
+            "name": "agentAuthority",
+            "type": "pubkey"
+          },
+          {
+            "name": "paused",
+            "type": "bool"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChallengeRegistered",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "challenge",
+            "type": "pubkey"
+          },
+          {
+            "name": "id",
+            "type": "u16"
+          },
+          {
+            "name": "slug",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "type": "string"
+          },
+          {
+            "name": "verifier",
+            "type": "pubkey"
+          },
+          {
+            "name": "checker",
+            "type": {
+              "defined": {
+                "name": "Checker"
+              }
+            }
+          },
+          {
+            "name": "metricCount",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChallengeOpenChanged",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "challenge",
+            "type": "pubkey"
+          },
+          {
+            "name": "open",
+            "type": "bool"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TokenLaunched",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "tokenRecord",
+            "type": "pubkey"
+          },
+          {
+            "name": "creator",
+            "type": "pubkey"
+          },
+          {
+            "name": "challenge",
+            "type": "pubkey"
+          },
+          {
+            "name": "metricIndex",
+            "type": "u8"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "ticker",
+            "type": "string"
+          },
+          {
+            "name": "pictureUri",
+            "type": "string"
+          },
+          {
+            "name": "openingBuy",
+            "type": "u64"
+          },
+          {
+            "name": "launchFeeLamports",
+            "type": "u64"
+          },
+          {
+            "name": "at",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FeesDeposited",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "amount",
+            "type": "u64"
+          },
+          {
+            "name": "toPool",
+            "type": "u64"
+          },
+          {
+            "name": "toPlatform",
+            "type": "u64"
+          },
+          {
+            "name": "toCreator",
+            "type": "u64"
+          },
+          {
+            "name": "at",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PoolSpent",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "kind",
+            "type": {
+              "defined": {
+                "name": "SpendKind"
+              }
+            }
+          },
+          {
+            "name": "amount",
+            "type": "u64"
+          },
+          {
+            "name": "remaining",
+            "type": "u64"
+          },
+          {
+            "name": "memo",
+            "type": "string"
+          },
+          {
+            "name": "at",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AgentSessionOpened",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "session",
+            "type": "pubkey"
+          },
+          {
+            "name": "index",
+            "type": "u32"
+          },
+          {
+            "name": "at",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AgentSessionClosed",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "session",
+            "type": "pubkey"
+          },
+          {
+            "name": "index",
+            "type": "u32"
+          },
+          {
+            "name": "spent",
+            "type": "u64"
+          },
+          {
+            "name": "transcriptUri",
+            "type": "string"
+          },
+          {
+            "name": "at",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ResultRecorded",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "challenge",
+            "type": "pubkey"
+          },
+          {
+            "name": "metricIndex",
+            "type": "u8"
+          },
+          {
+            "name": "tokenRecord",
+            "type": "pubkey"
+          },
+          {
+            "name": "checker",
+            "type": {
+              "defined": {
+                "name": "Checker"
+              }
+            }
+          },
+          {
+            "name": "value",
+            "type": "u128"
+          },
+          {
+            "name": "previous",
+            "type": "u128"
+          },
+          {
+            "name": "proofUri",
+            "type": "string"
+          },
+          {
+            "name": "at",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PortraitRegistered",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "uri",
+            "type": "string"
+          },
+          {
+            "name": "entanglementBps",
+            "type": "u16"
+          },
+          {
+            "name": "measurements",
+            "type": "u32"
+          },
+          {
+            "name": "machine",
+            "type": "u8"
+          },
+          {
+            "name": "at",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CreatorPayoutRecorded",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "creator",
+            "type": "pubkey"
+          },
+          {
+            "name": "amount",
+            "type": "u64"
+          },
+          {
+            "name": "at",
+            "type": "i64"
+          }
+        ]
+      }
+    }
+  ],
+  "constants": [
+    {
+      "name": "bpsDenominator",
+      "type": "u64",
+      "value": "10000"
+    },
+    {
+      "name": "defaultPoolBps",
+      "type": "u16",
+      "value": "6000"
+    },
+    {
+      "name": "defaultPlatformBps",
+      "type": "u16",
+      "value": "2000"
+    },
+    {
+      "name": "defaultCreatorBps",
+      "type": "u16",
+      "value": "2000"
+    },
+    {
+      "name": "defaultLaunchFeeLamports",
+      "type": "u64",
+      "value": "20000000"
+    },
+    {
+      "name": "qdayConfirmationsRequired",
+      "type": "u8",
+      "value": "3"
+    }
+  ]
+}

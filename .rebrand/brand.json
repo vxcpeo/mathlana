@@ -1,0 +1,88 @@
+{
+  "old": {
+    "display": "Mathlana",
+    "slug": "mathlana",
+    "variants": {
+      "display": "Mathlana",
+      "lower": "mathlana",
+      "upper": "MATHLANA",
+      "title": "Mathlana",
+      "kebab": "mathlana",
+      "snake": "mathlana",
+      "camel": "mathlana",
+      "pascal": "Mathlana",
+      "compact": "Mathlana",
+      "compactLower": "mathlana",
+      "first": "Mathlana",
+      "firstLower": "mathlana",
+      "firstUpper": "MATHLANA"
+    },
+    "variantList": [
+      {
+        "value": "Mathlana",
+        "kind": "display"
+      },
+      {
+        "value": "mathlana",
+        "kind": "lower"
+      },
+      {
+        "value": "MATHLANA",
+        "kind": "upper"
+      }
+    ],
+    "domains": [
+      "mathlana.si",
+      "mathlana.si`"
+    ],
+    "handles": [],
+    "emails": [
+      "privacy@mathlana.si"
+    ],
+    "packageNames": [
+      "mathlana-website"
+    ],
+    "initials": "",
+    "allowFiles": [
+      "vite.config.js"
+    ],
+    "allowStrings": [
+      "../contracts/programs/mathlana",
+      "../contracts/idl/mathlana.json",
+      "contracts/idl/mathlana.json",
+      "programs/mathlana"
+    ]
+  },
+  "usedBrands": [
+    "Mathlana"
+  ],
+  "notes": "vite.config.js keeps the /api proxy pointed at the original data origin (functional). contracts/ paths are the on-chain program, which is not renamed in this project scope. MATHLANA_PROGRAM_ID is a protected functional identifier.",
+  "new": {
+    "display": "Qubitlane",
+    "slug": "qubitlane",
+    "handle": "qubitlane",
+    "domain": "qubitlane.xyz",
+    "email": "hello@qubitlane.xyz",
+    "url": "https://qubitlane.xyz",
+    "note": "Availability is a snapshot; register the domain and X account separately."
+  },
+  "selection": {
+    "candidate": "qubitlane",
+    "score": 95,
+    "checkedAt": "2026-10-19T17:05:31.814Z",
+    "evidence": [
+      {
+        "kind": "domain",
+        "status": "available",
+        "signal": "rdap-unregistered",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-xyz-rdap.png"
+      },
+      {
+        "kind": "x",
+        "status": "available",
+        "signal": "not-found-text",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-x.png"
+      }
+    ]
+  }
+}

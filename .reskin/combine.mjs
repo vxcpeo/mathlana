@@ -1,0 +1,11 @@
+﻿import fs from 'node:fs';
+const enc = 'utf8';
+const head = fs.readFileSync('.reskin/new-head.css', enc);
+const overrides = fs.readFileSync('.reskin/new-overrides.css', enc);
+const css = fs.readFileSync('src/styles/paper.css', enc);
+const marker = '/* ---------- 4. type';
+const idx = css.indexOf(marker);
+if (idx < 0) throw new Error('marker not found');
+const tail = css.slice(idx);
+fs.writeFileSync('src/styles/paper.css', head + '\n' + tail + '\n' + overrides, enc);
+console.log('combined bytes:', fs.statSync('src/styles/paper.css').size);

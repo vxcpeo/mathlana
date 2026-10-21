@@ -1,0 +1,53 @@
+{
+  "old": {
+    "display": "Mathlana",
+    "slug": "mathlana",
+    "variants": {
+      "display": "Mathlana",
+      "lower": "mathlana",
+      "upper": "MATHLANA",
+      "title": "Mathlana",
+      "kebab": "mathlana",
+      "snake": "mathlana",
+      "camel": "mathlana",
+      "pascal": "Mathlana",
+      "compact": "Mathlana",
+      "compactLower": "mathlana",
+      "first": "Mathlana",
+      "firstLower": "mathlana",
+      "firstUpper": "MATHLANA"
+    },
+    "variantList": [
+      {
+        "value": "Mathlana",
+        "kind": "display"
+      },
+      {
+        "value": "mathlana",
+        "kind": "lower"
+      },
+      {
+        "value": "MATHLANA",
+        "kind": "upper"
+      }
+    ],
+    "domains": [
+      "mathlana.si",
+      "mathlana.si`"
+    ],
+    "handles": [],
+    "emails": [
+      "privacy@mathlana.si"
+    ],
+    "packageNames": [
+      "mathlana-website"
+    ],
+    "initials": "",
+    "allowFiles": [],
+    "allowStrings": []
+  },
+  "usedBrands": [
+    "Mathlana"
+  ],
+  "notes": ""
+}

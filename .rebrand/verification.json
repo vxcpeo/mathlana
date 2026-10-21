@@ -1,0 +1,659 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-20T01:45:59+08:00",
+  "ok": true,
+  "gates": {
+    "old_brand_source": {
+      "ok": true,
+      "filesChecked": 89,
+      "hits": [],
+      "pathHits": [],
+      "allowedFiles": [
+        "vite.config.js"
+      ]
+    },
+    "new_brand_presence": {
+      "ok": true,
+      "surfaces": {
+        "title": true,
+        "meta": true,
+        "logo": false,
+        "canonical": true,
+        "package": true,
+        "readme": true,
+        "newValues": [
+          "Qubitlane",
+          "qubitlane",
+          "qubitlane.xyz",
+          "qubitlane"
+        ]
+      },
+      "count": 5
+    },
+    "assets": {
+      "ok": true,
+      "problems": [],
+      "checks": [
+        {
+          "source": "public/icon.svg",
+          "target": "public/icon.svg",
+          "kind": "icon",
+          "ok": true,
+          "image": {
+            "path": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\public\\icon.svg",
+            "ok": true,
+            "format": "svg",
+            "bytes": 315
+          }
+        }
+      ],
+      "manualReview": []
+    },
+    "references": {
+      "ok": true,
+      "problems": [],
+      "checked": 2
+    },
+    "build_test": {
+      "ok": true,
+      "problems": [],
+      "notes": [
+        "test skipped: script not defined"
+      ],
+      "current": {
+        "build": {
+          "script": "build",
+          "skipped": false,
+          "ok": true,
+          "code": 0,
+          "timedOut": false,
+          "cmd": "C:\\Program Files\\nodejs\\npm.CMD run build --if-present",
+          "stdout": "\n> qubitlane-website@1.0.0 build\n> vite build\n\nvite v7.3.7 building client environment for production...\ntransforming...\n✓ 108 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                                1.24 kB │ gzip:  0.60 kB\ndist/assets/index-2tcuLb-y.css                67.69 kB │ gzip: 12.61 kB\ndist/assets/urania-ink-B0redJub.js             0.08 kB │ gzip:  0.08 kB\ndist/assets/onchain-Gkxmz-fF.js                0.17 kB │ gzip:  0.16 kB\ndist/assets/tokenSnapshot-CKSvABFO.js          0.83 kB │ gzip:  0.47 kB\ndist/assets/format-Bg3bmg86.js                 1.08 kB │ gzip:  0.58 kB\ndist/assets/AppBadge-r3BMrbNZ.js               1.11 kB │ gzip:  0.54 kB\ndist/assets/RisksView-Di2ZPspf.js              1.15 kB │ gzip:  0.70 kB\ndist/assets/NotFoundView-CywR-Hc7.js           1.27 kB │ gzip:  0.70 kB\ndist/assets/useMarket-WBTft1L7.js              1.83 kB │ gzip:  1.09 kB\ndist/assets/PanelCard-27JuTDhH.js              2.07 kB │ gzip:  0.97 kB\ndist/assets/PrivacyView-jpKLwPgE.js            2.08 kB │ gzip:  1.10 kB\ndist/assets/LegalSection-Cq_iR8oX.js           2.22 kB │ gzip:  1.08 kB\ndist/assets/TermsView-Dx9cVMMX.js              3.00 kB │ gzip:  1.48 kB\ndist/assets/TokenGridCard-AmMQsBtG.js          5.82 kB │ gzip:  2.22 kB\ndist/assets/AccountView-BMesZmo_.js            6.29 kB │ gzip:  2.67 kB\ndist/assets/ChallengesView-DXJavKYK.js         8.72 kB │ gzip:  2.96 kB\ndist/assets/presentation-BgPnQHjU.js           8.89 kB │ gzip:  3.55 kB\ndist/assets/QDayView-D6pJCK0I.js              11.92 kB │ gzip:  4.27 kB\ndist/assets/CardArt-DYrO6Zqr.js               12.56 kB │ gzip:  2.13 kB\ndist/assets/MachineLogo-CUCuCD19.js           13.23 kB │ gzip:  4.93 kB\ndist/assets/AboutView-hHBWoa-5.js             15.16 kB │ gzip:  5.27 kB\ndist/assets/TokensView-C1r0HaBC.js            15.99 kB │ gzip:  5.27 kB\ndist/assets/ChallengeDetailView-Bt7FoBpU.js   18.29 kB │ gzip:  5.33 kB\ndist/assets/TokenDetailView-qKms6Lu-.js       19.04 kB │ gzip:  5.85 kB\ndist/assets/HomeView-CQDbXhgq.js              19.54 kB │ gzip:  6.23 kB\ndist/assets/LaunchView-BU5SfmLa.js            28.90 kB │ gzip:  9.07 kB\ndist/assets/ExposureView-D5M14u4Z.js          32.55 kB │ gzip: 11.59 kB\ndist/assets/index-DRinSgC6.js                131.28 kB │ gzip: 50.06 kB\n✓ built in 3.11s\n",
+          "stderr": ""
+        },
+        "test": {
+          "script": "test",
+          "skipped": true,
+          "ok": true,
+          "note": "script not defined"
+        }
+      },
+      "baseline": {
+        "createdAt": "2026-10-20T00:59:20+08:00",
+        "project": "E:\\workspace\\chuangye\\solana\\mathlana\\website",
+        "build": {
+          "script": "build",
+          "skipped": false,
+          "ok": true,
+          "code": 0,
+          "timedOut": false,
+          "cmd": "C:\\Program Files\\nodejs\\npm.CMD run build --if-present",
+          "stdout": "\n> mathlana-website@1.0.0 build\n> vite build\n\nvite v7.3.7 building client environment for production...\ntransforming...\n✓ 106 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                                1.23 kB │ gzip:  0.60 kB\ndist/assets/index-DFYf5DCG.css                67.53 kB │ gzip: 12.56 kB\ndist/assets/urania-ink-B0redJub.js             0.08 kB │ gzip:  0.08 kB\ndist/assets/onchain-Gkxmz-fF.js                0.17 kB │ gzip:  0.16 kB\ndist/assets/tokenSnapshot-5UWcKMbU.js          0.83 kB │ gzip:  0.47 kB\ndist/assets/format-Bg3bmg86.js                 1.08 kB │ gzip:  0.58 kB\ndist/assets/AppBadge-B1e9E-Wl.js               1.11 kB │ gzip:  0.55 kB\ndist/assets/RisksView-BNqqipFY.js              1.15 kB │ gzip:  0.70 kB\ndist/assets/NotFoundView-Bydz-XFo.js           1.27 kB │ gzip:  0.71 kB\ndist/assets/useMarket-Dg60gmzU.js              1.83 kB │ gzip:  1.09 kB\ndist/assets/PanelCard-p5AUovoN.js              2.07 kB │ gzip:  0.97 kB\ndist/assets/PrivacyView-CnI-PtP4.js            2.08 kB │ gzip:  1.09 kB\ndist/assets/LegalSection-aLXHkpxI.js           2.22 kB │ gzip:  1.08 kB\ndist/assets/TermsView-Df9txjwl.js              2.99 kB │ gzip:  1.48 kB\ndist/assets/TokenGridCard-CAjiRpKK.js          5.82 kB │ gzip:  2.22 kB\ndist/assets/AccountView-CrobdErJ.js            6.29 kB │ gzip:  2.67 kB\ndist/assets/ChallengesView-CbeJrAWG.js         8.72 kB │ gzip:  2.96 kB\ndist/assets/presentation-DlmJx8Wj.js           8.89 kB │ gzip:  3.56 kB\ndist/assets/QDayView-DEeZYimQ.js              11.92 kB │ gzip:  4.28 kB\ndist/assets/CardArt-B8DhnRRl.js               12.56 kB │ gzip:  2.13 kB\ndist/assets/MachineLogo-9tshxiPo.js           13.23 kB │ gzip:  4.93 kB\ndist/assets/AboutView-CCwDSBtu.js             15.15 kB │ gzip:  5.27 kB\ndist/assets/TokensView-CK_YgDf6.js            15.99 kB │ gzip:  5.27 kB\ndist/assets/ChallengeDetailView-BS3VnjQh.js   18.29 kB │ gzip:  5.34 kB\ndist/assets/TokenDetailView-Dg67K5p4.js       19.03 kB │ gzip:  5.84 kB\ndist/assets/HomeView-DR7OVfLY.js              19.54 kB │ gzip:  6.23 kB\ndist/assets/LaunchView-Chama6NR.js            28.89 kB │ gzip:  9.07 kB\ndist/assets/ExposureView-B5CUStXB.js          32.55 kB │ gzip: 11.59 kB\ndist/assets/index-D8M-Q7EV.js                131.32 kB │ gzip: 50.07 kB\n✓ built in 2.37s\n",
+          "stderr": ""
+        },
+        "test": {
+          "script": "test",
+          "skipped": true,
+          "ok": true,
+          "note": "script not defined"
+        },
+        "browser": {
+          "ok": true,
+          "cmd": "C:\\Program Files\\nodejs\\node.EXE C:\\Users\\Administrator\\.dsh\\skills\\rebrand\\scripts\\check.mjs --screenshots --project E:\\workspace\\chuangye\\solana\\mathlana\\website --out E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand --url http://127.0.0.1:52121 --routes /",
+          "code": 0,
+          "stdout": "{\n  \"ok\": true,\n  \"url\": \"http://127.0.0.1:52121\",\n  \"screenshots\": 2,\n  \"oldBrandRoutes\": [\n    \"/:desktop\",\n    \"/:mobile\"\n  ],\n  \"browserJson\": \"E:\\\\workspace\\\\chuangye\\\\solana\\\\mathlana\\\\website\\\\.rebrand\\\\browser.json\"\n}\n",
+          "stderr": "",
+          "browser": {
+            "schemaVersion": 1,
+            "checkedAt": "2026-10-19T16:59:20.299Z",
+            "browser": {
+              "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+              "version": "Chrome/155.0.8059.80",
+              "headless": true,
+              "proxy": null,
+              "method": "chrome-cdp"
+            },
+            "baseUrl": "http://127.0.0.1:52121",
+            "routes": [
+              "/"
+            ],
+            "results": [
+              {
+                "route": "/",
+                "device": "desktop",
+                "url": "http://127.0.0.1:52121/",
+                "finalUrl": "http://127.0.0.1:52121/",
+                "httpStatus": 200,
+                "title": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\screenshots\\root-desktop.png",
+                "oldBrand": {
+                  "textHits": [
+                    "mathlana",
+                    "mathlana",
+                    "mathlana"
+                  ],
+                  "attributeHits": [
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://mathlana.si/",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://mathlana.si/",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://mathlana.si/",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://mathlana.si/",
+                      "variant": "mathlana.si"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    }
+                  ]
+                },
+                "newBrandPresent": [],
+                "consoleErrors": [],
+                "pageErrors": [],
+                "failedRequests": []
+              },
+              {
+                "route": "/",
+                "device": "mobile",
+                "url": "http://127.0.0.1:52121/",
+                "finalUrl": "http://127.0.0.1:52121/",
+                "httpStatus": 200,
+                "title": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\screenshots\\root-mobile.png",
+                "oldBrand": {
+                  "textHits": [
+                    "mathlana",
+                    "mathlana",
+                    "mathlana"
+                  ],
+                  "attributeHits": [
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://mathlana.si/",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://mathlana.si/",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://mathlana.si/",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://mathlana.si/",
+                      "variant": "mathlana.si"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Mathlana",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    },
+                    {
+                      "tag": "span",
+                      "attr": "aria-label",
+                      "value": "Mathlana home",
+                      "variant": "mathlana"
+                    }
+                  ]
+                },
+                "newBrandPresent": [],
+                "consoleErrors": [],
+                "pageErrors": [],
+                "failedRequests": []
+              }
+            ]
+          }
+        },
+        "web": true
+      }
+    },
+    "availability": {
+      "ok": true,
+      "selected": {
+        "name": "qubitlane",
+        "slug": "qubitlane"
+      },
+      "method": "chrome-cdp",
+      "mock": false,
+      "evidence": {
+        "domain": {
+          "host": "qubitlane.xyz",
+          "status": "available",
+          "confidence": "medium",
+          "signal": "rdap-unregistered",
+          "rdap": {
+            "url": "https://rdap.centralnic.com/xyz/domain/qubitlane.xyz",
+            "status": 404,
+            "mimeType": "application/rdap+json",
+            "excerpt": "{\"rdapConformance\":[\"icann_rdap_response_profile_1\",\"icann_rdap_technical_implementation_guide_1\",\"rdap_level_0\"],\"lang\":\"en\",\"objectClassName\":\"error\",\"notices\":[{\"title\":\"Status Codes\",\"description\":[\"For more information on domain status codes, please visit https:\\/\\/icann.org\\/epp\"],\"links\":[{\"title\":\"More information on domain status codes\",\"rel\":\"glossary\",\"value\":\"https:\\/\\/rdap.centralnic.com\\/xyz\\/domain\\/qubitlane.xyz\",\"href\":\"https:\\/\\/icann.org\\/epp\"}]},{\"title\":\"Terms of Use\",\"description\":[\"For more information on Whois status codes, please visit https:\\/\\/icann.org\\/epp\",\"\",\"The registration data available in this service is limited. Additional\",\"data may be available at https:\\/\\/lookup.icann.org\",\"\",\"The Whois and RDAP services are provided by CentralNic, and contain\",\"information pertaining to Internet domain names registered by our\",\"our customers. By using this service you are agreeing (1) not to use any\",\"information presented here for any purpose other than determining\",\"ownership of domain names, (2) not to store or reproduce this data in\",\"any way, (3) not to use any high-volume, automated, electronic processes\",\"to obtain data from this service. Abuse of this service is monitored and\",\"actions in contravention of these terms will result in being permanently\",\"blacklisted. All data is (c) CentralNic Ltd (https:\\/\\/www.centralnicregistry.com)\",\"\",\"Access to the Whois and RDAP services is rate limited. For more\",\"information, visit https:\\/\\/centralnicregistry.com\\/policies\\/whois-guidance.\"],\"links\":[{\"title\":\"Terms of Use\",\"rel\":\"terms-of-service\",\"v",
+            "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-xyz-rdap.png"
+          },
+          "registrar": null,
+          "evidence": [
+            {
+              "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=qubitlane.xyz",
+              "httpStatus": 200,
+              "finalUrl": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=qubitlane.xyz",
+              "state": "unknown",
+              "signal": "empty",
+              "excerpt": "",
+              "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-xyz-registrar-1.png"
+            },
+            {
+              "url": "https://porkbun.com/checkout/search?q=qubitlane.xyz",
+              "httpStatus": 200,
+              "finalUrl": "https://porkbun.com/checkout/search?q=qubitlane.xyz",
+              "state": "unknown",
+              "signal": "challenge",
+              "excerpt": "porkbun PRODUCTS TRANSFER SALE! ABOUT RESOURCES $0.00 (0) SIGN IN bulk search AI Search | Auction Search | Marketplace Search Not seeing all the results? We've shown you a shorter list than usual. Confirm you're a person and we'll load the full set of suggestions for your search. Awaiting verification. I'm not a robot Pork Captcha V1.3.1 hide unavailable domains show results by extension relevance Searches again showing only the extensions that best fit your search, most relevant first. sort by renewal price sort by price qubitlane.xyz 1st Year Sale! At Cost $14.21 $2.04 / year renews at $14.21 Show All Extensions Generate AI Suggestions 147206204106b34f971bc5d2bf18518fcafa3e4536f6ac31a45d920a51b66923 porkbun Porkbun is an amazingly awesome ICANN accredited domain name registrar based out of the Pacific Northwest. We're different, we're easy, and we're affordable. Use us, you won't be so",
+              "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-xyz-registrar-3.png"
+            }
+          ],
+          "checkedAt": "2026-10-19T17:05:32.838Z",
+          "registrarErrors": [
+            {
+              "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=qubitlane.xyz",
+              "state": "unknown",
+              "signal": "empty"
+            },
+            {
+              "url": "https://www.namecheap.com/domains/registration/results/?domain=qubitlane.xyz",
+              "error": "Navigation failed for https://www.namecheap.com/domains/registration/results/?domain=qubitlane.xyz: net::ERR_ABORTED"
+            },
+            {
+              "url": "https://porkbun.com/checkout/search?q=qubitlane.xyz",
+              "state": "unknown",
+              "signal": "challenge"
+            }
+          ]
+        },
+        "x": {
+          "handle": "qubitlane",
+          "status": "available",
+          "signal": "not-found-text",
+          "url": "https://x.com/qubitlane",
+          "checkedAt": "2026-10-19T17:05:44.064Z",
+          "httpStatus": 404,
+          "finalUrl": "https://x.com/qubitlane",
+          "title": "User Profile Not Found - X | 404 Error",
+          "excerpt": "Hmm...this page doesn’t exist. Try searching for something else. Search Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · US TIDA · Ads Info · More © 2026 X Corp. Scan to get the app",
+          "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-x.png"
+        }
+      }
+    },
+    "brand_registry": {
+      "ok": true,
+      "problems": [],
+      "path": "E:/workspace/chuangye/solana/mathlana/website/brand.txt",
+      "history": [
+        "Mathlana"
+      ],
+      "current": "Qubitlane",
+      "exists": true
+    },
+    "browser": {
+      "ok": true,
+      "problems": [],
+      "oldBrandHits": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\screenshots\\root-desktop.png",
+        "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\screenshots\\root-mobile.png"
+      ],
+      "routes": [
+        "/"
+      ],
+      "run": {
+        "ok": true,
+        "cmd": "C:\\Program Files\\nodejs\\node.EXE C:\\Users\\Administrator\\.dsh\\skills\\rebrand\\scripts\\check.mjs --screenshots --project E:\\workspace\\chuangye\\solana\\mathlana\\website --out E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand --url http://127.0.0.1:64754 --routes /",
+        "code": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"url\": \"http://127.0.0.1:64754\",\n  \"screenshots\": 2,\n  \"oldBrandRoutes\": [],\n  \"browserJson\": \"E:\\\\workspace\\\\chuangye\\\\solana\\\\mathlana\\\\website\\\\.rebrand\\\\browser.json\"\n}\n",
+        "stderr": ""
+      }
+    },
+    "report": {
+      "ok": true,
+      "path": "E:/workspace/chuangye/solana/mathlana/website/.rebrand/REPORT.md"
+    }
+  },
+  "build": {
+    "build": {
+      "script": "build",
+      "skipped": false,
+      "ok": true,
+      "code": 0,
+      "timedOut": false,
+      "cmd": "C:\\Program Files\\nodejs\\npm.CMD run build --if-present",
+      "stdout": "\n> qubitlane-website@1.0.0 build\n> vite build\n\nvite v7.3.7 building client environment for production...\ntransforming...\n✓ 108 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                                1.24 kB │ gzip:  0.60 kB\ndist/assets/index-2tcuLb-y.css                67.69 kB │ gzip: 12.61 kB\ndist/assets/urania-ink-B0redJub.js             0.08 kB │ gzip:  0.08 kB\ndist/assets/onchain-Gkxmz-fF.js                0.17 kB │ gzip:  0.16 kB\ndist/assets/tokenSnapshot-CKSvABFO.js          0.83 kB │ gzip:  0.47 kB\ndist/assets/format-Bg3bmg86.js                 1.08 kB │ gzip:  0.58 kB\ndist/assets/AppBadge-r3BMrbNZ.js               1.11 kB │ gzip:  0.54 kB\ndist/assets/RisksView-Di2ZPspf.js              1.15 kB │ gzip:  0.70 kB\ndist/assets/NotFoundView-CywR-Hc7.js           1.27 kB │ gzip:  0.70 kB\ndist/assets/useMarket-WBTft1L7.js              1.83 kB │ gzip:  1.09 kB\ndist/assets/PanelCard-27JuTDhH.js              2.07 kB │ gzip:  0.97 kB\ndist/assets/PrivacyView-jpKLwPgE.js            2.08 kB │ gzip:  1.10 kB\ndist/assets/LegalSection-Cq_iR8oX.js           2.22 kB │ gzip:  1.08 kB\ndist/assets/TermsView-Dx9cVMMX.js              3.00 kB │ gzip:  1.48 kB\ndist/assets/TokenGridCard-AmMQsBtG.js          5.82 kB │ gzip:  2.22 kB\ndist/assets/AccountView-BMesZmo_.js            6.29 kB │ gzip:  2.67 kB\ndist/assets/ChallengesView-DXJavKYK.js         8.72 kB │ gzip:  2.96 kB\ndist/assets/presentation-BgPnQHjU.js           8.89 kB │ gzip:  3.55 kB\ndist/assets/QDayView-D6pJCK0I.js              11.92 kB │ gzip:  4.27 kB\ndist/assets/CardArt-DYrO6Zqr.js               12.56 kB │ gzip:  2.13 kB\ndist/assets/MachineLogo-CUCuCD19.js           13.23 kB │ gzip:  4.93 kB\ndist/assets/AboutView-hHBWoa-5.js             15.16 kB │ gzip:  5.27 kB\ndist/assets/TokensView-C1r0HaBC.js            15.99 kB │ gzip:  5.27 kB\ndist/assets/ChallengeDetailView-Bt7FoBpU.js   18.29 kB │ gzip:  5.33 kB\ndist/assets/TokenDetailView-qKms6Lu-.js       19.04 kB │ gzip:  5.85 kB\ndist/assets/HomeView-CQDbXhgq.js              19.54 kB │ gzip:  6.23 kB\ndist/assets/LaunchView-BU5SfmLa.js            28.90 kB │ gzip:  9.07 kB\ndist/assets/ExposureView-D5M14u4Z.js          32.55 kB │ gzip: 11.59 kB\ndist/assets/index-DRinSgC6.js                131.28 kB │ gzip: 50.06 kB\n✓ built in 3.11s\n",
+      "stderr": ""
+    },
+    "test": {
+      "script": "test",
+      "skipped": true,
+      "ok": true,
+      "note": "script not defined"
+    }
+  },
+  "browser": {
+    "schemaVersion": 1,
+    "checkedAt": "2026-10-19T17:45:58.727Z",
+    "browser": {
+      "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "version": "Chrome/155.0.8059.80",
+      "headless": true,
+      "proxy": null,
+      "method": "chrome-cdp"
+    },
+    "baseUrl": "http://127.0.0.1:64754",
+    "routes": [
+      "/"
+    ],
+    "results": [
+      {
+        "route": "/",
+        "device": "desktop",
+        "url": "http://127.0.0.1:64754/",
+        "finalUrl": "http://127.0.0.1:64754/",
+        "httpStatus": 200,
+        "title": "Qubitlane: When do Bitcoin, Ethereum and Solana wallets break?",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\screenshots\\root-desktop.png",
+        "oldBrand": {
+          "textHits": [],
+          "attributeHits": []
+        },
+        "newBrandPresent": [
+          "Qubitlane",
+          "qubitlane",
+          "qubitlane"
+        ],
+        "consoleErrors": [],
+        "pageErrors": [],
+        "failedRequests": []
+      },
+      {
+        "route": "/",
+        "device": "mobile",
+        "url": "http://127.0.0.1:64754/",
+        "finalUrl": "http://127.0.0.1:64754/",
+        "httpStatus": 200,
+        "title": "Qubitlane: When do Bitcoin, Ethereum and Solana wallets break?",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\screenshots\\root-mobile.png",
+        "oldBrand": {
+          "textHits": [],
+          "attributeHits": []
+        },
+        "newBrandPresent": [
+          "Qubitlane",
+          "qubitlane",
+          "qubitlane"
+        ],
+        "consoleErrors": [],
+        "pageErrors": [],
+        "failedRequests": []
+      }
+    ]
+  },
+  "availability": {
+    "selected": {
+      "name": "qubitlane",
+      "slug": "qubitlane",
+      "score": 95,
+      "domain": {
+        "host": "qubitlane.xyz",
+        "status": "available",
+        "confidence": "medium",
+        "signal": "rdap-unregistered",
+        "rdap": {
+          "url": "https://rdap.centralnic.com/xyz/domain/qubitlane.xyz",
+          "status": 404,
+          "mimeType": "application/rdap+json",
+          "excerpt": "{\"rdapConformance\":[\"icann_rdap_response_profile_1\",\"icann_rdap_technical_implementation_guide_1\",\"rdap_level_0\"],\"lang\":\"en\",\"objectClassName\":\"error\",\"notices\":[{\"title\":\"Status Codes\",\"description\":[\"For more information on domain status codes, please visit https:\\/\\/icann.org\\/epp\"],\"links\":[{\"title\":\"More information on domain status codes\",\"rel\":\"glossary\",\"value\":\"https:\\/\\/rdap.centralnic.com\\/xyz\\/domain\\/qubitlane.xyz\",\"href\":\"https:\\/\\/icann.org\\/epp\"}]},{\"title\":\"Terms of Use\",\"description\":[\"For more information on Whois status codes, please visit https:\\/\\/icann.org\\/epp\",\"\",\"The registration data available in this service is limited. Additional\",\"data may be available at https:\\/\\/lookup.icann.org\",\"\",\"The Whois and RDAP services are provided by CentralNic, and contain\",\"information pertaining to Internet domain names registered by our\",\"our customers. By using this service you are agreeing (1) not to use any\",\"information presented here for any purpose other than determining\",\"ownership of domain names, (2) not to store or reproduce this data in\",\"any way, (3) not to use any high-volume, automated, electronic processes\",\"to obtain data from this service. Abuse of this service is monitored and\",\"actions in contravention of these terms will result in being permanently\",\"blacklisted. All data is (c) CentralNic Ltd (https:\\/\\/www.centralnicregistry.com)\",\"\",\"Access to the Whois and RDAP services is rate limited. For more\",\"information, visit https:\\/\\/centralnicregistry.com\\/policies\\/whois-guidance.\"],\"links\":[{\"title\":\"Terms of Use\",\"rel\":\"terms-of-service\",\"v",
+          "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-xyz-rdap.png"
+        },
+        "registrar": null,
+        "evidence": [
+          {
+            "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=qubitlane.xyz",
+            "httpStatus": 200,
+            "finalUrl": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=qubitlane.xyz",
+            "state": "unknown",
+            "signal": "empty",
+            "excerpt": "",
+            "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-xyz-registrar-1.png"
+          },
+          {
+            "url": "https://porkbun.com/checkout/search?q=qubitlane.xyz",
+            "httpStatus": 200,
+            "finalUrl": "https://porkbun.com/checkout/search?q=qubitlane.xyz",
+            "state": "unknown",
+            "signal": "challenge",
+            "excerpt": "porkbun PRODUCTS TRANSFER SALE! ABOUT RESOURCES $0.00 (0) SIGN IN bulk search AI Search | Auction Search | Marketplace Search Not seeing all the results? We've shown you a shorter list than usual. Confirm you're a person and we'll load the full set of suggestions for your search. Awaiting verification. I'm not a robot Pork Captcha V1.3.1 hide unavailable domains show results by extension relevance Searches again showing only the extensions that best fit your search, most relevant first. sort by renewal price sort by price qubitlane.xyz 1st Year Sale! At Cost $14.21 $2.04 / year renews at $14.21 Show All Extensions Generate AI Suggestions 147206204106b34f971bc5d2bf18518fcafa3e4536f6ac31a45d920a51b66923 porkbun Porkbun is an amazingly awesome ICANN accredited domain name registrar based out of the Pacific Northwest. We're different, we're easy, and we're affordable. Use us, you won't be so",
+            "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-xyz-registrar-3.png"
+          }
+        ],
+        "checkedAt": "2026-10-19T17:05:32.838Z",
+        "registrarErrors": [
+          {
+            "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=qubitlane.xyz",
+            "state": "unknown",
+            "signal": "empty"
+          },
+          {
+            "url": "https://www.namecheap.com/domains/registration/results/?domain=qubitlane.xyz",
+            "error": "Navigation failed for https://www.namecheap.com/domains/registration/results/?domain=qubitlane.xyz: net::ERR_ABORTED"
+          },
+          {
+            "url": "https://porkbun.com/checkout/search?q=qubitlane.xyz",
+            "state": "unknown",
+            "signal": "challenge"
+          }
+        ]
+      },
+      "x": {
+        "handle": "qubitlane",
+        "status": "available",
+        "signal": "not-found-text",
+        "url": "https://x.com/qubitlane",
+        "checkedAt": "2026-10-19T17:05:44.064Z",
+        "httpStatus": 404,
+        "finalUrl": "https://x.com/qubitlane",
+        "title": "User Profile Not Found - X | 404 Error",
+        "excerpt": "Hmm...this page doesn’t exist. Try searching for something else. Search Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · US TIDA · Ads Info · More © 2026 X Corp. Scan to get the app",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\availability\\qubitlane-x.png"
+      },
+      "verdict": "pass",
+      "checkedAt": "2026-10-19T17:05:49.506Z"
+    },
+    "method": "chrome-cdp"
+  }
+}

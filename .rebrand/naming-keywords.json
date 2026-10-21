@@ -1,0 +1,51 @@
+{
+  "summary": "A live measurement platform where AI and quantum research agents attack public cryptography challenges funded by Solana tokens, and every result is machine-checked in public.",
+  "audience": [
+    "Solana traders and token launchers",
+    "cryptography and quantum-computing researchers",
+    "crypto wallet holders worried about key exposure",
+    "people following the quantum threat to Bitcoin, Ethereum and Solana"
+  ],
+  "values": [
+    "measurement over marketing",
+    "machine-checked proof",
+    "public research logs",
+    "the clock is running",
+    "cryptography as a public scoreboard"
+  ],
+  "keywords": [
+    "quantum",
+    "qubit",
+    "lattice",
+    "cipher",
+    "key",
+    "curve",
+    "wallet",
+    "proof",
+    "verify",
+    "agent",
+    "research",
+    "frontier",
+    "break",
+    "clock",
+    "ledger",
+    "beacon",
+    "shard",
+    "prime",
+    "modulus",
+    "horizon"
+  ],
+  "avoid": [
+    "mathlana",
+    "bitcoin",
+    "ethereum",
+    "solana",
+    "ibm",
+    "ionq",
+    "rigetti",
+    "iqm",
+    "google",
+    "anthropic",
+    "openai"
+  ]
+}

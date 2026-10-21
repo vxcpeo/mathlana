@@ -1,0 +1,317 @@
+{
+  "createdAt": "2026-10-20T00:59:20+08:00",
+  "project": "E:\\workspace\\chuangye\\solana\\mathlana\\website",
+  "build": {
+    "script": "build",
+    "skipped": false,
+    "ok": true,
+    "code": 0,
+    "timedOut": false,
+    "cmd": "C:\\Program Files\\nodejs\\npm.CMD run build --if-present",
+    "stdout": "\n> mathlana-website@1.0.0 build\n> vite build\n\nvite v7.3.7 building client environment for production...\ntransforming...\n✓ 106 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                                1.23 kB │ gzip:  0.60 kB\ndist/assets/index-DFYf5DCG.css                67.53 kB │ gzip: 12.56 kB\ndist/assets/urania-ink-B0redJub.js             0.08 kB │ gzip:  0.08 kB\ndist/assets/onchain-Gkxmz-fF.js                0.17 kB │ gzip:  0.16 kB\ndist/assets/tokenSnapshot-5UWcKMbU.js          0.83 kB │ gzip:  0.47 kB\ndist/assets/format-Bg3bmg86.js                 1.08 kB │ gzip:  0.58 kB\ndist/assets/AppBadge-B1e9E-Wl.js               1.11 kB │ gzip:  0.55 kB\ndist/assets/RisksView-BNqqipFY.js              1.15 kB │ gzip:  0.70 kB\ndist/assets/NotFoundView-Bydz-XFo.js           1.27 kB │ gzip:  0.71 kB\ndist/assets/useMarket-Dg60gmzU.js              1.83 kB │ gzip:  1.09 kB\ndist/assets/PanelCard-p5AUovoN.js              2.07 kB │ gzip:  0.97 kB\ndist/assets/PrivacyView-CnI-PtP4.js            2.08 kB │ gzip:  1.09 kB\ndist/assets/LegalSection-aLXHkpxI.js           2.22 kB │ gzip:  1.08 kB\ndist/assets/TermsView-Df9txjwl.js              2.99 kB │ gzip:  1.48 kB\ndist/assets/TokenGridCard-CAjiRpKK.js          5.82 kB │ gzip:  2.22 kB\ndist/assets/AccountView-CrobdErJ.js            6.29 kB │ gzip:  2.67 kB\ndist/assets/ChallengesView-CbeJrAWG.js         8.72 kB │ gzip:  2.96 kB\ndist/assets/presentation-DlmJx8Wj.js           8.89 kB │ gzip:  3.56 kB\ndist/assets/QDayView-DEeZYimQ.js              11.92 kB │ gzip:  4.28 kB\ndist/assets/CardArt-B8DhnRRl.js               12.56 kB │ gzip:  2.13 kB\ndist/assets/MachineLogo-9tshxiPo.js           13.23 kB │ gzip:  4.93 kB\ndist/assets/AboutView-CCwDSBtu.js             15.15 kB │ gzip:  5.27 kB\ndist/assets/TokensView-CK_YgDf6.js            15.99 kB │ gzip:  5.27 kB\ndist/assets/ChallengeDetailView-BS3VnjQh.js   18.29 kB │ gzip:  5.34 kB\ndist/assets/TokenDetailView-Dg67K5p4.js       19.03 kB │ gzip:  5.84 kB\ndist/assets/HomeView-DR7OVfLY.js              19.54 kB │ gzip:  6.23 kB\ndist/assets/LaunchView-Chama6NR.js            28.89 kB │ gzip:  9.07 kB\ndist/assets/ExposureView-B5CUStXB.js          32.55 kB │ gzip: 11.59 kB\ndist/assets/index-D8M-Q7EV.js                131.32 kB │ gzip: 50.07 kB\n✓ built in 2.37s\n",
+    "stderr": ""
+  },
+  "test": {
+    "script": "test",
+    "skipped": true,
+    "ok": true,
+    "note": "script not defined"
+  },
+  "browser": {
+    "ok": true,
+    "cmd": "C:\\Program Files\\nodejs\\node.EXE C:\\Users\\Administrator\\.dsh\\skills\\rebrand\\scripts\\check.mjs --screenshots --project E:\\workspace\\chuangye\\solana\\mathlana\\website --out E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand --url http://127.0.0.1:52121 --routes /",
+    "code": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"url\": \"http://127.0.0.1:52121\",\n  \"screenshots\": 2,\n  \"oldBrandRoutes\": [\n    \"/:desktop\",\n    \"/:mobile\"\n  ],\n  \"browserJson\": \"E:\\\\workspace\\\\chuangye\\\\solana\\\\mathlana\\\\website\\\\.rebrand\\\\browser.json\"\n}\n",
+    "stderr": "",
+    "browser": {
+      "schemaVersion": 1,
+      "checkedAt": "2026-10-19T16:59:20.299Z",
+      "browser": {
+        "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "version": "Chrome/155.0.8059.80",
+        "headless": true,
+        "proxy": null,
+        "method": "chrome-cdp"
+      },
+      "baseUrl": "http://127.0.0.1:52121",
+      "routes": [
+        "/"
+      ],
+      "results": [
+        {
+          "route": "/",
+          "device": "desktop",
+          "url": "http://127.0.0.1:52121/",
+          "finalUrl": "http://127.0.0.1:52121/",
+          "httpStatus": 200,
+          "title": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+          "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\screenshots\\root-desktop.png",
+          "oldBrand": {
+            "textHits": [
+              "mathlana",
+              "mathlana",
+              "mathlana"
+            ],
+            "attributeHits": [
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "https://mathlana.si/",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "https://mathlana.si/",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "https://mathlana.si/",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "https://mathlana.si/",
+                "variant": "mathlana.si"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              }
+            ]
+          },
+          "newBrandPresent": [],
+          "consoleErrors": [],
+          "pageErrors": [],
+          "failedRequests": []
+        },
+        {
+          "route": "/",
+          "device": "mobile",
+          "url": "http://127.0.0.1:52121/",
+          "finalUrl": "http://127.0.0.1:52121/",
+          "httpStatus": 200,
+          "title": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+          "screenshot": "E:\\workspace\\chuangye\\solana\\mathlana\\website\\.rebrand\\screenshots\\root-mobile.png",
+          "oldBrand": {
+            "textHits": [
+              "mathlana",
+              "mathlana",
+              "mathlana"
+            ],
+            "attributeHits": [
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "AI and quantum computers are closing in on the math that guards crypto wallets. Mathlana measures how close, live. Run any task on a real quantum computer, or launch a token with your picture redrawn 1:1 by one, with proof of quantum.",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana: When do Bitcoin, Ethereum and Solana wallets break?",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "https://mathlana.si/",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "https://mathlana.si/",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "https://mathlana.si/",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "https://mathlana.si/",
+                "variant": "mathlana.si"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "meta",
+                "attr": "content",
+                "value": "Mathlana",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              },
+              {
+                "tag": "span",
+                "attr": "aria-label",
+                "value": "Mathlana home",
+                "variant": "mathlana"
+              }
+            ]
+          },
+          "newBrandPresent": [],
+          "consoleErrors": [],
+          "pageErrors": [],
+          "failedRequests": []
+        }
+      ]
+    }
+  },
+  "web": true
+}

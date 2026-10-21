@@ -1,0 +1,1131 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-20T16:26:41.682Z",
+  "project": {
+    "root": "E:/workspace/chuangye/solana/mathlana/website",
+    "name": "qubitlane-website",
+    "baseUrl": "http://127.0.0.1:4499/"
+  },
+  "passed": false,
+  "thresholds": {
+    "maxStructureSimilarity": 0.5,
+    "maxLandmarkSimilarity": 0.68,
+    "maxClassOverlap": 0.1,
+    "minAccentDistance": 30,
+    "maxContrastFailures": 0,
+    "maxAxeSerious": 0
+  },
+  "gates": {
+    "sourceContract": {
+      "passed": true,
+      "issues": [],
+      "warnings": [
+        "bindings: \"attr:item.to\" count increased 12 -> 13",
+        "bindings: \"interpolation:item.label\" count increased 14 -> 15",
+        "bindings: \"link:item.to\" count increased 12 -> 13"
+      ],
+      "hash": "32e21d29b635e30bb4ea29eda07a86460b8fed67373651b78d4e4843bb75fc90"
+    },
+    "skeleton": {
+      "passed": false,
+      "original": {
+        "id": "orbital",
+        "family": "spatial",
+        "traits": {
+          "sidebar": true,
+          "topbar": false,
+          "cards": true,
+          "hero": true,
+          "table": true,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": false,
+          "sticky": true,
+          "orbital": true,
+          "terminal": false,
+          "bento": false,
+          "ticker": true,
+          "gallery": false
+        }
+      },
+      "current": {
+        "id": "orbital",
+        "family": "spatial",
+        "traits": {
+          "sidebar": true,
+          "topbar": false,
+          "cards": true,
+          "hero": true,
+          "table": true,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": false,
+          "sticky": true,
+          "orbital": true,
+          "terminal": false,
+          "bento": false,
+          "ticker": true,
+          "gallery": false
+        }
+      },
+      "accent": {
+        "original": "#0000ff",
+        "current": "#6f82e8",
+        "deltaE": 82.95,
+        "min": 30
+      }
+    },
+    "pages": [
+      {
+        "route": "/",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.375,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.065
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 24,
+              "total": 28
+            },
+            "current": {
+              "tokens": 24,
+              "total": 28
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/home-desktop.png",
+          "mobile": "current/home-mobile.png"
+        }
+      },
+      {
+        "route": "/about",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.365,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.081
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 11,
+              "total": 13
+            },
+            "current": {
+              "tokens": 11,
+              "total": 13
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/about-desktop.png",
+          "mobile": "current/about-mobile.png"
+        }
+      },
+      {
+        "route": "/account",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.42,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.069
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 6,
+              "total": 7
+            },
+            "current": {
+              "tokens": 6,
+              "total": 7
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/account-desktop.png",
+          "mobile": "current/account-mobile.png"
+        }
+      },
+      {
+        "route": "/challenges",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.356,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.071
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 22,
+              "total": 23
+            },
+            "current": {
+              "tokens": 22,
+              "total": 23
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/challenges-desktop.png",
+          "mobile": "current/challenges-mobile.png"
+        }
+      },
+      {
+        "route": "/challenges/:slug",
+        "passed": true,
+        "skipped": true,
+        "failures": [],
+        "warnings": [],
+        "structure": {},
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {}
+        },
+        "screenshots": {}
+      },
+      {
+        "route": "/challenges/ecdsa-fail",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.349,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.053
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 11,
+              "total": 18
+            },
+            "current": {
+              "tokens": 11,
+              "total": 18
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/challenges-ecdsa-fail-desktop.png",
+          "mobile": "current/challenges-ecdsa-fail-mobile.png"
+        }
+      },
+      {
+        "route": "/challenges/proximity",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.324,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.043
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 30,
+              "total": 66
+            },
+            "current": {
+              "tokens": 30,
+              "total": 66
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/challenges-proximity-desktop.png",
+          "mobile": "current/challenges-proximity-mobile.png"
+        }
+      },
+      {
+        "route": "/challenges/sig-golf",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.352,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.049
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 21,
+              "total": 25
+            },
+            "current": {
+              "tokens": 21,
+              "total": 25
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/challenges-sig-golf-desktop.png",
+          "mobile": "current/challenges-sig-golf-mobile.png"
+        }
+      },
+      {
+        "route": "/exposure",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.389,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.074
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 15,
+              "total": 18
+            },
+            "current": {
+              "tokens": 15,
+              "total": 18
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/exposure-desktop.png",
+          "mobile": "current/exposure-mobile.png"
+        }
+      },
+      {
+        "route": "/launch",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.313,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.06
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 23,
+              "total": 25
+            },
+            "current": {
+              "tokens": 23,
+              "total": 25
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/launch-desktop.png",
+          "mobile": "current/launch-mobile.png"
+        }
+      },
+      {
+        "route": "/privacy",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.385,
+          "landmarkSimilarity": 0.571,
+          "classOverlap": 0.078
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 14,
+              "total": 15
+            },
+            "current": {
+              "tokens": 14,
+              "total": 15
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/privacy-desktop.png",
+          "mobile": "current/privacy-mobile.png"
+        }
+      },
+      {
+        "route": "/q-day",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.375,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.053
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 25,
+              "total": 28
+            },
+            "current": {
+              "tokens": 25,
+              "total": 28
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/q-day-desktop.png",
+          "mobile": "current/q-day-mobile.png"
+        }
+      },
+      {
+        "route": "/risks",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.408,
+          "landmarkSimilarity": 0.571,
+          "classOverlap": 0.079
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 12,
+              "total": 13
+            },
+            "current": {
+              "tokens": 12,
+              "total": 13
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/risks-desktop.png",
+          "mobile": "current/risks-mobile.png"
+        }
+      },
+      {
+        "route": "/t/:mint",
+        "passed": true,
+        "skipped": true,
+        "failures": [],
+        "warnings": [],
+        "structure": {},
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {}
+        },
+        "screenshots": {}
+      },
+      {
+        "route": "/t/preview",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.452,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.092
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 6,
+              "total": 7
+            },
+            "current": {
+              "tokens": 6,
+              "total": 7
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/t-preview-desktop.png",
+          "mobile": "current/t-preview-mobile.png"
+        }
+      },
+      {
+        "route": "/terms",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.408,
+          "landmarkSimilarity": 0.571,
+          "classOverlap": 0.079
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 17,
+              "total": 18
+            },
+            "current": {
+              "tokens": 17,
+              "total": 18
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/terms-desktop.png",
+          "mobile": "current/terms-mobile.png"
+        }
+      },
+      {
+        "route": "/tokens",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=About",
+          "aria attribute added: aria-label=Challenges",
+          "aria attribute added: aria-label=Check a wallet",
+          "aria attribute added: aria-label=Contents",
+          "aria attribute added: aria-label=How it works",
+          "aria attribute added: aria-label=Open the menu",
+          "aria attribute added: aria-label=Sections",
+          "aria attribute added: aria-label=Tokens",
+          "link target added: /#how",
+          "link target added: /about",
+          "link target added: /challenges",
+          "link target added: /exposure",
+          "link target added: /tokens"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.299,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.063
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 22,
+              "total": 32
+            },
+            "current": {
+              "tokens": 22,
+              "total": 32
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/tokens-desktop.png",
+          "mobile": "current/tokens-mobile.png"
+        }
+      }
+    ]
+  },
+  "failures": [
+    "source: archetype still orbital (spatial); expected a different skeleton family"
+  ],
+  "warnings": [
+    "bindings: \"attr:item.to\" count increased 12 -> 13",
+    "bindings: \"interpolation:item.label\" count increased 14 -> 15",
+    "bindings: \"link:item.to\" count increased 12 -> 13",
+    "/: aria attribute added: aria-label=About",
+    "/: aria attribute added: aria-label=Challenges",
+    "/: aria attribute added: aria-label=Check a wallet",
+    "/: aria attribute added: aria-label=Contents",
+    "/: aria attribute added: aria-label=How it works",
+    "/: aria attribute added: aria-label=Open the menu",
+    "/: aria attribute added: aria-label=Sections",
+    "/: aria attribute added: aria-label=Tokens",
+    "/: link target added: /#how",
+    "/: link target added: /about",
+    "/: link target added: /challenges",
+    "/: link target added: /exposure",
+    "/: link target added: /tokens",
+    "/about: aria attribute added: aria-label=About",
+    "/about: aria attribute added: aria-label=Challenges",
+    "/about: aria attribute added: aria-label=Check a wallet",
+    "/about: aria attribute added: aria-label=Contents",
+    "/about: aria attribute added: aria-label=How it works",
+    "/about: aria attribute added: aria-label=Open the menu",
+    "/about: aria attribute added: aria-label=Sections",
+    "/about: aria attribute added: aria-label=Tokens",
+    "/about: link target added: /#how",
+    "/about: link target added: /about",
+    "/about: link target added: /challenges",
+    "/about: link target added: /exposure",
+    "/about: link target added: /tokens",
+    "/account: aria attribute added: aria-label=About",
+    "/account: aria attribute added: aria-label=Challenges",
+    "/account: aria attribute added: aria-label=Check a wallet",
+    "/account: aria attribute added: aria-label=Contents",
+    "/account: aria attribute added: aria-label=How it works",
+    "/account: aria attribute added: aria-label=Open the menu",
+    "/account: aria attribute added: aria-label=Sections",
+    "/account: aria attribute added: aria-label=Tokens",
+    "/account: link target added: /#how",
+    "/account: link target added: /about",
+    "/account: link target added: /challenges",
+    "/account: link target added: /exposure",
+    "/account: link target added: /tokens",
+    "/challenges: aria attribute added: aria-label=About",
+    "/challenges: aria attribute added: aria-label=Challenges",
+    "/challenges: aria attribute added: aria-label=Check a wallet",
+    "/challenges: aria attribute added: aria-label=Contents",
+    "/challenges: aria attribute added: aria-label=How it works",
+    "/challenges: aria attribute added: aria-label=Open the menu",
+    "/challenges: aria attribute added: aria-label=Sections",
+    "/challenges: aria attribute added: aria-label=Tokens",
+    "/challenges: link target added: /#how",
+    "/challenges: link target added: /about",
+    "/challenges: link target added: /challenges",
+    "/challenges: link target added: /exposure",
+    "/challenges: link target added: /tokens",
+    "/challenges/ecdsa-fail: aria attribute added: aria-label=About",
+    "/challenges/ecdsa-fail: aria attribute added: aria-label=Challenges",
+    "/challenges/ecdsa-fail: aria attribute added: aria-label=Check a wallet",
+    "/challenges/ecdsa-fail: aria attribute added: aria-label=Contents",
+    "/challenges/ecdsa-fail: aria attribute added: aria-label=How it works",
+    "/challenges/ecdsa-fail: aria attribute added: aria-label=Open the menu",
+    "/challenges/ecdsa-fail: aria attribute added: aria-label=Sections",
+    "/challenges/ecdsa-fail: aria attribute added: aria-label=Tokens",
+    "/challenges/ecdsa-fail: link target added: /#how",
+    "/challenges/ecdsa-fail: link target added: /about",
+    "/challenges/ecdsa-fail: link target added: /challenges",
+    "/challenges/ecdsa-fail: link target added: /exposure",
+    "/challenges/ecdsa-fail: link target added: /tokens",
+    "/challenges/proximity: aria attribute added: aria-label=About",
+    "/challenges/proximity: aria attribute added: aria-label=Challenges",
+    "/challenges/proximity: aria attribute added: aria-label=Check a wallet",
+    "/challenges/proximity: aria attribute added: aria-label=Contents",
+    "/challenges/proximity: aria attribute added: aria-label=How it works",
+    "/challenges/proximity: aria attribute added: aria-label=Open the menu",
+    "/challenges/proximity: aria attribute added: aria-label=Sections",
+    "/challenges/proximity: aria attribute added: aria-label=Tokens",
+    "/challenges/proximity: link target added: /#how",
+    "/challenges/proximity: link target added: /about",
+    "/challenges/proximity: link target added: /challenges",
+    "/challenges/proximity: link target added: /exposure",
+    "/challenges/proximity: link target added: /tokens",
+    "/challenges/sig-golf: aria attribute added: aria-label=About",
+    "/challenges/sig-golf: aria attribute added: aria-label=Challenges",
+    "/challenges/sig-golf: aria attribute added: aria-label=Check a wallet",
+    "/challenges/sig-golf: aria attribute added: aria-label=Contents",
+    "/challenges/sig-golf: aria attribute added: aria-label=How it works",
+    "/challenges/sig-golf: aria attribute added: aria-label=Open the menu",
+    "/challenges/sig-golf: aria attribute added: aria-label=Sections",
+    "/challenges/sig-golf: aria attribute added: aria-label=Tokens",
+    "/challenges/sig-golf: link target added: /#how",
+    "/challenges/sig-golf: link target added: /about",
+    "/challenges/sig-golf: link target added: /challenges",
+    "/challenges/sig-golf: link target added: /exposure",
+    "/challenges/sig-golf: link target added: /tokens",
+    "/exposure: aria attribute added: aria-label=About",
+    "/exposure: aria attribute added: aria-label=Challenges",
+    "/exposure: aria attribute added: aria-label=Check a wallet",
+    "/exposure: aria attribute added: aria-label=Contents",
+    "/exposure: aria attribute added: aria-label=How it works",
+    "/exposure: aria attribute added: aria-label=Open the menu",
+    "/exposure: aria attribute added: aria-label=Sections",
+    "/exposure: aria attribute added: aria-label=Tokens",
+    "/exposure: link target added: /#how",
+    "/exposure: link target added: /about",
+    "/exposure: link target added: /challenges",
+    "/exposure: link target added: /exposure",
+    "/exposure: link target added: /tokens",
+    "/launch: aria attribute added: aria-label=About",
+    "/launch: aria attribute added: aria-label=Challenges",
+    "/launch: aria attribute added: aria-label=Check a wallet",
+    "/launch: aria attribute added: aria-label=Contents",
+    "/launch: aria attribute added: aria-label=How it works",
+    "/launch: aria attribute added: aria-label=Open the menu",
+    "/launch: aria attribute added: aria-label=Sections",
+    "/launch: aria attribute added: aria-label=Tokens",
+    "/launch: link target added: /#how",
+    "/launch: link target added: /about",
+    "/launch: link target added: /challenges",
+    "/launch: link target added: /exposure",
+    "/launch: link target added: /tokens",
+    "/privacy: aria attribute added: aria-label=About",
+    "/privacy: aria attribute added: aria-label=Challenges",
+    "/privacy: aria attribute added: aria-label=Check a wallet",
+    "/privacy: aria attribute added: aria-label=Contents",
+    "/privacy: aria attribute added: aria-label=How it works",
+    "/privacy: aria attribute added: aria-label=Open the menu",
+    "/privacy: aria attribute added: aria-label=Sections",
+    "/privacy: aria attribute added: aria-label=Tokens",
+    "/privacy: link target added: /#how",
+    "/privacy: link target added: /about",
+    "/privacy: link target added: /challenges",
+    "/privacy: link target added: /exposure",
+    "/privacy: link target added: /tokens",
+    "/q-day: aria attribute added: aria-label=About",
+    "/q-day: aria attribute added: aria-label=Challenges",
+    "/q-day: aria attribute added: aria-label=Check a wallet",
+    "/q-day: aria attribute added: aria-label=Contents",
+    "/q-day: aria attribute added: aria-label=How it works",
+    "/q-day: aria attribute added: aria-label=Open the menu",
+    "/q-day: aria attribute added: aria-label=Sections",
+    "/q-day: aria attribute added: aria-label=Tokens",
+    "/q-day: link target added: /#how",
+    "/q-day: link target added: /about",
+    "/q-day: link target added: /challenges",
+    "/q-day: link target added: /exposure",
+    "/q-day: link target added: /tokens",
+    "/risks: aria attribute added: aria-label=About",
+    "/risks: aria attribute added: aria-label=Challenges",
+    "/risks: aria attribute added: aria-label=Check a wallet",
+    "/risks: aria attribute added: aria-label=Contents",
+    "/risks: aria attribute added: aria-label=How it works",
+    "/risks: aria attribute added: aria-label=Open the menu",
+    "/risks: aria attribute added: aria-label=Sections",
+    "/risks: aria attribute added: aria-label=Tokens",
+    "/risks: link target added: /#how",
+    "/risks: link target added: /about",
+    "/risks: link target added: /challenges",
+    "/risks: link target added: /exposure",
+    "/risks: link target added: /tokens",
+    "/t/preview: aria attribute added: aria-label=About",
+    "/t/preview: aria attribute added: aria-label=Challenges",
+    "/t/preview: aria attribute added: aria-label=Check a wallet",
+    "/t/preview: aria attribute added: aria-label=Contents",
+    "/t/preview: aria attribute added: aria-label=How it works",
+    "/t/preview: aria attribute added: aria-label=Open the menu",
+    "/t/preview: aria attribute added: aria-label=Sections",
+    "/t/preview: aria attribute added: aria-label=Tokens",
+    "/t/preview: link target added: /#how",
+    "/t/preview: link target added: /about",
+    "/t/preview: link target added: /challenges",
+    "/t/preview: link target added: /exposure",
+    "/t/preview: link target added: /tokens",
+    "/terms: aria attribute added: aria-label=About",
+    "/terms: aria attribute added: aria-label=Challenges",
+    "/terms: aria attribute added: aria-label=Check a wallet",
+    "/terms: aria attribute added: aria-label=Contents",
+    "/terms: aria attribute added: aria-label=How it works",
+    "/terms: aria attribute added: aria-label=Open the menu",
+    "/terms: aria attribute added: aria-label=Sections",
+    "/terms: aria attribute added: aria-label=Tokens",
+    "/terms: link target added: /#how",
+    "/terms: link target added: /about",
+    "/terms: link target added: /challenges",
+    "/terms: link target added: /exposure",
+    "/terms: link target added: /tokens",
+    "/tokens: aria attribute added: aria-label=About",
+    "/tokens: aria attribute added: aria-label=Challenges",
+    "/tokens: aria attribute added: aria-label=Check a wallet",
+    "/tokens: aria attribute added: aria-label=Contents",
+    "/tokens: aria attribute added: aria-label=How it works",
+    "/tokens: aria attribute added: aria-label=Open the menu",
+    "/tokens: aria attribute added: aria-label=Sections",
+    "/tokens: aria attribute added: aria-label=Tokens",
+    "/tokens: link target added: /#how",
+    "/tokens: link target added: /about",
+    "/tokens: link target added: /challenges",
+    "/tokens: link target added: /exposure",
+    "/tokens: link target added: /tokens"
+  ],
+  "baseline": {
+    "generatedAt": "2026-10-20T16:23:07.656Z",
+    "routes": [
+      "/",
+      "/about",
+      "/account",
+      "/challenges",
+      "/challenges/:slug",
+      "/challenges/ecdsa-fail",
+      "/challenges/proximity",
+      "/challenges/sig-golf",
+      "/exposure",
+      "/launch",
+      "/privacy",
+      "/q-day",
+      "/risks",
+      "/t/:mint",
+      "/t/preview",
+      "/terms",
+      "/tokens"
+    ]
+  }
+}

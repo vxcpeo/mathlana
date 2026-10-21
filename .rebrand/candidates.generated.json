@@ -1,0 +1,229 @@
+{
+  "generatedAt": "2026-10-20T01:04:17+08:00",
+  "wave": 3,
+  "keywords": {
+    "summary": "A live measurement platform where AI and quantum research agents attack public cryptography challenges funded by Solana tokens, and every result is machine-checked in public.",
+    "audience": [
+      "Solana traders and token launchers",
+      "cryptography and quantum-computing researchers",
+      "crypto wallet holders worried about key exposure",
+      "people following the quantum threat to Bitcoin, Ethereum and Solana"
+    ],
+    "values": [
+      "measurement over marketing",
+      "machine-checked proof",
+      "public research logs",
+      "the clock is running",
+      "cryptography as a public scoreboard"
+    ],
+    "keywords": [
+      "quantum",
+      "qubit",
+      "lattice",
+      "cipher",
+      "key",
+      "curve",
+      "wallet",
+      "proof",
+      "verify",
+      "agent",
+      "research",
+      "frontier",
+      "break",
+      "clock",
+      "ledger",
+      "beacon",
+      "shard",
+      "prime",
+      "modulus",
+      "horizon"
+    ],
+    "avoid": [
+      "mathlana",
+      "bitcoin",
+      "ethereum",
+      "solana",
+      "ibm",
+      "ionq",
+      "rigetti",
+      "iqm",
+      "google",
+      "anthropic",
+      "openai"
+    ]
+  },
+  "excluded": [
+    "calipra",
+    "ciphera",
+    "keyrune",
+    "keyvane",
+    "lattix",
+    "primora",
+    "quantel",
+    "qubora",
+    "quorix",
+    "sextara"
+  ],
+  "candidates": [
+    {
+      "name": "keyscope",
+      "score": 96,
+      "components": {
+        "length": 20,
+        "syllables": 15,
+        "pronounceability": 20,
+        "visual": 15,
+        "semantic": 10,
+        "distinctiveness": 10
+      },
+      "length": 8,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "manual-curated-wave3"
+    },
+    {
+      "name": "qubitscope",
+      "score": 95,
+      "components": {
+        "length": 20,
+        "syllables": 15,
+        "pronounceability": 20,
+        "visual": 14,
+        "semantic": 10,
+        "distinctiveness": 10
+      },
+      "length": 9,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "manual-curated-wave3"
+    },
+    {
+      "name": "keybreak",
+      "score": 94,
+      "components": {
+        "length": 20,
+        "syllables": 15,
+        "pronounceability": 20,
+        "visual": 15,
+        "semantic": 10,
+        "distinctiveness": 10
+      },
+      "length": 8,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "manual-curated-wave3"
+    },
+    {
+      "name": "cipherix",
+      "score": 93,
+      "components": {
+        "length": 20,
+        "syllables": 15,
+        "pronounceability": 20,
+        "visual": 14,
+        "semantic": 10,
+        "distinctiveness": 10
+      },
+      "length": 8,
+      "syllables": 3,
+      "semanticHits": [],
+      "source": "manual-curated-wave3"
+    },
+    {
+      "name": "lattiva",
+      "score": 92,
+      "components": {
+        "length": 20,
+        "syllables": 15,
+        "pronounceability": 20,
+        "visual": 14,
+        "semantic": 10,
+        "distinctiveness": 10
+      },
+      "length": 7,
+      "syllables": 3,
+      "semanticHits": [],
+      "source": "manual-curated-wave3"
+    },
+    {
+      "name": "qubira",
+      "score": 91,
+      "components": {
+        "length": 20,
+        "syllables": 15,
+        "pronounceability": 20,
+        "visual": 15,
+        "semantic": 10,
+        "distinctiveness": 10
+      },
+      "length": 6,
+      "syllables": 3,
+      "semanticHits": [],
+      "source": "manual-curated-wave3"
+    },
+    {
+      "name": "quvora",
+      "score": 90,
+      "components": {
+        "length": 20,
+        "syllables": 15,
+        "pronounceability": 20,
+        "visual": 15,
+        "semantic": 10,
+        "distinctiveness": 10
+      },
+      "length": 6,
+      "syllables": 3,
+      "semanticHits": [],
+      "source": "manual-curated-wave3"
+    },
+    {
+      "name": "shorline",
+      "score": 89,
+      "components": {
+        "length": 20,
+        "syllables": 15,
+        "pronounceability": 20,
+        "visual": 14,
+        "semantic": 10,
+        "distinctiveness": 10
+      },
+      "length": 8,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "manual-curated-wave3"
+    },
+    {
+      "name": "keymark",
+      "score": 88,
+      "components": {
+        "length": 20,
+        "syllables": 15,
+        "pronounceability": 20,
+        "visual": 14,
+        "semantic": 10,
+        "distinctiveness": 10
+      },
+      "length": 7,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "manual-curated-wave3"
+    },
+    {
+      "name": "quoril",
+      "score": 87,
+      "components": {
+        "length": 20,
+        "syllables": 15,
+        "pronounceability": 20,
+        "visual": 14,
+        "semantic": 10,
+        "distinctiveness": 10
+      },
+      "length": 6,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "manual-curated-wave3"
+    }
+  ]
+}

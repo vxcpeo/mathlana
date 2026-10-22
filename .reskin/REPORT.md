@@ -170,6 +170,11 @@ to describe what ships.
    they were checked by hand at 1440 and 390, including their not-found branches.
 5. Decorative group/row numbers on `/challenges` are CSS counters, not text nodes; they are
    design furniture, not copy.
+6. The 122 warnings are non-blocking: `aria-label` values that moved with the shell (the removed
+   `Contents` aside, the menu button that only shows under 960 px, the compact sheet), link-count
+   reductions where the rail replaced two index rows with one, and two additive binding warnings
+   in the source contract (`item.icon` used by the added dock). No text or attribute value was
+   removed from the rendered page.
 
 ## Commit statement
 
